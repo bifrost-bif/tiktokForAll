@@ -1,79 +1,11 @@
-import React, {useState} from 'react';
-import {Grid, Typography, Paper, Dialog, DialogContent, DialogTitle, Button} from '@mui/material';
+import React from 'react';
+import {Grid, Typography, Paper} from '@mui/material';
+import data from '../data.json'; // Importer les données depuis le fichier JSON
 import './KnockoutStage.css'; // Le fichier CSS pour la mise en forme
 
-// Exemple de données des matchs avec des photos et des scores pour toutes les phases
-const knockoutData = {
-    "1/8e de finale": [
-        { player1: { name: "Joueur 1", photo: "/images/profiles/userTiktok.png", score: 3 }, player2: { name: "Joueur 2", photo: "/images/profiles/userTiktok.png", score: 1 } },
-        { player1: { name: "Joueur 3", photo: "/images/profiles/userTiktok.png", score: -1 }, player2: { name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: -1 } },
-        { player1: { name: "Joueur 5", photo: "/images/profiles/userTiktok.png", score: 1 }, player2: { name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 2 } },
-        {
-            player1: {name: "Joueur 3", photo: "/images/profiles/userTiktok.png", score: 2},
-            player2: {name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 4}
-        },
-        {
-            player1: {name: "Joueur 5", photo: "/images/profiles/userTiktok.png", score: 1},
-            player2: {name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 2}
-        },
-        {
-            player1: {name: "Joueur 7", photo: "/images/profiles/userTiktok.png", score: 3},
-            player2: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 5}
-        },
-        {
-            player1: {name: "Joueur 9", photo: "/images/profiles/userTiktok.png", score: 0},
-            player2: {name: "Joueur 10", photo: "/images/profiles/userTiktok.png", score: 3}
-        },
-        {
-            player1: {name: "Joueur 11", photo: "/images/profiles/userTiktok.png", score: 1},
-            player2: {name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 4}
-        },
-        {
-            player1: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 3},
-            player2: {name: "Joueur 14", photo: "/images/profiles/userTiktok.png", score: 2}
-        },
-        {
-            player1: {name: "Joueur 15", photo: "/images/profiles/userTiktok.png", score: 2},
-            player2: {name: "Joueur 16", photo: "/images/profiles/userTiktok.png", score: 1}
-        },
-    ],
-    "1/4e de finale": [
-        {
-            player1: {name: "Joueur 1", photo: "/images/profiles/userTiktok.png", score: 2},
-            player2: {name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 3}
-        },
-        {
-            player1: {name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 1},
-            player2: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 2}
-        },
-        {
-            player1: {name: "Joueur 10", photo: "/images/profiles/userTiktok.png", score: 3},
-            player2: {name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 4}
-        },
-        {
-            player1: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 5},
-            player2: {name: "Joueur 15", photo: "/images/profiles/userTiktok.png", score: 2}
-        },
-    ],
-    "1/2e de finale": [
-        {
-            player1: {name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 1},
-            player2: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 3}
-        },
-        {
-            player1: {name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 2},
-            player2: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 4}
-        },
-    ],
-    "Finale": [
-        {
-            player1: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 1},
-            player2: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 3}
-        }
-    ]
-};
-
 const KnockoutStage = () => {
+    const knockoutData = data.knockoutMatches; // Accéder aux données des phases éliminatoires
+
     // Fonction pour calculer les pourcentages pour les barres
     const calculatePercentage = (score1, score2) => {
         const total = score1 + score2;

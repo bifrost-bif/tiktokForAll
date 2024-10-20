@@ -1,27 +1,11 @@
 import React from 'react';
 import { Grid, Typography, Paper } from '@mui/material';
-import './Calendrier.css';
-
-// Exemple de données de calendrier (journées, matchs avec dates, heures et scores)
-const calendarData = [
-    {
-        date: "Vendredi 1 NOV 2024",
-        matches: [
-            { player1: { name: "Joueur 1", photo: "/images/profiles/userTiktok.png", score: 20 }, player2: { name: "Joueur 2", photo: "/images/profiles/userTiktok.png", score: 15 }, time: "18:00" },
-            { player1: { name: "Joueur 3", photo: "/images/profiles/userTiktok.png", score: -1 }, player2: { name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: -1 }, time: "20:00" }
-        ]
-    },
-    {
-        date: "Samedi 2 NOV 2024",
-        matches: [
-            { player1: { name: "Joueur 5", photo: "/images/profiles/userTiktok.png", score: 10 }, player2: { name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 20 }, time: "16:00" },
-            { player1: { name: "Joueur 7", photo: "/images/profiles/userTiktok.png", score: 25 }, player2: { name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 20 }, time: "18:00" },
-            { player1: { name: "Joueur 9", photo: "/images/profiles/userTiktok.png", score: -1 }, player2: { name: "Joueur 10", photo: "/images/profiles/userTiktok.png", score: -1 }, time: "20:00" }
-        ]
-    }
-];
+import data from '../data.json'; // Importer les données JSON
+import './Calendrier.css'; // Fichier CSS pour styliser la page
 
 const Calendar = () => {
+    const calendarData = data.calendarMatches; // Accéder aux données des matchs du calendrier
+
     // Fonction pour calculer le pourcentage de la barre de score
     const calculatePercentage = (score1, score2) => {
         const total = score1 + score2;
