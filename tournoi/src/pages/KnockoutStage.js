@@ -1,31 +1,75 @@
-import React, { useState } from 'react';
-import { Grid, Typography, Paper, Dialog, DialogContent, DialogTitle, Button } from '@mui/material';
+import React, {useState} from 'react';
+import {Grid, Typography, Paper, Dialog, DialogContent, DialogTitle, Button} from '@mui/material';
 import './KnockoutStage.css'; // Le fichier CSS pour la mise en forme
 
 // Exemple de données des matchs avec des photos et des scores pour toutes les phases
 const knockoutData = {
     "1/8e de finale": [
         { player1: { name: "Joueur 1", photo: "/images/profiles/userTiktok.png", score: 3 }, player2: { name: "Joueur 2", photo: "/images/profiles/userTiktok.png", score: 1 } },
-        { player1: { name: "Joueur 3", photo: "/images/profiles/userTiktok.png", score: 2 }, player2: { name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 4 } },
+        { player1: { name: "Joueur 3", photo: "/images/profiles/userTiktok.png", score: -1 }, player2: { name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: -1 } },
         { player1: { name: "Joueur 5", photo: "/images/profiles/userTiktok.png", score: 1 }, player2: { name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 2 } },
-        { player1: { name: "Joueur 7", photo: "/images/profiles/userTiktok.png", score: 3 }, player2: { name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 5 } },
-        { player1: { name: "Joueur 9", photo: "/images/profiles/userTiktok.png", score: 0 }, player2: { name: "Joueur 10", photo: "/images/profiles/userTiktok.png", score: 3 } },
-        { player1: { name: "Joueur 11", photo: "/images/profiles/userTiktok.png", score: 1 }, player2: { name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 4 } },
-        { player1: { name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 3 }, player2: { name: "Joueur 14", photo: "/images/profiles/userTiktok.png", score: 2 } },
-        { player1: { name: "Joueur 15", photo: "/images/profiles/userTiktok.png", score: 2 }, player2: { name: "Joueur 16", photo: "/images/profiles/userTiktok.png", score: 1 } },
+        {
+            player1: {name: "Joueur 3", photo: "/images/profiles/userTiktok.png", score: 2},
+            player2: {name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 4}
+        },
+        {
+            player1: {name: "Joueur 5", photo: "/images/profiles/userTiktok.png", score: 1},
+            player2: {name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 2}
+        },
+        {
+            player1: {name: "Joueur 7", photo: "/images/profiles/userTiktok.png", score: 3},
+            player2: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 5}
+        },
+        {
+            player1: {name: "Joueur 9", photo: "/images/profiles/userTiktok.png", score: 0},
+            player2: {name: "Joueur 10", photo: "/images/profiles/userTiktok.png", score: 3}
+        },
+        {
+            player1: {name: "Joueur 11", photo: "/images/profiles/userTiktok.png", score: 1},
+            player2: {name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 4}
+        },
+        {
+            player1: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 3},
+            player2: {name: "Joueur 14", photo: "/images/profiles/userTiktok.png", score: 2}
+        },
+        {
+            player1: {name: "Joueur 15", photo: "/images/profiles/userTiktok.png", score: 2},
+            player2: {name: "Joueur 16", photo: "/images/profiles/userTiktok.png", score: 1}
+        },
     ],
     "1/4e de finale": [
-        { player1: { name: "Joueur 1", photo: "/images/profiles/userTiktok.png", score: 2 }, player2: { name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 3 } },
-        { player1: { name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 1 }, player2: { name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 2 } },
-        { player1: { name: "Joueur 10", photo: "/images/profiles/userTiktok.png", score: 3 }, player2: { name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 4 } },
-        { player1: { name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 5 }, player2: { name: "Joueur 15", photo: "/images/profiles/userTiktok.png", score: 2 } },
+        {
+            player1: {name: "Joueur 1", photo: "/images/profiles/userTiktok.png", score: 2},
+            player2: {name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 3}
+        },
+        {
+            player1: {name: "Joueur 6", photo: "/images/profiles/userTiktok.png", score: 1},
+            player2: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 2}
+        },
+        {
+            player1: {name: "Joueur 10", photo: "/images/profiles/userTiktok.png", score: 3},
+            player2: {name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 4}
+        },
+        {
+            player1: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 5},
+            player2: {name: "Joueur 15", photo: "/images/profiles/userTiktok.png", score: 2}
+        },
     ],
     "1/2e de finale": [
-        { player1: { name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 1 }, player2: { name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 3 } },
-        { player1: { name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 2 }, player2: { name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 4 } },
+        {
+            player1: {name: "Joueur 4", photo: "/images/profiles/userTiktok.png", score: 1},
+            player2: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 3}
+        },
+        {
+            player1: {name: "Joueur 12", photo: "/images/profiles/userTiktok.png", score: 2},
+            player2: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 4}
+        },
     ],
     "Finale": [
-        { player1: { name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 1 }, player2: { name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 3 } }
+        {
+            player1: {name: "Joueur 8", photo: "/images/profiles/userTiktok.png", score: 1},
+            player2: {name: "Joueur 13", photo: "/images/profiles/userTiktok.png", score: 3}
+        }
     ]
 };
 
@@ -46,8 +90,12 @@ const KnockoutStage = () => {
                     <Typography variant="h5" className="round-title">{roundName}</Typography>
                     <Grid container spacing={3} justifyContent="center">
                         {knockoutData[roundName].map((match, matchIndex) => {
-                            const { player1, player2 } = match;
-                            const percentages = calculatePercentage(player1.score, player2.score);
+                            const {player1, player2} = match;
+                            const hasValidScores = player1.score !== -1 && player2.score !== -1;
+                            const percentages = hasValidScores ? calculatePercentage(player1.score, player2.score) : {
+                                player1: 50,
+                                player2: 50
+                            };
 
                             return (
                                 <Grid item xs={12} md={6} key={matchIndex}>
@@ -68,19 +116,25 @@ const KnockoutStage = () => {
                                             </div>
                                         </div>
 
-                                        {/* Barre de score directement sous les noms des joueurs */}
-                                        <div className="score-display">
-                                            <div className="score-number blue">{player2.score}k</div>
-                                            {/* Score bleu à gauche */}
-                                            <div className="score-bar">
-                                                <div className="score-bar-part blue"
-                                                     style={{width: `${percentages.player2}%`}}/>
-                                                <div className="score-bar-part red"
-                                                     style={{width: `${percentages.player1}%`}}/>
+                                        {/* Affichage de la barre de score si les scores sont valides */}
+                                        {hasValidScores && (
+                                            <div className="score-display">
+                                                <div className="score-bar">
+                                                    <div
+                                                        className={`score-bar-part red ${player1.score > player2.score ? 'winner' : ''}`}
+                                                        style={{width: `${percentages.player1}%`}}
+                                                    >
+                                                        {player1.score}k
+                                                    </div>
+                                                    <div
+                                                        className={`score-bar-part blue ${player2.score > player1.score ? 'winner' : ''}`}
+                                                        style={{width: `${percentages.player2}%`}}
+                                                    >
+                                                        {player2.score}k
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="score-number red">{player1.score}k</div>
-                                            {/* Score rouge à droite */}
-                                        </div>
+                                        )}
                                     </Paper>
                                 </Grid>
                             );
