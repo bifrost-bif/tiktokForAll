@@ -45,10 +45,10 @@ const GroupStage = () => {
                             <Table>
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell align="center" className="table-header">#</TableCell>
+                                        <TableCell align="center" className="table-header">Classement</TableCell>
                                         <TableCell align="center" className="table-header"></TableCell>
                                         <TableCell align="center" className="table-header">Joueur</TableCell>
-                                        <TableCell align="center" className="table-header">Matchs</TableCell>
+                                        <TableCell align="center" className="table-header">MJ</TableCell>
                                         <TableCell align="center" className="table-header">Coins</TableCell>
                                         <TableCell align="center" className="table-header">Points</TableCell>
                                     </TableRow>
@@ -82,6 +82,7 @@ const GroupStage = () => {
             <Divider variant="middle" className="group-divider" />
 
             {/* Section des Anciens Joueurs */}
+            <br/>
             <Typography variant="h4" className="category-title">Anciens Joueurs</Typography>
             <Grid container spacing={4} className="group-container">
                 {oldPlayerGroups.map((group, index) => (
