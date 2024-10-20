@@ -1,0 +1,31 @@
+/* Conteneur principal */
+.group-stage-container {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style de l'image du tournoi */
+.tournoi-image {
+    width: 100%; /* Taille de l'image (ajustable) */
+    height: auto;
+    border-radius: 10px; /* Coins arrondis pour un effet élégant */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Ombre subtile */
+    transition: transform 0.3s ease; /* Transition pour un effet de zoom */
+}
+
+.tournoi-image:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+/* Texte de bienvenue */
+.welcome-text {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}

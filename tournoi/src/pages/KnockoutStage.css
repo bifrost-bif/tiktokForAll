@@ -1,0 +1,141 @@
+/* Conteneur principal */
+.knockout-stage-container {
+    padding: 20px;
+    background-color: #f5f5f5; /* Fond clair pour un thème plus lumineux */
+    color: #333; /* Couleur de texte sombre mais douce */
+    min-height: 100vh;
+}
+
+/* Conteneur des rounds (1/8e de finale, 1/4e de finale, etc.) */
+.round-container {
+    margin-bottom: 40px;
+}
+
+/* Titre des rounds */
+.round-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Couleur sombre pour le texte */
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Carte de match */
+.match-container {
+    background-color: #ffffff; /* Fond blanc propre pour les matchs */
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Ombre douce */
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+/* Effet au survol de la carte */
+.match-container:hover {
+    border: 2px solid #3498DB; /* Bordure bleu clair au survol */
+}
+
+/* Informations sur les joueurs */
+.match-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+}
+
+.versus-separator {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7f8c8d; /* Gris foncé élégant pour le "VS" */
+    margin: 0 10px;
+}
+
+.player-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* S'assure que l'image soit bien ajustée */
+}
+
+.player-name {
+    font-size: 1.2rem;
+    color: #333; /* Couleur sombre pour le nom des joueurs */
+    font-weight: bold;
+}
+
+/* Affichage des scores et des barres */
+.score-display {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligner les scores des deux côtés */
+    margin-top: 10px;
+}
+
+.score-bar {
+    display: flex;
+    flex-grow: 1; /* La barre de score prend tout l'espace disponible */
+    height: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px; /* Espacement entre les scores et la barre */
+}
+
+.score-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.score-number.red {
+    color: #E74C3C; /* Rouge pour le score du joueur 1 */
+}
+
+.score-number.blue {
+    color: #3498DB; /* Bleu pour le score du joueur 2 */
+}
+
+.score-bar-part {
+    height: 100%;
+}
+
+.score-bar-part.red {
+    background-color: #E74C3C; /* Rouge pour la barre du joueur 1 */
+}
+
+.score-bar-part.blue {
+    background-color: #3498DB; /* Bleu pour la barre du joueur 2 */
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+    .player {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .versus-separator {
+        font-size: 1.5rem;
+    }
+
+    .score-bar {
+        height: 30px; /* Réduction de la hauteur de la barre sur mobile */
+    }
+
+    .score-number {
+        font-size: 1.3rem; /* Réduction de la taille du texte sur mobile */
+    }
+}
