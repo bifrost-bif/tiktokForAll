@@ -1,13 +1,16 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import {Typography, Box} from '@mui/material';
+import './home.css';
 
 const Home = () => {
     return (
-        <div style={{ textAlign: 'center', padding: '20px' }}>
-            <Typography variant="h3" gutterBottom>Bienvenue au Tournoi</Typography>
-            <Typography variant="h5">Sélectionnez une phase pour voir les groupes ou les éliminations directes.</Typography>
+        <div className="group-stage-container">
+            {/* Section pour l'affiche du tournoi */}
+            <Typography variant="h5">Sélectionnez une phase pour voir les groupes ou les éliminations
+                directes.</Typography>
+            <img src="/images/affiche.png" alt="Affiche du Tournoi" className="tournoi-image"/>
         </div>
-    );
+    )
 };
 
 export default Home;

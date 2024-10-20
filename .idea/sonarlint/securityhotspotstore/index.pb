@@ -3,8 +3,6 @@
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 P
  tournoi/src/components/Header.js,d/1/d1a946d049dc6ad373198c6dbe223d490ca147d3
-T
-$tournoi/src/components/GroupStage.js,3/4/345384dda247ed9c5fb60d424519008d2fe847d6
 W
 'tournoi/src/components/KnockoutStage.js,c/7/c718b353197473d77ad89c8504888744d2665f6d
 B
@@ -31,3 +29,25 @@ P
  tournoi/src/pages/Classement.jsx,1/d/1dcfed2fdcbf9266f59de4a261ea9c71afc288ec
 P
  tournoi/src/pages/GroupStage.css,9/d/9d89355726661bf9fe403636645b1921f6b3acaa
+P
+ tournoi/src/components/Navbar.js,5/1/51fc600748c14699c0b5b02c357ce07f4eb6b2c8
+Q
+!tournoi/src/components/Navbar.css,3/6/36f0055f452f64cba2deab20c9428020e89be083
+T
+$tournoi/src/pages/JoueursInscrits.js,d/9/d9fea5a6f08fba1f47bbb57e14117f31636947be
+N
+tournoi/src/pages/Sanctions.js,6/d/6df95da506b87f8a0a77fcf1518a6eef3f11f3a5
+S
+#tournoi/src/pages/KnockoutStage.css,d/0/d04334d25446b106272741041198e93b004de76b
+J
+tournoi/src/pages/home.css,5/6/56db38f63e6ca3937ac548b6210dbc2651db23d5
+D
+tournoi/src/index.js,8/6/86acf5c2fe568bd8dc172c04937a8e439532a05e
+U
+%tournoi/src/pages/compareToDelete.css,0/9/094a446678056cde56cc3c3359db265c26f793a5
+U
+%tournoi/src/pages/JoueursInscrits.css,5/8/588bc2b58048947ebaa72a8832eda73a3e7cccf9
+O
+tournoi/src/pages/Sanctions.css,8/1/81fd6fb36ec904c3219df1c61565887f3504a634
+O
+tournoi/src/pages/Calendrier.js,f/e/fec58ed627f82f82ff651f502f6029e4f55e98be

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper } from '@mui/material';
+import { Grid, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper, Divider } from '@mui/material';
 import { styled } from '@mui/system';
 import './GroupStage.css'; // Fichier CSS pour styliser la page
 
@@ -8,10 +8,10 @@ const groupsData = [
     {
         groupName: "Groupe A",
         teams: [
-            { id: 1, name: "joueur 1", flag: "/images/profiles/joueur2.png", played: 3, coins: "190k", points: 0 },
-            { id: 2, name: "joueur 2", flag: "/images/profiles/joueur2.png", played: 3, coins: "142k", points: 5 },
-            { id: 3, name: "joueur 3", flag: "/images/profiles/joueur2.png", played: 3, coins: "120k", points: 2 },
-            { id: 4, name: "joueur 4", flag: "/images/profiles/joueur2.png", played: 3, coins: "26k", points: 1 }
+            { id: 1, name: "joueur 1", flag: "/images/profiles/userTiktok.png", played: 3, coins: "190k", points: 0 },
+            { id: 2, name: "joueur 2", flag: "/images/profiles/userTiktok.png", played: 3, coins: "142k", points: 5 },
+            { id: 3, name: "joueur 3", flag: "/images/profiles/userTiktok.png", played: 3, coins: "120k", points: 2 },
+            { id: 4, name: "joueur 4", flag: "/images/profiles/userTiktok.png", played: 3, coins: "26k", points: 1 }
         ]
     },
     {
@@ -80,6 +80,7 @@ const groupsData = [
 ];
 
 
+
 // Catégoriser les groupes
 const newPlayerGroups = groupsData.slice(0, 4); // Groupes A à D
 const oldPlayerGroups = groupsData.slice(4);    // Groupes E à H
@@ -94,7 +95,7 @@ const Flag = styled('img')({
 
 const RankCircle = styled('div')(({ rank }) => ({
     display: 'inline-block',
-    backgroundColor: rank >= 3 ? '#FF6F61' : '#4CAF50',  // Rouge pour les 3e et 4e, Vert pour les 1ers et 2èmes
+    backgroundColor: rank >= 3 ? '#F44336' : '#4CAF50',  // Rouge pour les 3e et 4e, Vert pour les 1ers et 2èmes
     color: 'white',
     borderRadius: '50%',
     width: '35px',
@@ -151,6 +152,9 @@ const GroupStage = () => {
                     </Grid>
                 ))}
             </Grid>
+
+            {/* Séparateur élégant */}
+            <Divider variant="middle" className="group-divider" />
 
             {/* Section des Anciens Joueurs */}
             <Typography variant="h4" className="category-title">Anciens Joueurs</Typography>
