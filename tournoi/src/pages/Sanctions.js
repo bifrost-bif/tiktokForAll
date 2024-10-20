@@ -36,8 +36,8 @@ const Sanctions = () => {
                         <Table>
                             <TableHead>
                                 <TableRow>
-                                    <TableCell align="center" className="table-header">#</TableCell>
-                                    <TableCell align="center" className="table-header">Photo</TableCell>
+
+                                    <TableCell align="center" className="table-header"></TableCell>
                                     <TableCell align="center" className="table-header">Nom du joueur</TableCell>
                                     <TableCell align="center" className="table-header">Nombre d'avertissements</TableCell>
                                     <TableCell align="center" className="table-header">Raison</TableCell>
@@ -48,7 +48,7 @@ const Sanctions = () => {
                             <TableBody>
                                 {sanctionsData.map((joueur) => (
                                     <TableRow key={joueur.id} className={joueur.status === 'Sanctionné' ? 'sanctions-table-row sanctioned' : 'sanctions-table-row'}>
-                                        <TableCell align="center">{joueur.id}</TableCell>
+
                                         <TableCell align="center"><Flag src={joueur.flag} alt={joueur.name} /></TableCell>
                                         <TableCell align="center">{joueur.name}</TableCell>
                                         <TableCell align="center">{joueur.warnings}</TableCell>
