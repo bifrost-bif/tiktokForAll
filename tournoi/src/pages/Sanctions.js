@@ -78,7 +78,7 @@ const Sanctions = () => {
                             </TableHead>
                             <TableBody>
                                 {sanctionsData.map((joueur) => (
-                                    <TableRow key={joueur.id}>
+                                    <TableRow key={joueur.id} className={joueur.status === 'Sanctionné' ? 'sanctions-table-row sanctioned' : 'sanctions-table-row'}>
                                         <TableCell align="center">{joueur.id}</TableCell>
                                         <TableCell align="center">
                                             <Flag src={joueur.flag} alt={joueur.name} />

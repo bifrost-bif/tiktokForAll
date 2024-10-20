@@ -45,7 +45,12 @@
 }
 
 .sanctions-table-row:hover {
-    background-color: #f9f9f9; /* Légère teinte au survol */
+    background-color: #f9f9f9;
+}
+
+/* Style pour les joueurs sanctionnés */
+.sanctions-table-row.sanctioned {
+    background-color: rgba(255, 0, 0, 0.1); /* Fond rouge pâle */
 }
 
 /* Cellules du tableau */
