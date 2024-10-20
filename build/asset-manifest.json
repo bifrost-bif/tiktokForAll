@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bifrost-bif/tiktokForAll.git/static/css/main.b808a7d8.css",
+    "main.js": "/bifrost-bif/tiktokForAll.git/static/js/main.655da8db.js",
+    "static/js/453.edbcd8f1.chunk.js": "/bifrost-bif/tiktokForAll.git/static/js/453.edbcd8f1.chunk.js",
+    "index.html": "/bifrost-bif/tiktokForAll.git/index.html",
+    "main.b808a7d8.css.map": "/bifrost-bif/tiktokForAll.git/static/css/main.b808a7d8.css.map",
+    "main.655da8db.js.map": "/bifrost-bif/tiktokForAll.git/static/js/main.655da8db.js.map",
+    "453.edbcd8f1.chunk.js.map": "/bifrost-bif/tiktokForAll.git/static/js/453.edbcd8f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b808a7d8.css",
+    "static/js/main.655da8db.js"
+  ]
+}
