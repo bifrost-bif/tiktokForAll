@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Calendrier des matchs
+
+Le composant **`Calendar`** affiche les journées du tournoi avec les matchs programmés, incluant les horaires et les scores des matchs déjà terminés.
+
+### Utilisation des scores
+
+- Si le score d'un joueur est **`-1`**, cela signifie que le match **n'a pas encore été joué**. Dans ce cas, le score ne sera **pas affiché** dans l'interface.
+- Une barre horizontale bicolore est utilisée pour représenter les scores une fois le match terminé :
+    - **Rouge** pour le premier joueur.
+    - **Bleu** pour le second joueur.
+    - Le joueur gagnant est discrètement mis en valeur par une légère surbrillance.
+
+### Exemple de structure de données
+
+Voici comment structurer les données des matchs :
+
+```javascript
+const calendarData = [
+    {
+        date: "Vendredi 1 NOV 2024",
+        matches: [
+            { player1: { name: "Joueur 1", score: 20 }, player2: { name: "Joueur 2", score: 15 }, time: "18:00" },
+            { player1: { name: "Joueur 3", score: -1 }, player2: { name: "Joueur 4", score: -1 }, time: "20:00" }
+        ]
+    },
+    ...
+];

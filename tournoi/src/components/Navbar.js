@@ -15,17 +15,20 @@ const Navbar = () => {
                     <Button component={Link} to="/" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                         Accueil
                     </Button>
-                    <Button component={Link} to="/group-stage" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                        Phase de groupe
-                    </Button>
                     <Button component={Link} to="/joueurs-inscrit" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                         Joueurs Inscrits
                     </Button>
-                    <Button component={Link} to="/sanctions" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                        Sanctions
+                    <Button component={Link} to="calendrier" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
+                        Calendrier
+                    </Button>
+                    <Button component={Link} to="/group-stage" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
+                        Phase de groupe
                     </Button>
                     <Button component={Link} to="/eliminatoire" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                         Phase Éliminatoire
+                    </Button>
+                    <Button component={Link} to="/sanctions" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
+                        Sanctions
                     </Button>
                 </Box>
                 {/* Logo ou Titre */}

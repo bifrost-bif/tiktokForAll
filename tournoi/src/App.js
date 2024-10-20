@@ -6,7 +6,8 @@ import KnockoutStage from './pages/KnockoutStage';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Sanctions from './pages/Sanctions'; // Exemple de page pour les sanctions
 import JoueursInscrits from './pages/JoueursInscrits'; // Exemple de page des joueurs inscrits
-import Navbar from './components/Navbar'; // Import de la barre de navigation
+import Navbar from './components/Navbar';
+import Calendar from "./pages/Calendrier"; // Import de la barre de navigation
 
 // Créer un thème sombre pour tout le site
 const darkTheme = createTheme({
@@ -35,6 +36,7 @@ function App() {
                 <Route path="/sanctions" element={<Sanctions />} />
                 <Route path="/eliminatoire" element={<KnockoutStage />} />
                 <Route path="/classement" element={<GroupStage />} />
+                <Route path="/calendrier" element={<Calendar />} />
             </Routes>
         </Router>
     );
