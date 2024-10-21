@@ -1,0 +1,137 @@
+/* Conteneur principal */
+.joueurs-inscrits-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur de la table */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+}
+
+/* Titre de la page */
+.joueurs-inscrits-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Papier contenant le tableau */
+.joueurs-inscrits-paper {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* En-tête du tableau */
+.joueurs-table-header {
+    background-color: #eaeaea;
+    color: #333;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Lignes du tableau */
+.joueurs-table-row {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.joueurs-table-row:hover {
+    background-color: #f9f9f9;
+}
+
+/* Cellules du tableau */
+.joueurs-table-cell {
+    padding: 10px;
+    text-align: center;
+    color: #555;
+}
+
+/* Validation */
+.validation-icon {
+    font-size: 1.5rem;
+}
+
+.validation-icon.valid {
+    color: #2ECC71;
+}
+
+.validation-icon.invalid {
+    color: #E74C3C;
+}
+
+/* Lien TikTok */
+.tiktok-link {
+    color: #1DA1F2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tiktok-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .joueurs-inscrits-paper {
+        padding: 10px;
+    }
+
+    .joueurs-table-header {
+        font-size: 0.8rem;
+    }
+
+    .joueurs-table-cell {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .player-photo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .validation-icon {
+        font-size: 1.2rem;
+    }
+
+    .tiktok-link {
+        font-size: 0.8rem;
+    }
+
+    /* Réduire la largeur de certaines colonnes */
+    .joueurs-table-cell {
+        width: 20%;
+    }
+
+    .joueurs-table-cell:nth-child(1) { /* Colonne index */
+        width: 10%;
+    }
+
+    .joueurs-table-cell:nth-child(4) { /* Colonne validation */
+        width: 15%;
+    }
+
+    .joueurs-table-cell:nth-child(5) { /* Colonne lien TikTok */
+        width: 25%;
+    }
+
+    /* Masquer certaines colonnes */
+    /* .joueurs-table-cell:nth-child(2), .joueurs-table-cell:nth-child(5) { */
+    /*     display: none; */
+    /* } */
+}
