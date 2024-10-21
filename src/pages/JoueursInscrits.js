@@ -32,8 +32,9 @@ const JoueursInscrits = () => {
                                         <TableCell align="center" className="joueurs-table-header">#</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Photo</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Nom du joueur</TableCell>
-                                        <TableCell align="center" className="joueurs-table-header">Inscription validée</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Lien TikTok</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Inscription validée</TableCell>
+                                        
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -41,16 +42,9 @@ const JoueursInscrits = () => {
                                         <TableRow key={joueur.id} className="joueurs-table-row">
                                             <TableCell align="center" className="joueurs-table-cell">{index + 1}</TableCell>
                                             <TableCell align="center" className="joueurs-table-cell">
-                                                <Flag src={joueur.flag} alt={joueur.name} />
+                                                <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
                                             </TableCell>
                                             <TableCell align="center" className="joueurs-table-cell">{joueur.name}</TableCell>
-                                            <TableCell align="center" className="joueurs-table-cell">
-                                                {joueur.validated ? (
-                                                    <CheckIcon className="validation-icon valid" />
-                                                ) : (
-                                                    <CloseIcon className="validation-icon invalid" />
-                                                )}
-                                            </TableCell>
                                             <TableCell align="center" className="joueurs-table-cell">
                                                 {joueur.tiktokUsername ? (
                                                     <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer" className="tiktok-link">
@@ -58,6 +52,13 @@ const JoueursInscrits = () => {
                                                     </a>
                                                 ) : (
                                                     "N/A"
+                                                )}
+                                            </TableCell>
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                {joueur.validated ? (
+                                                    <CheckIcon className="validation-icon valid" />
+                                                ) : (
+                                                    <CloseIcon className="validation-icon invalid" />
                                                 )}
                                             </TableCell>
                                         </TableRow>

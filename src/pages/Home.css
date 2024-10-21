@@ -1,40 +1,83 @@
 .home-container {
     padding: 40px;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Fond clair pour une meilleure lisibilité */
 }
 
 .home-title {
-    color: #2c3e50;
-    text-align: center;
+    color: #2c3e50; /* Couleur sombre et élégante pour le titre principal */
+    text-align: center; /* Centrer le texte */
     margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 50px; /* Espacement entre chaque section */
 }
 
 .section-title {
-    color: #3498db;
-    margin-bottom: 10px;
+    color: #3498db; /* Bleu pour les sous-titres des sections */
+    margin-bottom: 10px; /* Espacement sous les titres */
+    font-weight: bold; /* Mettre les titres en valeur */
 }
 
 .home-text {
-    margin-bottom: 20px;
-    color: #555;
-    line-height: 1.6;
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+    color: #555; /* Couleur gris doux pour le texte */
+    line-height: 1.6; /* Meilleure lisibilité du texte */
 }
 
 .structure-grid {
-    margin-top: 20px;
+    margin-top: 20px; /* Espacement entre les sections */
 }
 
 .tournament-step {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
+    padding: 20px; /* Ajout d'espacement à l'intérieur des cartes */
+    background-color: #fff; /* Fond blanc pour un contraste clair */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce pour l'effet de profondeur */
+    border-radius: 10px; /* Coins arrondis pour un effet moderne */
+    text-align: center; /* Centrer le contenu de chaque étape */
 }
 
 .spirit-section {
-    background-color: #ecf0f1;
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 40px;
+    background-color: #ecf0f1; /* Fond gris clair pour cette section particulière */
+    padding: 30px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis pour correspondre au design */
+    margin-top: 40px; /* Espacement au-dessus de cette section */
+}
+
+/* Style spécifique pour la section d'inscription */
+.registration-box {
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc pour se détacher du reste */
+    border-left: 5px solid #3498db; /* Bordure à gauche pour mettre en valeur */
+    margin-top: 30px; /* Espacement avec les autres sections */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour une meilleure présentation */
+}
+
+.registration-box:hover {
+    transform: scale(1.02); /* Légère mise en avant au survol */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.registration-title {
+    color: #FF6B6B; /* Couleur bleu clair pour le titre */
+    text-align: center; /* Centrer le titre de la section d'inscription */
+    font-weight: bold; /* Mettre le titre en valeur */
+}
+
+.registration-text {
+    text-align: center; /* Center the text horizontally */
+    font-weight: 500; /* Mettre légèrement en valeur le texte */
+    color: #555; /* Couleur douce pour le texte */
+    width: 100%; /* Ensure the text takes the full width */
+}
+
+.tiktok-embed {
+    margin-top: 15px; /* Ajouter un léger espacement au-dessus de l'intégration TikTok */
+    text-align: center; /* Centrer l'intégration TikTok */
+}
+
+/* Styles pour les sections finales */
+.spirit-section .home-text {
+    font-size: 1.1rem; /* Légère augmentation de la taille du texte */
+    color: #2c3e50; /* Couleur sombre pour renforcer l'importance du message */
 }

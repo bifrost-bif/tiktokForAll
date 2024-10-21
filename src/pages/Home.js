@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react'; // Import useEffect
 import { Typography, Box, Grid, Paper } from '@mui/material';
 import './Home.css'; // Fichier CSS pour styliser la page
 
 const Home = () => {
+            // Load the TikTok embed script
+            useEffect(() => {
+                const script = document.createElement('script');
+                script.src = 'https://www.tiktok.com/embed.js';
+                script.async = true;
+                document.body.appendChild(script);
+        
+                // Clean up the script when the component is unmounted
+                return () => {
+                    document.body.removeChild(script);
+                };
+            }, []); // Empty dependency array ensures this effect runs once on mount
+        
     return (
         <div className="home-container">
             {/* Section d'introduction */}
@@ -39,6 +52,34 @@ const Home = () => {
                         </li>
                     </ul>
                 </Typography>
+                {/* Section d'inscription mise en valeur */}
+                <section className="registration-section">
+                    <Paper elevation={6} className="registration-box standout"> {/* Augmentation de l'élévation */}
+                        <Typography variant="h4" className="section-title registration-title">
+                            Inscription
+                        </Typography>
+                        <Typography variant="body1" className="home-text registration-text">
+                            <br/> Les frais de participation sont fixés à <strong>150€</strong>.<br/>
+                            Pour vous inscrire au tournoi et pour toute autres questions, veuillez contacter Hatema via son profil TikTok en envoyant un message privé.
+                            <br />
+                        </Typography>
+
+                        {/* TikTok Embed */}
+                        <blockquote
+                            className="tiktok-embed"
+                            cite="https://www.tiktok.com/@hatema_1"
+                            data-unique-id="hatema_1"
+                            data-embed-type="creator"
+                            style={{ maxWidth: '780px', minWidth: '288px' }} // Corrected style prop
+                        >
+                            <section>
+                                <a target="_blank" href="https://www.tiktok.com/@hatema_1?refer=creator_embed">
+                                    @hatema_1
+                                </a>
+                            </section>
+                        </blockquote>
+                    </Paper>
+                </section>
             </section>
 
             {/* Section sur la structure du tournoi */}

@@ -41,12 +41,12 @@ const Navbar = () => {
 
     return (
         <>
-            <AppBar position="static" sx={{ backgroundColor: '#2C3E50', width: '100%' }}> {/* Fond sombre élégant */}
-                <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}> {/* Alignement des éléments */}
+            <AppBar position="static" sx={{ backgroundColor: '#2C3E50', width: '100%' }}>
+                <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
 
                     {/* Logo + Titre */}
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <img src="/images/tiktoklogo.png" alt="Logo" className="navbar-logo" /> {/* Logo circulaire */}
+                        <img src={`${process.env.PUBLIC_URL}/images/tiktoklogo.png`} alt="Logo" className="navbar-logo" />
                         <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#ecf0f1' }}>
                             TIKTOK FOR ALL
                         </Typography>
@@ -64,7 +64,7 @@ const Navbar = () => {
                     </IconButton>
 
                     {/* Menu Horizontal pour les grands écrans */}
-                    <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: '30px' }}> {/* Affiché sur les écrans moyens et plus grands */}
+                    <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: '30px', justifyContent: 'center', flexGrow: 1 }}> {/* Ajout de `justifyContent: 'center'` */}
                         <Button component={Link} to="/" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Accueil
                         </Button>

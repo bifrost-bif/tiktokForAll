@@ -66,7 +66,7 @@ const GroupStage = () => {
                                                         <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
                                                     </TableCell>
                                                     <TableCell align="center">
-                                                        <Flag src={team.flag} alt={team.name} />
+                                                        <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
                                                     </TableCell>
                                                     <TableCell align="center">{team.name}</TableCell>
                                                     <TableCell align="center">{team.played}</TableCell>

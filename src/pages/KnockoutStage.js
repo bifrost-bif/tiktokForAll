@@ -49,7 +49,7 @@ const KnockoutStage = () => {
                                             {/* Joueur 1 */}
                                             <div className="player">
                                                 <img
-                                                    src={player1.photo}
+                                                    src={`${process.env.PUBLIC_URL}${player1.photo}`}
                                                     alt={player1.name}
                                                     className="player-photo"
                                                 />
@@ -63,7 +63,7 @@ const KnockoutStage = () => {
                                             {/* Joueur 2 */}
                                             <div className="player">
                                                 <img
-                                                    src={player2.photo}
+                                                    src={`${process.env.PUBLIC_URL}${player2.photo}`}
                                                     alt={player2.name}
                                                     className="player-photo"
                                                 />
