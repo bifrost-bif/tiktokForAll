@@ -1,5 +1,5 @@
-import React from 'react';
-import {Typography, Box} from '@mui/material';
+import React, { useEffect } from 'react';
+import { Typography, Box } from '@mui/material';
 import './home.css';
 
 const Home = () => {

@@ -20,12 +20,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint './src/**/*.{js,jsx}'"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "*.test.js",
+          "*.spec.js"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
     ]
   },
   "browserslist": {
@@ -41,8 +50,9 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^9.13.0",
+    "eslint": "^8.50.0",
     "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jest": "^28.8.3"
   }
 }
