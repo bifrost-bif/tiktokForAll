@@ -33,34 +33,35 @@ const Sanctions = () => {
             <Grid container spacing={4} justifyContent="center">
                 <Grid item xs={12} md={10}>
                     <Paper className="sanctions-paper">
-                        <Table>
-                            <TableHead>
-                                <TableRow>
-
-                                    <TableCell align="center" className="table-header"></TableCell>
-                                    <TableCell align="center" className="table-header">Nom du joueur</TableCell>
-                                    <TableCell align="center" className="table-header">Nombre d'avertissements</TableCell>
-                                    <TableCell align="center" className="table-header">Raison</TableCell>
-                                    <TableCell align="center" className="table-header">Date</TableCell>
-                                    <TableCell align="center" className="table-header">Statut</TableCell>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {sanctionsData.map((joueur) => (
-                                    <TableRow key={joueur.id} className={joueur.status === 'Sanctionné' ? 'sanctions-table-row sanctioned' : 'sanctions-table-row'}>
-
-                                        <TableCell align="center"><Flag src={joueur.flag} alt={joueur.name} /></TableCell>
-                                        <TableCell align="center">{joueur.name}</TableCell>
-                                        <TableCell align="center">{joueur.warnings}</TableCell>
-                                        <TableCell align="center">{joueur.reason}</TableCell>
-                                        <TableCell align="center">{joueur.date}</TableCell>
-                                        <TableCell align="center" style={getStatusStyle(joueur.status)}>
-                                            {joueur.status}
-                                        </TableCell>
+                        {/* Conteneur avec défilement horizontal */}
+                        <div className="table-container">
+                            <Table>
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell align="center" className="table-header"></TableCell>
+                                        <TableCell align="center" className="table-header">Nom du joueur</TableCell>
+                                        <TableCell align="center" className="table-header">Nombre d'avertissements</TableCell>
+                                        <TableCell align="center" className="table-header">Raison</TableCell>
+                                        <TableCell align="center" className="table-header">Date</TableCell>
+                                        <TableCell align="center" className="table-header">Statut</TableCell>
                                     </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
+                                </TableHead>
+                                <TableBody>
+                                    {sanctionsData.map((joueur) => (
+                                        <TableRow key={joueur.id} className={joueur.status === 'Sanctionné' ? 'sanctions-table-row sanctioned' : 'sanctions-table-row'}>
+                                            <TableCell align="center"><Flag src={joueur.flag} alt={joueur.name} /></TableCell>
+                                            <TableCell align="center">{joueur.name}</TableCell>
+                                            <TableCell align="center">{joueur.warnings}</TableCell>
+                                            <TableCell align="center">{joueur.reason}</TableCell>
+                                            <TableCell align="center">{joueur.date}</TableCell>
+                                            <TableCell align="center" style={getStatusStyle(joueur.status)}>
+                                                {joueur.status}
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </div>
                     </Paper>
                 </Grid>
             </Grid>

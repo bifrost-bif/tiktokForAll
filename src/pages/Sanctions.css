@@ -27,6 +27,12 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Ombre douce pour donner de la profondeur */
 }
 
+/* Conteneur du tableau avec défilement horizontal */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Défilement horizontal pour les petits écrans */
+}
+
 /* En-tête du tableau */
 .table-header {
     background-color: #eaeaea; /* Fond gris très clair pour l'en-tête */
@@ -58,6 +64,7 @@
     padding: 10px;
     text-align: center;
     color: #555; /* Gris doux pour les textes */
+    white-space: nowrap; /* Empêche le texte de déborder sur plusieurs lignes */
 }
 
 /* Photo du joueur */
@@ -68,42 +75,26 @@
     object-fit: cover; /* Pour que la photo garde ses proportions */
 }
 
-/* Validation */
-.validation-icon {
-    font-size: 1.5rem;
-}
-
-.validation-icon.valid {
-    color: #2ECC71; /* Vert pour les joueurs validés */
-}
-
-.validation-icon.invalid {
-    color: #E74C3C; /* Rouge pour les joueurs non validés */
-}
-
-/* Lien TikTok */
-.tiktok-link {
-    color: #1DA1F2; /* Bleu clair pour les liens */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.tiktok-link:hover {
-    text-decoration: underline;
-}
-
-/* Responsive */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .table-header {
-        font-size: 0.9rem;
+    .sanctions-paper {
+        padding: 10px;
     }
 
-    .player-photo {
+    .table-header, .sanctions-table-cell {
+        font-size: 0.8rem; /* Réduire la taille de la police sur mobile */
+        padding: 5px; /* Réduire le padding pour les petits écrans */
+    }
+
+    /* Réduire la taille des images sur mobile */
+    .sanctions-table-cell img {
         width: 40px;
-        height: 40px; /* Réduire la taille des photos sur mobile */
+        height: 40px;
     }
 
-    .validation-icon {
-        font-size: 1.3rem; /* Réduire la taille des icônes sur mobile */
+    /* Masquer certaines colonnes sur mobile pour économiser de l'espace */
+    .sanctions-table-cell:nth-child(4), /* Masque la colonne Raison */
+    .sanctions-table-cell:nth-child(5) { /* Masque la colonne Date */
+        display: none;
     }
 }

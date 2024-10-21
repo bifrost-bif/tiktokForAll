@@ -3,7 +3,7 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5; /* Fond clair */
+    background-color: #f5f5f5;
 }
 
 /* Titre de section */
@@ -26,21 +26,27 @@
 /* Papier pour les groupes */
 .group-paper {
     padding: 15px;
-    background-color: #ffffff; /* Fond blanc propre pour chaque groupe */
+    background-color: #ffffff;
     color: #333;
-    border: 1px solid #ddd; /* Bordure légère pour un look plus professionnel */
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner de la profondeur */
-    min-height: 350px; /* Hauteur minimum pour éviter les variations visuelles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 350px;
 }
 
 /* Titre du groupe */
 .group-title {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: #1976D2; /* Bleu léger pour les titres des groupes */
+    color: #1976D2;
     margin-bottom: 10px;
     font-size: 1.4rem;
+}
+
+/* Conteneur du tableau avec défilement horizontal */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
 }
 
 /* En-tête de table */
@@ -48,21 +54,34 @@
     color: #555;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    padding: 5px;
+    white-space: nowrap;
 }
 
-/* Séparateur entre sections */
-.group-divider {
-    margin: 30px 0;
-    border-top: 2px solid #1976D2; /* Séparateur bleu entre sections */
+/* Cellules du tableau */
+.table-cell {
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* Drapeaux */
+.group-paper img {
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+/* Cercle de classement */
+.RankCircle {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 /* Responsive styles */
-@media (max-width: 1200px) {
-    .group-container {
-        justify-content: center;
-    }
-}
-
 @media (max-width: 768px) {
     .group-container {
         flex-direction: column;
@@ -70,5 +89,30 @@
 
     .group-paper {
         margin-bottom: 20px;
+    }
+
+    /* Réduire la taille de la police et du padding */
+    .table-header, .table-cell {
+        font-size: 0.8rem;
+        padding: 3px;
+    }
+
+    /* Drapeaux plus petits sur mobile */
+    .group-paper img {
+        width: 40px;
+        height: 30px;
+    }
+
+    /* Cercle de classement plus petit sur mobile */
+    .RankCircle {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    /* Masquer certaines colonnes sur mobile */
+    .table-cell:nth-child(4), .table-cell:nth-child(5) {
+        display: none; /* Masquer MJ et Coins sur mobile */
     }
 }

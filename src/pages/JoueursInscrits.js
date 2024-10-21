@@ -24,44 +24,47 @@ const JoueursInscrits = () => {
             <Grid container spacing={4} justifyContent="center">
                 <Grid item xs={12} md={10}>
                     <Paper className="joueurs-inscrits-paper">
-                        <Table>
-                            <TableHead>
-                                <TableRow>
-                                    <TableCell align="center" className="joueurs-table-header">#</TableCell>
-                                    <TableCell align="center" className="joueurs-table-header">Photo</TableCell>
-                                    <TableCell align="center" className="joueurs-table-header">Nom du joueur</TableCell>
-                                    <TableCell align="center" className="joueurs-table-header">Inscription validée</TableCell>
-                                    <TableCell align="center" className="joueurs-table-header">Lien TikTok</TableCell>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {data.joueursInscritsData.map((joueur, index) => (
-                                    <TableRow key={joueur.id} className="joueurs-table-row">
-                                        <TableCell align="center" className="joueurs-table-cell">{index + 1}</TableCell>
-                                        <TableCell align="center" className="joueurs-table-cell">
-                                            <Flag src={joueur.flag} alt={joueur.name} />
-                                        </TableCell>
-                                        <TableCell align="center" className="joueurs-table-cell">{joueur.name}</TableCell>
-                                        <TableCell align="center" className="joueurs-table-cell">
-                                            {joueur.validated ? (
-                                                <CheckIcon className="validation-icon valid" />
-                                            ) : (
-                                                <CloseIcon className="validation-icon invalid" />
-                                            )}
-                                        </TableCell>
-                                        <TableCell align="center" className="joueurs-table-cell">
-                                            {joueur.tiktokUsername ? (
-                                                <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer" className="tiktok-link">
-                                                    {joueur.tiktokUsername}
-                                                </a>
-                                            ) : (
-                                                "N/A"
-                                            )}
-                                        </TableCell>
+                        {/* Ajout du conteneur de défilement pour les petits écrans */}
+                        <div className="table-container">
+                            <Table>
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell align="center" className="joueurs-table-header">#</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Photo</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Nom du joueur</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Inscription validée</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Lien TikTok</TableCell>
                                     </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
+                                </TableHead>
+                                <TableBody>
+                                    {data.joueursInscritsData.map((joueur, index) => (
+                                        <TableRow key={joueur.id} className="joueurs-table-row">
+                                            <TableCell align="center" className="joueurs-table-cell">{index + 1}</TableCell>
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                <Flag src={joueur.flag} alt={joueur.name} />
+                                            </TableCell>
+                                            <TableCell align="center" className="joueurs-table-cell">{joueur.name}</TableCell>
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                {joueur.validated ? (
+                                                    <CheckIcon className="validation-icon valid" />
+                                                ) : (
+                                                    <CloseIcon className="validation-icon invalid" />
+                                                )}
+                                            </TableCell>
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                {joueur.tiktokUsername ? (
+                                                    <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer" className="tiktok-link">
+                                                        {joueur.tiktokUsername}
+                                                    </a>
+                                                ) : (
+                                                    "N/A"
+                                                )}
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </div>
                     </Paper>
                 </Grid>
             </Grid>

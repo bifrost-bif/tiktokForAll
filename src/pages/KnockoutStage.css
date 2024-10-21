@@ -1,23 +1,56 @@
 /* Conteneur principal */
 .knockout-stage-container {
     padding: 20px;
-    background-color: #f5f5f5; /* Fond clair pour un thème plus lumineux */
+    background-color: #f5f5f5; /* Fond clair pour un thème lumineux */
     color: #333; /* Couleur de texte sombre mais douce */
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Police principale */
 }
 
 /* Conteneur des rounds (1/8e de finale, 1/4e de finale, etc.) */
 .round-container {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-/* Titre des rounds */
-.round-title {
+/* Conteneur stylisé pour les titres des phases */
+.round-title-container {
     text-align: center;
+    background-color: #2c3e50; /* Fond sombre et élégant pour valoriser le texte */
+    padding: 15px;
+    border-radius: 12px; /* Bords arrondis pour un effet moderne */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Ombre pour un effet "flottant" */
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%; /* Le titre occupe toute la largeur */
+}
+
+/* Style des titres des rounds */
+.round-title {
+    font-size: 2.5rem !important; /* Forcer la taille avec !important */
+    font-weight: bold; /* Texte en gras pour plus de visibilité */
+    color: #333; /* Couleur du texte */
     margin-bottom: 20px;
-    color: #333; /* Couleur sombre pour le texte */
-    font-weight: bold;
-    font-size: 1.8rem;
+    text-align: center; /* Centre le texte */
+    padding: 10px 0; /* Ajoute du padding pour plus d'espace autour du titre */
+}
+
+
+
+/* Barre décorative sous le titre */
+.round-title::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 5px;
+    background-color: #3498db; /* Barre bleue élégante sous le titre */
+    margin: 10px auto 0 auto;
+    border-radius: 5px; /* Légère arrondie de la barre */
+}
+
+/* Effet de surbrillance lors du survol */
+.round-title-container:hover {
+    background-color: #34495e; /* Couleur légèrement différente au survol */
+    transition: background-color 0.3s ease;
 }
 
 /* Carte de match */

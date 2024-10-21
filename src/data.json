@@ -20,7 +20,7 @@
     }
   ],
   "knockoutMatches": {
-    "1/8e de finale": [
+    "8èmes de finale\n": [
       {
         "player1": {
           "name": "Joueur 1",
@@ -118,7 +118,7 @@
         }
       }
     ],
-    "1/4e de finale": [
+    "Quarts de finale\n": [
       {
         "player1": {
           "name": "Joueur 1",
@@ -168,7 +168,7 @@
         }
       }
     ],
-    "1/2e de finale": [
+    "Demi-finales": [
       {
         "player1": {
           "name": "Joueur 4",

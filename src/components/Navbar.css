@@ -13,3 +13,10 @@
 .MuiTypography-root {
     font-family: 'Roboto', sans-serif; /* Police moderne */
 }
+/* Style pour rendre le logo circulaire */
+.navbar-logo {
+    width: 90px; /* Largeur du logo */
+    height: 90px; /* Hauteur du logo */
+    border-radius: 50%; /* Bordure ronde pour rendre l'image circulaire */
+    object-fit: cover; /* Ajuste l'image pour qu'elle s'adapte au conteneur */
+}

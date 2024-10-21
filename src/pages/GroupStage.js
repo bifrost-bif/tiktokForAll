@@ -42,37 +42,41 @@ const GroupStage = () => {
                     <Grid item xs={12} sm={6} key={index}>
                         <Paper className="group-paper">
                             <Typography variant="h6" className="group-title">{group.groupName}</Typography>
-                            <Table>
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell align="center" className="table-header">Classement</TableCell>
-                                        <TableCell align="center" className="table-header"></TableCell>
-                                        <TableCell align="center" className="table-header">Joueur</TableCell>
-                                        <TableCell align="center" className="table-header">MJ</TableCell>
-                                        <TableCell align="center" className="table-header">Coins</TableCell>
-                                        <TableCell align="center" className="table-header">Points</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    {group.teams
-                                        .slice()
-                                        .sort((a, b) => b.points - a.points)
-                                        .map((team, idx) => (
-                                            <TableRow key={team.id}>
-                                                <TableCell align="center">
-                                                    <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
-                                                </TableCell>
-                                                <TableCell align="center">
-                                                    <Flag src={team.flag} alt={team.name} />
-                                                </TableCell>
-                                                <TableCell align="center">{team.name}</TableCell>
-                                                <TableCell align="center">{team.played}</TableCell>
-                                                <TableCell align="center">{team.coins}</TableCell>
-                                                <TableCell align="center">{team.points}</TableCell>
-                                            </TableRow>
-                                        ))}
-                                </TableBody>
-                            </Table>
+
+                            {/* Conteneur avec défilement horizontal */}
+                            <div className="table-container">
+                                <Table>
+                                    <TableHead>
+                                        <TableRow>
+                                            <TableCell align="center" className="table-header">Classement</TableCell>
+                                            <TableCell align="center" className="table-header"></TableCell>
+                                            <TableCell align="center" className="table-header">Joueur</TableCell>
+                                            <TableCell align="center" className="table-header">MJ</TableCell>
+                                            <TableCell align="center" className="table-header">Coins</TableCell>
+                                            <TableCell align="center" className="table-header">Points</TableCell>
+                                        </TableRow>
+                                    </TableHead>
+                                    <TableBody>
+                                        {group.teams
+                                            .slice()
+                                            .sort((a, b) => b.points - a.points)
+                                            .map((team, idx) => (
+                                                <TableRow key={team.id}>
+                                                    <TableCell align="center">
+                                                        <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
+                                                    </TableCell>
+                                                    <TableCell align="center">
+                                                        <Flag src={team.flag} alt={team.name} />
+                                                    </TableCell>
+                                                    <TableCell align="center">{team.name}</TableCell>
+                                                    <TableCell align="center">{team.played}</TableCell>
+                                                    <TableCell align="center">{team.coins}</TableCell>
+                                                    <TableCell align="center">{team.points}</TableCell>
+                                                </TableRow>
+                                            ))}
+                                    </TableBody>
+                                </Table>
+                            </div>
                         </Paper>
                     </Grid>
                 ))}
@@ -89,37 +93,41 @@ const GroupStage = () => {
                     <Grid item xs={12} sm={6} key={index}>
                         <Paper className="group-paper">
                             <Typography variant="h6" className="group-title">{group.groupName}</Typography>
-                            <Table>
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell align="center" className="table-header">#</TableCell>
-                                        <TableCell align="center" className="table-header"></TableCell>
-                                        <TableCell align="center" className="table-header">Joueur</TableCell>
-                                        <TableCell align="center" className="table-header">Matchs</TableCell>
-                                        <TableCell align="center" className="table-header">Coins</TableCell>
-                                        <TableCell align="center" className="table-header">Points</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    {group.teams
-                                        .slice()
-                                        .sort((a, b) => b.points - a.points)
-                                        .map((team, idx) => (
-                                            <TableRow key={team.id}>
-                                                <TableCell align="center">
-                                                    <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
-                                                </TableCell>
-                                                <TableCell align="center">
-                                                    <Flag src={team.flag} alt={team.name} />
-                                                </TableCell>
-                                                <TableCell align="center">{team.name}</TableCell>
-                                                <TableCell align="center">{team.played}</TableCell>
-                                                <TableCell align="center">{team.coins}</TableCell>
-                                                <TableCell align="center">{team.points}</TableCell>
-                                            </TableRow>
-                                        ))}
-                                </TableBody>
-                            </Table>
+
+                            {/* Conteneur avec défilement horizontal */}
+                            <div className="table-container">
+                                <Table>
+                                    <TableHead>
+                                        <TableRow>
+                                            <TableCell align="center" className="table-header">#</TableCell>
+                                            <TableCell align="center" className="table-header"></TableCell>
+                                            <TableCell align="center" className="table-header">Joueur</TableCell>
+                                            <TableCell align="center" className="table-header">Matchs</TableCell>
+                                            <TableCell align="center" className="table-header">Coins</TableCell>
+                                            <TableCell align="center" className="table-header">Points</TableCell>
+                                        </TableRow>
+                                    </TableHead>
+                                    <TableBody>
+                                        {group.teams
+                                            .slice()
+                                            .sort((a, b) => b.points - a.points)
+                                            .map((team, idx) => (
+                                                <TableRow key={team.id}>
+                                                    <TableCell align="center">
+                                                        <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
+                                                    </TableCell>
+                                                    <TableCell align="center">
+                                                        <Flag src={team.flag} alt={team.name} />
+                                                    </TableCell>
+                                                    <TableCell align="center">{team.name}</TableCell>
+                                                    <TableCell align="center">{team.played}</TableCell>
+                                                    <TableCell align="center">{team.coins}</TableCell>
+                                                    <TableCell align="center">{team.points}</TableCell>
+                                                </TableRow>
+                                            ))}
+                                    </TableBody>
+                                </Table>
+                            </div>
                         </Paper>
                     </Grid>
                 ))}
