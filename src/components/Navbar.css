@@ -1,0 +1,15 @@
+/* Style pour les boutons de la barre de navigation */
+.MuiButton-root {
+    text-transform: none; /* Désactiver les majuscules par défaut */
+    font-size: 1rem; /* Taille de police */
+    transition: all 0.3s ease; /* Animation douce pour le survol */
+}
+
+.MuiButton-root:hover {
+    color: #3498db; /* Couleur bleue élégante lors du survol */
+}
+
+/* Ajuster le logo ou le titre */
+.MuiTypography-root {
+    font-family: 'Roboto', sans-serif; /* Police moderne */
+}
