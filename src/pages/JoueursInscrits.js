@@ -29,7 +29,6 @@ const JoueursInscrits = () => {
                             <Table>
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell align="center" className="joueurs-table-header">#</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Photo</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Nom du joueur</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Lien TikTok</TableCell>
@@ -40,7 +39,6 @@ const JoueursInscrits = () => {
                                 <TableBody>
                                     {data.joueursInscritsData.map((joueur, index) => (
                                         <TableRow key={joueur.id} className="joueurs-table-row">
-                                            <TableCell align="center" className="joueurs-table-cell">{index + 1}</TableCell>
                                             <TableCell align="center" className="joueurs-table-cell">
                                                 <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
                                             </TableCell>
