@@ -99,7 +99,7 @@ const GroupStage = () => {
                                 <Table>
                                     <TableHead>
                                         <TableRow>
-                                            <TableCell align="center" className="table-header">#</TableCell>
+                                            <TableCell align="center" className="table-header">Classement</TableCell>
                                             <TableCell align="center" className="table-header"></TableCell>
                                             <TableCell align="center" className="table-header">Joueur</TableCell>
                                             <TableCell align="center" className="table-header">Matchs</TableCell>
