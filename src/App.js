@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Home from './pages/Home';
 import GroupStage from './pages/GroupStage';
 import KnockoutStage from './pages/KnockoutStage';
@@ -20,6 +20,7 @@ function App() {
                 <Route path="/eliminatoire" element={<KnockoutStage/>}/>
                 <Route path="/classement" element={<GroupStage/>}/>
                 <Route path="/calendrier" element={<Calendar/>}/>
+                <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </Router>
     );
