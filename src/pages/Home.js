@@ -60,7 +60,7 @@ const Home = () => {
                     Structure du Tournoi
                 </Typography>
                 <Typography variant="body1" className="home-text">
-                    Le tournoi comprend <strong>32 joueurs</strong>, divisés en anciens (célèbres et bien soutenus) et nouveaux (ceux qui ont moins d'expérience et moins de visibilité). Voici comment se déroulera la compétition :
+                    Le tournoi comprendra un nombre de joueurs à déterminer, divisés en anciens (célèbres et bien soutenus) et nouveaux (ceux qui ont moins d'expérience et moins de visibilité). Voici comment se déroulera la compétition :
                 </Typography>
                 <Grid container spacing={2} className="structure-grid">
                     <Grid item xs={12} md={6}>
@@ -92,7 +92,7 @@ const Home = () => {
                     Récompenses
                 </Typography>
                 <Typography variant="body1" className="home-text">
-                    Le montant total des frais de participation s'élève à <strong>4800€</strong>, qui sera réparti comme suit :
+                    Le montant total des frais de participation s'élève à <strong>150€ x nombre de joueurs inscrits</strong>, qui sera réparti comme suit :
                     <ul>
                         <li><strong>Les trois premiers gagnants</strong> se partageront la majeure partie de la somme.</li>
                         <li><strong>10%</strong> des gains seront attribués au meilleur monteur vidéo pour la création des meilleurs moments du tournoi.</li>
