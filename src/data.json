@@ -3,16 +3,16 @@
     {
       "id": 1,
       "name": "Joueur 1",
-      "flag": "/images/profiles/joueur1.png",
-      "warnings": 2,
-      "reason": "Comportement antisportif",
-      "date": "2024-10-15",
+      "flag": "/images/profiles/userTiktok.png",
+      "warnings": 0,
+      "reason": "",
+      "date": "",
       "status": "Active"
     },
     {
       "id": 1,
       "name": "Joueur 2",
-      "flag": "/images/profiles/joueur2.png",
+      "flag": "/images/profiles/userTiktok.png",
       "warnings": 2,
       "reason": "Comportement antisportif",
       "date": "2024-10-15",
@@ -536,41 +536,41 @@
           "id": 1,
           "name": "joueur 1",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "190k",
+          "played": 0,
+          "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
           "name": "joueur 2",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "142k",
-          "points": 5
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 3",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "120k",
-          "points": 2
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 4,
           "name": "joueur 4",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 5,
           "name": "joueur 5",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     },
@@ -580,42 +580,42 @@
         {
           "id": 1,
           "name": "joueur 5",
-          "flag": "/images/profiles/joueur3.png",
-          "played": 3,
-          "coins": "7:4",
-          "points": 7
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 2,
           "name": "joueur 6",
-          "flag": "/images/profiles/joueur3.png",
-          "played": 3,
-          "coins": "4:2",
-          "points": 5
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 7",
-          "flag": "/images/profiles/joueur3.png",
-          "played": 3,
-          "coins": "4:5",
-          "points": 2
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 4,
           "name": "joueur 8",
-          "flag": "/images/profiles/joueur3.png",
-          "played": 3,
-          "coins": "2:6",
-          "points": 1
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 5,
           "name": "joueur 5",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     },
@@ -625,42 +625,42 @@
         {
           "id": 1,
           "name": "joueur 9",
-          "flag": "/images/profiles/joueur5.png",
+          "flag": "/images/profiles/userTiktok.png",
           "played": 3,
-          "coins": "7:4",
-          "points": 7
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 2,
           "name": "joueur 10",
-          "flag": "/images/profiles/joueur6.png",
-          "played": 3,
-          "coins": "4:2",
-          "points": 5
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 11",
-          "flag": "/images/profiles/joueur7.png",
-          "played": 3,
-          "coins": "4:5",
-          "points": 2
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 3",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 5,
           "name": "joueur 5",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     },
@@ -670,42 +670,42 @@
         {
           "id": 1,
           "name": "joueur 13",
-          "flag": "/images/profiles/joueur5.png",
+          "flag": "/images/profiles/userTiktok.png",
           "played": 3,
-          "coins": "7:4",
-          "points": 7
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 2,
           "name": "joueur 14",
-          "flag": "/images/profiles/joueur6.png",
-          "played": 3,
-          "coins": "4:2",
-          "points": 5
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 15",
-          "flag": "/images/profiles/joueur7.png",
-          "played": 3,
-          "coins": "4:5",
-          "points": 2
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 5,
           "name": "joueur 5",
-          "flag": "/images/profiles/joueur8.png",
-          "played": 3,
-          "coins": "2:6",
-          "points": 1
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 4,
           "name": "joueur 16",
-          "flag": "/images/profiles/joueur8.png",
-          "played": 3,
-          "coins": "2:6",
-          "points": 1
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     },
@@ -715,42 +715,42 @@
         {
           "id": 1,
           "name": "joueur 17",
-          "flag": "/images/profiles/joueur1.png",
+          "flag": "/images/profiles/userTiktok.png",
           "played": 3,
-          "coins": "7:4",
-          "points": 7
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 2,
           "name": "joueur 18",
-          "flag": "/images/profiles/joueur1.png",
-          "played": 3,
-          "coins": "4:2",
-          "points": 5
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 19",
-          "flag": "/images/profiles/joueur1.png",
-          "played": 3,
-          "coins": "4:5",
-          "points": 2
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 4,
           "name": "joueur 20",
-          "flag": "/images/profiles/joueur1.png",
-          "played": 3,
-          "coins": "2:6",
-          "points": 1
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 5,
           "name": "joueur 36",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     },
@@ -760,42 +760,42 @@
         {
           "id": 1,
           "name": "joueur 21",
-          "flag": "/images/profiles/joueur5.png",
-          "played": 3,
-          "coins": "7:4",
-          "points": 7
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 2,
           "name": "joueur 22",
-          "flag": "/images/profiles/joueur6.png",
-          "played": 3,
-          "coins": "4:2",
-          "points": 5
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 23",
-          "flag": "/images/profiles/joueur7.png",
-          "played": 3,
-          "coins": "4:5",
-          "points": 2
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 4,
           "name": "joueur 24",
-          "flag": "/images/profiles/joueur8.png",
-          "played": 3,
-          "coins": "2:6",
-          "points": 1
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 5,
           "name": "joueur 34",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     },
@@ -805,42 +805,42 @@
         {
           "id": 1,
           "name": "joueur 25",
-          "flag": "/images/profiles/joueur5.png",
+          "flag": "/images/profiles/userTiktok.png",
           "played": 3,
-          "coins": "7:4",
-          "points": 7
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 2,
           "name": "joueur 26",
-          "flag": "/images/profiles/joueur6.png",
-          "played": 3,
-          "coins": "4:2",
-          "points": 5
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 27",
-          "flag": "/images/profiles/joueur7.png",
-          "played": 3,
-          "coins": "4:5",
-          "points": 2
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 4,
           "name": "joueur 28",
-          "flag": "/images/profiles/joueur8.png",
-          "played": 3,
-          "coins": "2:6",
-          "points": 1
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 5,
           "name": "joueur 33",
           "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "26k",
-          "points": 1
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     },
@@ -850,34 +850,34 @@
         {
           "id": 1,
           "name": "joueur 29",
-          "flag": "/images/profiles/joueur29.png",
-          "played": 3,
-          "coins": "7:4",
-          "points": 7
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 2,
           "name": "joueur 30",
-          "flag": "/images/profiles/joueur30.png",
-          "played": 3,
-          "coins": "4:2",
-          "points": 5
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 3,
           "name": "joueur 31",
-          "flag": "/images/profiles/joueur31.png",
-          "played": 3,
-          "coins": "4:5",
-          "points": 2
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         },
         {
           "id": 4,
           "name": "joueur 32",
-          "flag": "/images/profiles/joueur32.png",
-          "played": 3,
-          "coins": "2:6",
-          "points": 1
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
         }
       ]
     }
