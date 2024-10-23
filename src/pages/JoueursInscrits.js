@@ -32,7 +32,7 @@ const JoueursInscrits = () => {
                                         <TableCell align="center" className="joueurs-table-header">Photo</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Nom du joueur</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Lien TikTok</TableCell>
-                                        <TableCell align="center" className="joueurs-table-header">Inscription validée</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Payé</TableCell>
                                         
                                     </TableRow>
                                 </TableHead>
