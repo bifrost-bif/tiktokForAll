@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Poppins', sans-serif; /* Typographie plus moderne */
 }
 
 /* Conteneur de la table */
@@ -17,11 +18,12 @@
 
 /* Titre de la page */
 .joueurs-inscrits-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
     text-align: center;
-    color: #333;
+    color: #2C3E50; /* Couleur plus sombre pour un aspect plus sérieux */
+    letter-spacing: 1px;
 }
 
 /* Papier contenant le tableau */
@@ -30,33 +32,50 @@
     background-color: #ffffff;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08); /* Ombre subtile */
 }
 
 /* En-tête du tableau */
 .joueurs-table-header {
     background-color: #eaeaea;
-    color: #333;
-    font-weight: bold;
+    color: #2C3E50;
+    font-weight: 600;
     padding: 12px;
     text-align: center;
     border-bottom: 2px solid #ddd;
+    letter-spacing: 0.5px;
 }
 
-/* Lignes du tableau */
-.joueurs-table-row {
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    transition: background-color 0.3s ease;
+/* Détails du joueur (photo + nom) */
+.joueur-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out; /* Effet de zoom subtil sur survol */
 }
 
-.joueurs-table-row:hover {
-    background-color: #f9f9f9;
+.joueur-details:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+.joueur-nom {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #34495E; /* Couleur plus élégante */
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: color 0.3s ease-in-out; /* Transition sur la couleur */
+}
+
+.joueur-nom:hover {
+    color: #3498DB; /* Couleur bleue au survol */
 }
 
 /* Cellules du tableau */
 .joueurs-table-cell {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     color: #555;
 }
@@ -64,6 +83,7 @@
 /* Validation */
 .validation-icon {
     font-size: 1.5rem;
+    transition: transform 0.2s ease-in-out;
 }
 
 .validation-icon.valid {
@@ -74,14 +94,20 @@
     color: #E74C3C;
 }
 
+.validation-icon:hover {
+    transform: rotate(360deg); /* Rotation subtile au survol */
+}
+
 /* Lien TikTok */
 .tiktok-link {
     color: #1DA1F2;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .tiktok-link:hover {
+    color: #3498DB; /* Changement de couleur au survol */
     text-decoration: underline;
 }
 
@@ -112,26 +138,4 @@
     .tiktok-link {
         font-size: 0.8rem;
     }
-
-    /* Réduire la largeur de certaines colonnes */
-    .joueurs-table-cell {
-        width: 20%;
-    }
-
-    .joueurs-table-cell:nth-child(1) { /* Colonne index */
-        width: 10%;
-    }
-
-    .joueurs-table-cell:nth-child(4) { /* Colonne validation */
-        width: 15%;
-    }
-
-    .joueurs-table-cell:nth-child(5) { /* Colonne lien TikTok */
-        width: 25%;
-    }
-
-    /* Masquer certaines colonnes */
-    /* .joueurs-table-cell:nth-child(2), .joueurs-table-cell:nth-child(5) { */
-    /*     display: none; */
-    /* } */
 }

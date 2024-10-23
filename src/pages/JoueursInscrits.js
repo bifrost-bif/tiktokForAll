@@ -29,20 +29,20 @@ const JoueursInscrits = () => {
                             <Table>
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell align="center" className="joueurs-table-header">Photo</TableCell>
-                                        <TableCell align="center" className="joueurs-table-header">Nom du joueur</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Joueur</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Lien TikTok</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Payé</TableCell>
-                                        
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     {data.joueursInscritsData.map((joueur, index) => (
                                         <TableRow key={joueur.id} className="joueurs-table-row">
                                             <TableCell align="center" className="joueurs-table-cell">
-                                                <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
+                                                <div className="joueur-details">
+                                                    <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
+                                                    <Typography variant="body1" className="joueur-nom">{joueur.name}</Typography>
+                                                </div>
                                             </TableCell>
-                                            <TableCell align="center" className="joueurs-table-cell">{joueur.name}</TableCell>
                                             <TableCell align="center" className="joueurs-table-cell">
                                                 {joueur.tiktokUsername ? (
                                                     <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer" className="tiktok-link">
