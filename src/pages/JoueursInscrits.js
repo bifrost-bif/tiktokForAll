@@ -1,72 +1,50 @@
-import React from 'react';
-import { Grid, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper } from '@mui/material';
-import { styled } from '@mui/system';
-import CheckIcon from '@mui/icons-material/CheckCircle'; // Icône de validation
-import CloseIcon from '@mui/icons-material/Cancel'; // Icône de non-validation
+import React, { useState } from 'react';
+import { Grid, Typography, Paper, Box } from '@mui/material';
+import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty'; // Icône pour indiquer l'attente
 import './JoueursInscrits.css';
-import data from '../data.json'; // Importer les données depuis le fichier JSON
-
-// Style pour les images (photos des joueurs)
-const Flag = styled('img')({
-    width: '60px',
-    height: '60px',
-    marginRight: '10px',
-    borderRadius: '50%',
-    objectFit: 'cover',
-});
 
 const JoueursInscrits = () => {
+    const [isReady, setIsReady] = useState(false); // Changez à true lorsque la liste est prête
+
     return (
         <div className="joueurs-inscrits-container">
             <Typography variant="h4" className="joueurs-inscrits-title">
                 Liste des Joueurs Inscrits
             </Typography>
-            <Grid container spacing={4} justifyContent="center">
-                <Grid item xs={12} md={10}>
-                    <Paper className="joueurs-inscrits-paper">
-                        {/* Ajout du conteneur de défilement pour les petits écrans */}
-                        <div className="table-container">
-                            <Table>
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell align="center" className="joueurs-table-header">Joueur</TableCell>
-                                        <TableCell align="center" className="joueurs-table-header">Lien TikTok</TableCell>
-                                        <TableCell align="center" className="joueurs-table-header">Payé</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    {data.joueursInscritsData.map((joueur, index) => (
-                                        <TableRow key={joueur.id} className="joueurs-table-row">
-                                            <TableCell align="center" className="joueurs-table-cell">
-                                                <div className="joueur-details">
-                                                    <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
-                                                    <Typography variant="body1" className="joueur-nom">{joueur.name}</Typography>
-                                                </div>
-                                            </TableCell>
-                                            <TableCell align="center" className="joueurs-table-cell">
-                                                {joueur.tiktokUsername ? (
-                                                    <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer" className="tiktok-link">
-                                                        {joueur.tiktokUsername}
-                                                    </a>
-                                                ) : (
-                                                    "N/A"
-                                                )}
-                                            </TableCell>
-                                            <TableCell align="center" className="joueurs-table-cell">
-                                                {joueur.validated ? (
-                                                    <CheckIcon className="validation-icon valid" />
-                                                ) : (
-                                                    <CloseIcon className="validation-icon invalid" />
-                                                )}
-                                            </TableCell>
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                        </div>
-                    </Paper>
+            
+            {/* Afficher un message de préparation si la liste n'est pas prête */}
+            {!isReady ? (
+                <Box className="preparation-message" sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '70vh',
+                    backgroundColor: '#f9f9f9',
+                    borderRadius: 2,
+                    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                    padding: 4,
+                    textAlign: 'center',
+                }}>
+                    <HourglassEmptyIcon sx={{ fontSize: 50, color: '#ff9800', marginBottom: 2 }} />
+                    <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#333' }}>
+                        Page en cours de préparation
+                    </Typography>
+                    <Typography variant="body1" sx={{ color: '#666', marginTop: 1 }}>
+                        La liste des joueurs inscrits sera disponible sous peu. Veuillez revenir dans quelques jours.
+                    </Typography>
+                </Box>
+            ) : (
+                <Grid container spacing={4} justifyContent="center">
+                    <Grid item xs={12} md={10}>
+                        <Paper className="joueurs-inscrits-paper">
+                            <div className="table-container">
+                                {/* Table et liste des joueurs ici */}
+                            </div>
+                        </Paper>
+                    </Grid>
                 </Grid>
-            </Grid>
+            )}
         </div>
     );
 };
