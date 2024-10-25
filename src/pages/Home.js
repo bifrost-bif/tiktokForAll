@@ -1,21 +1,19 @@
-import React, { useEffect } from 'react'; // Import useEffect
+import React, { useEffect } from 'react';
 import { Typography, Box, Grid, Paper } from '@mui/material';
-import './Home.css'; // Fichier CSS pour styliser la page
+import './Home.css';
 
 const Home = () => {
-            // Load the TikTok embed script
-            useEffect(() => {
-                const script = document.createElement('script');
-                script.src = 'https://www.tiktok.com/embed.js';
-                script.async = true;
-                document.body.appendChild(script);
-        
-                // Clean up the script when the component is unmounted
-                return () => {
-                    document.body.removeChild(script);
-                };
-            }, []); // Empty dependency array ensures this effect runs once on mount
-        
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://www.tiktok.com/embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
     return (
         <div className="home-container">
             {/* Section d'introduction */}
@@ -24,7 +22,7 @@ const Home = () => {
                     Bienvenue au Tournoi TIKTOK FOR ALL
                 </Typography>
                 <Typography variant="body1" className="home-text">
-                    Nous organisons une compétition unique en Tunisie, où les anciens et nouveaux Tiktokeurs peuvent se rencontrer et s'affronter dans un environnement compétitif et propre. Le but est de donner une chance à tous les streamers de se faire connaître, tout en créant un espace respectueux et créatif sur TikTok.
+                    Le tournoi TIKTOK FOR ALL propose une compétition conviviale et inclusive en Tunisie pour les créateurs de TikTok, qu'ils soient débutants ou expérimentés. Cette initiative vise à rassembler la communauté TikTok autour de la créativité et du respect, en favorisant des interactions positives et un partage ouvert de talents.
                 </Typography>
             </section>
 
@@ -36,19 +34,19 @@ const Home = () => {
                 <Typography variant="body1" className="home-text">
                     <ul>
                         <li>
-                            <strong>Participation ouverte à tous</strong> : Que vous soyez un streamer célèbre ou nouveau sur la plateforme, vous avez la possibilité de participer. Les frais de participation sont fixés à <strong>150€</strong>.
+                            <strong>Participation ouverte à tous</strong> : Ce tournoi est destiné à tous les créateurs, quelle que soit leur expérience ou leur notoriété sur la plateforme.
                         </li>
                         <li>
-                            <strong>Conditions pour les streamers en Tunisie</strong> : Les candidats tunisiens doivent avoir déjà réalisé des lives sur TikTok avec un minimum de gains pour se qualifier.
+                            <strong>Conditions d’éligibilité pour les créateurs en Tunisie</strong> : Pour participer, les créateurs doivent être actifs sur TikTok et avoir une interaction avec leur audience.
                         </li>
                         <li>
-                            <strong>Respect des règles</strong> : Le respect des autres participants est primordial. Les comportements insultants, grossiers ou irrespectueux entraîneront une disqualification immédiate, même en dehors des matchs.
+                            <strong>Respect et conduite appropriée</strong> : Le respect entre participants est essentiel. Tout comportement irrespectueux, même en dehors des sessions officielles, pourra entraîner une exclusion immédiate.
                         </li>
                         <li>
-                            <strong>Pas de cadeaux entre participants</strong> : Les participants ne doivent pas s'offrir de cadeaux entre eux pour garantir une compétition équitable.
+                            <strong>Transparence des dons et interdiction des dons directs</strong> : Afin de garantir une compétition juste, les dons entre participants sont interdits pendant le tournoi, et tout don de spectateur doit provenir de comptes identifiables.
                         </li>
                         <li>
-                            <strong>Interdiction de live solo pendant les matchs</strong> : Pendant les matchs du tournoi, il est interdit de diffuser des lives personnels.
+                            <strong>Pas de diffusions personnelles pendant le tournoi</strong> : Pour se concentrer sur les matchs, les diffusions en solo pendant le tournoi sont interdites.
                         </li>
                     </ul>
                 </Typography>
@@ -60,56 +58,52 @@ const Home = () => {
                     Structure du Tournoi
                 </Typography>
                 <Typography variant="body1" className="home-text">
-                    Le tournoi comprendra un nombre de joueurs à déterminer, divisés en anciens (célèbres et bien soutenus) et nouveaux (ceux qui ont moins d'expérience et moins de visibilité). Voici comment se déroulera la compétition :
+                    Le tournoi est conçu pour offrir une progression équitable, et pour encourager les créateurs à partager leur savoir-faire dans un cadre de compétition bienveillant et transparent.
                 </Typography>
                 <Grid container spacing={2} className="structure-grid">
                     <Grid item xs={12} md={6}>
                         <Paper className="tournament-step">
                             <Typography variant="h6" className="step-title">
-                                Premier Tour
+                                Phase de groupes
                             </Typography>
                             <Typography variant="body1" className="step-description">
-                                Les anciens affrontent les anciens, et les nouveaux affrontent les nouveaux. Cela permet aux deux groupes de progresser de manière équitable.
+                                Les créateurs sont d’abord répartis en groupes, entre anciens et nouveaux, pour des débuts de compétition équilibrés.
                             </Typography>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Paper className="tournament-step">
                             <Typography variant="h6" className="step-title">
-                                Quarts de Finale
+                                Quarts de finale et phases avancées
                             </Typography>
                             <Typography variant="body1" className="step-description">
-                                À partir des quarts de finale, les équipes sont mélangées. Chaque match regroupera un ancien et un nouveau contre une autre équipe mixte.
+                                Les équipes sont ensuite mélangées pour favoriser l’esprit de solidarité et le partage d’expériences entre les participants.
                             </Typography>
                         </Paper>
                     </Grid>
                 </Grid>
             </section>
 
-            {/* Section des prix */}
+            {/* Section des récompenses */}
             <section className="prize-section">
                 <Typography variant="h4" className="section-title">
                     Récompenses
                 </Typography>
                 <Typography variant="body1" className="home-text">
-                    Le montant total des frais de participation s'élève à <strong>150€ x nombre de joueurs inscrits</strong>, qui sera réparti comme suit :
-                    <ul>
-                        <li><strong>Les trois premiers gagnants</strong> se partageront la majeure partie de la somme.</li>
-                        <li><strong>10%</strong> des gains seront attribués au meilleur monteur vidéo pour la création des meilleurs moments du tournoi.</li>
-                    </ul>
+                    Les créateurs qui se démarqueront par leurs performances et leur créativité recevront des récompenses, et une mention spéciale sera attribuée au créateur ayant capturé les meilleurs moments du tournoi en vidéo.
                 </Typography>
             </section>
 
             {/* Section finale : Esprit du Tournoi */}
             <section className="spirit-section">
                 <Typography variant="h4" className="section-title">
-                    Esprit du Tournoi
+                    Esprit et Engagement du Tournoi
                 </Typography>
                 <Typography variant="body1" className="home-text">
-                    Le but ultime de ce tournoi est de nettoyer l'image de TikTok en Tunisie et de créer une ambiance compétitive mais respectueuse. Nous encourageons la solidarité entre les anciens et les nouveaux participants, et nous souhaitons promouvoir une utilisation créative et responsable de la plateforme.
+                    Le tournoi valorise la créativité et le respect, en favorisant un environnement sain pour tous. Les créateurs sont encouragés à participer activement tout en respectant les lois en vigueur et en contribuant à une communauté TikTok positive en Tunisie.
                 </Typography>
                 <Typography variant="body1" className="home-text">
-                    <strong>Souvenez-vous</strong> : TikTok est une plateforme de divertissement. Ne l'oubliez pas et ne négligez pas votre vie personnelle et vos objectifs à long terme. Ensemble, nous pouvons créer un environnement plus sain, respectueux et créatif pour tous.
+                    <strong>Note</strong> : Les informations personnelles des participants et des donateurs seront traitées dans le strict respect de la confidentialité, conformément aux normes légales en vigueur, notamment en matière de protection des données.
                 </Typography>
             </section>
         </div>
