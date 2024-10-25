@@ -4,7 +4,7 @@ import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty'; // Icône p
 import './JoueursInscrits.css';
 
 const JoueursInscrits = () => {
-    const [isReady, setIsReady] = useState(false); // Changez à true lorsque la liste est prête
+    const [isReady] = useState(false); // Changez à true lorsque la liste est prête
 
     return (
         <div className="joueurs-inscrits-container">

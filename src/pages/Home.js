@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Typography, Box, Grid, Paper } from '@mui/material';
+import React, {} from 'react';
+import { Typography, Grid, Paper } from '@mui/material';
 import './Home.css';
 
 const Home = () => {
