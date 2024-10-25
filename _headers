@@ -1,2 +1,2 @@
 /*
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline';
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trustedscripts.example.com; img-src 'self' https://uploads.votre-site.com data:; style-src 'self' 'unsafe-inline';
