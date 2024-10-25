@@ -27,17 +27,15 @@ const RankCircle = styled('div')(({ rank }) => ({
 }));
 
 const GroupStage = () => {
-    const groupsData = data.groups; // Accéder aux données des groupes depuis le fichier JSON
-
-    // Catégoriser les groupes
-    const newPlayerGroups = groupsData.slice(0, 4); // Groupes A à D
-    const oldPlayerGroups = groupsData.slice(4);    // Groupes E à H
+    // Access each group category directly from the JSON data
+    const newPlayerGroups = data.groups["Nouveaux Joueurs"];
+    const oldPlayerGroups = data.groups["Anciens Joueurs"];
 
     return (
         <div className="group-stage-container">
             {/* Section des Nouveaux Joueurs */}
             <Typography variant="h4" className="category-title">Nouveaux Joueurs</Typography>
-            <Grid container spacing={4} className="group-container">
+            <Grid container spacing={1} className="group-container">
                 {newPlayerGroups.map((group, index) => (
                     <Grid item xs={12} sm={6} key={index}>
                         <Paper className="group-paper">
@@ -88,7 +86,7 @@ const GroupStage = () => {
             {/* Section des Anciens Joueurs */}
             <br/>
             <Typography variant="h4" className="category-title">Anciens Joueurs</Typography>
-            <Grid container spacing={4} className="group-container">
+            <Grid container spacing={1} className="group-container">
                 {oldPlayerGroups.map((group, index) => (
                     <Grid item xs={12} sm={6} key={index}>
                         <Paper className="group-paper">

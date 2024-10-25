@@ -35,6 +35,9 @@ const Navbar = () => {
                 <ListItem button component={Link} to="/sanctions">
                     <ListItemText primary="Sanctions" />
                 </ListItem>
+                <ListItem button component={Link} to="/AdminPanel">
+                    <ListItemText primary="Admin" />
+                </ListItem>
             </List>
         </Box>
     );
@@ -82,6 +85,9 @@ const Navbar = () => {
                         </Button>
                         <Button component={Link} to="/sanctions" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Sanctions
+                        </Button>
+                        <Button component={Link} to="/AdminPanel" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
+                            Admin
                         </Button>
                     </Box>
                 </Toolbar>

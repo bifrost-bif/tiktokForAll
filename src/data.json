@@ -2,7 +2,7 @@
   "sanctions": [
     {
       "id": 1,
-      "name": "Joueur 1",
+      "name": "3ami9",
       "flag": "/images/profiles/userTiktok.png",
       "warnings": 0,
       "reason": "",
@@ -377,7 +377,7 @@
       "id": 17,
       "name": "El Youneni",
       "flag": "/images/profiles/nazz_elyouneni.png",
-      "validated": false,
+      "validated": true,
       "tiktokUsername": "nazz_elyouneni"
     },
     {
@@ -419,14 +419,14 @@
       "id": 23,
       "name": "Brabus",
       "flag": "/images/profiles/brabus372.png",
-      "validated": false,
+      "validated": true,
       "tiktokUsername": "Brabus372"
     },
     {
       "id": 24,
       "name": "Khayri",
       "flag": "/images/profiles/khayri_89.png",
-      "validated": false,
+      "validated": true,
       "tiktokUsername": "Khayri_89"
     },
     {
@@ -524,362 +524,61 @@
       "id": 38,
       "name": "Sag3",
       "flag": "/images/profiles/dr.sag3.01.png",
-      "validated": false,
+      "validated": true,
       "tiktokUsername": "dr.sag3.01"
+    },
+    {
+      "id": 38,
+      "name": "El Khal",
+      "flag": "/images/profiles/5al.png",
+      "validated": true,
+      "tiktokUsername": "user4021713872133"
+    },
+    {
+      "id": 38,
+      "name": "Houda",
+      "flag": "/images/profiles/houda.jabri.png",
+      "validated": true,
+      "tiktokUsername": "houda.jabri"
     }
   ],
-  "groups": [
-    {
-      "groupName": "Groupe B1",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 1",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 2",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 3",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 4",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe B2",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 6",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 7",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 8",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe B3",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 9",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 10",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 11",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 3",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe B4",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 13",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 14",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 15",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 16",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe A1",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 17",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 18",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 19",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 20",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 36",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe A2",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 21",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 22",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 23",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 24",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 34",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe A3",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 25",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 26",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 27",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 28",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 33",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe A4",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 29",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 30",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 31",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 32",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    }
-  ]
+  "groups": {
+    "Nouveaux Joueurs": [
+      {
+        "groupName": "Groupe B1",
+        "category": "Nouveaux Joueurs",
+        "teams": [
+          {
+            "name": "Pap Malik",
+            "played": 0,
+            "coins": "0k",
+            "points": 0,
+            "flag": "/images/profiles/malek.louati.2.png"
+          },
+          {
+            "name": "Seif",
+            "played": 0,
+            "coins": "0k",
+            "points": 0,
+            "flag": "/images/profiles/seifbenmustapha.png"
+          },
+          {
+            "name": "King Maher",
+            "played": 0,
+            "coins": "0k",
+            "points": 0,
+            "flag": "/images/profiles/maherncycm7.png"
+          },
+          {
+            "name": "Faj3a Limar",
+            "played": 0,
+            "coins": "0k",
+            "points": 0,
+            "flag": "/images/profiles/limar8969.png"
+          }
+        ]
+      }
+    ],
+    "Anciens Joueurs": []
+  }
 }
