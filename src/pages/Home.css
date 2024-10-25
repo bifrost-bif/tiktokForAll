@@ -71,11 +71,6 @@ section {
     width: 100%; /* Ensure the text takes the full width */
 }
 
-.tiktok-embed {
-    margin-top: 15px; /* Ajouter un léger espacement au-dessus de l'intégration TikTok */
-    text-align: center; /* Centrer l'intégration TikTok */
-}
-
 /* Styles pour les sections finales */
 .spirit-section .home-text {
     font-size: 1.1rem; /* Légère augmentation de la taille du texte */
