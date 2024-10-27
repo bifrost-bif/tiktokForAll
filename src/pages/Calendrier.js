@@ -29,7 +29,6 @@ const Calendar = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     backgroundColor: '#e3f2fd',
-                    color: '#0d47a1',
                     borderRadius: '8px',
                     padding: '20px',
                     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
