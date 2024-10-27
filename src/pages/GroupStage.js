@@ -67,7 +67,7 @@ const GroupStage = () => {
                         Tirage au sort le 1er NOV, 20h
                     </Typography>
                     <Typography variant="body1" gutterBottom sx={{ fontSize: '1rem', marginBottom: '20px' }}>
-                        Live sur TikTok avec <strong>@bacem1tun</strong>.
+                        Live sur TikTok avec <strong>BACEM</strong>.
                     </Typography>
                     <div style={{ margin: '20px 0', width: '100%', maxWidth: '480px' }}>
                         <blockquote
