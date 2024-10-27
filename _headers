@@ -1,5 +1,9 @@
 /*
   Content-Security-Policy: default-src 'self'; 
-                          script-src 'self' https://trustedscripts.tuntok.live https://www.tiktok.com; 
+                          script-src 'self' https://trustedscripts.tuntok.live https://www.tiktok.com https://www.googletagmanager.com; 
+                          script-src-elem 'self' https://www.tiktok.com https://www.googletagmanager.com; 
+                          style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                          style-src-elem 'self' https://fonts.googleapis.com; 
+                          font-src 'self' https://fonts.gstatic.com; 
                           img-src 'self' https://uploads.tuntok.live data:; 
-                          style-src 'self' 'unsafe-inline';
+                          connect-src 'self' https://www.googletagmanager.com;
