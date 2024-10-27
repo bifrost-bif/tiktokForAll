@@ -224,6 +224,16 @@
             "photo": "/images/profiles/userTiktok.png",
             "score": -1
           },
+          "player3": {
+            "name": "Joueur 2",
+            "photo": "/images/profiles/userTiktok.png",
+            "score": -1
+          },
+          "player4": {
+            "name": "Joueur 2",
+            "photo": "/images/profiles/userTiktok.png",
+            "score": -1
+          },
           "time": "18:00"
         },
         {

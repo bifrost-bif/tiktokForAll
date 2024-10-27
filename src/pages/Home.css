@@ -1,78 +1,123 @@
+/* Home.css */
+
+/* Conteneur principal */
 .home-container {
-    padding: 40px;
-    background-color: #f5f5f5; /* Fond clair pour une meilleure lisibilité */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* Fond clair et moderne */
 }
 
+/* Titre principal */
 .home-title {
-    color: #2c3e50; /* Couleur sombre et élégante pour le titre principal */
-    text-align: center; /* Centrer le texte */
-    margin-bottom: 20px;
+    color: #2e4053;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.8rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
-section {
-    margin-bottom: 50px; /* Espacement entre chaque section */
+/* Ligne décorative sous le titre */
+.home-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 15px auto 0;
+    border-radius: 4px;
 }
 
+/* Titres de section */
 .section-title {
-    color: #3498db; /* Bleu pour les sous-titres des sections */
-    margin-bottom: 10px; /* Espacement sous les titres */
-    font-weight: bold; /* Mettre les titres en valeur */
+    color: #2980b9;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
 }
 
+/* Texte général */
 .home-text {
-    margin-bottom: 20px; /* Espacement entre les paragraphes */
-    color: #555; /* Couleur gris doux pour le texte */
-    line-height: 1.6; /* Meilleure lisibilité du texte */
+    margin-bottom: 20px;
+    color: #5d6d7e;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
+/* Liste des règles */
+.rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.rules-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    color: #444;
+    font-size: 1rem;
+}
+
+.rules-list li::before {
+    content: "▶";
+    color: #3498db;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 0;
+}
+
+/* Section de la structure du tournoi */
 .structure-grid {
-    margin-top: 20px; /* Espacement entre les sections */
+    margin-top: 30px;
 }
 
 .tournament-step {
-    padding: 20px; /* Ajout d'espacement à l'intérieur des cartes */
-    background-color: #fff; /* Fond blanc pour un contraste clair */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce pour l'effet de profondeur */
-    border-radius: 10px; /* Coins arrondis pour un effet moderne */
-    text-align: center; /* Centrer le contenu de chaque étape */
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #ddd;
 }
 
+.tournament-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section esprit du tournoi */
 .spirit-section {
-    background-color: #ecf0f1; /* Fond gris clair pour cette section particulière */
-    padding: 30px; /* Espacement interne */
-    border-radius: 10px; /* Coins arrondis pour correspondre au design */
-    margin-top: 40px; /* Espacement au-dessus de cette section */
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    border-left: 6px solid #3498db;
 }
 
-/* Style spécifique pour la section d'inscription */
-.registration-box {
-    padding: 20px;
-    background-color: #ffffff; /* Fond blanc pour se détacher du reste */
-    border-left: 5px solid #3498db; /* Bordure à gauche pour mettre en valeur */
-    margin-top: 30px; /* Espacement avec les autres sections */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour une meilleure présentation */
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2rem;
+    }
 
-.registration-box:hover {
-    transform: scale(1.02); /* Légère mise en avant au survol */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
-}
+    .section-title {
+        font-size: 1.5rem;
+    }
 
-.registration-title {
-    color: #FF6B6B; /* Couleur bleu clair pour le titre */
-    text-align: center; /* Centrer le titre de la section d'inscription */
-    font-weight: bold; /* Mettre le titre en valeur */
-}
+    .tournament-step {
+        padding: 15px;
+    }
 
-.registration-text {
-    text-align: center; /* Center the text horizontally */
-    font-weight: 500; /* Mettre légèrement en valeur le texte */
-    color: #555; /* Couleur douce pour le texte */
-    width: 100%; /* Ensure the text takes the full width */
-}
-
-/* Styles pour les sections finales */
-.spirit-section .home-text {
-    font-size: 1.1rem; /* Légère augmentation de la taille du texte */
-    color: #2c3e50; /* Couleur sombre pour renforcer l'importance du message */
+    .home-container {
+        padding: 15px;
+    }
 }

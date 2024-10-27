@@ -7,7 +7,6 @@ import './Sanctions.css'; // Fichier CSS pour styliser la page
 const Flag = styled('img')({
     width: '60px',
     height: '60px',
-    marginRight: '10px',
     borderRadius: '50%',
     objectFit: 'cover',
 });
@@ -38,20 +37,20 @@ const Sanctions = () => {
                             <Table>
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell align="center" className="table-header"></TableCell>
-                                        <TableCell align="center" className="table-header">Nom du joueur</TableCell>
+                                        <TableCell align="center" className="table-header">Joueur</TableCell>
                                         <TableCell align="center" className="table-header">Statut</TableCell>
                                         <TableCell align="center" className="table-header">Nombre d'avertissements</TableCell>
                                         <TableCell align="center" className="table-header">Raison</TableCell>
                                         <TableCell align="center" className="table-header">Date</TableCell>
-                                        
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     {sanctionsData.map((joueur) => (
                                         <TableRow key={joueur.id} className={joueur.status === 'Sanctionné' ? 'sanctions-table-row sanctioned' : 'sanctions-table-row'}>
-                                            <TableCell align="center"><Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} /></TableCell>
-                                            <TableCell align="center">{joueur.name}</TableCell>
+                                            <TableCell align="center">
+                                                <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
+                                                <div>{joueur.name}</div>
+                                            </TableCell>
                                             <TableCell align="center" style={getStatusStyle(joueur.status)}>
                                                 {joueur.status}
                                             </TableCell>

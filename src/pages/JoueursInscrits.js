@@ -1,50 +1,127 @@
-import React, { useState } from 'react';
-import { Grid, Typography, Paper, Box } from '@mui/material';
-import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty'; // Icône pour indiquer l'attente
+import React from 'react';
+import { Grid, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper } from '@mui/material';
+import { styled } from '@mui/system';
+import CheckIcon from '@mui/icons-material/CheckCircle';
+import CloseIcon from '@mui/icons-material/Cancel';
 import './JoueursInscrits.css';
+import data from '../data.json';
+
+// Style for the player images (flags/photos)
+const Flag = styled('img')({
+    width: '60px',
+    height: '60px',
+    marginRight: '10px',
+    borderRadius: '50%'
+});
+
+// Styled component for the player number
+const PlayerNumber = styled('div')({
+    display: 'flex',  // Use flexbox for centering
+    alignItems: 'center', // Center vertically
+    justifyContent: 'center', // Center horizontally
+    width: '40px',
+    height: '40px',
+    borderRadius: '50%',
+    backgroundColor: '#3498db',
+    color: '#fff',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s, transform 0.3s',
+    cursor: 'default',
+    margin: '0 auto', // Ensure the element centers itself in its container
+    '&:hover': {
+        backgroundColor: '#2980b9',
+        transform: 'rotate(10deg) scale(1.05)', // Add rotation and slight scale effect on hover
+    },
+});
+
 
 const JoueursInscrits = () => {
-    const [isReady] = useState(false); // Changez à true lorsque la liste est prête
+    // Split players into Group A (first 18) and Group B (remaining)
+    const groupA = data.joueursInscritsData.slice(0, 18);
+    const groupB = data.joueursInscritsData.slice(18);
 
     return (
         <div className="joueurs-inscrits-container">
             <Typography variant="h4" className="joueurs-inscrits-title">
-                Liste des Joueurs Inscrits
+                Liste des Joueurs
             </Typography>
-            
-            {/* Afficher un message de préparation si la liste n'est pas prête */}
-            {!isReady ? (
-                <Box className="preparation-message" sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '70vh',
-                    backgroundColor: '#f9f9f9',
-                    borderRadius: 2,
-                    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-                    padding: 4,
-                    textAlign: 'center',
-                }}>
-                    <HourglassEmptyIcon sx={{ fontSize: 50, color: '#ff9800', marginBottom: 2 }} />
-                    <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#333' }}>
-                        Page en cours de préparation
-                    </Typography>
-                    <Typography variant="body1" sx={{ color: '#666', marginTop: 1 }}>
-                        La liste des joueurs inscrits sera disponible sous peu. Veuillez revenir dans quelques jours.
-                    </Typography>
-                </Box>
-            ) : (
-                <Grid container spacing={4} justifyContent="center">
-                    <Grid item xs={12} md={10}>
-                        <Paper className="joueurs-inscrits-paper">
-                            <div className="table-container">
-                                {/* Table et liste des joueurs ici */}
-                            </div>
-                        </Paper>
-                    </Grid>
+            <Grid container spacing={2} justifyContent="center">
+                {/* Group A */}
+                <Grid item xs={12} md={6}>
+                    <Paper className="joueurs-inscrits-paper">
+                        <Typography variant="h5" className="group-title">
+                            Groupe A
+                        </Typography>
+                        <div className="table-container">
+                            <Table>
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell align="center" className="joueurs-table-header">Numéro</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Joueur</TableCell>
+                                        
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {groupA.map((joueur, index) => (
+                                        <TableRow key={joueur.id} className="joueurs-table-row">
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                <PlayerNumber>A{index + 1}</PlayerNumber>
+                                            </TableCell>
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                <div className="joueur-details">
+                                                    <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer">
+                                                        <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
+                                                    </a>
+                                                    <Typography variant="body1" className="joueur-nom">{joueur.name}</Typography>
+                                                </div>
+                                            </TableCell>
+
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </div>
+                    </Paper>
                 </Grid>
-            )}
+                
+                {/* Group B */}
+                <Grid item xs={12} md={6}>
+                    <Paper className="joueurs-inscrits-paper">
+                        <Typography variant="h5" className="group-title">
+                            Groupe B
+                        </Typography>
+                        <div className="table-container">
+                            <Table>
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell align="center" className="joueurs-table-header">Numéro</TableCell>
+                                        <TableCell align="center" className="joueurs-table-header">Joueur</TableCell>
+                                        
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {groupB.map((joueur, index) => (
+                                        <TableRow key={joueur.id} className="joueurs-table-row">
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                <PlayerNumber>B{index + 1}</PlayerNumber>
+                                            </TableCell>
+                                            <TableCell align="center" className="joueurs-table-cell">
+                                                <div className="joueur-details">
+                                                    <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer">
+                                                        <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
+                                                    </a>
+                                                    <Typography variant="body1" className="joueur-nom">{joueur.name}</Typography>
+                                                </div>
+                                            </TableCell>
+      
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </div>
+                    </Paper>
+                </Grid>
+            </Grid>
         </div>
     );
 };

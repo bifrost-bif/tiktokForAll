@@ -4,14 +4,16 @@ import { styled } from '@mui/system';
 import data from '../data.json'; // Importer les données depuis le fichier JSON
 import './GroupStage.css'; // Fichier CSS pour styliser la page
 
-// Style personnalisé pour les drapeaux et le classement
+// Style personnalisé pour les drapeaux
 const Flag = styled('img')({
-    width: '80px',
-    height: '60px',
-    marginRight: '10px',
-    borderRadius: '4px',
+    width: '80px', // Taille augmentée
+    height: '80px', // Taille augmentée
+    borderRadius: '50%',
+    objectFit: 'cover',
+    marginBottom: '10px',
 });
 
+// Style conditionnel pour le cercle de classement
 const RankCircle = styled('div')(({ rank }) => ({
     display: 'inline-block',
     backgroundColor: rank >= 3 ? '#F44336' : '#4CAF50',  // Rouge pour les 3e et 4e, Vert pour les 1ers et 2èmes
@@ -21,15 +23,14 @@ const RankCircle = styled('div')(({ rank }) => ({
     height: '35px',
     textAlign: 'center',
     lineHeight: '35px',
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: 'bold',
-    marginRight: '10px',
 }));
 
 const GroupStage = () => {
     const groupsData = data.groups; // Accéder aux données des groupes depuis le fichier JSON
 
-    // Catégoriser les groupes
+    // Catégoriser les groupes en nouveaux et anciens joueurs
     const newPlayerGroups = groupsData.slice(0, 4); // Groupes A à D
     const oldPlayerGroups = groupsData.slice(4);    // Groupes E à H
 
@@ -49,7 +50,6 @@ const GroupStage = () => {
                                     <TableHead>
                                         <TableRow>
                                             <TableCell align="center" className="table-header">Classement</TableCell>
-                                            <TableCell align="center" className="table-header"></TableCell>
                                             <TableCell align="center" className="table-header">Joueur</TableCell>
                                             <TableCell align="center" className="table-header">MJ</TableCell>
                                             <TableCell align="center" className="table-header">Coins</TableCell>
@@ -66,9 +66,11 @@ const GroupStage = () => {
                                                         <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
                                                     </TableCell>
                                                     <TableCell align="center">
-                                                        <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
+                                                        <div className="player-cell">
+                                                            <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
+                                                            <Typography variant="body2" className="player-name">{team.name}</Typography>
+                                                        </div>
                                                     </TableCell>
-                                                    <TableCell align="center">{team.name}</TableCell>
                                                     <TableCell align="center">{team.played}</TableCell>
                                                     <TableCell align="center">{team.coins}</TableCell>
                                                     <TableCell align="center">{team.points}</TableCell>
@@ -99,9 +101,8 @@ const GroupStage = () => {
                                     <TableHead>
                                         <TableRow>
                                             <TableCell align="center" className="table-header">Classement</TableCell>
-                                            <TableCell align="center" className="table-header"></TableCell>
                                             <TableCell align="center" className="table-header">Joueur</TableCell>
-                                            <TableCell align="center" className="table-header">Matchs</TableCell>
+                                            <TableCell align="center" className="table-header">MJ</TableCell>
                                             <TableCell align="center" className="table-header">Coins</TableCell>
                                             <TableCell align="center" className="table-header">Points</TableCell>
                                         </TableRow>
@@ -116,9 +117,11 @@ const GroupStage = () => {
                                                         <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
                                                     </TableCell>
                                                     <TableCell align="center">
-                                                        <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
+                                                        <div className="player-cell">
+                                                            <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
+                                                            <Typography variant="body2" className="player-name">{team.name}</Typography>
+                                                        </div>
                                                     </TableCell>
-                                                    <TableCell align="center">{team.name}</TableCell>
                                                     <TableCell align="center">{team.played}</TableCell>
                                                     <TableCell align="center">{team.coins}</TableCell>
                                                     <TableCell align="center">{team.points}</TableCell>
