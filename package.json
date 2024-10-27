@@ -1,6 +1,6 @@
 {
   "name": "tournoi",
-  "homepage": "https://bifrost-bif.github.io/tiktokForAll/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
