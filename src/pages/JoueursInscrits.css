@@ -1,4 +1,3 @@
-
 /* Conteneur principal */
 .joueurs-inscrits-container {
     padding: 20px;
@@ -19,33 +18,31 @@
 
 /* Titre de la page */
 .joueurs-inscrits-title {
-    font-size: 3rem; /* Augmente légèrement la taille pour plus d'impact */
-    font-weight: 800; /* Rend le texte un peu plus gras pour une apparence audacieuse */
-    margin-bottom: 40px; /* Ajoute un peu plus d'espace en dessous pour le rendre plus aéré */
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 40px;
     text-align: center;
-    color: #1A2E44; /* Utilise une couleur bleu nuit pour un effet plus professionnel */
-    letter-spacing: 1.5px; /* Augmente légèrement l'espacement des lettres */
-    text-transform: uppercase; /* Met le texte en majuscule pour plus de prestance */
-    position: relative; /* Nécessaire pour les éléments décoratifs ajoutés */
+    color: #1A2E44;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
 }
 
 /* Ligne décorative au-dessous du titre */
 .joueurs-inscrits-title::after {
     content: '';
     display: block;
-    width: 80px; /* Longueur de la barre */
-    height: 4px; /* Épaisseur de la barre */
-    background-color: #E74C3C; /* Utilise une couleur vive pour un contraste élégant */
-    margin: 15px auto 0; /* Centre la barre horizontalement et ajoute de l'espace */
-    border-radius: 5px; /* Adoucit les bords de la barre */
-    transition: width 0.3s ease; /* Animation lors du survol */
+    width: 80px;
+    height: 4px;
+    background-color: #E74C3C;
+    margin: 15px auto 0;
+    border-radius: 5px;
+    transition: width 0.3s ease;
 }
 
-/* Animation au survol */
 .joueurs-inscrits-title:hover::after {
-    width: 120px; /* Augmente la longueur de la barre au survol */
+    width: 120px;
 }
-
 
 /* Papier contenant le tableau */
 .joueurs-inscrits-paper {
@@ -53,7 +50,7 @@
     background-color: #ffffff;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08); /* Ombre subtile */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* En-tête du tableau */
@@ -72,26 +69,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease-in-out; /* Effet de zoom subtil sur survol */
+    transition: transform 0.3s ease-in-out;
 }
 
 .joueur-details:hover {
-    transform: scale(1.05); /* Zoom léger au survol */
+    transform: scale(1.05);
 }
 
 .joueur-nom {
     margin-top: 10px;
     font-weight: 500;
     font-size: 1rem;
-    color: #34495E; /* Couleur plus élégante */
+    color: #34495E;
     text-transform: capitalize;
     letter-spacing: 0.5px;
     text-align: center;
-    transition: color 0.3s ease-in-out; /* Transition sur la couleur */
+    transition: color 0.3s ease-in-out;
 }
 
 .joueur-nom:hover {
-    color: #3498DB; /* Couleur bleue au survol */
+    color: #3498DB;
 }
 
 /* Cellules du tableau */
@@ -116,7 +113,7 @@
 }
 
 .validation-icon:hover {
-    transform: rotate(360deg); /* Rotation subtile au survol */
+    transform: rotate(360deg);
 }
 
 /* Player Number Badge */
@@ -132,16 +129,32 @@
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
     cursor: default;
-    align: center; 
 }
 
 .player-number:hover {
     background-color: #2980b9;
-    transform: rotate(10deg) scale(1.05); /* Add rotation and slight scale effect on hover */
+    transform: rotate(10deg) scale(1.05);
 }
 
-/* Responsive pour les petits écrans */
+/* Grid layout */
+.joueurs-inscrits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Grid items */
+.joueurs-inscrits-grid-item {
+    flex: 0 0 48%; /* Ensure two columns side by side */
+    box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
+    .joueurs-inscrits-grid-item {
+        flex: 0 0 100%; /* Make each group full width on mobile */
+    }
+
     .joueurs-inscrits-paper {
         padding: 10px;
     }
@@ -153,37 +166,15 @@
     .joueurs-table-cell {
         font-size: 0.8rem;
         padding: 10px;
-        text-align: center; /* Centre le texte horizontalement */
-        vertical-align: middle; /* Centre le texte verticalement si nécessaire */        
+        text-align: center;
     }
 
     .player-photo {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .validation-icon {
         font-size: 1.2rem;
     }
-}
-
-.RankCircle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4CAF50; /* Vert par exemple */
-    color: white;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
-    line-height: 30px;
-    margin: 0 auto; /* Centre horizontalement dans son parent */
-}
-
-.circle-cell {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    padding: 10px;
 }

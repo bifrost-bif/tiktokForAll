@@ -1,10 +1,42 @@
 /* Conteneur principal du calendrier */
 .calendar-container {
     padding: 10px;
-    background-color: #f4f6f8;
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Message d'information avec un effet de suspense */
+.suspense-message {
+    animation: pulse 1.5s infinite;
+    border: 2px dashed #0d47a1;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(13, 71, 161, 0.5);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 15px rgba(13, 71, 161, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(13, 71, 161, 0.5);
+    }
 }
 
 /* Conteneur de chaque journée */
@@ -17,6 +49,7 @@
     border-radius: 8px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    box-sizing: border-box;
 }
 
 .journey-container:hover {
@@ -28,24 +61,21 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #37474f;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
     text-align: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 /* Conteneur de chaque match */
 .match-container {
     padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s;
-    margin: 0 auto 10px auto;
-    max-width: 380px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .match-container:hover {
@@ -53,105 +83,19 @@
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Informations sur le match */
-.match-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.player-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.teammate {
-    margin-top: 5px;
-}
-
-.player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.player-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-    margin-bottom: 5px;
-}
-
-.player-name {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #455a64;
-}
-
-/* Séparateur "VS" */
-.versus-separator {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #d32f2f;
-    margin: 0 5px;
-}
-
-/* Heure du match */
-.match-time {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #00796b;
-    background-color: #e0f7fa;
-    padding: 5px 10px;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Barre de score */
-.score-bar {
-    display: flex;
-    height: 20px;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 5px;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.score-bar-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: white;
-}
-
-.score-bar-part.red {
-    background-color: #b71c1c;
-}
-
-.score-bar-part.blue {
-    background-color: #0d47a1;
-}
-
-/* Partie gagnante */
-.score-bar-part.winner {
-    font-size: 0.8rem;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+    .calendar-container {
+        padding: 5px;
+    }
+
     .journey-title {
         font-size: 1.2rem;
+    }
+
+    .match-container {
+        padding: 10px;
+        margin: 10px 0;
     }
 
     .player-photo {
@@ -171,19 +115,7 @@
         height: 18px;
     }
 
-    .match-container {
-        width: 100%;
+    .info-message {
+        padding: 15px;
     }
-}
-
-.journey-text {
-    font-weight: bold;
-    color: #1976D2;
-    font-size: 1.3rem;
-}
-
-.journey-date {
-    color: #555;
-    font-size: 1rem;
-    font-style: italic;
 }

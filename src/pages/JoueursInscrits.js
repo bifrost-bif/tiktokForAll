@@ -1,8 +1,6 @@
 import React from 'react';
 import { Grid, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper } from '@mui/material';
 import { styled } from '@mui/system';
-import CheckIcon from '@mui/icons-material/CheckCircle';
-import CloseIcon from '@mui/icons-material/Cancel';
 import './JoueursInscrits.css';
 import data from '../data.json';
 
@@ -16,9 +14,9 @@ const Flag = styled('img')({
 
 // Styled component for the player number
 const PlayerNumber = styled('div')({
-    display: 'flex',  // Use flexbox for centering
-    alignItems: 'center', // Center vertically
-    justifyContent: 'center', // Center horizontally
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     width: '40px',
     height: '40px',
     borderRadius: '50%',
@@ -27,27 +25,26 @@ const PlayerNumber = styled('div')({
     fontWeight: 'bold',
     transition: 'background-color 0.3s, transform 0.3s',
     cursor: 'default',
-    margin: '0 auto', // Ensure the element centers itself in its container
+    margin: '0 auto',
     '&:hover': {
         backgroundColor: '#2980b9',
-        transform: 'rotate(10deg) scale(1.05)', // Add rotation and slight scale effect on hover
+        transform: 'rotate(10deg) scale(1.05)',
     },
 });
 
-
 const JoueursInscrits = () => {
     // Split players into Group A (first 18) and Group B (remaining)
-    const groupA = data.joueursInscritsData.slice(0, 18);
-    const groupB = data.joueursInscritsData.slice(18);
+    const groupA = data.joueursInscritsData.slice(0, 19);
+    const groupB = data.joueursInscritsData.slice(19,39);
 
     return (
         <div className="joueurs-inscrits-container">
             <Typography variant="h4" className="joueurs-inscrits-title">
                 Liste des Joueurs
             </Typography>
-            <Grid container spacing={2} justifyContent="center">
+            <div className="joueurs-inscrits-grid">
                 {/* Group A */}
-                <Grid item xs={12} md={6}>
+                <div className="joueurs-inscrits-grid-item">
                     <Paper className="joueurs-inscrits-paper">
                         <Typography variant="h5" className="group-title">
                             Groupe A
@@ -58,14 +55,13 @@ const JoueursInscrits = () => {
                                     <TableRow>
                                         <TableCell align="center" className="joueurs-table-header">Numéro</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Joueur</TableCell>
-                                        
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     {groupA.map((joueur, index) => (
                                         <TableRow key={joueur.id} className="joueurs-table-row">
                                             <TableCell align="center" className="joueurs-table-cell">
-                                                <PlayerNumber>A{index + 1}</PlayerNumber>
+                                                <PlayerNumber>{index + 1}</PlayerNumber> {/* Numéro de jouer dans le groupe A */}
                                             </TableCell>
                                             <TableCell align="center" className="joueurs-table-cell">
                                                 <div className="joueur-details">
@@ -75,17 +71,16 @@ const JoueursInscrits = () => {
                                                     <Typography variant="body1" className="joueur-nom">{joueur.name}</Typography>
                                                 </div>
                                             </TableCell>
-
                                         </TableRow>
                                     ))}
                                 </TableBody>
                             </Table>
                         </div>
                     </Paper>
-                </Grid>
-                
+                </div>
+
                 {/* Group B */}
-                <Grid item xs={12} md={6}>
+                <div className="joueurs-inscrits-grid-item">
                     <Paper className="joueurs-inscrits-paper">
                         <Typography variant="h5" className="group-title">
                             Groupe B
@@ -96,14 +91,13 @@ const JoueursInscrits = () => {
                                     <TableRow>
                                         <TableCell align="center" className="joueurs-table-header">Numéro</TableCell>
                                         <TableCell align="center" className="joueurs-table-header">Joueur</TableCell>
-                                        
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     {groupB.map((joueur, index) => (
                                         <TableRow key={joueur.id} className="joueurs-table-row">
                                             <TableCell align="center" className="joueurs-table-cell">
-                                                <PlayerNumber>B{index + 1}</PlayerNumber>
+                                                <PlayerNumber>{index + 1}</PlayerNumber>{/* Numéro de jouer dans le groupe A */}
                                             </TableCell>
                                             <TableCell align="center" className="joueurs-table-cell">
                                                 <div className="joueur-details">
@@ -113,15 +107,14 @@ const JoueursInscrits = () => {
                                                     <Typography variant="body1" className="joueur-nom">{joueur.name}</Typography>
                                                 </div>
                                             </TableCell>
-      
                                         </TableRow>
                                     ))}
                                 </TableBody>
                             </Table>
                         </div>
                     </Paper>
-                </Grid>
-            </Grid>
+                </div>
+            </div>
         </div>
     );
 };
