@@ -1,5 +1,5 @@
 /*
   Content-Security-Policy: default-src 'self'; 
-                          script-src 'self' https://trustedscripts.tuntok.live https://www.tiktok.com https://www.googletagmanager.com; 
+                          script-src 'self' https://trustedscripts.tuntok.live https://www.tiktok.com; 
                           img-src 'self' https://uploads.tuntok.live data:; 
                           style-src 'self' 'unsafe-inline';
