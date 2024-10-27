@@ -14,6 +14,10 @@ const Calendar = () => {
         script.src = "https://www.tiktok.com/embed.js";
         script.async = true;
         document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
     }, []);
 
     // Si les résultats sont cachés, afficher un message d'attente
@@ -52,7 +56,7 @@ const Calendar = () => {
                             style={{ width: '100%', margin: '0 auto' }}
                         >
                             <section>
-                                <a target="_blank" href="https://www.tiktok.com/@bacem1tun?refer=creator_embed" style={{ color: '#0d47a1', textDecoration: 'underline', fontWeight: 'bold' }}>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@bacem1tun?refer=creator_embed" style={{ color: '#0d47a1', textDecoration: 'underline', fontWeight: 'bold' }}>
                                     @bacem1tun
                                 </a>
                             </section>

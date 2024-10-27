@@ -28,22 +28,23 @@ const RankCircle = styled('div')(({ rank }) => ({
 }));
 
 const GroupStage = () => {
-    const [isResultsHidden] = useState(true);
-    const groupsData = data.groups; // Accéder aux données des groupes depuis le fichier JSON
+    const [isResultsHidden, setIsResultsHidden] = useState(true);
+    const groupsData = data.groups;
 
-    // Utiliser useEffect pour charger le script TikTok lorsque le composant est monté
     useEffect(() => {
         const script = document.createElement('script');
         script.src = "https://www.tiktok.com/embed.js";
         script.async = true;
         document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
     }, []);
 
-    // Catégoriser les groupes en nouveaux et anciens joueurs
-    const newPlayerGroups = groupsData.slice(0, 4); // Groupes A à D
-    const oldPlayerGroups = groupsData.slice(4);    // Groupes E à H
+    const newPlayerGroups = groupsData.slice(0, 4);
+    const oldPlayerGroups = groupsData.slice(4);
 
-    // Si les résultats sont cachés, afficher un message d'attente
     if (isResultsHidden) {
         return (
             <div className="group-stage-container">
@@ -78,7 +79,7 @@ const GroupStage = () => {
                             style={{ width: '100%', margin: '0 auto' }}
                         >
                             <section>
-                                <a target="_blank" href="https://www.tiktok.com/@bacem1tun?refer=creator_embed" style={{ color: '#0d47a1', textDecoration: 'underline', fontWeight: 'bold' }}>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@bacem1tun?refer=creator_embed" style={{ color: '#0d47a1', textDecoration: 'underline', fontWeight: 'bold' }}>
                                     @bacem1tun
                                 </a>
                             </section>
@@ -91,7 +92,6 @@ const GroupStage = () => {
 
     return (
         <div className="group-stage-container">
-            {/* Section des Nouveaux Joueurs */}
             <Typography variant="h4" className="category-title">Nouveaux Joueurs</Typography>
             <Grid container spacing={4} className="group-container">
                 {newPlayerGroups.map((group, index) => (
@@ -110,25 +110,22 @@ const GroupStage = () => {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {group.teams
-                                            .slice()
-                                            .sort((a, b) => b.points - a.points)
-                                            .map((team, idx) => (
-                                                <TableRow key={team.id}>
-                                                    <TableCell align="center">
-                                                        <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
-                                                    </TableCell>
-                                                    <TableCell align="center">
-                                                        <div className="player-cell">
-                                                            <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
-                                                            <Typography variant="body2" className="player-name">{team.name}</Typography>
-                                                        </div>
-                                                    </TableCell>
-                                                    <TableCell align="center">{team.played}</TableCell>
-                                                    <TableCell align="center">{team.coins}</TableCell>
-                                                    <TableCell align="center">{team.points}</TableCell>
-                                                </TableRow>
-                                            ))}
+                                        {group.teams.slice().sort((a, b) => b.points - a.points).map((team, idx) => (
+                                            <TableRow key={team.id}>
+                                                <TableCell align="center">
+                                                    <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
+                                                </TableCell>
+                                                <TableCell align="center">
+                                                    <div className="player-cell">
+                                                        <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
+                                                        <Typography variant="body2" className="player-name">{team.name}</Typography>
+                                                    </div>
+                                                </TableCell>
+                                                <TableCell align="center">{team.played}</TableCell>
+                                                <TableCell align="center">{team.coins}</TableCell>
+                                                <TableCell align="center">{team.points}</TableCell>
+                                            </TableRow>
+                                        ))}
                                     </TableBody>
                                 </Table>
                             </div>
@@ -139,7 +136,6 @@ const GroupStage = () => {
 
             <Divider variant="middle" className="group-divider" />
 
-            {/* Section des Anciens Joueurs */}
             <Typography variant="h4" className="category-title">Anciens Joueurs</Typography>
             <Grid container spacing={4} className="group-container">
                 {oldPlayerGroups.map((group, index) => (
@@ -158,25 +154,22 @@ const GroupStage = () => {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {group.teams
-                                            .slice()
-                                            .sort((a, b) => b.points - a.points)
-                                            .map((team, idx) => (
-                                                <TableRow key={team.id}>
-                                                    <TableCell align="center">
-                                                        <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
-                                                    </TableCell>
-                                                    <TableCell align="center">
-                                                        <div className="player-cell">
-                                                            <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
-                                                            <Typography variant="body2" className="player-name">{team.name}</Typography>
-                                                        </div>
-                                                    </TableCell>
-                                                    <TableCell align="center">{team.played}</TableCell>
-                                                    <TableCell align="center">{team.coins}</TableCell>
-                                                    <TableCell align="center">{team.points}</TableCell>
-                                                </TableRow>
-                                            ))}
+                                        {group.teams.slice().sort((a, b) => b.points - a.points).map((team, idx) => (
+                                            <TableRow key={team.id}>
+                                                <TableCell align="center">
+                                                    <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
+                                                </TableCell>
+                                                <TableCell align="center">
+                                                    <div className="player-cell">
+                                                        <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
+                                                        <Typography variant="body2" className="player-name">{team.name}</Typography>
+                                                    </div>
+                                                </TableCell>
+                                                <TableCell align="center">{team.played}</TableCell>
+                                                <TableCell align="center">{team.coins}</TableCell>
+                                                <TableCell align="center">{team.points}</TableCell>
+                                            </TableRow>
+                                        ))}
                                     </TableBody>
                                 </Table>
                             </div>

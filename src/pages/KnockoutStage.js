@@ -99,9 +99,7 @@ const KnockoutStage = () => {
                                             <div className="score-display">
                                                 <div className="score-bar">
                                                     <div
-                                                        className={`score-bar-part red ${
-                                                            player1.score > player2.score ? 'winner' : ''
-                                                        }`}
+                                                        className={`score-bar-part red ${player1.score > player2.score ? 'winner' : ''}`}
                                                         style={{
                                                             width: `${percentages.player1}%`,
                                                         }}
@@ -109,9 +107,7 @@ const KnockoutStage = () => {
                                                         {player1.score}k
                                                     </div>
                                                     <div
-                                                        className={`score-bar-part blue ${
-                                                            player2.score > player1.score ? 'winner' : ''
-                                                        }`}
+                                                        className={`score-bar-part blue ${player2.score > player1.score ? 'winner' : ''}`}
                                                         style={{
                                                             width: `${percentages.player2}%`,
                                                         }}
