@@ -1,24 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Grid, Typography, Paper, Box } from '@mui/material';
 import data from '../data.json'; // Importer les données JSON
 import './Calendrier.css'; // Fichier CSS pour styliser la page
+import TikTokEmbed from '../components/TikTokEmbed'; // Importer le composant TikTokEmbed
 
 // Composant principal pour afficher le calendrier
 const Calendar = () => {
     // État pour savoir si les résultats sont cachés (en attente de tirage)
     const [isResultsHidden] = useState(true);
-
-    // Utiliser useEffect pour charger le script TikTok lorsque le composant est monté
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = "https://www.tiktok.com/embed.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
 
     // Si les résultats sont cachés, afficher un message d'attente
     if (isResultsHidden) {
@@ -47,21 +36,8 @@ const Calendar = () => {
                     <Typography variant="body1" gutterBottom sx={{ fontSize: '1rem', marginBottom: '20px' }}>
                         Live sur TikTok avec <strong>BACEM</strong>.
                     </Typography>
-                    <div style={{ margin: '20px 0', width: '100%', maxWidth: '480px' }}>
-                        <blockquote
-                            className="tiktok-embed"
-                            cite="https://www.tiktok.com/@bacem1tun"
-                            data-unique-id="bacem1tun"
-                            data-embed-type="creator"
-                            style={{ width: '100%', margin: '0 auto' }}
-                        >
-                            <section>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@bacem1tun?refer=creator_embed" style={{ color: '#0d47a1', textDecoration: 'underline', fontWeight: 'bold' }}>
-                                    @bacem1tun
-                                </a>
-                            </section>
-                        </blockquote>
-                    </div>
+                    {/* Utilisation du composant TikTokEmbed */}
+                    <TikTokEmbed profile="bacem1tun" />
                 </Box>
             </div>
         );
