@@ -20,3 +20,14 @@
     border-radius: 50%; /* Bordure ronde pour rendre l'image circulaire */
     object-fit: cover; /* Ajuste l'image pour qu'elle s'adapte au conteneur */
 }
+
+.navbar-mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow-y: auto;
+    z-index: 999;
+}
