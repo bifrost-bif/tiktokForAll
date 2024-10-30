@@ -13,7 +13,7 @@ import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 import MentionsLegales from './pages/MentionsLegales';
 import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import ContactDonnees from './pages/ContactDonnees';
-
+import Mosammin from './pages/Mosammin'; // Import the new Mosammin page
 
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
                 <Route path="/politique-cookies" element={<PolitiqueCookies/>}/>
                 <Route path="/conditions-utilisation" element={<ConditionsUtilisation/>}/>
                 <Route path="/contact-donnees" element={<ContactDonnees/>}/>
+                <Route path="/mosammin" element={<Mosammin />} />
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
             <Footer/> {/* Ajout du footer */}

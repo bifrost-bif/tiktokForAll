@@ -35,6 +35,9 @@ const Navbar = () => {
                 <ListItem button component={Link} to="/sanctions">
                     <ListItemText primary="Sanctions" />
                 </ListItem>
+                <ListItem button component={Link} to="/mosammin">
+                    <ListItemText primary="Mosammin"/>
+                </ListItem>
             </List>
         </Box>
     );
@@ -82,6 +85,9 @@ const Navbar = () => {
                         </Button>
                         <Button component={Link} to="/sanctions" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Sanctions
+                        </Button>
+                        <Button component={Link} to="/mosammin" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
+                        Monteurs Vidéo
                         </Button>
                     </Box>
                 </Toolbar>
