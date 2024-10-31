@@ -59,32 +59,43 @@ html, body, #root {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 12px 16px;
-  background-color: #1976D2;
+  padding: 12px 18px;
+  background-color: #ff5722; /* Couleur vive pour attirer l'attention */
   color: white;
   border: none;
   border-radius: 50px;
   font-size: 14px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  z-index: 1000; /* S'assurer qu'il reste au-dessus des autres éléments */
-  opacity: 0.9; /* Légère transparence */
+  z-index: 1000;
+  opacity: 0.9;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: pulse 1.5s infinite; /* Ajoute un effet de pulsation */
 }
 
 .install-button:hover {
   opacity: 1;
-  transform: scale(1.05); /* Agrandissement léger au survol */
+  transform: scale(1.05);
 }
 
-.install-button:active {
-  transform: scale(0.95); /* Réduction légère lors du clic */
+/* Animation pulse pour attirer l’attention */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 
-/* Styles spécifiques pour mobile */
+/* Style spécifique pour mobile */
 @media (max-width: 768px) {
   .install-button {
-      padding: 10px 14px;
+      padding: 10px 16px;
       font-size: 12px;
       bottom: 15px;
       right: 15px;
