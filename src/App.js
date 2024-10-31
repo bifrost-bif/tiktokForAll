@@ -1,4 +1,6 @@
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+
 import Home from './pages/Home';
 import GroupStage from './pages/GroupStage';
 import KnockoutStage from './pages/KnockoutStage';
@@ -15,11 +17,43 @@ import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import ContactDonnees from './pages/ContactDonnees';
 import Mosammin from './pages/Mosammin'; // Import the new Mosammin page
 
+import './App.css'; // Fichier CSS pour styliser la page
+
 
 function App() {
+
+    const [installPrompt, setInstallPrompt] = useState(null);
+
+    useEffect(() => {
+        // Écouter l'événement 'beforeinstallprompt' pour capturer l'invite d'installation
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            setInstallPrompt(e); // Sauvegarde l'événement pour l'utiliser plus tard
+        });
+    }, []);
+
+    const handleInstallClick = () => {
+        if (installPrompt) {
+            installPrompt.prompt();
+            installPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the install prompt');
+                } else {
+                    console.log('User dismissed the install prompt');
+                }
+                setInstallPrompt(null);
+            });
+        }
+    };
     return (
         <Router>
             <Navbar/> {/* Barre de navigation */}
+            <div className="App">
+                {installPrompt && (
+                    <button className="install-button" onClick={handleInstallClick}>
+                         Disponible en application mobile
+                    </button>
+                )}
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/group-stage" element={<GroupStage/>}/>
@@ -37,7 +71,9 @@ function App() {
                 <Route path="/mosammin" element={<Mosammin />} />
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
+            
             <Footer/> {/* Ajout du footer */}
+            </div>
         </Router>
     );
 }
