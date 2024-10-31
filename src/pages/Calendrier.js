@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Grid, Typography, Paper, Box } from '@mui/material';
 import data from '../data.json'; // Importer les données JSON
 import './Calendrier.css'; // Fichier CSS pour styliser la page
-import TikTokEmbed from '../components/TikTokEmbed'; // Importer le composant TikTokEmbed
+import TikTokProfileBanner from '../components/TikTokProfileBanner'; // Importer le composant TikTokProfileBanner
 
 // Composant principal pour afficher le calendrier
 const Calendar = () => {
@@ -23,21 +23,20 @@ const Calendar = () => {
                     justifyContent: 'center',
                     backgroundColor: '#e3f2fd',
                     borderRadius: '8px',
-                    padding: '20px',
+                    padding: '15px',
                     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
                     textAlign: 'center',
-                    margin: '20px 10px',
-                    maxWidth: '100%',
-                    width: '100%',
+                    maxWidth: '400px',
+                    margin: '20px auto',
                 }}>
-                    <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', fontSize: '1.6rem' }}>
+                    <Typography variant="h5" sx={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '10px' }}>
                         Tirage au sort le 1er NOV, 20h
                     </Typography>
-                    <Typography variant="body1" gutterBottom sx={{ fontSize: '1rem', marginBottom: '20px' }}>
+                    <Typography variant="body1" sx={{ fontSize: '1rem', color: '#1976D2', marginBottom: '10px' }}>
                         Live sur TikTok avec <strong>BACEM</strong>.
                     </Typography>
-                    {/* Utilisation du composant TikTokEmbed */}
-                    <TikTokEmbed profile="bacem1tun" />
+                    {/* Utilisation du composant TikTokProfileBanner */}
+                    <TikTokProfileBanner profile="bacem1tun" />
                 </Box>
             </div>
         );

@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Grid, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper, Divider, Box } from '@mui/material';
 import { styled } from '@mui/system';
 import data from '../data.json'; // Importer les données depuis le fichier JSON
 import './GroupStage.css'; // Fichier CSS pour styliser la page
+import TikTokProfileBanner from '../components/TikTokProfileBanner'; // Import TikTok embed component
 
 // Style personnalisé pour les drapeaux
 const Flag = styled('img')({
@@ -28,19 +29,8 @@ const RankCircle = styled('div')(({ rank }) => ({
 }));
 
 const GroupStage = () => {
-    const [isResultsHidden, setIsResultsHidden] = useState(true);
+    const [isResultsHidden] = useState(true);
     const groupsData = data.groups;
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = "https://www.tiktok.com/embed.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
 
     const newPlayerGroups = groupsData.slice(0, 4);
     const oldPlayerGroups = groupsData.slice(4);
@@ -55,36 +45,21 @@ const GroupStage = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     backgroundColor: '#e3f2fd',
-                    color: '#0d47a1',
                     borderRadius: '8px',
-                    padding: '20px',
+                    padding: '15px',
                     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
                     textAlign: 'center',
-                    margin: '20px 10px',
-                    maxWidth: '100%',
-                    width: '100%',
+                    maxWidth: '400px',
+                    margin: '20px auto',
                 }}>
-                    <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', fontSize: '1.6rem' }}>
+                    <Typography variant="h5" sx={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '10px' }}>
                         Tirage au sort le 1er NOV, 20h
                     </Typography>
-                    <Typography variant="body1" gutterBottom sx={{ fontSize: '1rem', marginBottom: '20px' }}>
+                    <Typography variant="body1" sx={{ fontSize: '1rem', color: '#1976D2', marginBottom: '10px' }}>
                         Live sur TikTok avec <strong>BACEM</strong>.
                     </Typography>
-                    <div style={{ margin: '20px 0', width: '100%', maxWidth: '480px' }}>
-                        <blockquote
-                            className="tiktok-embed"
-                            cite="https://www.tiktok.com/@bacem1tun"
-                            data-unique-id="bacem1tun"
-                            data-embed-type="creator"
-                            style={{ width: '100%', margin: '0 auto' }}
-                        >
-                            <section>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@bacem1tun?refer=creator_embed" style={{ color: '#0d47a1', textDecoration: 'underline', fontWeight: 'bold' }}>
-                                    @bacem1tun
-                                </a>
-                            </section>
-                        </blockquote>
-                    </div>
+                    {/* Utilisation du composant TikTokProfileBanner */}
+                    <TikTokProfileBanner profile="bacem1tun" />
                 </Box>
             </div>
         );

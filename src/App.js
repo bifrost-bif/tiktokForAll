@@ -45,6 +45,7 @@ function App() {
             });
         }
     };
+    
     return (
         <Router>
             <Navbar/> {/* Barre de navigation */}
@@ -54,25 +55,33 @@ function App() {
                          Disponible en application mobile
                     </button>
                 )}
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/group-stage" element={<GroupStage/>}/>
-                <Route path="/knockout-stage" element={<KnockoutStage/>}/>
-                <Route path="/joueurs-inscrit" element={<JoueursInscrits/>}/>
-                <Route path="/sanctions" element={<Sanctions/>}/>
-                <Route path="/eliminatoire" element={<KnockoutStage/>}/>
-                <Route path="/classement" element={<GroupStage/>}/>
-                <Route path="/calendrier" element={<Calendar/>}/>
-                <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite/>}/>
-                <Route path="/mentions-legales" element={<MentionsLegales/>}/>
-                <Route path="/politique-cookies" element={<PolitiqueCookies/>}/>
-                <Route path="/conditions-utilisation" element={<ConditionsUtilisation/>}/>
-                <Route path="/contact-donnees" element={<ContactDonnees/>}/>
-                <Route path="/mosammin" element={<Mosammin />} />
-                <Route path="*" element={<Navigate to="/" />} />
-            </Routes>
-            
-            <Footer/> {/* Ajout du footer */}
+
+                {/* Instructions for iOS users to manually install the app */}
+                {navigator.userAgent.includes("iPhone") && (
+                    <div className="ios-install-instructions">
+                        <p>Pour installer cette application sur votre iPhone, appuyez sur <strong>"Partager"</strong> dans la barre de navigation, puis sélectionnez <strong>"Ajouter à l'écran d'accueil"</strong>.</p>
+                    </div>
+                )}
+
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/group-stage" element={<GroupStage/>}/>
+                    <Route path="/knockout-stage" element={<KnockoutStage/>}/>
+                    <Route path="/joueurs-inscrit" element={<JoueursInscrits/>}/>
+                    <Route path="/sanctions" element={<Sanctions/>}/>
+                    <Route path="/eliminatoire" element={<KnockoutStage/>}/>
+                    <Route path="/classement" element={<GroupStage/>}/>
+                    <Route path="/calendrier" element={<Calendar/>}/>
+                    <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite/>}/>
+                    <Route path="/mentions-legales" element={<MentionsLegales/>}/>
+                    <Route path="/politique-cookies" element={<PolitiqueCookies/>}/>
+                    <Route path="/conditions-utilisation" element={<ConditionsUtilisation/>}/>
+                    <Route path="/contact-donnees" element={<ContactDonnees/>}/>
+                    <Route path="/mosammin" element={<Mosammin />} />
+                    <Route path="*" element={<Navigate to="/" />} />
+                </Routes>
+                
+                <Footer/> {/* Ajout du footer */}
             </div>
         </Router>
     );

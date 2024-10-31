@@ -101,3 +101,14 @@ html, body, #root {
       right: 15px;
   }
 }
+
+.ios-install-instructions {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+}
