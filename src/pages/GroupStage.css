@@ -1,6 +1,6 @@
 /* Conteneur principal */
 .group-stage-container {
-    padding: 20px;
+    padding: 5px;
     background-color: #f5f5f5; /* Fond clair */
     color: #333; /* Couleur du texte */
     min-height: 100vh;
@@ -13,7 +13,7 @@
 .category-title {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
     color: #1976D2;
 }
@@ -53,7 +53,7 @@
     width: 100%;
     overflow-x: auto; /* Activer le défilement horizontal */
     -webkit-overflow-scrolling: touch; /* Défilement fluide sur iOS */
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* Table */
@@ -69,7 +69,7 @@ table {
     background-color: #eaeaea;
     color: #333;
     font-weight: bold;
-    padding: 12px;
+    padding: 5px;
     text-align: center;
     border-bottom: 2px solid #ddd;
 }
@@ -101,8 +101,8 @@ table {
 /* Cercle de classement */
 .RankCircle {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     font-size: 14px;
     line-height: 35px;
@@ -129,7 +129,7 @@ table {
     }
 
     .group-paper {
-        padding: 10px;
+        padding: 5px;
     }
 
     .table-header, .table-cell {
@@ -139,8 +139,8 @@ table {
 
     /* Réduire la taille des images sur mobile */
     .player-cell img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     /* Masquer certaines colonnes sur mobile pour économiser de l'espace */

@@ -211,38 +211,37 @@
   },
   "calendarMatches": [
     {
-      "date": "Vendredi 1 NOV 2024",
+      "date": "Samedi 2 NOV 2024",
       "matches": [
         {
           "player1": {
-            "name": "Joueur 1",
-            "photo": "/images/profiles/userTiktok.png",
+            "name": "Amira",
+            "photo": "/images/profiles/amiraI.png",
             "score": -1
           },
           "player2": {
-            "name": "Joueur 2",
-            "photo": "/images/profiles/userTiktok.png",
+            "name": "Brabus",
+            "photo": "/images/profiles/brabus372.png",
             "score": -1
           },
-          "time": "18:00"
-        },
-        {
-          "player1": {
-            "name": "Joueur 3",
-            "photo": "/images/profiles/userTiktok.png",
+          "player3": {
+            "name": "Achref",
+            "photo": "/images/profiles/ashref_officiel.png",
             "score": -1
           },
-          "player2": {
-            "name": "Joueur 4",
-            "photo": "/images/profiles/userTiktok.png",
+          "player4": {
+            "name": "Midou",
+            "photo": "/images/profiles/midouayari26.png",
             "score": -1
           },
-          "time": "20:00"
+          "ouverture":"true",
+          
+          "time": "20:30"
         }
       ]
     },
     {
-      "date": "Samedi 2 NOV 2024",
+      "date": "Dimanche 3 NOV 2024",
       "matches": [
         {
           "player1": {
@@ -270,7 +269,7 @@
       },
       {
           "id": 2,
-          "name": "Anis Ben Salem",
+          "name": "Anis",
           "flag": "/images/profiles/ben.salem.anis.png",
           "validated": true,
           "tiktokUsername": "ben.salem.anis"
@@ -284,10 +283,10 @@
       },
       {
           "id": 4,
-          "name": "Basbous",
-          "flag": "/images/profiles/basbous.png",
+          "name": "Non Inscrit",
+          "flag": "/images/profiles/sortie.png",
           "validated": true,
-          "tiktokUsername": ".basbous"
+          "tiktokUsername": "#"
       },
       {
           "id": 5,
@@ -298,7 +297,7 @@
       },
       {
           "id": 6,
-          "name": "Colombi Oussama",
+          "name": "Colombi",
           "flag": "/images/profiles/colombi_oussama.png",
           "validated": true,
           "tiktokUsername": "colombi_oussama"
@@ -333,7 +332,7 @@
       },
       {
           "id": 11,
-          "name": "Marwen1.0",
+          "name": "Marwen",
           "flag": "/images/profiles/marwen.07.png",
           "validated": true,
           "tiktokUsername": "marwen.07"
@@ -361,7 +360,7 @@
       },
       {
           "id": 15,
-          "name": "Skander Rezgui",
+          "name": "Skander",
           "flag": "/images/profiles/skander_rezgui.png",
           "validated": true,
           "tiktokUsername": "skanderrezguiii"
@@ -424,14 +423,14 @@
       },
       {
           "id": 24,
-          "name": "Dali El Ghoul",
+          "name": "Dali",
           "flag": "/images/profiles/dali_elghoul.png",
           "validated": true,
           "tiktokUsername": "dali_elghoul_"
       },
       {
           "id": 25,
-          "name": "El Youneni",
+          "name": "Youneni",
           "flag": "/images/profiles/nazz_elyouneni.png",
           "validated": true,
           "tiktokUsername": "nazz_elyouneni"
@@ -473,10 +472,10 @@
       },
       {
           "id": 31,
-          "name": "Ibn El Jarid",
-          "flag": "/images/profiles/ebn.aljarid.png",
+          "name": "Non Inscrit",
+          "flag": "/images/profiles/sortie.png",
           "validated": true,
-          "tiktokUsername": "ebn.aljarid "
+          "tiktokUsername": "#"
       },
       {
           "id": 32,
@@ -529,186 +528,6 @@
       }    
   ],
   "groups": [
-    {
-      "groupName": "Groupe B1",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 1",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 2",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 3",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 4",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe B2",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 6",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 7",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 8",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe B3",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 9",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 10",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 11",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 3",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
-    {
-      "groupName": "Groupe B4",
-      "teams": [
-        {
-          "id": 1,
-          "name": "joueur 13",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "joueur 14",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "joueur 15",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 4,
-          "name": "joueur 16",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        }
-      ]
-    },
     {
       "groupName": "Groupe A1",
       "teams": [
@@ -880,6 +699,186 @@
           "points": 0
         }
       ]
+    },
+    {
+      "groupName": "Groupe B1",
+      "teams": [
+        {
+          "id": 1,
+          "name": "joueur",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 2,
+          "name": "joueur",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 3,
+          "name": "joueur",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 4,
+          "name": "joueur",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 5,
+          "name": "joueur",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "groupName": "Groupe B2",
+      "teams": [
+        {
+          "id": 1,
+          "name": "joueur 5",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 2,
+          "name": "joueur 6",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 3,
+          "name": "joueur 7",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 4,
+          "name": "joueur 8",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 5,
+          "name": "joueur 5",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "groupName": "Groupe B3",
+      "teams": [
+        {
+          "id": 1,
+          "name": "joueur 9",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 3,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 2,
+          "name": "joueur 10",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 3,
+          "name": "joueur 11",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 3,
+          "name": "joueur 3",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 5,
+          "name": "joueur 5",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "groupName": "Groupe B4",
+      "teams": [
+        {
+          "id": 1,
+          "name": "joueur 13",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 3,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 2,
+          "name": "joueur 14",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 3,
+          "name": "joueur 15",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 5,
+          "name": "joueur 5",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 4,
+          "name": "joueur 16",
+          "flag": "/images/profiles/userTiktok.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        }
+      ]
     }
   ],
   "Mosammin":[      
@@ -909,7 +908,7 @@
       "name": "Tunisian-editor",
       "flag": "/images/profiles/mosamin/_abdou_06.png",
       "validated": true,
-      "tiktokUsername": "_abdou_06"
+      "tiktokUsername": "__abdou_06"
     },
     {
       "id": 6,
@@ -940,13 +939,6 @@
       "tiktokUsername": "majdiyt"
     },
     {
-      "id": 10,
-      "name": "Baba Colombi",
-      "flag": "/images/profiles/mosamin/user644368856.png",
-      "validated": true,
-      "tiktokUsername": "user644368856"
-    },
-    {
       "id": 11,
       "name": "Midzo",
       "flag": "/images/profiles/mosamin/waled_tounis_.png",
@@ -959,13 +951,6 @@
       "flag": "/images/profiles/mosamin/alpacino_365d.png",
       "validated": true,
       "tiktokUsername": "alpacino_365d"
-    },
-    {
-      "id": 13,
-      "name": "Luffy",
-      "flag": "/images/profiles/mosamin/luffy.officiel7.png",
-      "validated": true,
-      "tiktokUsername": "luffy.officiel7"
     },
     {
       "id": 14,

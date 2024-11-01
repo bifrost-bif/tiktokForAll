@@ -29,7 +29,7 @@ const RankCircle = styled('div')(({ rank }) => ({
 }));
 
 const GroupStage = () => {
-    const [isResultsHidden] = useState(true);
+    const [isResultsHidden] = useState(false);
     const groupsData = data.groups;
 
     const newPlayerGroups = groupsData.slice(0, 4);
@@ -67,7 +67,7 @@ const GroupStage = () => {
 
     return (
         <div className="group-stage-container">
-            <Typography variant="h4" className="category-title">Nouveaux Joueurs</Typography>
+            <Typography variant="h4" className="category-title">Groupe A</Typography>
             <Grid container spacing={4} className="group-container">
                 {newPlayerGroups.map((group, index) => (
                     <Grid item xs={12} sm={6} key={index}>
@@ -111,7 +111,7 @@ const GroupStage = () => {
 
             <Divider variant="middle" className="group-divider" />
 
-            <Typography variant="h4" className="category-title">Anciens Joueurs</Typography>
+            <Typography variant="h4" className="category-title">Groupe B</Typography>
             <Grid container spacing={4} className="group-container">
                 {oldPlayerGroups.map((group, index) => (
                     <Grid item xs={12} sm={6} key={index}>
