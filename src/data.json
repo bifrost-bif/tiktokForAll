@@ -533,40 +533,32 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur 17",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 3,
+          "name": "Sag3",
+          "flag": "/images/profiles/dr.sag3.01.png",
+          "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur 18",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "El Khal",
+          "flag": "/images/profiles/5al.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 19",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Khayri",
+          "flag": "/images/profiles/khayri_89.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 4,
-          "name": "joueur 20",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 36",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Souhaiel",
+          "flag": "/images/profiles/souhaiel_junkremoval03.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -578,40 +570,32 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur 21",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Brabus",
+          "flag": "/images/profiles/brabus372.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur 22",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Skander",
+          "flag": "/images/profiles/skander_rezgui.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 23",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Tiger",
+          "flag": "/images/profiles/big.heart129.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 4,
-          "name": "joueur 24",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 34",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Amyr",
+          "flag": "/images/profiles/amir__hajji.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -623,40 +607,40 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur 25",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Sandro",
+          "flag": "/images/profiles/sandro.png",
           "played": 3,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur 26",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Houda",
+          "flag": "/images/profiles/houda.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 27",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Khayri",
+          "flag": "/images/profiles/khayri_89.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 4,
-          "name": "joueur 28",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Thala",
+          "flag": "/images/profiles/thalaftw.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 5,
-          "name": "joueur 33",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Marwen",
+          "flag": "/images/profiles/marwen.07.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -668,32 +652,40 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur 29",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Colombi",
+          "flag": "/images/profiles/colombi_oussama.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur 30",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Ashref",
+          "flag": "/images/profiles/ashref_officiel.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 31",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Syrinne",
+          "flag": "/images/profiles/sy_rinnee.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 4,
-          "name": "joueur 32",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Ibn Tunis",
+          "flag": "/images/profiles/marouane_suisse88.png",
+          "played": 0,
+          "coins": "0k",
+          "points": 0
+        },
+        {
+          "id": 5,
+          "name": "Sameh",
+          "flag": "/images/profiles/sameh.ba.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -705,40 +697,32 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Fares",
+          "flag": "/images/profiles/faresbabay.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Trabelsi",
+          "flag": "/images/profiles/mtrabelsi.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Youneni",
+          "flag": "/images/profiles/nazz_elyouneni.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 4,
-          "name": "joueur",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Fathi 3j3j",
+          "flag": "/images/profiles/fathi_3jej.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -750,40 +734,32 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Chbaya7",
+          "flag": "/images/profiles/bilel.chbayah.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur 6",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Charchabil",
+          "flag": "/images/profiles/garga044.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 7",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Faj3a Limar",
+          "flag": "/images/profiles/limar8969.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 4,
-          "name": "joueur 8",
-          "flag": "/images/profiles/userTiktok.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Amira",
+          "flag": "/images/profiles/amiraomriii.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -795,40 +771,40 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur 9",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Kinen",
+          "flag": "/images/profiles/kinen007.png",
           "played": 3,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur 10",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Couloumbi",
+          "flag": "/images/profiles/www.couloumbi.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 11",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Pap Malik",
+          "flag": "/images/profiles/malek.louati.2.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 3",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Eva",
+          "flag": "/images/profiles/eva.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "King Maher",
+          "flag": "/images/profiles/maherncycm7.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -840,40 +816,40 @@
       "teams": [
         {
           "id": 1,
-          "name": "joueur 13",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Seif",
+          "flag": "/images/profiles/seifbenmustapha.png",
           "played": 3,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 2,
-          "name": "joueur 14",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Zaman",
+          "flag": "/images/profiles/zamanino.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 3,
-          "name": "joueur 15",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Mosamem",
+          "flag": "/images/profiles/mosamem.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 5,
-          "name": "joueur 5",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Dali",
+          "flag": "/images/profiles/dali_elghoul.png",
           "played": 0,
           "coins": "0k",
           "points": 0
         },
         {
           "id": 4,
-          "name": "joueur 16",
-          "flag": "/images/profiles/userTiktok.png",
+          "name": "Hend Ben",
+          "flag": "/images/profiles/hendab7.png",
           "played": 0,
           "coins": "0k",
           "points": 0
