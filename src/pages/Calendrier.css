@@ -20,7 +20,6 @@
     
     margin-bottom: 30px;
     padding: 5px;
-    
     border-left: 6px solid #d1d9e6;
     border-right: 6px solid #d1d9e6;
     border-bottom: 6px solid #d1d9e6;
@@ -184,7 +183,7 @@
 /* Ajustement pour les écrans mobiles */
 @media (max-width: 767px) {
     .match-container {
-        left: 0; /* Pas de décalage pour mobile */
+        left: 9px; /* Pas de décalage pour mobile */
     }
 }
 
