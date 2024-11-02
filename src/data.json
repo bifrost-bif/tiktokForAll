@@ -608,7 +608,7 @@
           "id": 1,
           "name": "Sandro",
           "flag": "/images/profiles/sandro.png",
-          "played": 3,
+          "played": 0,
           "coins": "0k",
           "points": 0
         },
@@ -772,7 +772,7 @@
           "id": 1,
           "name": "Kinen",
           "flag": "/images/profiles/kinen007.png",
-          "played": 3,
+          "played": 0,
           "coins": "0k",
           "points": 0
         },
@@ -817,7 +817,7 @@
           "id": 1,
           "name": "Seif",
           "flag": "/images/profiles/seifbenmustapha.png",
-          "played": 3,
+          "played": 0,
           "coins": "0k",
           "points": 0
         },
