@@ -170,14 +170,14 @@
     transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
-    width: 150px;
+    width: 185px;
     position: relative;
-    left: -64px; /* Décalage vers la gauche */
+    left: 64px; /* Décalage vers la gauche */
 }
 /* Décalage pour les écrans de bureau */
 @media (min-width: 768px) {
     .match-container {
-        left: -64px; /* Décalage pour bureau */
+        left: 130px; /* Décalage pour bureau */
     }
 }
 
