@@ -6,7 +6,7 @@ import './Home.css';
 
 const Home = () => {
     // Define the state for whether the drawing results are hidden
-    const [isResultsHidden] = useState(true);
+    const [isResultsHidden] = useState(false);
 
     return (
         <div className="home-container">
