@@ -234,298 +234,297 @@
             "photo": "/images/profiles/midouayari26.png",
             "score": -1
           },
-          "ouverture":"true",
-          
+          "ouverture": "true",
           "time": "20:30"
         }
       ]
     },
     {
-      "date": "Dimanche 3 NOV 2024",
+      "date": "Dimanche 3 nov. 2024",
       "matches": [
         {
           "player1": {
-            "name": "Joueur 5",
-            "photo": "/images/profiles/userTiktok.png",
+            "name": "Marwen",
+            "photo": "/images/profiles/marwen.07.png",
             "score": -1
           },
           "player2": {
-            "name": "Joueur 6",
-            "photo": "/images/profiles/userTiktok.png",
+            "name": "Sandro",
+            "photo": "/images/profiles/sandro.png",
             "score": -1
           },
-          "time": "16:00"
+          "time": "19:30"
         }
       ]
     }
   ],
   "joueursInscritsData": [
-      {
-          "id": 1,
-          "name": "Amyr",
-          "flag": "/images/profiles/amir__hajji.png",
-          "validated": true,
-          "tiktokUsername": "amir__hajji"
-      },
-      {
-          "id": 2,
-          "name": "Anis",
-          "flag": "/images/profiles/ben.salem.anis.png",
-          "validated": true,
-          "tiktokUsername": "ben.salem.anis"
-      },
-      {
-          "id": 3,
-          "name": "Ashref",
-          "flag": "/images/profiles/ashref_officiel.png",
-          "validated": true,
-          "tiktokUsername": "ashref_officiel"
-      },
-      {
-          "id": 4,
-          "name": "Non Inscrit",
-          "flag": "/images/profiles/sortie.png",
-          "validated": true,
-          "tiktokUsername": "#"
-      },
-      {
-          "id": 5,
-          "name": "Brabus",
-          "flag": "/images/profiles/brabus372.png",
-          "validated": true,
-          "tiktokUsername": "brabus372"
-      },
-      {
-          "id": 6,
-          "name": "Colombi",
-          "flag": "/images/profiles/colombi_oussama.png",
-          "validated": true,
-          "tiktokUsername": "colombi_oussama"
-      },
-      {
-          "id": 7,
-          "name": "El Khal",
-          "flag": "/images/profiles/5al.png",
-          "validated": true,
-          "tiktokUsername": "user4021713872133"
-      },
-      {
-          "id": 8,
-          "name": "Houda",
-          "flag": "/images/profiles/houda.png",
-          "validated": true,
-          "tiktokUsername": "houda.jabri"
-      },
-      {
-          "id": 9,
-          "name": "Ibn Tunis",
-          "flag": "/images/profiles/marouane_suisse88.png",
-          "validated": true,
-          "tiktokUsername": "marouane_suisse88"
-      },
-      {
-          "id": 10,
-          "name": "Khayri",
-          "flag": "/images/profiles/khayri_89.png",
-          "validated": true,
-          "tiktokUsername": "Khayri_89"
-      },
-      {
-          "id": 11,
-          "name": "Marwen",
-          "flag": "/images/profiles/marwen.07.png",
-          "validated": true,
-          "tiktokUsername": "marwen.07"
-      },
-      {
-          "id": 12,
-          "name": "Sag3",
-          "flag": "/images/profiles/dr.sag3.01.png",
-          "validated": true,
-          "tiktokUsername": "dr.sag3.01"
-      },
-      {
-          "id": 13,
-          "name": "Sameh",
-          "flag": "/images/profiles/sameh.ba.png",
-          "validated": true,
-          "tiktokUsername": "sameh.ba"
-      },
-      {
-          "id": 14,
-          "name": "Sandro",
-          "flag": "/images/profiles/sandro.png",
-          "validated": true,
-          "tiktokUsername": "sandrinotn"
-      },
-      {
-          "id": 15,
-          "name": "Skander",
-          "flag": "/images/profiles/skander_rezgui.png",
-          "validated": true,
-          "tiktokUsername": "skanderrezguiii"
-      },
-      {
-          "id": 16,
-          "name": "Souhaiel",
-          "flag": "/images/profiles/souhaiel_junkremoval03.png",
-          "validated": true,
-          "tiktokUsername": "souhaiel_junkremoval03"
-      },
-      {
-          "id": 17,
-          "name": "Syrinne",
-          "flag": "/images/profiles/sy_rinnee.png",
-          "validated": true,
-          "tiktokUsername": "syy_rinne"
-      },
-      {
-          "id": 18,
-          "name": "Thala",
-          "flag": "/images/profiles/thalaftw.png",
-          "validated": true,
-          "tiktokUsername": "thalaftw"
-      },
-      {
-          "id": 19,
-          "name": "Tiger",
-          "flag": "/images/profiles/big.heart129.png",
-          "validated": true,
-          "tiktokUsername": "big.heart129"
-      },
-      {
-          "id": 20,
-          "name": "Amira",
-          "flag": "/images/profiles/amiraomriii.png",
-          "validated": true,
-          "tiktokUsername": "amiraomriii"
-      },
-      {
-          "id": 21,
-          "name": "Charchabil",
-          "flag": "/images/profiles/garga044.png",
-          "validated": true,
-          "tiktokUsername": "garga044"
-      },
-      {
-          "id": 22,
-          "name": "Chbaya7",
-          "flag": "/images/profiles/bilel.chbayah.png",
-          "validated": true,
-          "tiktokUsername": "bilel.chbayah"
-      },
-      {
-          "id": 23,
-          "name": "Couloumbi",
-          "flag": "/images/profiles/www.couloumbi.png",
-          "validated": true,
-          "tiktokUsername": "www.couloumbi"
-      },
-      {
-          "id": 24,
-          "name": "Dali",
-          "flag": "/images/profiles/dali_elghoul.png",
-          "validated": true,
-          "tiktokUsername": "dali_elghoul_"
-      },
-      {
-          "id": 25,
-          "name": "Youneni",
-          "flag": "/images/profiles/nazz_elyouneni.png",
-          "validated": true,
-          "tiktokUsername": "nazz_elyouneni"
-      },
-      {
-          "id": 26,
-          "name": "Eva",
-          "flag": "/images/profiles/eva.png",
-          "validated": true,
-          "tiktokUsername": "_eva_bjaoui"
-      },
-      {
-          "id": 27,
-          "name": "Faj3a Limar",
-          "flag": "/images/profiles/limar8969.png",
-          "validated": true,
-          "tiktokUsername": "limar8969"
-      },
-      {
-          "id": 28,
-          "name": "Fares",
-          "flag": "/images/profiles/faresbabay.png",
-          "validated": true,
-          "tiktokUsername": "faresbabay"
-      },
-      {
-          "id": 29,
-          "name": "Fathi 3j3j",
-          "flag": "/images/profiles/fathi_3jej.png",
-          "validated": true,
-          "tiktokUsername": "fathi.kamoussa "
-      },
-      {
-          "id": 30,
-          "name": "Hend Ben",
-          "flag": "/images/profiles/hendab7.png",
-          "validated": true,
-          "tiktokUsername": "hendab7"
-      },
-      {
-          "id": 31,
-          "name": "Non Inscrit",
-          "flag": "/images/profiles/sortie.png",
-          "validated": true,
-          "tiktokUsername": "#"
-      },
-      {
-          "id": 32,
-          "name": "Kinen",
-          "flag": "/images/profiles/kinen007.png",
-          "validated": true,
-          "tiktokUsername": "kinen007"
-      },
-      {
-          "id": 33,
-          "name": "King Maher",
-          "flag": "/images/profiles/maherncycm7.png",
-          "validated": true,
-          "tiktokUsername": "maherboutarfa835"
-      },
-      {
-          "id": 34,
-          "name": "Mosamem",
-          "flag": "/images/profiles/mosamem.png",
-          "validated": true,
-          "tiktokUsername": "mosamem_tunsi"
-      },
-      {
-          "id": 35,
-          "name": "Pap Malik",
-          "flag": "/images/profiles/malek.louati.2.png",
-          "validated": true,
-          "tiktokUsername": "malek.louati.2"
-      },
-      {
-          "id": 36,
-          "name": "Seif",
-          "flag": "/images/profiles/seifbenmustapha.png",
-          "validated": true,
-          "tiktokUsername": "seifbenmustapha"
-      },
-      {
-          "id": 37,
-          "name": "Trabelsi",
-          "flag": "/images/profiles/mtrabelsi.png",
-          "validated": true,
-          "tiktokUsername": "mtrabelsi"
-      },
-      {
-          "id": 38,
-          "name": "Zaman",
-          "flag": "/images/profiles/zamanino.png",
-          "validated": true,
-          "tiktokUsername": "zamanino"
-      }    
+    {
+      "id": 1,
+      "name": "Amyr",
+      "flag": "/images/profiles/amir__hajji.png",
+      "validated": true,
+      "tiktokUsername": "amir__hajji"
+    },
+    {
+      "id": 2,
+      "name": "Anis",
+      "flag": "/images/profiles/ben.salem.anis.png",
+      "validated": true,
+      "tiktokUsername": "ben.salem.anis"
+    },
+    {
+      "id": 3,
+      "name": "Ashref",
+      "flag": "/images/profiles/ashref_officiel.png",
+      "validated": true,
+      "tiktokUsername": "ashref_officiel"
+    },
+    {
+      "id": 4,
+      "name": "Non Inscrit",
+      "flag": "/images/profiles/sortie.png",
+      "validated": true,
+      "tiktokUsername": "#"
+    },
+    {
+      "id": 5,
+      "name": "Brabus",
+      "flag": "/images/profiles/brabus372.png",
+      "validated": true,
+      "tiktokUsername": "brabus372"
+    },
+    {
+      "id": 6,
+      "name": "Colombi",
+      "flag": "/images/profiles/colombi_oussama.png",
+      "validated": true,
+      "tiktokUsername": "colombi_oussama"
+    },
+    {
+      "id": 7,
+      "name": "El Khal",
+      "flag": "/images/profiles/5al.png",
+      "validated": true,
+      "tiktokUsername": "user4021713872133"
+    },
+    {
+      "id": 8,
+      "name": "Houda",
+      "flag": "/images/profiles/houda.png",
+      "validated": true,
+      "tiktokUsername": "houda.jabri"
+    },
+    {
+      "id": 9,
+      "name": "Ibn Tunis",
+      "flag": "/images/profiles/marouane_suisse88.png",
+      "validated": true,
+      "tiktokUsername": "marouane_suisse88"
+    },
+    {
+      "id": 10,
+      "name": "Khayri",
+      "flag": "/images/profiles/khayri_89.png",
+      "validated": true,
+      "tiktokUsername": "Khayri_89"
+    },
+    {
+      "id": 11,
+      "name": "Marwen",
+      "flag": "/images/profiles/marwen.07.png",
+      "validated": true,
+      "tiktokUsername": "marwen.07"
+    },
+    {
+      "id": 12,
+      "name": "Sag3",
+      "flag": "/images/profiles/dr.sag3.01.png",
+      "validated": true,
+      "tiktokUsername": "dr.sag3.01"
+    },
+    {
+      "id": 13,
+      "name": "Sameh",
+      "flag": "/images/profiles/sameh.ba.png",
+      "validated": true,
+      "tiktokUsername": "sameh.ba"
+    },
+    {
+      "id": 14,
+      "name": "Sandro",
+      "flag": "/images/profiles/sandro.png",
+      "validated": true,
+      "tiktokUsername": "sandrinotn"
+    },
+    {
+      "id": 15,
+      "name": "Skander",
+      "flag": "/images/profiles/skander_rezgui.png",
+      "validated": true,
+      "tiktokUsername": "skanderrezguiii"
+    },
+    {
+      "id": 16,
+      "name": "Souhaiel",
+      "flag": "/images/profiles/souhaiel_junkremoval03.png",
+      "validated": true,
+      "tiktokUsername": "souhaiel_junkremoval03"
+    },
+    {
+      "id": 17,
+      "name": "Syrinne",
+      "flag": "/images/profiles/sy_rinnee.png",
+      "validated": true,
+      "tiktokUsername": "syy_rinne"
+    },
+    {
+      "id": 18,
+      "name": "Thala",
+      "flag": "/images/profiles/thalaftw.png",
+      "validated": true,
+      "tiktokUsername": "thalaftw"
+    },
+    {
+      "id": 19,
+      "name": "Tiger",
+      "flag": "/images/profiles/big.heart129.png",
+      "validated": true,
+      "tiktokUsername": "big.heart129"
+    },
+    {
+      "id": 20,
+      "name": "Amira",
+      "flag": "/images/profiles/amiraomriii.png",
+      "validated": true,
+      "tiktokUsername": "amiraomriii"
+    },
+    {
+      "id": 21,
+      "name": "Charchabil",
+      "flag": "/images/profiles/garga044.png",
+      "validated": true,
+      "tiktokUsername": "garga044"
+    },
+    {
+      "id": 22,
+      "name": "Chbaya7",
+      "flag": "/images/profiles/bilel.chbayah.png",
+      "validated": true,
+      "tiktokUsername": "bilel.chbayah"
+    },
+    {
+      "id": 23,
+      "name": "Couloumbi",
+      "flag": "/images/profiles/www.couloumbi.png",
+      "validated": true,
+      "tiktokUsername": "www.couloumbi"
+    },
+    {
+      "id": 24,
+      "name": "Dali",
+      "flag": "/images/profiles/dali_elghoul.png",
+      "validated": true,
+      "tiktokUsername": "dali_elghoul_"
+    },
+    {
+      "id": 25,
+      "name": "Youneni",
+      "flag": "/images/profiles/nazz_elyouneni.png",
+      "validated": true,
+      "tiktokUsername": "nazz_elyouneni"
+    },
+    {
+      "id": 26,
+      "name": "Eva",
+      "flag": "/images/profiles/eva.png",
+      "validated": true,
+      "tiktokUsername": "_eva_bjaoui"
+    },
+    {
+      "id": 27,
+      "name": "Faj3a Limar",
+      "flag": "/images/profiles/limar8969.png",
+      "validated": true,
+      "tiktokUsername": "limar8969"
+    },
+    {
+      "id": 28,
+      "name": "Fares",
+      "flag": "/images/profiles/faresbabay.png",
+      "validated": true,
+      "tiktokUsername": "faresbabay"
+    },
+    {
+      "id": 29,
+      "name": "Fathi 3j3j",
+      "flag": "/images/profiles/fathi_3jej.png",
+      "validated": true,
+      "tiktokUsername": "fathi.kamoussa "
+    },
+    {
+      "id": 30,
+      "name": "Hend Ben",
+      "flag": "/images/profiles/hendab7.png",
+      "validated": true,
+      "tiktokUsername": "hendab7"
+    },
+    {
+      "id": 31,
+      "name": "Non Inscrit",
+      "flag": "/images/profiles/sortie.png",
+      "validated": true,
+      "tiktokUsername": "#"
+    },
+    {
+      "id": 32,
+      "name": "Kinen",
+      "flag": "/images/profiles/kinen007.png",
+      "validated": true,
+      "tiktokUsername": "kinen007"
+    },
+    {
+      "id": 33,
+      "name": "King Maher",
+      "flag": "/images/profiles/maherncycm7.png",
+      "validated": true,
+      "tiktokUsername": "maherboutarfa835"
+    },
+    {
+      "id": 34,
+      "name": "Mosamem",
+      "flag": "/images/profiles/mosamem.png",
+      "validated": true,
+      "tiktokUsername": "mosamem_tunsi"
+    },
+    {
+      "id": 35,
+      "name": "Pap Malik",
+      "flag": "/images/profiles/malek.louati.2.png",
+      "validated": true,
+      "tiktokUsername": "malek.louati.2"
+    },
+    {
+      "id": 36,
+      "name": "Seif",
+      "flag": "/images/profiles/seifbenmustapha.png",
+      "validated": true,
+      "tiktokUsername": "seifbenmustapha"
+    },
+    {
+      "id": 37,
+      "name": "Trabelsi",
+      "flag": "/images/profiles/mtrabelsi.png",
+      "validated": true,
+      "tiktokUsername": "mtrabelsi"
+    },
+    {
+      "id": 38,
+      "name": "Zaman",
+      "flag": "/images/profiles/zamanino.png",
+      "validated": true,
+      "tiktokUsername": "zamanino"
+    }
   ],
   "groups": [
     {
@@ -857,7 +856,7 @@
       ]
     }
   ],
-  "Mosammin":[      
+  "Mosammin": [
     {
       "id": 2,
       "name": "Mosamim ibn mojahid",

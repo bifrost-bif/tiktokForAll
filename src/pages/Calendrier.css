@@ -56,19 +56,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 105%;
+    width: 115%;
     margin-bottom: 15px;
 }
 
 .player-group {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.player {
-    
+.player {    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,6 +158,34 @@
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #1a73e8;
+}
+
+.match-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 150px;
+    position: relative;
+    left: -64px; /* Décalage vers la gauche */
+}
+/* Décalage pour les écrans de bureau */
+@media (min-width: 768px) {
+    .match-container {
+        left: -64px; /* Décalage pour bureau */
+    }
+}
+
+/* Ajustement pour les écrans mobiles */
+@media (max-width: 767px) {
+    .match-container {
+        left: 0; /* Pas de décalage pour mobile */
+    }
 }
 
 .suspense-text {

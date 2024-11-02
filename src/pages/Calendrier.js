@@ -5,7 +5,7 @@ import './Calendrier.css';
 import TikTokProfileBanner from '../components/TikTokProfileBanner';
 
 const Calendar = () => {
-    const [isResultsHidden] = useState(true);
+    const [isResultsHidden] = useState(false);
 
     if (isResultsHidden) {
         return (

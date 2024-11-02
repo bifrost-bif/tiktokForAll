@@ -10,12 +10,15 @@ import Navbar from './components/Navbar';
 import Calendar from "./pages/Calendrier";
 
 import Footer from './components/Footer';
+import AdminCalendar from './components/AdminCalendar';
 import PolitiqueCookies from './pages/PolitiqueCookies';
 import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 import MentionsLegales from './pages/MentionsLegales';
 import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import ContactDonnees from './pages/ContactDonnees';
 import Mosammin from './pages/Mosammin'; // Import the new Mosammin page
+import AdminPage from './components/AdminPage';
+import ProtectedRoute from './components/ProtectedRoute';
 
 import './App.css'; // Fichier CSS pour styliser la page
 
@@ -78,8 +81,13 @@ function App() {
                     <Route path="/conditions-utilisation" element={<ConditionsUtilisation/>}/>
                     <Route path="/contact-donnees" element={<ContactDonnees/>}/>
                     <Route path="/mosammin" element={<Mosammin />} />
-                    <Route path="*" element={<Navigate to="/" />} />
-                </Routes>
+                    <Route path="/login" element={<AdminPage />} />
+            <Route
+                path="/adminCalendar"
+                element={<ProtectedRoute element={<AdminCalendar />} />}
+            />
+            {/* Ajoutez d'autres routes ici si nécessaire */}
+        </Routes>
                 
                 <Footer/> {/* Ajout du footer */}
             </div>
