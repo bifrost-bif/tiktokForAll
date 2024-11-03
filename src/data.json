@@ -1443,19 +1443,19 @@
       "teams": [
         {
           "id": 1,
-          "name": "Sag3",
-          "flag": "/images/profiles/dr.sag3.01.png",
-          "played": 1,
-          "coins": "42k",
-          "points": 0
-        },
-        {
-          "id": 2,
           "name": "Khal",
           "flag": "/images/profiles/5al.png",
           "played": 1,
           "coins": "169k",
-          "points": 0
+          "points": 2
+        },
+        {
+          "id": 2,
+          "name": "Souhaiel",
+          "flag": "/images/profiles/souhaiel_junkremoval03.png",
+          "played": 1,
+          "coins": "160k",
+          "points": 2
         },
         {
           "id": 3,
@@ -1466,12 +1466,12 @@
           "points": 0
         },
         {
-          "id": 4,
-          "name": "Souhaiel",
-          "flag": "/images/profiles/souhaiel_junkremoval03.png",
+          "id": 3,
+          "name": "Sag3",
+          "flag": "/images/profiles/dr.sag3.01.png",
           "played": 1,
-          "coins": "160k",
-          "points": 2
+          "coins": "42k",
+          "points": 0
         }
       ]
     },
