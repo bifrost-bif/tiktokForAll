@@ -217,22 +217,22 @@
           "player1": {
             "name": "Amira",
             "photo": "/images/profiles/amiraI.png",
-            "score": 135
+            "score": -1
           },
           "player2": {
             "name": "Brabus",
             "photo": "/images/profiles/brabus372.png",
-            "score": 46
+            "score": -1
           },
           "player3": {
             "name": "Achref",
             "photo": "/images/profiles/ashref_officiel.png",
-            "score": 2
+            "score": -1
           },
           "player4": {
             "name": "Midou",
             "photo": "/images/profiles/midouayari26.png",
-            "score": 2
+            "score": -1
           },
           "ouverture": "true",
           "time": "20:30"
@@ -1812,14 +1812,14 @@
       "tiktokUsername": "alpacino_365d"
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "Colo Locked",
       "flag": "/images/profiles/mosamin/med_loked.png",
       "validated": true,
       "tiktokUsername": "med_loked"
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "Journal Tunisie",
       "flag": "/images/profiles/mosamin/journal_tunisie.png",
       "validated": true,
