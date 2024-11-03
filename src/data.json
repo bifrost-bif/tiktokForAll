@@ -2,21 +2,30 @@
   "sanctions": [
     {
       "id": 1,
-      "name": "Joueur 1",
-      "flag": "/images/profiles/userTiktok.png",
-      "warnings": 0,
-      "reason": "",
-      "date": "",
+      "name": "Achref",
+      "flag": "/images/profiles/ashref_officiel.png",
+      "warnings": 1,
+      "reason": "Ouverture simultanée de lives ",
+      "date": "2024-11-03",
       "status": "Active"
     },
     {
-      "id": 1,
-      "name": "Joueur 2",
-      "flag": "/images/profiles/userTiktok.png",
-      "warnings": 2,
-      "reason": "Comportement antisportif",
-      "date": "2024-10-15",
-      "status": "Sanctionné"
+      "id": 2,
+      "name": "Fathi",
+      "flag": "/images/profiles/fathi_3jej.png",
+      "warnings": 1,
+      "reason": "Ouverture simultanée de lives" ,
+      "date": "2024-11-03",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "name": "Kinen",
+      "flag": "/images/profiles/kinen007.png",
+      "warnings": 1,
+      "reason": "Ouverture simultanée de lives ",
+      "date": "2024-11-03",
+      "status": "Active"
     }
   ],
   "knockoutMatches": {
@@ -1492,7 +1501,7 @@
           "id": 1,
           "name": "Sandro",
           "flag": "/images/profiles/sandro.png",
-          "played": 0,
+          "played": 1,
           "coins": "0k",
           "points": 0
         },
@@ -1524,9 +1533,9 @@
           "id": 5,
           "name": "Marwen",
           "flag": "/images/profiles/marwen.07.png",
-          "played": 0,
+          "played": 1,
           "coins": "0k",
-          "points": 0
+          "points": 2
         }
       ]
     },
