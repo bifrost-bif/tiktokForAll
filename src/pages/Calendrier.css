@@ -17,7 +17,6 @@
 }
 
 .journey-container {
-    
     margin-bottom: 30px;
     padding: 5px;
     border-left: 6px solid #d1d9e6;
@@ -26,7 +25,6 @@
     border-top: 6px solid #d1d9e6;
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    
 }
 
 .journey-title {
@@ -42,13 +40,10 @@
     color: #607d8b;
 }
 
-
-
 .match-container {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
     width: 80%;
-    
 }
 
 .match-info {
@@ -66,7 +61,7 @@
     align-items: center;
 }
 
-.player {    
+.player {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,19 +166,18 @@
     cursor: pointer;
     width: 185px;
     position: relative;
-    left: 64px; /* Décalage vers la gauche */
+    left: 64px;
 }
-/* Décalage pour les écrans de bureau */
+
 @media (min-width: 768px) {
     .match-container {
-        left: 130px; /* Décalage pour bureau */
+        left: 130px;
     }
 }
 
-/* Ajustement pour les écrans mobiles */
 @media (max-width: 767px) {
     .match-container {
-        left: 9px; /* Pas de décalage pour mobile */
+        left: 9px;
     }
 }
 
@@ -208,3 +202,184 @@
         font-size: 1.3rem;
     }
 }
+
+/* Modal styles */
+.modal-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #37474f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-close-button {
+    color: #d32f2f;
+}
+
+.modal-content {
+    background: radial-gradient(circle, #0c0c0c, #656666);
+    padding: 40px;
+    width: 88%;
+    max-height: 110vh; /* Ensure it doesn’t exceed the viewport height */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    max-height: 78vh; /* Limite la hauteur du contenu */
+    overflow-y: auto;
+    
+}
+
+.modal-match-date {
+    font-size: 2.1rem !important;
+    color: #607d8b;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1.334 !important;
+    margin-top: 40px !important;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet de "flamme blanche" */
+.modal-match-date::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 200%; /* Assez large pour couvrir le texte */
+    animation: flameEffect 3s infinite ease-in-out;
+}
+
+/* Animation pour déplacer la "flamme" */
+@keyframes flameEffect {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+.modal-match-date:hover {
+    color: #455a64; /* Change légèrement la couleur au survol */
+    transform: scale(1.05); /* Légère mise en avant */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+.modal-match-time {
+    font-size: 1.5rem!important;
+    font-weight: bold;
+    color: #607d8b;       
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    font-family: "Roboto"!important;
+}
+
+.modal-players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.player-photo-large {
+    width: 110px; /* Taille augmentée pour l'affiche */
+    height: 110px;
+    border-radius: 50%;
+    margin-top: 50px; /* Down */
+    
+    border: 3px solid rgba(226, 45, 45, 0.479); /* Bordure plus visible */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.player-photo-large:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+.player-name-large {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #680505;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.versus-image-modal {
+    width: 140px; /* Taille de l'image VS */
+    height: 140px;
+    margin-right:20px ; /* Espace autour de l'image pour séparer les joueurs */
+    margin-top: 30px; /* Down */
+}
+
+.affiche-image-modal {
+    width: 90px;
+    height: 87px;
+    margin-right: 0;
+    opacity: 0.4; /* 1 est opaque, moins de 1 ajoute de la transparence */
+    transition: opacity 0.3s ease; /* Transition pour l'effet de survol */ 
+}
+
+/*titre*/
+.affiche-title {
+    
+    vertical-align: middle; /* Aligne l'image avec le texte ou autres éléments */
+    transition: opacity 0.3s ease;
+    width: 370px;
+}
+
+/* Effet de survol pour rendre l'image opaque quand on passe la souris dessus */
+.countdown-timer-modal {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff00009c;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 0;
+    opacity: 0.3!important;
+}
+
+.countdown-complete {
+    color: #ff00009c;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.4!important;
+}
+
+.flag-icon {
+    width: 25px; /* Taille des icônes */
+    height: 25px;
+    margin-left: 5px; /* Espacement par rapport au texte */
+    vertical-align: middle; /* Alignement au milieu du texte */
+    margin-top: 50px;
+}
+
+.modal-button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    color: rgba(226, 20, 20, 0.589)!important;
+    font-size: 1.2rem!important;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 25px!important;
+    font-weight: bold!important;
+}
+

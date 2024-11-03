@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { Grid, Typography, Paper, Box } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { Grid, Typography, Paper, Box, Dialog, DialogContent, DialogTitle, IconButton, Button } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import data from '../data.json';
 import './Calendrier.css';
 import TikTokProfileBanner from '../components/TikTokProfileBanner';
 
 const Calendar = () => {
     const [isResultsHidden] = useState(false);
+    const [openMatch, setOpenMatch] = useState(null);
 
     if (isResultsHidden) {
         return (
@@ -27,7 +29,7 @@ const Calendar = () => {
     }
 
     const calendarData = data.calendarMatches;
-    let journeyCount = 0; // Compteur de journée qui ignore les matchs d'ouverture
+    let journeyCount = 0;
 
     return (
         <div className="calendar-container">
@@ -36,10 +38,8 @@ const Calendar = () => {
             </Typography>
             <div className="calendar-content">
                 {calendarData.map((journey, journeyIndex) => {
-                    // Vérifie si l'un des matchs de la journée a "ouverture: true"
                     const isOpeningMatch = journey.matches.some(match => match.ouverture === "true");
 
-                    // Si ce n'est pas un match d'ouverture, on incrémente le compteur de journée
                     if (!isOpeningMatch) {
                         journeyCount += 1;
                     }
@@ -54,11 +54,8 @@ const Calendar = () => {
                                 {journey.matches.map((match, matchIndex) => (
                                     <Match
                                         key={matchIndex}
-                                        player1={match.player1}
-                                        player2={match.player2}
-                                        player3={match.player3}
-                                        player4={match.player4}
-                                        time={match.time}
+                                        match={match}
+                                        onClick={() => setOpenMatch({ ...match, date: journey.date })}
                                     />
                                 ))}
                             </Grid>
@@ -66,35 +63,144 @@ const Calendar = () => {
                     );
                 })}
             </div>
+            {openMatch && (
+                <MatchModal
+                    match={openMatch}
+                    onClose={() => setOpenMatch(null)}
+                />
+            )}
         </div>
     );
 };
 
-// Reste du code inchangé
-const Match = ({ player1, player2, player3, player4, time }) => {
-    const isTeamMatch = player3 && player4;
-    const hasScore = player1.score !== -1 && player2.score !== -1 && (!isTeamMatch || (player3.score !== -1 && player4.score !== -1));
-    const percentages = hasScore ? calculatePercentage(player1.score, player2.score) : { player1: 50, player2: 50 };
+const MatchModal = ({ match, onClose }) => (
+    <Dialog open={!!match} onClose={onClose} fullScreen>
+        <DialogTitle className="modal-title">
+            <IconButton aria-label="close" onClick={onClose} className="modal-close-button">
+                <CloseIcon />
+            </IconButton>
+        </DialogTitle>
+        <DialogContent className="modal-content" style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/fd-1.png)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        color: '#ffffff',
+    }}>
+        <CountdownTimer targetDate={`${match.date} ${match.time}`} /> {/* Compte à rebours pour la date du match */}
+        <img src="./images/titre.png" alt="tiktokForAll_icone_affiche" className="affiche-title" />
+            <div className="modal-players">
+                <Player player={match.player1} large />
+                <img src={`${process.env.PUBLIC_URL}/images/versus.png`} alt="Versus" className="versus-image-modal" />
+                <Player player={match.player2} large />
+                {match.player3 && (
+                    <>
+                        <Player player={match.player3} large />
+                        <img src="./images/versus.png" alt="Versus" className="versus-image-modal" />
+                        <Player player={match.player4} large />
+                    </>
+                )}
+            </div>
+            <Typography variant="h5" className="modal-match-date">{match.date}</Typography>
+            <Typography>
+                <img src={`${process.env.PUBLIC_URL}/images/euro.png`} alt="Europe" className="flag-icon" />
+                <img src={`${process.env.PUBLIC_URL}/images/tunisia.png`} alt="Tunisie" className="flag-icon" />
+            </Typography> 
+            <Typography variant="h6" className="modal-match-time">
+                {match.time.replace(':', 'h')} 
+            </Typography>
+            <Button className="modal-button">TUNTOK.LIVE</Button>
+
+
+            <img src="./images/tiktokForAll_icone_affiche.png" alt="tiktokForAll_icone_affiche" className="affiche-image-modal" />
+        </DialogContent>
+    </Dialog>
+);
+
+// Composant CountdownTimer pour afficher le compte à rebours
+const CountdownTimer = ({ targetDate }) => {
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeLeft(calculateTimeLeft(targetDate));
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [targetDate]);
+
+    if (timeLeft.total <= 0) {
+        return <div className="countdown-complete">C'est l'heure du match !</div>;
+    }
+    if(timeLeft.days == 0){
+        return (
+            <div className="countdown-timer-modal">
+                <span>{timeLeft.hours}h </span>
+                <span>{timeLeft.minutes}m </span>
+                <span>{timeLeft.seconds}s </span>
+            </div>
+        );
+    } 
+    if(timeLeft.hours == 0){
+        return (
+            <div className="countdown-timer-modal">
+                <span>{timeLeft.minutes}m </span>
+                <span>{timeLeft.seconds}s </span>
+            </div>
+        );
+    } 
+    if(timeLeft.minutes == 0){
+        return (
+            <div className="countdown-timer-modal">
+                <span>{timeLeft.seconds}s </span>
+            </div>
+        );
+    } 
+    return (
+        <div className="countdown-timer-modal">
+            <span>{timeLeft.days}j </span>
+            <span>{timeLeft.hours}h </span>
+            <span>{timeLeft.minutes}m </span>
+            <span>{timeLeft.seconds}s </span>
+        </div>
+    );
+};
+
+const calculateTimeLeft = (targetDate) => {
+    const difference = new Date(targetDate) - new Date();
+    return {
+        total: difference,
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+    };
+};
+
+const Match = ({ match, onClick }) => {
+    const isTeamMatch = match.player3 && match.player4;
+    const hasScore = match.player1.score !== -1 && match.player2.score !== -1 && (!isTeamMatch || (match.player3.score !== -1 && match.player4.score !== -1));
+    const percentages = hasScore ? calculatePercentage(match.player1.score, match.player2.score) : { player1: 50, player2: 50 };
 
     return (
-        <Grid item xs={12} sm={6} md={5}>
+        <Grid item xs={12} sm={6} md={5} onClick={onClick}>
             <Paper className="match-container">
                 <div className="match-info">
                     <div className="player-group">
-                        <Player player={player1} />
-                        {isTeamMatch && <Player player={player3} />}
+                        <Player player={match.player1} />
+                        {isTeamMatch && <Player player={match.player3} />}
                     </div>
                     <div className="versus-separator">VS</div>
                     <div className="player-group">
-                        <Player player={player2} />
-                        {isTeamMatch && <Player player={player4} />}
+                        <Player player={match.player2} />
+                        {isTeamMatch && <Player player={match.player4} />}
                     </div>
                 </div>
-                <div className="match-time">{time}</div>
+                <div className="match-time">{match.time}</div>
                 {hasScore && (
                     <div className="score-bar">
-                        <ScoreBarPart score={player1.score} percentage={percentages.player1} winner={player1.score > player2.score} color="red" />
-                        <ScoreBarPart score={player2.score} percentage={percentages.player2} winner={player2.score > player1.score} color="blue" />
+                        <ScoreBarPart score={match.player1.score} percentage={percentages.player1} winner={match.player1.score > match.player2.score} color="red" />
+                        <ScoreBarPart score={match.player2.score} percentage={percentages.player2} winner={match.player2.score > match.player1.score} color="blue" />
                     </div>
                 )}
             </Paper>
@@ -102,10 +208,15 @@ const Match = ({ player1, player2, player3, player4, time }) => {
     );
 };
 
-const Player = ({ player }) => (
+// Composant Player pour chaque joueur
+const Player = ({ player, large }) => (
     <div className="player">
-        <img src={`${process.env.PUBLIC_URL}${player.photo}`} alt={player.name} className="player-photo" />
-        <span className="player-name">{player.name}</span>
+        <img
+            src={`${process.env.PUBLIC_URL}${player.photo}`}
+            alt={player.name}
+            className={large ? "player-photo-large" : "player-photo"}
+        />
+        <span className={large ? "player-name-large" : "player-name"}>{player.name}</span>
     </div>
 );
 
