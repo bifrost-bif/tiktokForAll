@@ -55,7 +55,7 @@ const Calendar = () => {
                                     <Match
                                         key={matchIndex}
                                         match={match}
-                                        onClick={() => setOpenMatch({ ...match, date: journey.date })}
+                                        onClick={() =>{ if(!match.ouverture){setOpenMatch({ ...match, date: journey.date })}}}
                                     />
                                 ))}
                             </Grid>
@@ -74,7 +74,7 @@ const Calendar = () => {
 };
 
 const MatchModal = ({ match, onClose }) => (
-    <Dialog open={!!match} onClose={onClose} fullScreen>
+    <Dialog open={!!match} onClose={onClose} fullScreen className="dialog-container">
         <DialogTitle className="modal-title">
             <IconButton aria-label="close" onClick={onClose} className="modal-close-button">
                 <CloseIcon />
@@ -129,8 +129,12 @@ const CountdownTimer = ({ targetDate }) => {
         return () => clearInterval(timer);
     }, [targetDate]);
 
-    if (timeLeft.total <= 0) {
-        return <div className="countdown-complete">C'est l'heure du match !</div>;
+    if (timeLeft.days <= 0 && timeLeft.hours<= 0 && timeLeft.minutes<= 10 && timeLeft.minutes > 0) {
+        return <div className="countdown-complete">Match en cours !</div>;
+    }
+
+    if (timeLeft.days <= 0 && timeLeft.hours<= 0 && timeLeft.minutes<= 0 && timeLeft.seconds<= 0) {
+        return <div className="countdown-complete">Match terminé !</div>;
     }
     if(timeLeft.days == 0){
         return (

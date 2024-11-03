@@ -217,11 +217,21 @@
     color: #d32f2f;
 }
 
+/* Empêcher le défilement horizontal global */
+body {
+    overflow-x: hidden; /* Désactive le défilement horizontal sur la page */
+    margin: 0; /* Enlève les marges par défaut pour éviter tout décalage */
+}
+
+/* Modale ajustée pour éviter le défilement horizontal */
 .modal-content {
     background: radial-gradient(circle, #0c0c0c, #656666);
-    padding: 40px;
-    width: 88%;
-    max-height: 110vh; /* Ensure it doesn’t exceed the viewport height */
+    padding: 20px;
+    width: 88%; /* S'adapte à l'écran */
+    max-width: 500px; /* Limite la largeur pour un affichage harmonieux */
+    max-height: 90vh; /* Limite la hauteur */
+    overflow-y: auto; /* Permet seulement le défilement vertical si nécessaire */
+    overflow-x: hidden; /* Désactive le défilement horizontal */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -229,10 +239,42 @@
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    max-height: 78vh; /* Limite la hauteur du contenu */
-    overflow-y: auto;
-    
+    border-radius: 8px; /* Coins arrondis pour une apparence élégante */
 }
+
+/* Ajustements pour mobile */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 15px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    /* Assurez-vous que tous les éléments internes sont responsifs */
+    .modal-match-date, .modal-match-time, .countdown-timer-modal {
+        text-align: center;
+        white-space: nowrap; /* Empêche les sauts de ligne involontaires */
+        font-size: 1.6rem !important;
+        margin-top: 15px !important;
+    }
+
+    .versus-image-modal {
+        width: 80px;
+        height: 80px;
+    }
+
+    .countdown-timer-modal {
+        font-size: 1.4rem;
+        gap: 8px;
+    }
+
+    .modal-button {
+        font-size: 1rem !important;
+        padding: 8px 20px;
+    }
+}
+
+
 
 .modal-match-date {
     font-size: 2.1rem !important;
@@ -243,7 +285,7 @@
     margin-top: 40px !important;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    
 }
 
 /* Effet de "flamme blanche" */
@@ -296,10 +338,10 @@
 }
 
 .player-photo-large {
-    width: 110px; /* Taille augmentée pour l'affiche */
-    height: 110px;
+    width: 100px; /* Taille augmentée pour l'affiche */
+    height: 100px;
     border-radius: 50%;
-    margin-top: 50px; /* Down */
+    margin-top: 20px; /* Down */
     
     border: 3px solid rgba(226, 45, 45, 0.479); /* Bordure plus visible */
     transition: transform 0.3s ease; /* Animation au survol */
@@ -322,7 +364,7 @@
     width: 140px; /* Taille de l'image VS */
     height: 140px;
     margin-right:20px ; /* Espace autour de l'image pour séparer les joueurs */
-    margin-top: 30px; /* Down */
+    margin-top: 20px; /* Down */
 }
 
 .affiche-image-modal {
@@ -330,15 +372,16 @@
     height: 87px;
     margin-right: 0;
     opacity: 0.4; /* 1 est opaque, moins de 1 ajoute de la transparence */
-    transition: opacity 0.3s ease; /* Transition pour l'effet de survol */ 
+    transition: opacity 0.3s ease; /* Transition pour l'effet de survol */
+    margin-top: -20px!important; 
 }
 
 /*titre*/
 .affiche-title {
-    
     vertical-align: middle; /* Aligne l'image avec le texte ou autres éléments */
     transition: opacity 0.3s ease;
-    width: 370px;
+    width: 420px;
+    
 }
 
 /* Effet de survol pour rendre l'image opaque quand on passe la souris dessus */
@@ -346,12 +389,12 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: bold;
     color: #ff00009c;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
     margin-top: 0;
-    opacity: 0.3!important;
+    opacity: 0.2!important;
 }
 
 .countdown-complete {
@@ -379,7 +422,7 @@
     display: inline-flex;
     align-items: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 25px!important;
+    margin-top: 10px!important;
     font-weight: bold!important;
 }
 
