@@ -4,46 +4,78 @@
       "id": 1,
       "name": "Achref",
       "flag": "/images/profiles/ashref_officiel.png",
-      "warnings": 1,
-      "reason": "Ouverture simultanée de lives ",
       "date": "2024-11-03",
-      "status": "Active"
-    },
-    {
-      "id": 2,
-      "name": "Fathi",
-      "flag": "/images/profiles/fathi_3jej.png",
-      "warnings": 1,
-      "reason": "Ouverture simultanée de lives" ,
-      "date": "2024-11-03",
-      "status": "Active"
-    },
-    {
-      "id": 3,
-      "name": "Kinen",
-      "flag": "/images/profiles/kinen007.png",
-      "warnings": 1,
-      "reason": "Ouverture simultanée de lives ",
-      "date": "2024-11-03",
-      "status": "Active"
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
     },
     {
       "id": 4,
       "name": "Tiger",
       "flag": "/images/profiles/big.heart129.png",
-      "warnings": 1,
-      "reason": "Ouverture simultanée de lives ",
       "date": "2024-11-03",
-      "status": "Active"
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
+    },
+    {
+      "id": 4,
+      "name": "Marwen",
+      "flag": "/images/profiles/marwen.07.png",
+      "date": "2024-11-04",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
     },
     {
       "id": 5,
-      "name": "Pap Malik",
-      "flag": "/images/profiles/malek.louati.2.png",
-      "warnings": 1,
-      "reason": "Ouverture simultanée de lives ",
+      "name": "Anis",
+      "flag": "/images/profiles/ben.salem.anis.png",
       "date": "2024-11-03",
-      "status": "Active"
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "1",
+      "niv3": "0",
+      "niv4": "0"
+    },
+    {
+      "id": 5,
+      "name": "el 5al",
+      "flag": "/images/profiles/5al.png",
+      "date": "2024-11-04",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "1",
+      "niv3": "0",
+      "niv4": "0"
+    },
+    {
+      "id": 2,
+      "name": "Fathi",
+      "flag": "/images/profiles/fathi_3jej.png",
+      "date": "2024-11-03",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
+    },
+    {
+      "id": 3,
+      "name": "Kinen",
+      "flag": "/images/profiles/kinen007.png",
+      "date": "2024-11-03",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
     }
   ],
   "knockoutMatches": {
@@ -495,8 +527,8 @@
       "matches": [
         {
           "player1": {
-            "name": "Colombi",
-            "photo": "/images/profiles/colombi_oussama.png",
+            "name": "Sameh",
+            "photo": "/images/profiles/sameh.ba.png",
             "score": -1
           },
           "player2": {
@@ -863,8 +895,8 @@
       "matches": [
         {
           "player1": {
-            "name": "Sameh",
-            "photo": "/images/profiles/sameh.ba.png",
+            "name": "Colombi",
+            "photo": "/images/profiles/colombi_oussama.png",
             "score": -1
           },
           "player2": {
