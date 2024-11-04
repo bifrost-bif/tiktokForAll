@@ -185,11 +185,12 @@ const Match = ({ match, onClick }) => {
     const isTeamMatch = match.player3 && match.player4;
     const hasScore = match.player1.score !== -1 && match.player2.score !== -1 && (!isTeamMatch || (match.player3.score !== -1 && match.player4.score !== -1));
     const percentages = hasScore ? calculatePercentage(match.player1.score, match.player2.score) : { player1: 50, player2: 50 };
-
+    
     return (
         <Grid item xs={12} sm={6} md={5} onClick={onClick}>
-            <Paper className="match-container">
+            <Paper className={`match-container ${match.report === "true" ? 'postponed-match' : ''}`}>
                 <div className="match-info">
+                    {match.report === "true" && <div className="postponed-overlay">Reporté</div>}
                     <div className="player-group">
                         <Player player={match.player1} />
                         {isTeamMatch && <Player player={match.player3} />}
@@ -211,6 +212,7 @@ const Match = ({ match, onClick }) => {
         </Grid>
     );
 };
+
 
 // Composant Player pour chaque joueur
 const Player = ({ player, large }) => (

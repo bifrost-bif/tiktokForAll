@@ -426,3 +426,22 @@ body {
     font-weight: bold!important;
 }
 
+.postponed-match {
+    background-color: #f5f5f5; /* Light gray background */
+    opacity: 0.6; /* Make it slightly transparent */
+    border: 2px dashed #ff9800; /* Add a dashed orange border */
+    position: relative;
+}
+
+.postponed-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 165, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
