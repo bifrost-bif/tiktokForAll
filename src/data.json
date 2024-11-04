@@ -402,12 +402,12 @@
           "player1": {
             "name": "Hend",
             "photo": "/images/profiles/hendab7.png",
-            "score": -1
+            "score": 300
           },
           "player2": {
             "name": "Zaman",
             "photo": "/images/profiles/zamanino.png",
-            "score": -1
+            "score": 257
           },
           "time": "19:45"
         },
@@ -415,12 +415,12 @@
           "player1": {
             "name": "Brabus",
             "photo": "/images/profiles/brabus372.png",
-            "score": -1
+            "score": 496
           },
           "player2": {
             "name": "Amyr",
             "photo": "/images/profiles/amir__hajji.png",
-            "score": -1
+            "score": 630
           },
           "time": "20:15"
         },
@@ -428,12 +428,12 @@
           "player1": {
             "name": "Chbaya7",
             "photo": "/images/profiles/bilel.chbayah.png",
-            "score": -1
+            "score": 19
           },
           "player2": {
             "name": "Amira",
             "photo": "/images/profiles/amiraomriii.png",
-            "score": -1
+            "score": 14
           },
           "time": "20:30"
         },
@@ -441,12 +441,12 @@
           "player1": {
             "name": "Skander",
             "photo": "/images/profiles/skander_rezgui.png",
-            "score": -1
+            "score": 543
           },
           "player2": {
             "name": "Tiger",
             "photo": "/images/profiles/big.heart129.png",
-            "score": -1
+            "score": 866
           },
           "time": "21:00"
         },
@@ -454,12 +454,12 @@
           "player1": {
             "name": "Charchabil",
             "photo": "/images/profiles/garga044.png",
-            "score": -1
+            "score": 143
           },
           "player2": {
             "name": "Faj3a",
             "photo": "/images/profiles/limar8969.png",
-            "score": -1
+            "score": 49
           },
           "time": "21:15"
         }
@@ -1511,37 +1511,38 @@
     {
       "groupName": "Groupe A2",
       "teams": [
-        {
-          "id": 1,
-          "name": "Brabus",
-          "flag": "/images/profiles/brabus372.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
+        
         {
           "id": 2,
           "name": "Skander",
           "flag": "/images/profiles/skander_rezgui.png",
-          "played": 0,
-          "coins": "0k",
+          "played": 1,
+          "coins": "543k",
+          "points": 0
+        },
+        {
+          "id": 1,
+          "name": "Brabus",
+          "flag": "/images/profiles/brabus372.png",
+          "played": 1,
+          "coins": "496k",
           "points": 0
         },
         {
           "id": 3,
           "name": "Tiger",
           "flag": "/images/profiles/big.heart129.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
+          "played": 1,
+          "coins": "866k",
+          "points": 2
         },
         {
           "id": 4,
           "name": "Amyr",
           "flag": "/images/profiles/amir__hajji.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
+          "played": 1,
+          "coins": "630k",
+          "points": 2
         }
       ]
     },
@@ -1675,36 +1676,37 @@
     {
       "groupName": "Groupe B2",
       "teams": [
-        {
-          "id": 1,
-          "name": "Chbaya7",
-          "flag": "/images/profiles/bilel.chbayah.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
+
         {
           "id": 2,
           "name": "Charchabil",
           "flag": "/images/profiles/garga044.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
+          "played": 1,
+          "coins": "143k",
+          "points": 2
+        },
+        {
+          "id": 1,
+          "name": "Chbaya7",
+          "flag": "/images/profiles/bilel.chbayah.png",
+          "played": 1,
+          "coins": "19k",
+          "points": 2
         },
         {
           "id": 3,
           "name": "Faj3a",
           "flag": "/images/profiles/limar8969.png",
-          "played": 0,
-          "coins": "0k",
+          "played": 1,
+          "coins": "49k",
           "points": 0
         },
         {
           "id": 4,
           "name": "Amira",
           "flag": "/images/profiles/amiraomriii.png",
-          "played": 0,
-          "coins": "0k",
+          "played": 1,
+          "coins": "14k",
           "points": 0
         }
       ]
@@ -1757,18 +1759,18 @@
     {
       "groupName": "Groupe B4",
       "teams": [
-        {
-          "id": 1,
-          "name": "Seif",
-          "flag": "/images/profiles/seifbenmustapha.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
+        
         {
           "id": 2,
           "name": "Zaman",
           "flag": "/images/profiles/zamanino.png",
+          "played": 1,
+          "coins": "257k",
+          "points": 0
+        },{
+          "id": 1,
+          "name": "Seif",
+          "flag": "/images/profiles/seifbenmustapha.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -1793,9 +1795,9 @@
           "id": 4,
           "name": "Hend",
           "flag": "/images/profiles/hendab7.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
+          "played": 1,
+          "coins": "300k",
+          "points": 2
         }
       ]
     }
