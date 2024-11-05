@@ -1751,16 +1751,8 @@
           "id": 2,
           "name": "Couloumbi",
           "flag": "/images/profiles/www.couloumbi.png",
-          "played": 0,
-          "coins": "212k",
-          "points": 2
-        },
-        {
-          "id": 3,
-          "name": "Eva",
-          "flag": "/images/profiles/eva.png",
           "played": 1,
-          "coins": "67k",
+          "coins": "212k",
           "points": 2
         },
         {
@@ -1769,6 +1761,14 @@
           "flag": "/images/profiles/maherncycm7.png",
           "played": 1,
           "coins": "178k",
+          "points": 2
+        },
+        {
+          "id": 3,
+          "name": "Eva",
+          "flag": "/images/profiles/eva.png",
+          "played": 1,
+          "coins": "67k",
           "points": 2
         },
         {
