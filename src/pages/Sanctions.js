@@ -34,7 +34,7 @@ const Sanctions = () => {
     const [sanctionsData, setSanctionsData] = useState(
         // Trie les données par date en format ISO pour garantir l'ordre chronologique
         data.sanctions
-            .map(joueur => ({ ...joueur, selectedLevel: 'niv3' })) // Initialise chaque joueur avec le niveau par défaut 'niv3'
+            .map(joueur => ({ ...joueur, selectedLevel: 'niv2' })) // Initialise chaque joueur avec le niveau par défaut 'niv3'
             .sort((a, b) => new Date(b.date) - new Date(a.date)) // Trie les joueurs par date décroissante
     );
 
@@ -101,7 +101,7 @@ const Sanctions = () => {
                                             <TableCell align="center" style={getStatusStyle(joueur.status)}>
                                                 {joueur.status}
                                             </TableCell>
-                                            <TableCell align="center">
+                                            <TableCell align="left">
                                                 {getWarningsForLevel(joueur, joueur.selectedLevel)} {/* Affiche le nombre d'avertissements pour le niveau sélectionné */}
                                             </TableCell>
                                             <TableCell align="center">{joueur.date}</TableCell>
