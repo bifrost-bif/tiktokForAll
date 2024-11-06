@@ -562,12 +562,12 @@
           "player1": {
             "name": "Sameh",
             "photo": "/images/profiles/sameh.ba.png",
-            "score": -1
+            "score": 486
           },
           "player2": {
             "name": "Ibn Tunis",
             "photo": "/images/profiles/marouane_suisse88.png",
-            "score": -1
+            "score": 413
           },
           "time": "20:15"
         },
@@ -575,12 +575,12 @@
           "player1": {
             "name": "Seif",
             "photo": "/images/profiles/seifbenmustapha.png",
-            "score": -1
+            "score": 11
           },
           "player2": {
             "name": "Dali",
             "photo": "/images/profiles/dali_elghoul.png",
-            "score": -1
+            "score": 132
           },
           "time": "20:30"
         },
@@ -588,12 +588,12 @@
           "player1": {
             "name": "Ashref",
             "photo": "/images/profiles/ashref_officiel.png",
-            "score": -1
+            "score": 332
           },
           "player2": {
             "name": "Syrinne",
             "photo": "/images/profiles/sy_rinnee.png",
-            "score": -1
+            "score": 320
           },
           "time": "21:00"
         },
@@ -601,12 +601,12 @@
           "player1": {
             "name": "Zaman",
             "photo": "/images/profiles/zamanino.png",
-            "score": -1
+            "score": 147
           },
           "player2": {
             "name": "Mosamem",
             "photo": "/images/profiles/mosamem.png",
-            "score": -1
+            "score": 197
           },
           "time": "21:15"
         }
@@ -1628,41 +1628,41 @@
       "groupName": "Groupe A4",
       "teams": [
         {
-          "id": 1,
-          "name": "Colombi",
-          "flag": "/images/profiles/colombi_oussama.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
+          "id": 5,
+          "name": "Sameh",
+          "flag": "/images/profiles/sameh.ba.png",
+          "played": 1,
+          "coins": "486k",
+          "points": 2
         },
         {
           "id": 2,
           "name": "Ashref",
           "flag": "/images/profiles/ashref_officiel.png",
-          "played": 0,
-          "coins": "0k",
+          "played": 1,
+          "coins": "332k",
+          "points": 2
+        },
+        {
+          "id": 4,
+          "name": "Ibn Tunis",
+          "flag": "/images/profiles/marouane_suisse88.png",
+          "played": 1,
+          "coins": "413k",
           "points": 0
         },
         {
           "id": 3,
           "name": "Syrinne",
           "flag": "/images/profiles/sy_rinnee.png",
-          "played": 0,
-          "coins": "0k",
+          "played": 1,
+          "coins": "320k",
           "points": 0
         },
         {
-          "id": 4,
-          "name": "Ibn Tunis",
-          "flag": "/images/profiles/marouane_suisse88.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "Sameh",
-          "flag": "/images/profiles/sameh.ba.png",
+          "id": 1,
+          "name": "Colombi",
+          "flag": "/images/profiles/colombi_oussama.png",
           "played": 0,
           "coins": "0k",
           "points": 0
@@ -1792,38 +1792,6 @@
     {
       "groupName": "Groupe B4",
       "teams": [
-        
-        {
-          "id": 2,
-          "name": "Zaman",
-          "flag": "/images/profiles/zamanino.png",
-          "played": 1,
-          "coins": "257k",
-          "points": 0
-        },{
-          "id": 1,
-          "name": "Seif",
-          "flag": "/images/profiles/seifbenmustapha.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "Mosamem",
-          "flag": "/images/profiles/mosamem.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
-        {
-          "id": 5,
-          "name": "Dali",
-          "flag": "/images/profiles/dali_elghoul.png",
-          "played": 0,
-          "coins": "0k",
-          "points": 0
-        },
         {
           "id": 4,
           "name": "Hend",
@@ -1831,6 +1799,37 @@
           "played": 1,
           "coins": "300k",
           "points": 2
+        },
+        {
+          "id": 3,
+          "name": "Mosamem",
+          "flag": "/images/profiles/mosamem.png",
+          "played": 1,
+          "coins": "188k",
+          "points": 2
+        },
+        {
+          "id": 5,
+          "name": "Dali",
+          "flag": "/images/profiles/dali_elghoul.png",
+          "played": 1,
+          "coins": "132k",
+          "points": 2
+        },
+        {
+          "id": 2,
+          "name": "Zaman",
+          "flag": "/images/profiles/zamanino.png",
+          "played": 2,
+          "coins": "403k",
+          "points": 0
+        },{
+          "id": 1,
+          "name": "Seif",
+          "flag": "/images/profiles/seifbenmustapha.png",
+          "played": 1,
+          "coins": "11kk",
+          "points": 0
         }
       ]
     }
