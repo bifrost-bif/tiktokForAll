@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Navbar.css'; // Importer le CSS pour l'animation
 
 const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -33,8 +33,8 @@ const Navbar = () => {
                         to={`/${text.replace(/\s/g, '-').toLowerCase()}`} 
                         key={index}
                         sx={{
-                            borderBottom: index !== 6 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none', // Séparation entre éléments
-                            py: 1.5, // Espacement vertical
+                            borderBottom: index !== 6 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+                            py: 1.5,
                         }}
                     >
                         <ListItemText primary={text} sx={{ textAlign: 'center', fontSize: '1.5rem', color: '#f5f5f5' }} />
@@ -58,7 +58,7 @@ const Navbar = () => {
                 }}
             >
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                    {/* Logo et Titre avec des animations indépendantes */}
+                    {/* Logo et Titre avec des animations indépendantes en mobile uniquement */}
                     <Box
                         sx={{
                             display: 'flex',
@@ -71,24 +71,25 @@ const Navbar = () => {
                         <img
                             src={`${process.env.PUBLIC_URL}/images/tiktoklogo.png`}
                             alt="Logo"
-                            className="navbar-logo"
+                            className={`navbar-logo ${mobileOpen ? 'animate-logo' : ''}`} // Ajout de la classe d'animation en mode mobile
                             style={{
                                 width: mobileOpen ? '50px' : '40px',
                                 height: mobileOpen ? '50px' : '40px',
                                 transition: 'width 0.5s ease, height 0.5s ease, transform 0.5s ease',
-                                transform: mobileOpen ? 'translate(19vh, 19vh) scale(1.8)' : 'translate(0, 0) scale(1)', // Déplacement et agrandissement
+                                transform: mobileOpen ? 'translate(19vh, 19vh) scale(1.8)' : 'translate(0, 0) scale(1)', // Déplacement et agrandissement en mobile
                             }}
                         />
                         <Typography 
                             variant="h6" 
                             sx={{ 
                                 fontWeight: 'bold', 
-                                color: '#ecf0f1',
+                                color: mobileOpen ? '#E63946' : '#ecf0f1', // Couleur du titre modifiée
                                 fontSize: mobileOpen ? '1.8rem' : '1.3rem',
-                                transition: 'font-size 0.5s ease, transform 0.5s ease',
-                                transform: mobileOpen ? 'translate(0, 10vh)' : 'translate(0, 0)', // Déplacement indépendant du titre
+                                transition: 'color 0.5s ease, font-size 0.5s ease, transform 0.5s ease',
+                                transform: mobileOpen ? 'translate(0, 10vh)' : 'translate(0, 0)', // Déplacement indépendant du titre en mobile
                                 textAlign: mobileOpen ? 'center' : 'left', 
                                 width: mobileOpen ? '100%' : 'auto',
+                                display: { xs: 'block', sm: 'none' } // Affiché uniquement en mobile
                             }}
                         >
                             TIKTOK FOR ALL
