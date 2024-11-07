@@ -345,7 +345,9 @@
             "photo": "/images/profiles/sandro.png",
             "score": -1
           },
-          "time": "19:30"
+          "time": "19:30",
+          "forfait":"Sandro",
+          "motif_forfait":"absent"
         },
         {
           "player1": {
@@ -512,7 +514,9 @@
             "photo": "/images/profiles/thalaftw.png",
             "score": -1
           },
-          "time": "20:15"
+          "time": "20:15",
+          "forfait":"Sandro",
+          "motif_forfait":"absent"
         },
         {
           "player1": {
@@ -678,7 +682,9 @@
             "photo": "/images/profiles/souhaiel_junkremoval03.png",
             "score": -1
           },
-          "time": "21:00"
+          "time": "21:00",
+          "forfait":"Anis",
+          "motif_forfait":"sanctionné"
         },
         {
           "player1": {
@@ -1828,7 +1834,7 @@
           "name": "Seif",
           "flag": "/images/profiles/seifbenmustapha.png",
           "played": 1,
-          "coins": "11kk",
+          "coins": "11k",
           "points": 0
         }
       ]

@@ -183,26 +183,42 @@ const calculateTimeLeft = (targetDate) => {
 
 const Match = ({ match, onClick }) => {
     const isTeamMatch = match.player3 && match.player4;
-    const hasScore = match.player1.score !== -1 && match.player2.score !== -1 && (!isTeamMatch || (match.player3.score !== -1 && match.player4.score !== -1));
+    const hasScore = match.player1.score !== -1 && match.player2.score !== -1 &&
+                     (!isTeamMatch || (match.player3.score !== -1 && match.player4.score !== -1));
     const percentages = hasScore ? calculatePercentage(match.player1.score, match.player2.score) : { player1: 50, player2: 50 };
-    
+
+    // Check for forfeit and determine overlay styles
+    const isForfeit = match.forfait;
+    const getPlayerOverlayStyle = (playerName) => {
+        if (isForfeit) {
+            return playerName === match.forfait ? 'forfeit-loser-overlay' : 'forfeit-winner-overlay';
+        }
+        return '';
+    };
+
+    // Generate forfeit message with motif
+    const forfeitReason = match.motif_forfait ? `${match.motif_forfait}` : '';
+    const forfeitMessage = `${match.forfait} ${forfeitReason}, victoire automatique`.trim();
+
     return (
         <Grid item xs={12} sm={6} md={5} onClick={onClick}>
             <Paper className={`match-container ${match.report === "true" ? 'postponed-match' : ''}`}>
                 <div className="match-info">
                     {match.report === "true" && <div className="postponed-overlay">Reporté</div>}
-                    <div className="player-group">
+                    <div className={`player-group ${getPlayerOverlayStyle(match.player1.name)}`}>
                         <Player player={match.player1} />
                         {isTeamMatch && <Player player={match.player3} />}
                     </div>
                     <div className="versus-separator">VS</div>
-                    <div className="player-group">
+                    <div className={`player-group ${getPlayerOverlayStyle(match.player2.name)}`}>
                         <Player player={match.player2} />
                         {isTeamMatch && <Player player={match.player4} />}
                     </div>
                 </div>
-                <div className="match-time">{match.time}</div>
-                {hasScore && (
+                <div className="match-time">
+                    {isForfeit ? forfeitMessage : match.time}
+                </div>
+                {!isForfeit && hasScore && (
                     <div className="score-bar">
                         <ScoreBarPart score={match.player1.score} percentage={percentages.player1} winner={match.player1.score > match.player2.score} color="red" />
                         <ScoreBarPart score={match.player2.score} percentage={percentages.player2} winner={match.player2.score > match.player1.score} color="blue" />
