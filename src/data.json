@@ -1,6 +1,39 @@
 {
   "sanctions": [
     {
+      "id": 6,
+      "name": "Sag3",
+      "flag": "/images/profiles/dr.sag3.01.png",
+      "date": "2024-11-07",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "1",
+      "niv3": "0",
+      "niv4": "0"
+    },
+    {
+      "id": 6,
+      "name": "Faj3a",
+      "flag": "/images/profiles/limar8969.png",
+      "date": "2024-11-07",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
+    },
+    {
+      "id": 5,
+      "name": "Fathi",
+      "flag": "/images/profiles/fathi_3jej.png",
+      "date": "2024-11-07",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "2",
+      "niv4": "2"
+    },
+    {
       "id": 5,
       "name": "Anis",
       "flag": "/images/profiles/ben.salem.anis.png",
@@ -623,12 +656,12 @@
           "player1": {
             "name": "Marwen",
             "photo": "/images/profiles/marwen.07.png",
-            "score": -1
+            "score": 37
           },
           "player2": {
             "name": "Houda",
             "photo": "/images/profiles/houda.png",
-            "score": 10
+            "score": 241
           },
           "time": "19:30"
         },
@@ -636,12 +669,12 @@
           "player1": {
             "name": "Maher",
             "photo": "/images/profiles/maherncycm7.png",
-            "score": -1
+            "score": 308
           },
           "player2": {
             "name": "Couloumbi",
             "photo": "/images/profiles/www.couloumbi.png",
-            "score": -1
+            "score": 375
           },
           "time": "19:45"
         },
@@ -656,18 +689,20 @@
             "photo": "/images/profiles/5al.png",
             "score": -1
           },
-          "time": "20:15"
+          "time": "20:15",
+          "forfait":"Sag3",
+          "motif_forfait":"a refusé de jouer"
         },
         {
           "player1": {
             "name": "Fares",
             "photo": "/images/profiles/faresbabay.png",
-            "score": -1
+            "score": 30
           },
           "player2": {
             "name": "Trabelsi",
             "photo": "/images/profiles/mtrabelsi.png",
-            "score": -1
+            "score": 129
           },
           "time": "20:30"
         },
@@ -690,12 +725,12 @@
           "player1": {
             "name": "Youneni",
             "photo": "/images/profiles/nazz_elyouneni.png",
-            "score": -1
+            "score": 81
           },
           "player2": {
             "name": "Fathi",
             "photo": "/images/profiles/fathi_3jej.png",
-            "score": -1
+            "score": 174
           },
           "time": "21:15"
         }
@@ -1517,9 +1552,9 @@
           "id": 1,
           "name": "Khal",
           "flag": "/images/profiles/5al.png",
-          "played": 1,
+          "played": 2,
           "coins": "169k",
-          "points": 2
+          "points": 4
         },
         {
           "id": 2,
@@ -1541,7 +1576,7 @@
           "id": 3,
           "name": "Sag3",
           "flag": "/images/profiles/dr.sag3.01.png",
-          "played": 1,
+          "played": 2,
           "coins": "42k",
           "points": 0
         }
@@ -1682,33 +1717,33 @@
           "id": 1,
           "name": "Fares",
           "flag": "/images/profiles/faresbabay.png",
-          "played": 1,
-          "coins": "109k",
+          "played": 2,
+          "coins": "139k",
+          "points": 4
+        },
+        {
+          "id": 4,
+          "name": "Fathi",
+          "flag": "/images/profiles/fathi_3jej.png",
+          "played": 2,
+          "coins": "176k",
           "points": 2
         },
         {
           "id": 2,
           "name": "Trabelsi",
           "flag": "/images/profiles/mtrabelsi.png",
-          "played": 1,
-          "coins": "48k",
-          "points": 0
+          "played": 2,
+          "coins": "177k",
+          "points": 2
         },
         {
           "id": 3,
           "name": "Youneni",
           "flag": "/images/profiles/nazz_elyouneni.png",
-          "played": 1,
-          "coins": "88k",
+          "played": 2,
+          "coins": "169k",
           "points": 2
-        },
-        {
-          "id": 4,
-          "name": "Fathi",
-          "flag": "/images/profiles/fathi_3jej.png",
-          "played": 1,
-          "coins": "2k",
-          "points": 0
         }
       ]
     },
@@ -1757,17 +1792,17 @@
           "id": 2,
           "name": "Couloumbi",
           "flag": "/images/profiles/www.couloumbi.png",
-          "played": 1,
-          "coins": "212k",
-          "points": 2
+          "played": 2,
+          "coins": "587k",
+          "points": 3
         },
         {
           "id": 5,
           "name": "Maher",
           "flag": "/images/profiles/maherncycm7.png",
-          "played": 1,
-          "coins": "178k",
-          "points": 2
+          "played": 2,
+          "coins": "486k",
+          "points": 3
         },
         {
           "id": 3,
