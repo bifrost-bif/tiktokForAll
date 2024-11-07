@@ -1,33 +1,139 @@
-/* Style pour les boutons de la barre de navigation */
-.MuiButton-root {
-    text-transform: none; /* Désactiver les majuscules par défaut */
-    font-size: 1rem; /* Taille de police */
-    transition: all 0.3s ease; /* Animation douce pour le survol */
+/* Style global pour la barre de navigation */
+.navbar {
+    background: #282828 !important; /* Fond sombre */
+    color: #f5f5f5 !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5) !important;
+    padding: 10px 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
 }
 
-.MuiButton-root:hover {
-    color: #3498db; /* Couleur bleue élégante lors du survol */
+/* Conteneur du logo et du titre */
+.navbar-logo-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 8px 12px !important;
 }
 
-/* Ajuster le logo ou le titre */
-.MuiTypography-root {
-    font-family: 'Roboto', sans-serif; /* Police moderne */
-}
-/* Style pour rendre le logo circulaire */
+/* Logo de la Navbar */
 .navbar-logo {
-    width: 90px; /* Largeur du logo */
-    height: 90px; /* Hauteur du logo */
-    border-radius: 50%; /* Bordure ronde pour rendre l'image circulaire */
-    object-fit: cover; /* Ajuste l'image pour qu'elle s'adapte au conteneur */
+    width: 47px !important;
+    height: 47px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    box-shadow: 0px 4px 12px rgba(255, 105, 180, 0.5) !important;
 }
 
-.navbar-mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
-    overflow-y: auto;
-    z-index: 999;
+.navbar-logo:hover {
+    transform: scale(1.1) !important;
+    
+}
+
+/* Titre de la Navbar */
+.navbar-title {
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    color: #f5f5f5 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    transition: color 0.3s ease !important;
+}
+
+.navbar-title:hover {
+    color: #ff79c6 !important;
+}
+
+/* Icône du menu pour mobile */
+.MuiIconButton-root {
+    color: #f5f5f5 !important;
+}
+
+/* Style pour les éléments de menu en liste */
+.navbar-menu {
+    display: flex;
+    gap: 15px; /* Espacement entre les éléments */
+    align-items: center;
+}
+
+.navbar-menu-item {
+    color: #d1d1d1 !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    text-transform: capitalize !important;
+    transition: color 0.3s ease, background-color 0.3s ease !important;
+    padding: 8px 12px !important;
+    border-radius: 5px; /* Coins légèrement arrondis pour chaque élément */
+    position: relative;
+    display: inline-block;
+}
+
+/* Ajout de séparation visuelle entre les éléments de menu */
+.navbar-menu-item:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Séparation subtile */
+    padding-right: 15px;
+}
+
+/* Effet de fond subtil au survol */
+.navbar-menu-item:hover {
+    color: #ff79c6 !important; /* Accent violet dynamique */
+    background-color: rgba(255, 255, 255, 0.05) !important; /* Fond léger au survol */
+    transform: scale(1.03) !important;
+}
+
+/* Drawer pour le menu mobile */
+.MuiDrawer-paper {
+    background: #282828 !important;
+    color: #f5f5f5 !important;
+    padding-top: 20px !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Menu mobile en colonne avec bordures */
+.drawer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.drawer-menu-item {
+    color: #d1d1d1;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: left;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.drawer-menu-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Séparation pour le menu mobile */
+}
+
+.drawer-menu-item:hover {
+    color: #ff79c6;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar-logo-container {
+        padding: 6px 10px !important;
+        gap: 8px !important;
+    }
+    .navbar-title {
+        font-size: 1.2rem !important;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar-menu-item {
+        font-size: 1rem !important;
+        padding: 8px 10px !important;
+    }
 }

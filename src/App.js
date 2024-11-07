@@ -30,22 +30,11 @@ function App() {
         });
 
         // Désactiver le clic droit et certains raccourcis pour limiter l'accès au code source
-        const disableRightClick = (e) => e.preventDefault();
-        const disableShortcutKeys = (e) => {
-            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-                e.preventDefault();
-                return false;
-            }
-        };
+ 
 
-        document.addEventListener('contextmenu', disableRightClick);
-        document.addEventListener('keydown', disableShortcutKeys);
 
-        // Nettoyage des événements à la désactivation du composant
-        return () => {
-            document.removeEventListener('contextmenu', disableRightClick);
-            document.removeEventListener('keydown', disableShortcutKeys);
-        };
+
+
     }, []);
 
     const handleInstallClick = () => {

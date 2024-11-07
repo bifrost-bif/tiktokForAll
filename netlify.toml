@@ -14,7 +14,7 @@ for = "/*"
     script-src 'self' 'nonce-random-nonce-value' https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com 'strict-dynamic' 'unsafe-inline';
     script-src-elem 'self' https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com;  # Optionnel: Ajoutez un hash si nécessaire
+    style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' https://uploads.tuntok.live data: https://pagead2.googlesyndication.com;
     connect-src 'self' https://www.googletagmanager.com https://plausible.io https://region1.google-analytics.com;

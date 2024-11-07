@@ -1,0 +1,55 @@
+/* index.css */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #bb86fc;
+  }
+  
+  a, .link, .App-link {
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  
+  a:hover, .link:hover, .App-link:hover {
+    color: #3700b3;
+    transition: color 0.3s ease;
+  }
+  
+  .install-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #03dac6;
+    color: #121212;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .install-button:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .install-button {
+      padding: 10px 16px;
+      font-size: 12px;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+  
