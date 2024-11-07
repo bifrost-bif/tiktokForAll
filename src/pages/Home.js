@@ -25,7 +25,7 @@ const Home = () => {
 
             {/* Bouton pour afficher/masquer le contenu */}
             <Box textAlign="center" mb={2}>
-                <Button variant="contained" color="primary" onClick={toggleContent}>
+                <Button className="button-voir-plus" variant="contained" color="primary" onClick={toggleContent}>
                     {isContentMinimized ? 'Voir Plus' : 'Réduire'}
                 </Button>
             </Box>
