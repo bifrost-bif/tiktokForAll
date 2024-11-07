@@ -72,10 +72,10 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/group-stage" element={<GroupStage />} />
                     <Route path="/knockout-stage" element={<KnockoutStage />} />
-                    <Route path="/joueurs-inscrit" element={<JoueursInscrits />} />
+                    <Route path="/joueurs-inscrits" element={<JoueursInscrits />} />
                     <Route path="/sanctions" element={<Sanctions />} />
                     <Route path="/eliminatoire" element={<KnockoutStage />} />
-                    <Route path="/classement" element={<GroupStage />} />
+                    <Route path="/phase-de-groupe" element={<GroupStage />} />
                     <Route path="/calendrier" element={<Calendar />} />
                     <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
                     <Route path="/mentions-legales" element={<MentionsLegales />} />
