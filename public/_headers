@@ -1,9 +1,10 @@
 /*
-  Content-Security-Policy: default-src 'self'; 
-                          script-src 'self' https://plausible.io https://www.googletagmanager.com https://pagead2.googlesyndication.com; 
-                          script-src-elem 'self' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://plausible.io;          
-                          style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
-                          style-src-elem 'self' https://fonts.googleapis.com; 
-                          font-src 'self' https://fonts.gstatic.com; 
-                          img-src 'self' https://uploads.tuntok.live data: https://pagead2.googlesyndication.com; 
-                          connect-src 'self' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://plausible.io;
+  Cache-Control: no-cache
+  Content-Security-Policy: default-src 'self';
+                           script-src 'self' 'nonce-random-nonce-value' https://www.tiktok.com https://www.googletagmanager.com;
+                           script-src-elem 'self' https://www.tiktok.com https://www.googletagmanager.com;
+                           style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+                           style-src-elem 'self' https://fonts.googleapis.com;
+                           font-src 'self' https://fonts.gstatic.com;
+                           img-src 'self' https://uploads.tuntok.live data:;
+                           connect-src 'self' https://www.googletagmanager.com;
