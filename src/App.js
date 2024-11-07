@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 import Home from './pages/Home';
@@ -15,22 +15,37 @@ import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 import MentionsLegales from './pages/MentionsLegales';
 import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import ContactDonnees from './pages/ContactDonnees';
-import Mosammin from './pages/Mosammin'; // Import the new Mosammin page
+import Mosammin from './pages/Mosammin'; // Import de la page Mosammin
 
 import './App.css'; // Fichier CSS pour styliser la page
 
-
 function App() {
-
     const [installPrompt, setInstallPrompt] = useState(null);
 
     useEffect(() => {
-        
         // Écouter l'événement 'beforeinstallprompt' pour capturer l'invite d'installation
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             setInstallPrompt(e); // Sauvegarde l'événement pour l'utiliser plus tard
         });
+
+        // Désactiver le clic droit et certains raccourcis pour limiter l'accès au code source
+        const disableRightClick = (e) => e.preventDefault();
+        const disableShortcutKeys = (e) => {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault();
+                return false;
+            }
+        };
+
+        document.addEventListener('contextmenu', disableRightClick);
+        document.addEventListener('keydown', disableShortcutKeys);
+
+        // Nettoyage des événements à la désactivation du composant
+        return () => {
+            document.removeEventListener('contextmenu', disableRightClick);
+            document.removeEventListener('keydown', disableShortcutKeys);
+        };
     }, []);
 
     const handleInstallClick = () => {
@@ -46,18 +61,18 @@ function App() {
             });
         }
     };
-    
+
     return (
         <Router>
-            <Navbar/> {/* Barre de navigation */}
+            <Navbar /> {/* Barre de navigation */}
             <div className="App">
                 {installPrompt && (
                     <button className="install-button" onClick={handleInstallClick}>
-                         Disponible en application mobile
+                        Disponible en application mobile
                     </button>
                 )}
 
-                {/* Instructions for iOS users to manually install the app */}
+                {/* Instructions pour les utilisateurs iOS pour installer l'application manuellement */}
                 {navigator.userAgent.includes("iPhone") && (
                     <div className="ios-install-instructions">
                         <p>Pour installer cette application sur votre iPhone, appuyez sur <strong>"Partager"</strong> dans la barre de navigation, puis sélectionnez <strong>"Ajouter à l'écran d'accueil"</strong>.</p>
@@ -65,22 +80,23 @@ function App() {
                 )}
 
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/group-stage" element={<GroupStage/>}/>
-                    <Route path="/knockout-stage" element={<KnockoutStage/>}/>
-                    <Route path="/joueurs-inscrit" element={<JoueursInscrits/>}/>
-                    <Route path="/sanctions" element={<Sanctions/>}/>
-                    <Route path="/eliminatoire" element={<KnockoutStage/>}/>
-                    <Route path="/classement" element={<GroupStage/>}/>
-                    <Route path="/calendrier" element={<Calendar/>}/>
-                    <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite/>}/>
-                    <Route path="/mentions-legales" element={<MentionsLegales/>}/>
-                    <Route path="/politique-cookies" element={<PolitiqueCookies/>}/>
-                    <Route path="/conditions-utilisation" element={<ConditionsUtilisation/>}/>
-                    <Route path="/contact-donnees" element={<ContactDonnees/>}/>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/group-stage" element={<GroupStage />} />
+                    <Route path="/knockout-stage" element={<KnockoutStage />} />
+                    <Route path="/joueurs-inscrit" element={<JoueursInscrits />} />
+                    <Route path="/sanctions" element={<Sanctions />} />
+                    <Route path="/eliminatoire" element={<KnockoutStage />} />
+                    <Route path="/classement" element={<GroupStage />} />
+                    <Route path="/calendrier" element={<Calendar />} />
+                    <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+                    <Route path="/mentions-legales" element={<MentionsLegales />} />
+                    <Route path="/politique-cookies" element={<PolitiqueCookies />} />
+                    <Route path="/conditions-utilisation" element={<ConditionsUtilisation />} />
+                    <Route path="/contact-donnees" element={<ContactDonnees />} />
                     <Route path="/mosammin" element={<Mosammin />} />
+                    <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
-                <Footer/> 
+                <Footer />
             </div>
         </Router>
     );
