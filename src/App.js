@@ -15,26 +15,36 @@ import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 import MentionsLegales from './pages/MentionsLegales';
 import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import ContactDonnees from './pages/ContactDonnees';
-import Mosammin from './pages/Mosammin'; // Import de la page Mosammin
+import Mosammin from './pages/Mosammin';
 
-import './App.css'; // Fichier CSS pour styliser la page
+import './App.css';
 
 function App() {
     const [installPrompt, setInstallPrompt] = useState(null);
 
     useEffect(() => {
-        // Écouter l'événement 'beforeinstallprompt' pour capturer l'invite d'installation
+        // Capture l'événement 'beforeinstallprompt' pour proposer l'installation
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
-            setInstallPrompt(e); // Sauvegarde l'événement pour l'utiliser plus tard
+            setInstallPrompt(e); // Sauvegarde l'événement pour une utilisation ultérieure
         });
 
-        // Désactiver le clic droit et certains raccourcis pour limiter l'accès au code source
- 
+        // Ajoute des restrictions sur le clic droit et les raccourcis pour limiter l'accès au code source
+        const handleContextMenu = (e) => e.preventDefault();
+        const handleKeyDown = (e) => {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'Shift')) {
+                e.preventDefault();
+            }
+        };
 
+        document.addEventListener('contextmenu', handleContextMenu);
+        document.addEventListener('keydown', handleKeyDown);
 
-
-
+        // Nettoyage des événements lors de la désactivation du composant
+        return () => {
+            document.removeEventListener('contextmenu', handleContextMenu);
+            document.removeEventListener('keydown', handleKeyDown);
+        };
     }, []);
 
     const handleInstallClick = () => {
@@ -61,7 +71,6 @@ function App() {
                     </button>
                 )}
 
-
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/group-stage" element={<GroupStage />} />
@@ -79,6 +88,7 @@ function App() {
                     <Route path="/mosammin" element={<Mosammin />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
+                
                 <Footer />
             </div>
         </Router>

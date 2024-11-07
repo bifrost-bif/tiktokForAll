@@ -214,7 +214,12 @@
 }
 
 .modal-close-button {
-    color: #d32f2f;
+    height: inherit;
+    color: #d32f2f!important;
+    position: absolute!important;
+    right: 175px!important;
+    top: 50px!important;
+    z-index: 10!important; /* Assurez-vous que l'icône de fermeture est au-dessus des autres éléments */
 }
 
 /* Empêcher le défilement horizontal global */
@@ -368,8 +373,8 @@ body {
 }
 
 .affiche-image-modal {
-    width: 90px;
-    height: 87px;
+    width: 90px!important;
+    height: 87px!important;
     margin-right: 0;
     opacity: 0.4; /* 1 est opaque, moins de 1 ajoute de la transparence */
     transition: opacity 0.3s ease; /* Transition pour l'effet de survol */
@@ -378,10 +383,10 @@ body {
 
 /*titre*/
 .affiche-title {
-    vertical-align: middle; /* Aligne l'image avec le texte ou autres éléments */
-    transition: opacity 0.3s ease;
-    width: 420px;
-    
+    max-width: 80%;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
 }
 
 /* Effet de survol pour rendre l'image opaque quand on passe la souris dessus */
@@ -414,16 +419,36 @@ body {
 }
 
 .modal-button {
-    padding: 10px 25px;
-    border-radius: 20px;
-    background-color: #f1f1f1;
-    color: rgba(226, 20, 20, 0.589)!important;
-    font-size: 1.2rem!important;
-    display: inline-flex;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    color: inherit; /* Inherit text color */
+    font-size: 1.5rem; /* Increase font size if needed */
+    font-weight: bold;
+    text-transform: uppercase; /* Optional: make it uppercase */
+    cursor: default; /* Not clickable */
+    margin: 0 auto;
+}
+
+/* Square modal styling */
+.dialog-container .modal-content {
+    border-radius: 0; /* Remove rounded corners */
+    padding: 20px;
+    width: 90%; /* Stretch to 90% of screen width */
+    height: 90vh; /* Occupy 90% of screen height */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 10px!important;
-    font-weight: bold!important;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+/* Adjust the top alignment and white space */
+.dialog-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 .postponed-match {

@@ -76,30 +76,29 @@ const Calendar = () => {
 const MatchModal = ({ match, onClose }) => (
     <Dialog open={!!match} onClose={onClose} fullScreen className="dialog-container">
         <DialogTitle className="modal-title">
-            <IconButton aria-label="close" onClick={onClose} className="modal-close-button">
-                <CloseIcon />
+            <IconButton 
+                aria-label="close" 
+                onClick={onClose} 
+                className="modal-close-button"
+                style={{ position: 'absolute', right: 16, top: 16, zIndex: 1000 }}
+                >
+            <CloseIcon fontSize="large" />
             </IconButton>
+
         </DialogTitle>
         <DialogContent className="modal-content" style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/images/fd-1.png)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        color: '#ffffff',
-    }}>
-        <CountdownTimer targetDate={`${match.date} ${match.time}`} /> {/* Compte à rebours pour la date du match */}
-        <img src="./images/titre.png" alt="tiktokForAll_icone_affiche" className="affiche-title" />
+            backgroundImage: `url(${process.env.PUBLIC_URL}/images/fd-1.png)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            color: '#ffffff'
+        }}>
+            <CountdownTimer targetDate={`${match.date} ${match.time}`} />
+        <img src="./images/titre.png" alt="tiktokForAll_icone_affiche" className="affiche-title" style={{ maxWidth: '80%', height: 'auto', width: '300px' }} />
             <div className="modal-players">
                 <Player player={match.player1} large />
                 <img src={`${process.env.PUBLIC_URL}/images/versus.png`} alt="Versus" className="versus-image-modal" />
                 <Player player={match.player2} large />
-                {match.player3 && (
-                    <>
-                        <Player player={match.player3} large />
-                        <img src="./images/versus.png" alt="Versus" className="versus-image-modal" />
-                        <Player player={match.player4} large />
-                    </>
-                )}
             </div>
             <Typography variant="h5" className="modal-match-date">{match.date}</Typography>
             <Typography>
@@ -109,10 +108,9 @@ const MatchModal = ({ match, onClose }) => (
             <Typography variant="h6" className="modal-match-time">
                 {match.time.replace(':', 'h')} 
             </Typography>
-            <Button className="modal-button">TUNTOK.LIVE</Button>
-
-
-            <img src="./images/tiktokForAll_icone_affiche.png" alt="tiktokForAll_icone_affiche" className="affiche-image-modal" />
+            <div >
+                <img src="./images/tiktokForAll_icone_affiche.png" className="affiche-image-modal" alt="Affiche Icon" />
+            </div>
         </DialogContent>
     </Dialog>
 );

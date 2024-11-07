@@ -100,3 +100,7 @@ html, body, #root {
   font-size: 0.9rem;
   color: #333;
 }
+
+.hide-navbar .navbar {
+  display: none!important;
+}

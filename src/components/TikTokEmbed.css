@@ -1,0 +1,19 @@
+/* TikTokEmbed.css */
+
+.tiktok-video {
+    max-width: 600px!important;
+    min-width: 440px!important;
+    margin-left: -5px!important;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.6); /* Dark background */
+    backdrop-filter: blur(5px); /* Subtle blur for elegance */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tiktok-video:hover {
+    transform: scale(1.02); /* Slight zoom on hover for interaction */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
