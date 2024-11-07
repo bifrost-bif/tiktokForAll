@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useMediaQuery } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Importer le CSS pour l'animation
+import './Navbar.css';
 
 const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const isMobile = useMediaQuery('(max-width:600px)'); // Détecte si l’écran est de petite taille
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -24,7 +25,6 @@ const Navbar = () => {
                 gap: 3,
             }}
         >
-            {/* Liste des éléments du menu avec séparation améliorée */}
             <List sx={{ width: '100%' }}>
                 {['Accueil', 'Joueurs Inscrits', 'Calendrier', 'Phase de groupe', 'Phase Éliminatoire', 'Sanctions', 'Mosammin'].map((text, index) => (
                     <ListItem 
@@ -46,9 +46,9 @@ const Navbar = () => {
 
     return (
         <>
-            {/* HEADER */}
+            {/* HEADER FIXE */}
             <AppBar
-                position="static"
+                position="fixed"  // Position fixe pour maintenir le header en haut
                 sx={{
                     backgroundColor: mobileOpen ? 'rgba(40, 40, 40, 0.9)' : '#282828',
                     width: '100%',
@@ -58,7 +58,6 @@ const Navbar = () => {
                 }}
             >
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                    {/* Logo et Titre avec des animations indépendantes en mobile uniquement */}
                     <Box
                         sx={{
                             display: 'flex',
@@ -71,32 +70,31 @@ const Navbar = () => {
                         <img
                             src={`${process.env.PUBLIC_URL}/images/tiktoklogo.png`}
                             alt="Logo"
-                            className={`navbar-logo ${mobileOpen ? 'animate-logo' : ''}`} // Ajout de la classe d'animation en mode mobile
+                            className={`navbar-logo ${mobileOpen ? 'animate-logo' : ''}`}
                             style={{
                                 width: mobileOpen ? '50px' : '40px',
                                 height: mobileOpen ? '50px' : '40px',
                                 transition: 'width 0.5s ease, height 0.5s ease, transform 0.5s ease',
-                                transform: mobileOpen ? 'translate(19vh, 19vh) scale(1.8)' : 'translate(0, 0) scale(1)', // Déplacement et agrandissement en mobile
+                                transform: mobileOpen && isMobile ? 'translate(40vw, 15vh) scale(1.5)' : 'translate(0, 0) scale(1)', 
                             }}
                         />
                         <Typography 
                             variant="h6" 
                             sx={{ 
                                 fontWeight: 'bold', 
-                                color: mobileOpen ? '#E63946' : '#ecf0f1', // Couleur du titre modifiée
+                                color: mobileOpen ? '#E63946' : '#ecf0f1',
                                 fontSize: mobileOpen ? '1.8rem' : '1.3rem',
                                 transition: 'color 0.5s ease, font-size 0.5s ease, transform 0.5s ease',
-                                transform: mobileOpen ? 'translate(0, 10vh)' : 'translate(0, 0)', // Déplacement indépendant du titre en mobile
+                                transform: mobileOpen && isMobile ? 'translateY(8vh)' : 'translateY(0)',
                                 textAlign: mobileOpen ? 'center' : 'left', 
                                 width: mobileOpen ? '100%' : 'auto',
-                                display: { xs: 'block', sm: 'none' } // Affiché uniquement en mobile
+                                display: { xs: 'block', sm: 'none' },
                             }}
                         >
                             TIKTOK FOR ALL
                         </Typography>
                     </Box>
 
-                    {/* Icône du menu pour mobile */}
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -107,7 +105,6 @@ const Navbar = () => {
                         <MenuIcon />
                     </IconButton>
 
-                    {/* Menu Horizontal pour les grands écrans */}
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: '30px', justifyContent: 'center', flexGrow: 1 }}>
                         <Button component={Link} to="/" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Accueil
@@ -153,6 +150,9 @@ const Navbar = () => {
             >
                 {drawer}
             </Drawer>
+
+            {/* Espace en haut pour compenser la hauteur du header fixe */}
+            <Box sx={{ marginTop: '64px' }} /> {/* Ajustez la valeur pour la hauteur du header */}
         </>
     );
 };
