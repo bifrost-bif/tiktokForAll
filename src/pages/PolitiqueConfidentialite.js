@@ -34,7 +34,7 @@ const PolitiqueConfidentialite = () => {
                 <li>Demander la rectification ou la suppression de vos données.</li>
                 <li>Vous opposer au traitement de vos données personnelles.</li>
             </ul>
-            <p>Pour exercer ces droits, veuillez nous contacter à <a href="mailto:contact@tiktokforall.com">contact@tiktokforall.com</a>.</p>
+            <p>Pour exercer ces droits, veuillez nous contacter à <a href="mailto:contact@tuntok.live">contact@tuntok.live</a>.</p>
         </div>
     );
 };
