@@ -25,6 +25,7 @@ function App() {
     const [installPrompt, setInstallPrompt] = useState(null);
 
     useEffect(() => {
+        
         // Écouter l'événement 'beforeinstallprompt' pour capturer l'invite d'installation
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
