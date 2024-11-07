@@ -21,7 +21,7 @@ const TikTokEmbed = ({ videoId }) => {
             className="tiktok-embed"
             cite={`https://www.tiktok.com/@schba31w/video/${videoId}`}
             data-video-id={videoId}
-            style={{ maxWidth: '605px', minWidth: '325px', margin: '0 auto' }}
+            style={{ maxHeight:'740px', minHeight:'500px', maxWidth: '505px', minWidth: '225px', margin: '0 auto' }}
         >
             <section></section>
         </blockquote>

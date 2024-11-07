@@ -61,12 +61,6 @@ function App() {
                     </button>
                 )}
 
-                {/* Instructions pour les utilisateurs iOS pour installer l'application manuellement */}
-                {navigator.userAgent.includes("iPhone") && (
-                    <div className="ios-install-instructions">
-                        <p>Pour installer cette application sur votre iPhone, appuyez sur <strong>"Partager"</strong> dans la barre de navigation, puis sélectionnez <strong>"Ajouter à l'écran d'accueil"</strong>.</p>
-                    </div>
-                )}
 
                 <Routes>
                     <Route path="/" element={<Home />} />
