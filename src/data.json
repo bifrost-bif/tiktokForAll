@@ -1713,14 +1713,7 @@
     {
       "groupName": "Groupe B1",
       "teams": [
-        {
-          "id": 2,
-          "name": "Trabelsi",
-          "flag": "/images/profiles/mtrabelsi.png",
-          "played": 2,
-          "coins": "177k",
-          "points": 2
-        },
+        
         {
           "id": 4,
           "name": "Fathi",
@@ -1730,11 +1723,11 @@
           "points": 2
         },
         {
-          "id": 1,
-          "name": "Fares",
-          "flag": "/images/profiles/faresbabay.png",
+          "id": 2,
+          "name": "Trabelsi",
+          "flag": "/images/profiles/mtrabelsi.png",
           "played": 2,
-          "coins": "139k",
+          "coins": "177k",
           "points": 2
         },
         {
@@ -1743,6 +1736,14 @@
           "flag": "/images/profiles/nazz_elyouneni.png",
           "played": 2,
           "coins": "169k",
+          "points": 2
+        },
+        {
+          "id": 1,
+          "name": "Fares",
+          "flag": "/images/profiles/faresbabay.png",
+          "played": 2,
+          "coins": "139k",
           "points": 2
         }
       ]

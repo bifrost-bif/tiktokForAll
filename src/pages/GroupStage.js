@@ -5,6 +5,11 @@ import data from '../data.json'; // Importer les données depuis le fichier JSON
 import './GroupStage.css'; // Fichier CSS pour styliser la page
 import TikTokProfileBanner from '../components/TikTokProfileBanner'; // Import TikTok embed component
 
+// Fonction utilitaire pour convertir les coins en un nombre pour comparaison
+const parseCoins = (coins) => {
+    return parseFloat(coins.replace('k', '')) * 1000;
+};
+
 // Style personnalisé pour les drapeaux
 const Flag = styled('img')({
     width: '60px',
@@ -58,7 +63,6 @@ const GroupStage = () => {
                     <Typography variant="body1" sx={{ fontSize: '1rem', color: '#1976D2', marginBottom: '10px' }}>
                         Live sur TikTok avec <strong>BACEM</strong>.
                     </Typography>
-                    {/* Utilisation du composant TikTokProfileBanner */}
                     <TikTokProfileBanner profile="bacem1tun" />
                 </Box>
             </div>
@@ -85,7 +89,12 @@ const GroupStage = () => {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {group.teams.slice().sort((a, b) => b.points - a.points).map((team, idx) => (
+                                        {group.teams.slice().sort((a, b) => {
+                                            if (b.points !== a.points) {
+                                                return b.points - a.points; // Trier par points
+                                            }
+                                            return parseCoins(b.coins) - parseCoins(a.coins); // Trier par coins si points égaux
+                                        }).map((team, idx) => (
                                             <TableRow key={team.id}>
                                                 <TableCell align="center">
                                                     <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
@@ -129,7 +138,12 @@ const GroupStage = () => {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {group.teams.slice().sort((a, b) => b.points - a.points).map((team, idx) => (
+                                        {group.teams.slice().sort((a, b) => {
+                                            if (b.points !== a.points) {
+                                                return b.points - a.points; // Trier par points
+                                            }
+                                            return parseCoins(b.coins) - parseCoins(a.coins); // Trier par coins si points égaux
+                                        }).map((team, idx) => (
                                             <TableRow key={team.id}>
                                                 <TableCell align="center">
                                                     <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
