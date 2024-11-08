@@ -1627,17 +1627,9 @@
           "id": 2,
           "name": "Houda",
           "flag": "/images/profiles/houda.png",
-          "played": 1,
-          "coins": "149k",
-          "points": 0
-        },
-        {
-          "id": 1,
-          "name": "Sandro",
-          "flag": "/images/profiles/sandro.png",
           "played": 2,
-          "coins": "0k",
-          "points": 0
+          "coins": "390k",
+          "points": 2
         },
         {
           "id": 3,
@@ -1645,6 +1637,14 @@
           "flag": "/images/profiles/khayri_89.png",
           "played": 1,
           "coins": "423k",
+          "points": 2
+        },
+        {
+          "id": 5,
+          "name": "Marwen",
+          "flag": "/images/profiles/marwen.07.png",
+          "played": 2,
+          "coins": "37k",
           "points": 2
         },
         {
@@ -1656,12 +1656,12 @@
           "points": 2
         },
         {
-          "id": 5,
-          "name": "Marwen",
-          "flag": "/images/profiles/marwen.07.png",
-          "played": 1,
+          "id": 1,
+          "name": "Sandro",
+          "flag": "/images/profiles/sandro.png",
+          "played": 2,
           "coins": "0k",
-          "points": 2
+          "points": 0
         }
       ]
     },
@@ -1714,12 +1714,12 @@
       "groupName": "Groupe B1",
       "teams": [
         {
-          "id": 1,
-          "name": "Fares",
-          "flag": "/images/profiles/faresbabay.png",
+          "id": 2,
+          "name": "Trabelsi",
+          "flag": "/images/profiles/mtrabelsi.png",
           "played": 2,
-          "coins": "139k",
-          "points": 4
+          "coins": "177k",
+          "points": 2
         },
         {
           "id": 4,
@@ -1730,11 +1730,11 @@
           "points": 2
         },
         {
-          "id": 2,
-          "name": "Trabelsi",
-          "flag": "/images/profiles/mtrabelsi.png",
+          "id": 1,
+          "name": "Fares",
+          "flag": "/images/profiles/faresbabay.png",
           "played": 2,
-          "coins": "177k",
+          "coins": "139k",
           "points": 2
         },
         {
