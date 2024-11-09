@@ -828,12 +828,12 @@
           "player1": {
             "name": "Tiger",
             "photo": "/images/profiles/big.heart129.png",
-            "score": -1
+            "score": 659
           },
           "player2": {
             "name": "Amyr",
             "photo": "/images/profiles/amir__hajji.png",
-            "score": -1
+            "score": 848
           },
           "time": "21:00"
         },

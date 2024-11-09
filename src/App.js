@@ -17,6 +17,8 @@ import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import ContactDonnees from './pages/ContactDonnees';
 import Mosammin from './pages/Mosammin';
 
+import AdminPage from './components/AdminPage';
+
 import './App.css';
 
 function App() {
@@ -86,6 +88,7 @@ function App() {
                     <Route path="/conditions-utilisation" element={<ConditionsUtilisation />} />
                     <Route path="/contact-donnees" element={<ContactDonnees />} />
                     <Route path="/mosammin" element={<Mosammin />} />
+                    <Route path="/admin" element={<AdminPage/> } />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
                 
