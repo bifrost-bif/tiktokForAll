@@ -161,3 +161,9 @@ table {
         overflow: hidden;
     }
 }
+
+/* Couleur pour les joueurs sanctionnés */
+.sanctioned-player {
+    background-color: rgba(255, 0, 0, 0.1); /* Fond rouge clair */
+    color: #ff0000; /* Texte en rouge */
+}

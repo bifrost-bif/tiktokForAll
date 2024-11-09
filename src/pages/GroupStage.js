@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Grid, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper, Divider, Box } from '@mui/material';
 import { styled } from '@mui/system';
-import data from '../data.json'; // Importer les données depuis le fichier JSON
-import './GroupStage.css'; // Fichier CSS pour styliser la page
-import TikTokProfileBanner from '../components/TikTokProfileBanner'; // Import TikTok embed component
+import data from '../data.json';
+import './GroupStage.css';
+import TikTokProfileBanner from '../components/TikTokProfileBanner';
 
 // Fonction utilitaire pour convertir les coins en un nombre pour comparaison
 const parseCoins = (coins) => {
@@ -91,11 +91,11 @@ const GroupStage = () => {
                                     <TableBody>
                                         {group.teams.slice().sort((a, b) => {
                                             if (b.points !== a.points) {
-                                                return b.points - a.points; // Trier par points
+                                                return b.points - a.points;
                                             }
-                                            return parseCoins(b.coins) - parseCoins(a.coins); // Trier par coins si points égaux
+                                            return parseCoins(b.coins) - parseCoins(a.coins);
                                         }).map((team, idx) => (
-                                            <TableRow key={team.id}>
+                                            <TableRow key={team.id} className={team.status === "Sanctionné" ? "sanctioned-player" : ""}>
                                                 <TableCell align="center">
                                                     <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
                                                 </TableCell>
@@ -140,11 +140,11 @@ const GroupStage = () => {
                                     <TableBody>
                                         {group.teams.slice().sort((a, b) => {
                                             if (b.points !== a.points) {
-                                                return b.points - a.points; // Trier par points
+                                                return b.points - a.points;
                                             }
-                                            return parseCoins(b.coins) - parseCoins(a.coins); // Trier par coins si points égaux
+                                            return parseCoins(b.coins) - parseCoins(a.coins);
                                         }).map((team, idx) => (
-                                            <TableRow key={team.id}>
+                                            <TableRow key={team.id} className={team.status === "Sanctionné" ? "sanctioned-player" : ""}>
                                                 <TableCell align="center">
                                                     <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
                                                 </TableCell>

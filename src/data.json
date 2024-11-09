@@ -1,10 +1,32 @@
 {
   "sanctions": [
     {
+      "id": 7,
+      "name": "Pap Malik",
+      "flag": "/images/profiles/malek.louati.2.png",
+      "date": "2024-11-08",
+      "status": "Sanctionné",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
+    },
+    {
+      "id": 4,
+      "name": "Fares",
+      "flag": "/images/profiles/faresbabay.png",
+      "date": "2024-11-08",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
+    },
+    {
       "id": 6,
       "name": "Sandro",
       "flag": "/images/profiles/sandro.png",
-      "date": "2024-11-07",
+      "date": "2024-11-08",
       "status": "Sanctionné",
       "niv1": "0",
       "niv2": "2",
@@ -754,12 +776,12 @@
           "player1": {
             "name": "Sameh",
             "photo": "/images/profiles/sameh.ba.png",
-            "score": -1
+            "score": 529
           },
           "player2": {
             "name": "Ashref",
             "photo": "/images/profiles/ashref_officiel.png",
-            "score": -1
+            "score": 533
           },
           "time": "19:30"
         },
@@ -767,12 +789,12 @@
           "player1": {
             "name": "Hend",
             "photo": "/images/profiles/hendab7.png",
-            "score": -1
+            "score": 170
           },
           "player2": {
             "name": "Seif",
             "photo": "/images/profiles/seifbenmustapha.png",
-            "score": -1
+            "score": 47
           },
           "time": "19:45"
         },
@@ -780,12 +802,12 @@
           "player1": {
             "name": "Brabus",
             "photo": "/images/profiles/brabus372.png",
-            "score": -1
+            "score": 296
           },
           "player2": {
             "name": "Skander",
             "photo": "/images/profiles/skander_rezgui.png",
-            "score": -1
+            "score": 142
           },
           "time": "20:15"
         },
@@ -793,12 +815,12 @@
           "player1": {
             "name": "Chbaya7",
             "photo": "/images/profiles/bilel.chbayah.png",
-            "score": -1
+            "score": 10
           },
           "player2": {
             "name": "Charchabil",
             "photo": "/images/profiles/garga044.png",
-            "score": -1
+            "score": 214
           },
           "time": "20:30"
         },
@@ -819,12 +841,12 @@
           "player1": {
             "name": "Faj3a",
             "photo": "/images/profiles/limar8969.png",
-            "score": -1
+            "score": 86
           },
           "player2": {
             "name": "Amira",
             "photo": "/images/profiles/amiraomriii.png",
-            "score": -1
+            "score": 136
           },
           "time": "21:15"
         }
@@ -1581,7 +1603,8 @@
           "flag": "/images/profiles/ben.salem.anis.png",
           "played": 1,
           "coins": "69k",
-          "points": 0
+          "points": 0,
+          "status": "Sanctionné"
         },
         {
           "id": 3,
@@ -1601,33 +1624,33 @@
           "id": 2,
           "name": "Skander",
           "flag": "/images/profiles/skander_rezgui.png",
-          "played": 1,
-          "coins": "543k",
+          "played": 2,
+          "coins": "685k",
           "points": 0
         },
         {
           "id": 1,
           "name": "Brabus",
           "flag": "/images/profiles/brabus372.png",
-          "played": 1,
-          "coins": "496k",
-          "points": 0
+          "played": 2,
+          "coins": "792k",
+          "points": 2
         },
         {
           "id": 3,
           "name": "Tiger",
           "flag": "/images/profiles/big.heart129.png",
-          "played": 1,
-          "coins": "866k",
+          "played": 2,
+          "coins": "1525k",
           "points": 2
         },
         {
           "id": 4,
           "name": "Amyr",
           "flag": "/images/profiles/amir__hajji.png",
-          "played": 1,
-          "coins": "630k",
-          "points": 2
+          "played": 2,
+          "coins": "1478k",
+          "points": 4
         }
       ]
     },
@@ -1672,7 +1695,8 @@
           "flag": "/images/profiles/sandro.png",
           "played": 2,
           "coins": "0k",
-          "points": 0
+          "points": 0,
+          "status": "Sanctionné"
         }
       ]
     },
@@ -1683,17 +1707,17 @@
           "id": 5,
           "name": "Sameh",
           "flag": "/images/profiles/sameh.ba.png",
-          "played": 1,
-          "coins": "486k",
+          "played": 2,
+          "coins": "1062k",
           "points": 2
         },
         {
           "id": 2,
           "name": "Ashref",
           "flag": "/images/profiles/ashref_officiel.png",
-          "played": 1,
-          "coins": "332k",
-          "points": 2
+          "played": 2,
+          "coins": "865k",
+          "points": 4
         },
         {
           "id": 4,
@@ -1768,32 +1792,32 @@
           "name": "Charchabil",
           "flag": "/images/profiles/garga044.png",
           "played": 1,
-          "coins": "143k",
-          "points": 2
+          "coins": "357k",
+          "points": 4
         },
         {
           "id": 1,
           "name": "Chbaya7",
           "flag": "/images/profiles/bilel.chbayah.png",
-          "played": 1,
-          "coins": "19k",
+          "played": 2,
+          "coins": "29k",
           "points": 2
         },
         {
           "id": 3,
           "name": "Faj3a",
           "flag": "/images/profiles/limar8969.png",
-          "played": 1,
-          "coins": "49k",
+          "played": 2,
+          "coins": "85k",
           "points": 0
         },
         {
           "id": 4,
           "name": "Amira",
           "flag": "/images/profiles/amiraomriii.png",
-          "played": 1,
-          "coins": "14k",
-          "points": 0
+          "played": 2,
+          "coins": "150k",
+          "points": 2
         }
       ]
     },
@@ -1849,9 +1873,9 @@
           "id": 4,
           "name": "Hend",
           "flag": "/images/profiles/hendab7.png",
-          "played": 1,
-          "coins": "300k",
-          "points": 2
+          "played": 2,
+          "coins": "470k",
+          "points": 4
         },
         {
           "id": 3,
@@ -1880,8 +1904,8 @@
           "id": 1,
           "name": "Seif",
           "flag": "/images/profiles/seifbenmustapha.png",
-          "played": 1,
-          "coins": "11k",
+          "played": 2,
+          "coins": "58k",
           "points": 0
         }
       ]
@@ -1978,6 +2002,13 @@
       "flag": "/images/profiles/mosamin/tounsi.png",
       "validated": true,
       "tiktokUsername": "00g991"
+    },
+    {
+      "id": 15,
+      "name": "ibay il colombi",
+      "flag": "/images/tiktoklogo.png",
+      "validated": true,
+      "tiktokUsername": "latunisia4"
     }
   ]
 }
