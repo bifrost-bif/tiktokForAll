@@ -874,12 +874,12 @@
           "player1": {
             "name": "Kinen",
             "photo": "/images/profiles/kinen007.png",
-            "score": -1
+            "score": 7
           },
           "player2": {
             "name": "Couloumbi",
             "photo": "/images/profiles/www.couloumbi.png",
-            "score": -1
+            "score": 89
           },
           "time": "20:30"
         },
@@ -887,12 +887,12 @@
           "player1": {
             "name": "Khayri",
             "photo": "/images/profiles/khayri_89.png",
-            "score": -1
+            "score": 232
           },
           "player2": {
             "name": "Thala",
             "photo": "/images/profiles/thalaftw.png",
-            "score": -1
+            "score": 79
           },
           "time": "21:00"
         },
@@ -900,12 +900,12 @@
           "player1": {
             "name": "Pap Malik",
             "photo": "/images/profiles/malek.louati.2.png",
-            "score": -1
+            "score": 33
           },
           "player2": {
             "name": "Eva",
             "photo": "/images/profiles/eva.png",
-            "score": -1
+            "score": 72
           },
           "time": "21:15"
         }
@@ -1671,9 +1671,9 @@
           "id": 3,
           "name": "Khayri",
           "flag": "/images/profiles/khayri_89.png",
-          "played": 1,
-          "coins": "423k",
-          "points": 2
+          "played": 2,
+          "coins": "655k",
+          "points": 4
         },
         {
           "id": 5,
@@ -1687,8 +1687,8 @@
           "id": 4,
           "name": "Thala",
           "flag": "/images/profiles/thalaftw.png",
-          "played": 1,
-          "coins": "0k",
+          "played": 2,
+          "coins": "79k",
           "points": 2
         },
         {
@@ -1830,9 +1830,9 @@
           "id": 2,
           "name": "Couloumbi",
           "flag": "/images/profiles/www.couloumbi.png",
-          "played": 2,
-          "coins": "587k",
-          "points": 3
+          "played": 3,
+          "coins": "676k",
+          "points": 5
         },
         {
           "id": 5,
@@ -1846,24 +1846,24 @@
           "id": 3,
           "name": "Eva",
           "flag": "/images/profiles/eva.png",
-          "played": 1,
-          "coins": "67k",
-          "points": 2
+          "played": 2,
+          "coins": "139k",
+          "points": 4
         },
         {
           "id": 3,
           "name": "Pap Malik",
           "flag": "/images/profiles/malek.louati.2.png",
-          "played": 1,
-          "coins": "77k",
+          "played": 2,
+          "coins": "110k",
           "points": 0
         },
         {
           "id": 1,
           "name": "Kinen",
           "flag": "/images/profiles/kinen007.png",
-          "played": 2,
-          "coins": "68k",
+          "played": 3,
+          "coins": "75k",
           "points": 0
         }
       ]
