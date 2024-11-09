@@ -866,7 +866,9 @@
             "photo": "/images/profiles/houda.png",
             "score": -1
           },
-          "time": "20:15"
+          "time": "20:15",
+          "forfait":"Sandro",
+          "motif_forfait":"sanctionné"
         },
         {
           "player1": {
