@@ -3,27 +3,25 @@
 /* Styles de base du footer */
 .footer {
     background-color: #282828; /* Couleur de fond sombre */
-    color: white; /* Couleur de texte */
-    padding: 20px 10px;
-    position: relative; /* Utiliser position relative */
+    color: white;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
 }
 
 .footer-content {
     max-width: 1200px; /* Limite la largeur maximale */
     width: 100%; /* Prend toute la largeur */
-    margin: 0 auto;
+
 }
 
 .footer-links {
     list-style: none;
-    padding: 0;
-    margin: 0 0 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,23 +44,20 @@
 
 .footer-copyright {
     font-size: 0.9rem;
-    margin-top: 10px;
 }
 
 /* Assurer que le footer reste en bas de l'écran */
 html, body {
-    height: 100%; /* Permet au footer de rester en bas */
+    height: 40%; /* Permet au footer de rester en bas */
 }
 
 #root {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* S'assure que le footer est en bas */
+    
 }
 
-.main-content {
-    flex: 1; /* Prend tout l'espace disponible pour pousser le footer en bas */
-}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
