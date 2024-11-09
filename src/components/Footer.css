@@ -1,8 +1,6 @@
-/* Footer.css */
-
 /* Styles de base du footer */
 .footer {
-    background-color: #282828; /* Couleur de fond sombre */
+    background-color: #282828;
     color: white;
     position: relative;
     width: 100%;
@@ -15,9 +13,8 @@
 }
 
 .footer-content {
-    max-width: 1200px; /* Limite la largeur maximale */
+    max-width: 1200px;
     width: 100%; /* Prend toute la largeur */
-
 }
 
 .footer-links {
@@ -46,23 +43,19 @@
     font-size: 0.9rem;
 }
 
-/* Assurer que le footer reste en bas de l'écran */
 html, body {
-    height: 40%; /* Permet au footer de rester en bas */
+    height: 40%;
 }
 
 #root {
     display: flex;
     flex-direction: column;
-    
 }
-
-
 
 /* Responsive styles */
 @media (max-width: 768px) {
     .footer-links {
-        flex-direction: column; /* Les liens sont empilés en colonne sur mobile */
-        align-items: center; /* Centre les liens */
+        flex-direction: column;
+        align-items: center; 
     }
 }
