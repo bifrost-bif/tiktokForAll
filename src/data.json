@@ -496,7 +496,8 @@
             "photo": "/images/profiles/colombi_oussama.png",
             "score": -1
           },
-          "report":"true",
+          "forfait":"Colombi",
+          "motif_forfait":"absent",
           "time": "19:30"
         },
         {
@@ -918,12 +919,12 @@
           "player1": {
             "name": "Colombi",
             "photo": "/images/profiles/colombi_oussama.png",
-            "score": -1
+            "score": 167
           },
           "player2": {
             "name": "Ashref",
             "photo": "/images/profiles/ashref_officiel.png",
-            "score": -1
+            "score": 309
           },
           "time": "20:15"
         },
@@ -931,12 +932,12 @@
           "player1": {
             "name": "Seif",
             "photo": "/images/profiles/seifbenmustapha.png",
-            "score": -1
+            "score": 62
           },
           "player2": {
             "name": "Zaman",
             "photo": "/images/profiles/zamanino.png",
-            "score": -1
+            "score": 72
           },
           "time": "20:30"
         },
@@ -944,12 +945,12 @@
           "player1": {
             "name": "Syrinne",
             "photo": "/images/profiles/sy_rinnee.png",
-            "score": -1
+            "score": 312
           },
           "player2": {
             "name": "Ibn Tunis",
             "photo": "/images/profiles/marouane_suisse88.png",
-            "score": -1
+            "score": 237
           },
           "time": "21:00"
         },
@@ -957,12 +958,12 @@
           "player1": {
             "name": "Mosamem",
             "photo": "/images/profiles/mosamem.png",
-            "score": -1
+            "score": 106
           },
           "player2": {
             "name": "Dali",
             "photo": "/images/profiles/dali_elghoul.png",
-            "score": -1
+            "score": 408
           },
           "time": "21:15"
         }
@@ -1709,40 +1710,40 @@
           "id": 5,
           "name": "Sameh",
           "flag": "/images/profiles/sameh.ba.png",
-          "played": 2,
+          "played": 3,
           "coins": "1062k",
-          "points": 2
+          "points": 4
         },
         {
           "id": 2,
           "name": "Ashref",
           "flag": "/images/profiles/ashref_officiel.png",
-          "played": 2,
-          "coins": "865k",
-          "points": 4
+          "played": 3,
+          "coins": "1174k",
+          "points": 6
         },
         {
           "id": 4,
           "name": "Ibn Tunis",
           "flag": "/images/profiles/marouane_suisse88.png",
-          "played": 1,
-          "coins": "413k",
+          "played": 2,
+          "coins": "650k",
           "points": 0
         },
         {
           "id": 3,
           "name": "Syrinne",
           "flag": "/images/profiles/sy_rinnee.png",
-          "played": 1,
-          "coins": "320k",
-          "points": 0
+          "played": 2,
+          "coins": "632k",
+          "points": 2
         },
         {
           "id": 1,
           "name": "Colombi",
           "flag": "/images/profiles/colombi_oussama.png",
-          "played": 0,
-          "coins": "0k",
+          "played": 2,
+          "coins": "167k",
           "points": 0
         }
       ]
@@ -1883,31 +1884,31 @@
           "id": 3,
           "name": "Mosamem",
           "flag": "/images/profiles/mosamem.png",
-          "played": 1,
-          "coins": "188k",
+          "played": 2,
+          "coins": "294k",
           "points": 2
         },
         {
           "id": 5,
           "name": "Dali",
           "flag": "/images/profiles/dali_elghoul.png",
-          "played": 1,
-          "coins": "132k",
-          "points": 2
+          "played": 2,
+          "coins": "519k",
+          "points": 4
         },
         {
           "id": 2,
           "name": "Zaman",
           "flag": "/images/profiles/zamanino.png",
-          "played": 2,
-          "coins": "403k",
-          "points": 0
+          "played": 3,
+          "coins": "475k",
+          "points": 2
         },{
           "id": 1,
           "name": "Seif",
           "flag": "/images/profiles/seifbenmustapha.png",
-          "played": 2,
-          "coins": "58k",
+          "played": 3,
+          "coins": "120k",
           "points": 0
         }
       ]
