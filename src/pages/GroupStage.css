@@ -1,6 +1,6 @@
 /* Conteneur principal */
 .group-stage-container {
-    padding: 5px;
+    margin-left: -35px!important;
     background-color: #f5f5f5; /* Fond clair */
     color: #333; /* Couleur du texte */
     min-height: 100vh;

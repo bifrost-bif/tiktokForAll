@@ -1663,9 +1663,9 @@
           "id": 2,
           "name": "Houda",
           "flag": "/images/profiles/houda.png",
-          "played": 2,
+          "played": 3,
           "coins": "390k",
-          "points": 2
+          "points": 4
         },
         {
           "id": 3,
@@ -1695,7 +1695,7 @@
           "id": 1,
           "name": "Sandro",
           "flag": "/images/profiles/sandro.png",
-          "played": 2,
+          "played": 3,
           "coins": "0k",
           "points": 0,
           "status": "Sanctionné"
