@@ -1,6 +1,27 @@
 {
   "sanctions": [
     {
+      "id": 1,
+      "name": "Daly",
+      "flag": "/images/profiles/dali_elghoul.png",
+      "date": "2024-11-12",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "1",
+      "niv3": "0",
+      "niv4": "0"
+    },    {
+      "id": 4,
+      "name": "Marwen",
+      "flag": "/images/profiles/marwen.07.png",
+      "date": "2024-11-10",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "1",
+      "niv3": "1",
+      "niv4": "0"
+    },
+    {
       "id": 7,
       "name": "Pap Malik",
       "flag": "/images/profiles/malek.louati.2.png",
@@ -1022,12 +1043,12 @@
           "player1": {
             "name": "Hend",
             "photo": "/images/profiles/hendab7.png",
-            "score": -1
+            "score": 812
           },
           "player2": {
             "name": "Dali",
             "photo": "/images/profiles/dali_elghoul.png",
-            "score": -1
+            "score": 875
           },
           "time": "20:30"
         }
@@ -1878,9 +1899,9 @@
           "id": 4,
           "name": "Hend",
           "flag": "/images/profiles/hendab7.png",
-          "played": 2,
-          "coins": "470k",
-          "points": 4
+          "played": 3,
+          "coins": "1282k",
+          "points": 6
         },
         {
           "id": 3,
@@ -1894,8 +1915,8 @@
           "id": 5,
           "name": "Dali",
           "flag": "/images/profiles/dali_elghoul.png",
-          "played": 2,
-          "coins": "519k",
+          "played": 3,
+          "coins": "1264k",
           "points": 4
         },
         {
