@@ -1014,7 +1014,9 @@
             "photo": "/images/profiles/marouane_suisse88.png",
             "score": -1
           },
-          "time": "20:15"
+          "time": "20:15",
+          "forfait": "Colombi",
+          "motif_forfait": "a refusé de jouer"
         },
         {
           "player1": {
@@ -1742,7 +1744,7 @@
           "id": 1,
           "name": "Colombi",
           "flag": "/images/profiles/colombi_oussama.png",
-          "played": 2,
+          "played": 3,
           "coins": "167k",
           "points": 0
         }
