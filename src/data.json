@@ -976,12 +976,12 @@
           "player1": {
             "name": "Marwen",
             "photo": "/images/profiles/marwen.07.png",
-            "score": -1
+            "score": 203
           },
           "player2": {
             "name": "Thala",
             "photo": "/images/profiles/thalaftw.png",
-            "score": -1
+            "score": 43
           },
           "time": "20:15"
         },
@@ -989,12 +989,12 @@
           "player1": {
             "name": "Maher",
             "photo": "/images/profiles/maherncycm7.png",
-            "score": -1
+            "score": 117
           },
           "player2": {
             "name": "Eva",
             "photo": "/images/profiles/eva.png",
-            "score": -1
+            "score": 102
           },
           "time": "20:30"
         }
@@ -1680,16 +1680,16 @@
           "id": 5,
           "name": "Marwen",
           "flag": "/images/profiles/marwen.07.png",
-          "played": 2,
-          "coins": "37k",
-          "points": 2
+          "played": 3,
+          "coins": "240k",
+          "points": 4
         },
         {
           "id": 4,
           "name": "Thala",
           "flag": "/images/profiles/thalaftw.png",
-          "played": 2,
-          "coins": "79k",
+          "played": 3,
+          "coins": "122k",
           "points": 2
         },
         {
@@ -1839,16 +1839,16 @@
           "id": 5,
           "name": "Maher",
           "flag": "/images/profiles/maherncycm7.png",
-          "played": 2,
-          "coins": "486k",
-          "points": 3
+          "played": 3,
+          "coins": "603k",
+          "points": 5
         },
         {
           "id": 3,
           "name": "Eva",
           "flag": "/images/profiles/eva.png",
-          "played": 2,
-          "coins": "139k",
+          "played": 3,
+          "coins": "241k",
           "points": 4
         },
         {
