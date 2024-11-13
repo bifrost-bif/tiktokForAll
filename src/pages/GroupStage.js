@@ -5,12 +5,12 @@ import data from '../data.json';
 import './GroupStage.css';
 import TikTokProfileBanner from '../components/TikTokProfileBanner';
 
-// Fonction utilitaire pour convertir les coins en un nombre pour comparaison
+// Utility function to convert coins to a number for comparison
 const parseCoins = (coins) => {
     return parseFloat(coins.replace('k', '')) * 1000;
 };
 
-// Style personnalisé pour les drapeaux
+// Custom style for flags
 const Flag = styled('img')({
     width: '60px',
     height: '60px',
@@ -19,7 +19,7 @@ const Flag = styled('img')({
     marginBottom: '10px',
 });
 
-// Style conditionnel pour le cercle de classement
+// Conditional styling for ranking circle
 const RankCircle = styled('div')(({ rank }) => ({
     display: 'inline-block',
     backgroundColor: rank >= 3 ? '#F44336' : '#4CAF50',
@@ -39,6 +39,21 @@ const GroupStage = () => {
 
     const newPlayerGroups = groupsData.slice(0, 4);
     const oldPlayerGroups = groupsData.slice(4);
+
+    // Sorting function that considers "rang" if available and falls back to points only
+    const sortTeams = (teams) => {
+        return teams.slice().sort((a, b) => {
+            // Check if "rang" is defined for both, and sort by it if so
+            if (a.rang !== undefined && b.rang !== undefined) {
+                return a.rang - b.rang;
+            }
+            // If only one has "rang", prioritize it in the ranking
+            if (a.rang !== undefined) return -1;
+            if (b.rang !== undefined) return 1;
+            // Fallback to sorting by points only
+            return b.points - a.points;
+        });
+    };
 
     if (isResultsHidden) {
         return (
@@ -89,12 +104,7 @@ const GroupStage = () => {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {group.teams.slice().sort((a, b) => {
-                                            if (b.points !== a.points) {
-                                                return b.points - a.points;
-                                            }
-                                            return parseCoins(b.coins) - parseCoins(a.coins);
-                                        }).map((team, idx) => (
+                                        {sortTeams(group.teams).map((team, idx) => (
                                             <TableRow key={team.id} className={team.status === "Sanctionné" ? "sanctioned-player" : ""}>
                                                 <TableCell align="center">
                                                     <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
@@ -138,12 +148,7 @@ const GroupStage = () => {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {group.teams.slice().sort((a, b) => {
-                                            if (b.points !== a.points) {
-                                                return b.points - a.points;
-                                            }
-                                            return parseCoins(b.coins) - parseCoins(a.coins);
-                                        }).map((team, idx) => (
+                                        {sortTeams(group.teams).map((team, idx) => (
                                             <TableRow key={team.id} className={team.status === "Sanctionné" ? "sanctioned-player" : ""}>
                                                 <TableCell align="center">
                                                     <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>

@@ -1686,14 +1686,7 @@
     {
       "groupName": "Groupe A3",
       "teams": [
-        {
-          "id": 2,
-          "name": "Houda",
-          "flag": "/images/profiles/houda.png",
-          "played": 3,
-          "coins": "390k",
-          "points": 4
-        },
+        
         {
           "id": 3,
           "name": "Khayri",
@@ -1701,6 +1694,14 @@
           "played": 3,
           "coins": "1445k",
           "points": 6
+        },
+        {
+          "id": 2,
+          "name": "Houda",
+          "flag": "/images/profiles/houda.png",
+          "played": 3,
+          "coins": "390k",
+          "points": 4
         },
         {
           "id": 5,
@@ -1749,19 +1750,19 @@
           "points": 6
         },
         {
-          "id": 4,
-          "name": "Ibn Tunis",
-          "flag": "/images/profiles/marouane_suisse88.png",
-          "played": 3,
-          "coins": "650k",
-          "points": 2
-        },
-        {
           "id": 3,
           "name": "Syrinne",
           "flag": "/images/profiles/sy_rinnee.png",
           "played": 2,
           "coins": "632k",
+          "points": 2
+        },
+        {
+          "id": 4,
+          "name": "Ibn Tunis",
+          "flag": "/images/profiles/marouane_suisse88.png",
+          "played": 3,
+          "coins": "650k",
           "points": 2
         },
         {
@@ -1777,7 +1778,14 @@
     {
       "groupName": "Groupe B1",
       "teams": [
-        
+        {
+          "id": 1,
+          "name": "Fares",
+          "flag": "/images/profiles/faresbabay.png",
+          "played": 3,
+          "coins": "274k",
+          "points": 4
+        },
         {
           "id": 4,
           "name": "Fathi",
@@ -1785,14 +1793,6 @@
           "played": 3,
           "coins": "392k",
           "points": 4
-        },
-        {
-          "id": 2,
-          "name": "Trabelsi",
-          "flag": "/images/profiles/mtrabelsi.png",
-          "played": 3,
-          "coins": "207k",
-          "points": 2
         },
         {
           "id": 3,
@@ -1803,19 +1803,18 @@
           "points": 2
         },
         {
-          "id": 1,
-          "name": "Fares",
-          "flag": "/images/profiles/faresbabay.png",
+          "id": 2,
+          "name": "Trabelsi",
+          "flag": "/images/profiles/mtrabelsi.png",
           "played": 3,
-          "coins": "274k",
-          "points": 4
+          "coins": "207k",
+          "points": 2
         }
       ]
     },
     {
       "groupName": "Groupe B2",
       "teams": [
-
         {
           "id": 2,
           "name": "Charchabil",
@@ -1833,20 +1832,20 @@
           "points": 2
         },
         {
-          "id": 3,
-          "name": "Faj3a",
-          "flag": "/images/profiles/limar8969.png",
-          "played": 2,
-          "coins": "85k",
-          "points": 0
-        },
-        {
           "id": 4,
           "name": "Amira",
           "flag": "/images/profiles/amiraomriii.png",
           "played": 2,
           "coins": "150k",
           "points": 2
+        },
+        {
+          "id": 3,
+          "name": "Faj3a",
+          "flag": "/images/profiles/limar8969.png",
+          "played": 2,
+          "coins": "85k",
+          "points": 0
         }
       ]
     },
@@ -1865,9 +1864,9 @@
           "id": 5,
           "name": "Maher",
           "flag": "/images/profiles/maherncycm7.png",
-          "played": 3,
-          "coins": "603k",
-          "points": 5
+          "played": 4,
+          "coins": "687k",
+          "points": 7
         },
         {
           "id": 3,
@@ -1881,8 +1880,8 @@
           "id": 3,
           "name": "Pap Malik",
           "flag": "/images/profiles/malek.louati.2.png",
-          "played": 2,
-          "coins": "110k",
+          "played": 3,
+          "coins": "122k",
           "points": 0
         },
         {
