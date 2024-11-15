@@ -1147,12 +1147,12 @@
           "player1": {
             "name": "Sameh",
             "photo": "/images/profiles/sameh.ba.png",
-            "score": -1
+            "score": 743
           },
           "player2": {
             "name": "Syrinne",
             "photo": "/images/profiles/sy_rinnee.png",
-            "score": -1
+            "score": 719
           },
           "time": "19:30"
         },
@@ -1160,12 +1160,12 @@
           "player1": {
             "name": "Hend",
             "photo": "/images/profiles/hendab7.png",
-            "score": -1
+            "score": 166
           },
           "player2": {
             "name": "Mosamem",
             "photo": "/images/profiles/mosamem.png",
-            "score": -1
+            "score": 49
           },
           "time": "19:45"
         },
@@ -1173,12 +1173,12 @@
           "player1": {
             "name": "Brabus",
             "photo": "/images/profiles/brabus372.png",
-            "score": -1
+            "score": 743
           },
           "player2": {
             "name": "Tiger",
             "photo": "/images/profiles/big.heart129.png",
-            "score": -1
+            "score": 1877
           },
           "time": "20:15"
         },
@@ -1186,12 +1186,12 @@
           "player1": {
             "name": "Chbaya7",
             "photo": "/images/profiles/bilel.chbayah.png",
-            "score": -1
+            "score": 6
           },
           "player2": {
             "name": "Faj3a",
             "photo": "/images/profiles/limar8969.png",
-            "score": -1
+            "score": 126
           },
           "time": "20:30"
         },
@@ -1199,12 +1199,12 @@
           "player1": {
             "name": "Skander",
             "photo": "/images/profiles/skander_rezgui.png",
-            "score": -1
+            "score": 62
           },
           "player2": {
             "name": "Amyr",
             "photo": "/images/profiles/amir__hajji.png",
-            "score": -1
+            "score": 176
           },
           "time": "21:00"
         },
@@ -1212,12 +1212,12 @@
           "player1": {
             "name": "Charchabil",
             "photo": "/images/profiles/garga044.png",
-            "score": -1
+            "score": 254
           },
           "player2": {
             "name": "Amira",
             "photo": "/images/profiles/amiraomriii.png",
-            "score": -1
+            "score": 209
           },
           "time": "21:15"
         }
@@ -1819,33 +1819,33 @@
           "id": 2,
           "name": "Charchabil",
           "flag": "/images/profiles/garga044.png",
-          "played": 2,
-          "coins": "357k",
-          "points": 4
+          "played": 3,
+          "coins": "572k",
+          "points": 6
         },
         {
           "id": 1,
           "name": "Chbaya7",
           "flag": "/images/profiles/bilel.chbayah.png",
-          "played": 2,
-          "coins": "29k",
+          "played": 3,
+          "coins": "35k",
           "points": 2
         },
         {
           "id": 4,
           "name": "Amira",
           "flag": "/images/profiles/amiraomriii.png",
-          "played": 2,
-          "coins": "150k",
+          "played": 3,
+          "coins": "359k",
           "points": 2
         },
         {
           "id": 3,
           "name": "Faj3a",
           "flag": "/images/profiles/limar8969.png",
-          "played": 2,
-          "coins": "85k",
-          "points": 0
+          "played": 3,
+          "coins": "211k",
+          "points": 2
         }
       ]
     },
@@ -1901,16 +1901,16 @@
           "id": 4,
           "name": "Hend",
           "flag": "/images/profiles/hendab7.png",
-          "played": 3,
-          "coins": "1282k",
-          "points": 6
+          "played": 4,
+          "coins": "1448k",
+          "points": 8
         },
         {
           "id": 3,
           "name": "Mosamem",
           "flag": "/images/profiles/mosamem.png",
-          "played": 2,
-          "coins": "294k",
+          "played": 3,
+          "coins": "343k",
           "points": 2
         },
         {
@@ -1918,7 +1918,7 @@
           "name": "Dali",
           "flag": "/images/profiles/dali_elghoul.png",
           "played": 3,
-          "coins": "1264k",
+          "coins": "1285k",
           "points": 4
         },
         {
