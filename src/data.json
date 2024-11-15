@@ -2,6 +2,17 @@
   "sanctions": [
     {
       "id": 1,
+      "name": "Zaman",
+      "flag": "/images/profiles/zamanino.png",
+      "date": "2024-11-14",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "0",
+      "niv3": "1",
+      "niv4": "0"
+    },
+         {
+      "id": 1,
       "name": "Daly",
       "flag": "/images/profiles/dali_elghoul.png",
       "date": "2024-11-12",
