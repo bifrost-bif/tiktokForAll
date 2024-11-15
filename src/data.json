@@ -1653,40 +1653,39 @@
           "id": 2,
           "name": "Skander",
           "flag": "/images/profiles/skander_rezgui.png",
-          "played": 2,
-          "coins": "685k",
+          "played": 3,
+          "coins": "747k",
           "points": 0
         },
         {
           "id": 1,
           "name": "Brabus",
           "flag": "/images/profiles/brabus372.png",
-          "played": 2,
-          "coins": "792k",
+          "played": 3,
+          "coins": "1535k",
           "points": 2
         },
         {
           "id": 3,
           "name": "Tiger",
           "flag": "/images/profiles/big.heart129.png",
-          "played": 2,
-          "coins": "1525k",
-          "points": 2
+          "played": 4,
+          "coins": "3402k",
+          "points": 4
         },
         {
           "id": 4,
           "name": "Amyr",
           "flag": "/images/profiles/amir__hajji.png",
-          "played": 2,
-          "coins": "1478k",
-          "points": 4
+          "played": 3,
+          "coins": "1654k",
+          "points": 6
         }
       ]
     },
     {
       "groupName": "Groupe A3",
       "teams": [
-        
         {
           "id": 3,
           "name": "Khayri",
@@ -1734,14 +1733,6 @@
       "groupName": "Groupe A4",
       "teams": [
         {
-          "id": 5,
-          "name": "Sameh",
-          "flag": "/images/profiles/sameh.ba.png",
-          "played": 3,
-          "coins": "1062k",
-          "points": 4
-        },
-        {
           "id": 2,
           "name": "Ashref",
           "flag": "/images/profiles/ashref_officiel.png",
@@ -1753,9 +1744,17 @@
           "id": 3,
           "name": "Syrinne",
           "flag": "/images/profiles/sy_rinnee.png",
-          "played": 2,
-          "coins": "632k",
-          "points": 2
+          "played": 3,
+          "coins": "1351k",
+          "points": 4
+        },
+        {
+          "id": 5,
+          "name": "Sameh",
+          "flag": "/images/profiles/sameh.ba.png",
+          "played": 4,
+          "coins": "1758k",
+          "points": 4
         },
         {
           "id": 4,
