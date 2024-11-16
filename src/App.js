@@ -31,22 +31,6 @@ function App() {
             setInstallPrompt(e); // Sauvegarde l'événement pour une utilisation ultérieure
         });
 
-        // Ajoute des restrictions sur le clic droit et les raccourcis pour limiter l'accès au code source
-        const handleContextMenu = (e) => e.preventDefault();
-        const handleKeyDown = (e) => {
-            if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'Shift')) {
-                e.preventDefault();
-            }
-        };
-
-        document.addEventListener('contextmenu', handleContextMenu);
-        document.addEventListener('keydown', handleKeyDown);
-
-        // Nettoyage des événements lors de la désactivation du composant
-        return () => {
-            document.removeEventListener('contextmenu', handleContextMenu);
-            document.removeEventListener('keydown', handleKeyDown);
-        };
     }, []);
 
     const handleInstallClick = () => {

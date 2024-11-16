@@ -1,131 +1,345 @@
 import React, { useState } from 'react';
-import { Grid, Typography, Paper, Box } from '@mui/material';
+import { Typography, Paper, Box } from '@mui/material';
 import data from '../data.json';
-import './KnockoutStage.css'; // Fichier CSS
 
 const KnockoutStage = () => {
-    const [isPhaseNotReady] = useState(true);
+    const [isPhaseNotReady] = useState(false);
     const knockoutData = data.knockoutMatches;
 
-    // Fonction pour calculer les pourcentages pour les barres
     const calculatePercentage = (score1, score2) => {
         const total = score1 + score2;
-        if (total === 0) return { player1: 50, player2: 50 };
+        if (total === 0) return { team1: 50, team2: 50 };
         return {
-            player1: (score1 / total) * 100,
-            player2: (score2 / total) * 100,
+            team1: (score1 / total) * 100,
+            team2: (score2 / total) * 100,
         };
     };
 
-    // Si la phase n'est pas prête, afficher un message d'attente
+    const MatchCard = ({ player1, player2, player3, player4, roundIndex }) => {
+        const isTeamMatch = player3 && player4;
+        const hasValidScores = isTeamMatch
+            ? player1.score !== -1 && player2.score !== -1 && player3.score !== -1 && player4.score !== -1
+            : player1.score !== -1 && player2.score !== -1;
+
+        const team1Score = player1.score + player2.score;
+        const team2Score = player3?.score + player4?.score || 0;
+
+        const percentages = hasValidScores
+            ? calculatePercentage(team1Score, team2Score)
+            : { team1: 50, team2: 50 };
+
+        return (
+            <div className="match-wrapper">
+                <Paper
+                    elevation={3}
+                    sx={{
+                        p: 2,
+                        width: '160px',
+                        height: isTeamMatch ? '250px' : '80px',
+                        backgroundColor: 'white',
+                        borderRadius: '15px',
+                    }}
+                >
+                    <div className="match-content">
+                        <Typography
+                            sx={{
+                                my: 1,
+                                textAlign: 'center',
+                                fontWeight: 'bold',
+                                color: '#666',
+                                marginTop: "8px"
+                            }}
+                        >
+                            {isTeamMatch ? 'Équipe 1' : ""}
+                        </Typography>
+                        <div className="team-section">
+                            {[player1, player2].map((player, idx) => (
+                                <Typography
+                                    key={idx}
+                                    sx={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '8px',
+                                        fontWeight: 'bold',
+                                        marginTop: "8px"
+                                    }}
+                                >
+                                    <img
+                                        src={`${process.env.PUBLIC_URL}${player.photo}`}
+                                        alt={player.name}
+                                        style={{
+                                            width: '32px',
+                                            height: '32px',
+                                            borderRadius: '50%'
+                                        }}
+                                    />
+                                    {player.name}
+                                </Typography>
+                            ))}
+                        </div>
+
+                        {isTeamMatch && (
+                            <>
+                                <Typography
+                                    sx={{
+                                        my: 1,
+                                        textAlign: 'center',
+                                        fontWeight: 'bold',
+                                        color: '#666',
+                                    }}
+                                >
+                                    Équipe 2
+                                </Typography>
+                                <div className="team-section">
+                                    {[player3, player4].map((player, idx) => (
+                                        <Typography
+                                            key={idx}
+                                            sx={{
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '8px',
+                                                fontWeight: 'bold',
+                                                marginTop: "8px"
+                                            }}
+                                        >
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}${player.photo}`}
+                                                alt={player.name}
+                                                style={{
+                                                    width: '32px',
+                                                    height: '32px',
+                                                    borderRadius: '50%',
+                                                }}
+                                            />
+                                            {player.name}
+                                        </Typography>
+                                    ))}
+                                </div>
+                            </>
+                        )}
+
+                        {hasValidScores && (
+                            <Box sx={{ mt: 2 }}>
+                                <div
+                                    style={{
+                                        display: 'flex',
+                                        height: '24px',
+                                        borderRadius: '12px',
+                                        overflow: 'hidden',
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            width: `${percentages.team1}%`,
+                                            backgroundColor: '#ff4444',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            color: 'white',
+                                            fontWeight: 'bold',
+                                        }}
+                                        className={team1Score > team2Score ? 'winner' : ''}
+                                    >
+                                        {team1Score}k
+                                    </div>
+                                    {isTeamMatch && (
+                                        <div
+                                            style={{
+                                                width: `${percentages.team2}%`,
+                                                backgroundColor: '#4444ff',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                color: 'white',
+                                                fontWeight: 'bold',
+                                            }}
+                                            className={team2Score > team1Score ? 'winner' : ''}
+                                        >
+                                            {team2Score}k
+                                        </div>
+                                    )}
+                                </div>
+                            </Box>
+                        )}
+                    </div>
+                </Paper>
+                {roundIndex < 3 && <div className="connector" />}
+            </div>
+        );
+    };
+
     if (isPhaseNotReady) {
         return (
-            <div className="knockout-stage-container">
-                <Typography variant="h4" className="category-title">Phase Éliminatoire</Typography>
-                <Box className="info-message suspense-message" sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backgroundColor: '#e3f2fd',
-                    color: '#0d47a1',
-                    borderRadius: '8px',
-                    padding: '20px',
-                    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-                    textAlign: 'center',
-                    margin: '20px 10px',
-                    maxWidth: '100%',
-                    width: '100%',
-                }}>
-                    <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', fontSize: '1.6rem' }}>
+            <Box sx={{ p: 4 }}>
+                <Typography variant="h4" sx={{ textAlign: 'center', mb: 4 }}>
+                    Phase Éliminatoire
+                </Typography>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        backgroundColor: '#e3f2fd',
+                        color: '#0d47a1',
+                        borderRadius: '8px',
+                        p: 3,
+                        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+                        textAlign: 'center',
+                        mx: 'auto',
+                        maxWidth: '600px',
+                    }}
+                >
+                    <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2 }}>
                         En attente des qualifications des groupes
                     </Typography>
-                    <Typography variant="body1" gutterBottom sx={{ fontSize: '1rem', marginBottom: '20px' }}>
-                        Les matchs de la phase éliminatoire seront disponibles une fois les qualifications terminées.
+                    <Typography>
+                        Les matchs de la phase éliminatoire seront disponibles une fois les
+                        qualifications terminées.
                     </Typography>
                 </Box>
-            </div>
+            </Box>
         );
     }
 
+    const getPhaseClass = (roundIndex) => {
+        if (roundIndex === 0) return 'quarterfinals';
+        if (roundIndex === 1) return 'semifinals';
+        if (roundIndex === 2) return 'final';
+        return '';
+    };
+
     return (
-        <div className="knockout-stage-container">
-            {Object.keys(knockoutData).map((roundName, roundIndex) => (
-                <div key={roundIndex} className="round-container">
-                    <Typography
-                        variant="h2"
-                        className="round-title"
-                        sx={{
-                            fontSize: '2rem',
-                            fontWeight: 'bold',
-                            textAlign: 'center',
-                            color: '#333',
-                            marginBottom: '20px',
+        <Box
+            sx={{
+                p: 4,
+                overflowX: 'auto',
+                minWidth: 'fit-content',
+            }}
+        >
+            <Typography
+                variant="h4"
+                sx={{
+                    textAlign: 'center',
+                    mb: 4,
+                }}
+            >
+                Phase Éliminatoire
+            </Typography>
+
+            <Box
+                sx={{
+                    display: 'flex',
+                    gap: '4rem',
+                    justifyContent: 'center',
+                }}
+            >
+                {Object.entries(knockoutData).map(([roundName, matches], roundIndex) => (
+                    <div
+                        key={roundName}
+                        className={getPhaseClass(roundIndex)}
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
                         }}
                     >
-                        {roundName}
-                    </Typography>
-                    <Grid container spacing={3} justifyContent="center">
-                        {knockoutData[roundName].map((match, matchIndex) => {
-                            const { player1, player2 } = match;
-                            const hasValidScores = player1.score !== -1 && player2.score !== -1;
-                            const percentages = hasValidScores
-                                ? calculatePercentage(player1.score, player2.score)
-                                : { player1: 50, player2: 50 };
+                        <Typography
+                            variant="h6"
+                            sx={{
+                                textAlign: 'center',
+                                mb: 3,
+                                color: '#666',
+                            }}
+                        >
+                            {roundName}
+                        </Typography>
 
-                            return (
-                                <Grid item xs={12} md={6} key={matchIndex}>
-                                    <Paper className="match-container">
-                                        <div className="match-info">
-                                            <div className="player">
-                                                <img
-                                                    src={`${process.env.PUBLIC_URL}${player1.photo}`}
-                                                    alt={player1.name}
-                                                    className="player-photo"
-                                                />
-                                                <span className="player-name">{player1.name}</span>
-                                            </div>
-                                            <div className="versus-separator">VS</div>
-                                            <div className="player">
-                                                <img
-                                                    src={`${process.env.PUBLIC_URL}${player2.photo}`}
-                                                    alt={player2.name}
-                                                    className="player-photo"
-                                                />
-                                                <span className="player-name">{player2.name}</span>
-                                            </div>
-                                        </div>
-                                        {hasValidScores && (
-                                            <div className="score-display">
-                                                <div className="score-bar">
-                                                    <div
-                                                        className={`score-bar-part red ${player1.score > player2.score ? 'winner' : ''}`}
-                                                        style={{
-                                                            width: `${percentages.player1}%`,
-                                                        }}
-                                                    >
-                                                        {player1.score}k
-                                                    </div>
-                                                    <div
-                                                        className={`score-bar-part blue ${player2.score > player1.score ? 'winner' : ''}`}
-                                                        style={{
-                                                            width: `${percentages.player2}%`,
-                                                        }}
-                                                    >
-                                                        {player2.score}k
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        )}
-                                    </Paper>
-                                </Grid>
-                            );
-                        })}
-                    </Grid>
-                </div>
-            ))}
-        </div>
+                        <div
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '3rem',
+                            }}
+                        >
+                            {matches.map((match, idx) => (
+                                <MatchCard
+                                    key={idx}
+                                    player1={match.player1}
+                                    player2={match.player2}
+                                    player3={match.player3}
+                                    player4={match.player4}
+                                    roundIndex={roundIndex}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </Box>
+        </Box>
     );
 };
 
 export default KnockoutStage;
+
+
+const styles = `
+.quarterfinals {
+    position: relative;
+    margin-top: 200px!important;
+    
+}
+
+.semifinals {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.final {
+    position: relative;
+    margin-top: 10rem;
+}
+
+.match-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.match-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.player-section {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.connector {
+    position: absolute;
+    right: -64px;
+    width: 64px;
+    height: 2px;
+    background-color: #ddd;
+}
+
+.connector::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 100vh;
+    width: 2px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+
+.winner::after {
+    content: '👑';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+`;
