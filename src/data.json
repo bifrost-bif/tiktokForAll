@@ -1248,18 +1248,20 @@
             "photo": "/images/profiles/khayri_89.png",
             "score": -1
           },
-          "time": "20:15"
+          "time": "20:15",
+          "forfait":"Sandro",
+          "motif_forfait": "sanctionné"
         },
         {
           "player1": {
             "name": "Kinen",
             "photo": "/images/profiles/kinen007.png",
-            "score": -1
+            "score": 19
           },
           "player2": {
             "name": "Pap Malik",
             "photo": "/images/profiles/malek.louati.2.png",
-            "score": -1
+            "score": 44
           },
           "time": "20:30"
         },
@@ -1267,12 +1269,12 @@
           "player1": {
             "name": "Houda",
             "photo": "/images/profiles/houda.png",
-            "score": -1
+            "score": 174
           },
           "player2": {
             "name": "Thala",
             "photo": "/images/profiles/thalaftw.png",
-            "score": -1
+            "score": 1098
           },
           "time": "21:00"
         },
@@ -1280,12 +1282,12 @@
           "player1": {
             "name": "Couloumbi",
             "photo": "/images/profiles/www.couloumbi.png",
-            "score": -1
+            "score": 207
           },
           "player2": {
             "name": "Eva",
             "photo": "/images/profiles/eva.png",
-            "score": -1
+            "score": 306
           },
           "time": "21:15"
         }
@@ -1701,16 +1703,16 @@
           "id": 3,
           "name": "Khayri",
           "flag": "/images/profiles/khayri_89.png",
-          "played": 3,
+          "played": 4,
           "coins": "1445k",
-          "points": 6
+          "points": 8
         },
         {
-          "id": 2,
-          "name": "Houda",
-          "flag": "/images/profiles/houda.png",
-          "played": 3,
-          "coins": "390k",
+          "id": 4,
+          "name": "Thala",
+          "flag": "/images/profiles/thalaftw.png",
+          "played": 4,
+          "coins": "1220k",
           "points": 4
         },
         {
@@ -1722,18 +1724,18 @@
           "points": 4
         },
         {
-          "id": 4,
-          "name": "Thala",
-          "flag": "/images/profiles/thalaftw.png",
-          "played": 3,
-          "coins": "122k",
-          "points": 2
+          "id": 2,
+          "name": "Houda",
+          "flag": "/images/profiles/houda.png",
+          "played": 4,
+          "coins": "564k",
+          "points": 4
         },
         {
           "id": 1,
           "name": "Sandro",
           "flag": "/images/profiles/sandro.png",
-          "played": 3,
+          "played": 4,
           "coins": "0k",
           "points": 0,
           "status": "Sanctionné"
@@ -1847,7 +1849,7 @@
           "flag": "/images/profiles/amiraomriii.png",
           "played": 3,
           "coins": "359k",
-          "points": 2
+          "points": 4
         },
         {
           "id": 3,
@@ -1866,8 +1868,8 @@
           "id": 2,
           "name": "Couloumbi",
           "flag": "/images/profiles/www.couloumbi.png",
-          "played": 3,
-          "coins": "676k",
+          "played": 4,
+          "coins": "883k",
           "points": 5
         },
         {
@@ -1882,16 +1884,16 @@
           "id": 3,
           "name": "Eva",
           "flag": "/images/profiles/eva.png",
-          "played": 3,
-          "coins": "241k",
-          "points": 4
+          "played": 4,
+          "coins": "547k",
+          "points": 6
         },
         {
           "id": 3,
           "name": "Pap Malik",
           "flag": "/images/profiles/malek.louati.2.png",
-          "played": 3,
-          "coins": "122k",
+          "played": 4,
+          "coins": "166k",
           "points": 0
         },
         {
