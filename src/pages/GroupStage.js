@@ -38,9 +38,14 @@ const GroupStage = () => {
     const groupsData = data.groups;
     const calendarData = data.calendarMatches;
 
+    // Extract the top 2 players from each group
+    const qualifiedPlayers = groupsData.flatMap((group) =>
+        group.teams.slice().sort((a, b) => b.points - a.points).slice(0, 2)
+    );
+
     // Separate matches into phases
-    const groupPhaseMatches = calendarData.filter(journey => !journey.knockout);
-    const knockoutPhaseMatches = calendarData.filter(journey => journey.knockout);
+    const groupPhaseMatches = calendarData.filter((journey) => !journey.knockout);
+    const knockoutPhaseMatches = calendarData.filter((journey) => journey.knockout);
 
     const newPlayerGroups = groupsData.slice(0, 4);
     const oldPlayerGroups = groupsData.slice(4);
@@ -48,14 +53,11 @@ const GroupStage = () => {
     // Sorting function that considers "rang" if available and falls back to points only
     const sortTeams = (teams) => {
         return teams.slice().sort((a, b) => {
-            // Check if "rang" is defined for both, and sort by it if so
             if (a.rang !== undefined && b.rang !== undefined) {
                 return a.rang - b.rang;
             }
-            // If only one has "rang", prioritize it in the ranking
             if (a.rang !== undefined) return -1;
             if (b.rang !== undefined) return 1;
-            // Fallback to sorting by points only
             return b.points - a.points;
         });
     };
@@ -91,11 +93,28 @@ const GroupStage = () => {
 
     return (
         <div className="group-stage-container">
+            {/* Qualified Players Section */}
+            <Typography variant="h4" className="phase-title" sx={{ marginBottom: '30px' }}>
+                Joueurs Qualifiés
+            </Typography>
+            <Grid container spacing={4} justifyContent="center">
+                {qualifiedPlayers.map((player, index) => (
+                    <Grid item xs={12} sm={6} md={4} key={index}>
+                        <Box className="player-qualified">
+                            <img src={`${process.env.PUBLIC_URL}${player.flag}`} alt={player.name} />
+                            <Typography variant="h6" className="player-name">{player.name}</Typography>
+                            <Typography className="player-stats">{player.points} Points</Typography>
+                        </Box>
+                    </Grid>
+                ))}
+            </Grid>
+
             {/* Phase de groupe section */}
             <Typography variant="h4" className="phase-title" sx={{ marginBottom: '30px' }}>
                 Phase de groupe
             </Typography>
-            
+
+            {/* Group A */}
             <Typography variant="h5" className="category-title">Groupe A</Typography>
             <Grid container spacing={4} className="group-container">
                 {newPlayerGroups.map((group, index) => (
@@ -137,83 +156,6 @@ const GroupStage = () => {
                     </Grid>
                 ))}
             </Grid>
-
-            <Divider variant="middle" className="group-divider" sx={{ margin: '30px 0' }} />
-
-            <Typography variant="h5" className="category-title">Groupe B</Typography>
-            <Grid container spacing={4} className="group-container">
-                {oldPlayerGroups.map((group, index) => (
-                    <Grid item xs={12} sm={6} key={index}>
-                        <Paper className="group-paper">
-                            <Typography variant="h6" className="group-title">{group.groupName}</Typography>
-                            <div className="table-container">
-                                <Table>
-                                    <TableHead>
-                                        <TableRow>
-                                            <TableCell align="center" className="table-header">Classement</TableCell>
-                                            <TableCell align="center" className="table-header">Joueur</TableCell>
-                                            <TableCell align="center" className="table-header">MJ</TableCell>
-                                            <TableCell align="center" className="table-header">Coins</TableCell>
-                                            <TableCell align="center" className="table-header">Points</TableCell>
-                                        </TableRow>
-                                    </TableHead>
-                                    <TableBody>
-                                        {sortTeams(group.teams).map((team, idx) => (
-                                            <TableRow key={team.id} className={team.status === "Sanctionné" ? "sanctioned-player" : ""}>
-                                                <TableCell align="center">
-                                                    <RankCircle rank={idx + 1}>{idx + 1}</RankCircle>
-                                                </TableCell>
-                                                <TableCell align="center">
-                                                    <div className="player-cell">
-                                                        <Flag src={`${process.env.PUBLIC_URL}${team.flag}`} alt={team.name} />
-                                                        <Typography variant="body2" className="player-name">{team.name}</Typography>
-                                                    </div>
-                                                </TableCell>
-                                                <TableCell align="center">{team.played}</TableCell>
-                                                <TableCell align="center">{team.coins}</TableCell>
-                                                <TableCell align="center">{team.points}</TableCell>
-                                            </TableRow>
-                                        ))}
-                                    </TableBody>
-                                </Table>
-                            </div>
-                        </Paper>
-                    </Grid>
-                ))}
-            </Grid>
-
-            {/* Phase éliminatoire section */}
-            {knockoutPhaseMatches.length > 0 && (
-                <>
-                    <Divider variant="middle" className="phase-divider" sx={{ margin: '40px 0' }} />
-                    <Typography variant="h4" className="phase-title" sx={{ marginBottom: '30px' }}>
-                        Phase éliminatoire
-                    </Typography>
-                    {knockoutPhaseMatches.map((journey, index) => {
-                        const roundCount = knockoutPhaseMatches.filter(j => 
-                            j.roundName === journey.roundName
-                        ).indexOf(journey) + 1;
-                        
-                        return (
-                            <div key={index}>
-                                <Typography 
-                                    variant="h5" 
-                                    className="knockout-round-title" 
-                                    sx={{ 
-                                        margin: '20px 0',
-                                        textAlign: 'center',
-                                        color: '#1976D2',
-                                        fontWeight: 'bold'
-                                    }}
-                                >
-                                    {journey.roundName} - Journée {roundCount}
-                                </Typography>
-                                {/* Vous pouvez ajouter ici l'affichage des matches de la journée si nécessaire */}
-                            </div>
-                        );
-                    })}
-                </>
-            )}
         </div>
     );
 };
