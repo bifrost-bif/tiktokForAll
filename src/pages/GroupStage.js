@@ -36,6 +36,11 @@ const RankCircle = styled('div')(({ rank }) => ({
 const GroupStage = () => {
     const [isResultsHidden] = useState(false);
     const groupsData = data.groups;
+    const calendarData = data.calendarMatches;
+
+    // Separate matches into phases
+    const groupPhaseMatches = calendarData.filter(journey => !journey.knockout);
+    const knockoutPhaseMatches = calendarData.filter(journey => journey.knockout);
 
     const newPlayerGroups = groupsData.slice(0, 4);
     const oldPlayerGroups = groupsData.slice(4);
@@ -86,7 +91,12 @@ const GroupStage = () => {
 
     return (
         <div className="group-stage-container">
-            <Typography variant="h4" className="category-title">Groupe A</Typography>
+            {/* Phase de groupe section */}
+            <Typography variant="h4" className="phase-title" sx={{ marginBottom: '30px' }}>
+                Phase de groupe
+            </Typography>
+            
+            <Typography variant="h5" className="category-title">Groupe A</Typography>
             <Grid container spacing={4} className="group-container">
                 {newPlayerGroups.map((group, index) => (
                     <Grid item xs={12} sm={6} key={index}>
@@ -128,9 +138,9 @@ const GroupStage = () => {
                 ))}
             </Grid>
 
-            <Divider variant="middle" className="group-divider" />
+            <Divider variant="middle" className="group-divider" sx={{ margin: '30px 0' }} />
 
-            <Typography variant="h4" className="category-title">Groupe B</Typography>
+            <Typography variant="h5" className="category-title">Groupe B</Typography>
             <Grid container spacing={4} className="group-container">
                 {oldPlayerGroups.map((group, index) => (
                     <Grid item xs={12} sm={6} key={index}>
@@ -171,6 +181,39 @@ const GroupStage = () => {
                     </Grid>
                 ))}
             </Grid>
+
+            {/* Phase éliminatoire section */}
+            {knockoutPhaseMatches.length > 0 && (
+                <>
+                    <Divider variant="middle" className="phase-divider" sx={{ margin: '40px 0' }} />
+                    <Typography variant="h4" className="phase-title" sx={{ marginBottom: '30px' }}>
+                        Phase éliminatoire
+                    </Typography>
+                    {knockoutPhaseMatches.map((journey, index) => {
+                        const roundCount = knockoutPhaseMatches.filter(j => 
+                            j.roundName === journey.roundName
+                        ).indexOf(journey) + 1;
+                        
+                        return (
+                            <div key={index}>
+                                <Typography 
+                                    variant="h5" 
+                                    className="knockout-round-title" 
+                                    sx={{ 
+                                        margin: '20px 0',
+                                        textAlign: 'center',
+                                        color: '#1976D2',
+                                        fontWeight: 'bold'
+                                    }}
+                                >
+                                    {journey.roundName} - Journée {roundCount}
+                                </Typography>
+                                {/* Vous pouvez ajouter ici l'affichage des matches de la journée si nécessaire */}
+                            </div>
+                        );
+                    })}
+                </>
+            )}
         </div>
     );
 };

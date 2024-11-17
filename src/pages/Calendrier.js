@@ -39,6 +39,7 @@ const Calendar = () => {
             <div className="calendar-content">
                 {calendarData.map((journey, journeyIndex) => {
                     const isOpeningMatch = journey.matches.some(match => match.ouverture === "true");
+                    
 
                     if (!isOpeningMatch) {
                         journeyCount += 1;
@@ -47,7 +48,7 @@ const Calendar = () => {
                     return (
                         <div key={journeyIndex} className="journey-container">
                             <Typography variant="h5" className="journey-title">
-                                {isOpeningMatch ? "Match d'ouverture" : `Journée ${journeyCount}`} <br />
+                                {isOpeningMatch ? "Match d'ouverture" : `${journey.roundName} - Journée ${journeyCount}`} <br />
                                 <span className="journey-date">{journey.date}</span>
                             </Typography>
                             <Grid container spacing={3} justifyContent="space-around">

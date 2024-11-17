@@ -39,8 +39,8 @@ function App() {
             }
         };
 
-        document.addEventListener('contextmenu', handleContextMenu);
-        document.addEventListener('keydown', handleKeyDown);
+        //document.addEventListener('contextmenu', handleContextMenu);
+        //document.addEventListener('keydown', handleKeyDown);
 
         // Nettoyage des événements lors de la désactivation du composant
         return () => {

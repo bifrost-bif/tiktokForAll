@@ -213,7 +213,6 @@
   "knockoutMatches": {
     "1/8e de finale": [
       {
-        "id": 1,
         "player1": {
           "name": "Joueur 1",
           "photo": "/images/profiles/userTiktok.png",
@@ -226,7 +225,6 @@
         }
       },
       {
-        "id": 2,
         "player1": {
           "name": "Joueur 3",
           "photo": "/images/profiles/userTiktok.png",
@@ -239,7 +237,6 @@
         }
       },
       {
-        "id": 3,
         "player1": {
           "name": "Joueur 1",
           "photo": "/images/profiles/userTiktok.png",
@@ -252,7 +249,6 @@
         }
       },
       {
-        "id": 4,
         "player1": {
           "name": "Joueur 3",
           "photo": "/images/profiles/userTiktok.png",
@@ -265,7 +261,6 @@
         }
       },
       {
-        "id": 5,
         "player1": {
           "name": "Joueur 1",
           "photo": "/images/profiles/userTiktok.png",
@@ -278,7 +273,6 @@
         }
       },
       {
-        "id": 6,
         "player1": {
           "name": "Joueur 3",
           "photo": "/images/profiles/userTiktok.png",
@@ -291,7 +285,6 @@
         }
       },
       {
-        "id": 7,
         "player1": {
           "name": "Joueur 1",
           "photo": "/images/profiles/userTiktok.png",
@@ -304,7 +297,6 @@
         }
       },
       {
-        "id": 8,
         "player1": {
           "name": "Joueur 3",
           "photo": "/images/profiles/userTiktok.png",
@@ -319,7 +311,6 @@
     ],
     "1/4e de finale": [
       {
-        "id": 9,
         "player1": {
           "name": "Joueur 1",
           "photo": "/images/profiles/userTiktok.png",
@@ -329,8 +320,7 @@
           "name": "Joueur 4",
           "photo": "/images/profiles/userTiktok.png",
           "score": -1
-        },
-        "player3": {
+        },"player3": {
           "name": "Joueur 1",
           "photo": "/images/profiles/userTiktok.png",
           "score": -1
@@ -340,9 +330,9 @@
           "photo": "/images/profiles/userTiktok.png",
           "score": -1
         }
+
       },
       {
-        "id": 10,
         "player1": {
           "name": "Joueur 1",
           "photo": "/images/profiles/userTiktok.png",
@@ -367,7 +357,6 @@
     ],
     "1/2e de finale": [
       {
-        "id": 11,
         "player1": {
           "name": "Joueur 4",
           "photo": "/images/profiles/userTiktok.png",
@@ -380,7 +369,6 @@
         }
       },
       {
-        "id": 12,
         "player1": {
           "name": "Joueur 4",
           "photo": "/images/profiles/userTiktok.png",
@@ -395,7 +383,6 @@
     ],
     "Finale": [
       {
-        "id": 13,
         "player1": {
           "name": "Joueur 8",
           "photo": "/images/profiles/userTiktok.png",
@@ -411,6 +398,955 @@
   },
   "calendarMatches": [
     {
+      "date": "Samedi 2 NOV 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraI.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Brabus",
+            "photo": "/images/profiles/brabus372.png",
+            "score": -1
+          },
+          "player3": {
+            "name": "Achref",
+            "photo": "/images/profiles/ashref_officiel.png",
+            "score": -1
+          },
+          "player4": {
+            "name": "Midou",
+            "photo": "/images/profiles/midouayari26.png",
+            "score": -1
+          },
+          "ouverture": "true",
+          "time": "20:30"
+        }
+      ]
+    },
+    {
+      "date": "Dimanche 3 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Marwen",
+            "photo": "/images/profiles/marwen.07.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Sandro",
+            "photo": "/images/profiles/sandro.png",
+            "score": -1
+          },
+          "time": "19:30",
+          "forfait":"Sandro",
+          "motif_forfait":"absent"
+        },
+        {
+          "player1": {
+            "name": "Maher",
+            "photo": "/images/profiles/maherncycm7.png",
+            "score": 178
+          },
+          "player2": {
+            "name": "Kinen",
+            "photo": "/images/profiles/kinen007.png",
+            "score": 8
+          },
+          "time": "19:45"
+        },
+        {
+          "player1": {
+            "name": "Sag3",
+            "photo": "/images/profiles/dr.sag3.01.png",
+            "score": 42
+          },
+          "player2": {
+            "name": "Souhaiel",
+            "photo": "/images/profiles/souhaiel_junkremoval03.png",
+            "score": 160
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Fares",
+            "photo": "/images/profiles/faresbabay.png",
+            "score": 109
+          },
+          "player2": {
+            "name": "Fathi",
+            "photo": "/images/profiles/fathi_3jej.png",
+            "score": 2
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Khal",
+            "photo": "/images/profiles/5al.png",
+            "score": 169
+          },
+          "player2": {
+            "name": "Anis",
+            "photo": "/images/profiles/ben.salem.anis.png",
+            "score": 69
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Trabelsi",
+            "photo": "/images/profiles/mtrabelsi.png",
+            "score": 48
+          },
+          "player2": {
+            "name": "Youneni",
+            "photo": "/images/profiles/nazz_elyouneni.png",
+            "score": 88
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Lundi 4 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Sameh",
+            "photo": "/images/profiles/sameh.ba.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Colombi",
+            "photo": "/images/profiles/colombi_oussama.png",
+            "score": -1
+          },
+          "forfait":"Colombi",
+          "motif_forfait":"absent",
+          "time": "19:30"
+        },
+        {
+          "player1": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
+            "score": 300
+          },
+          "player2": {
+            "name": "Zaman",
+            "photo": "/images/profiles/zamanino.png",
+            "score": 257
+          },
+          "time": "19:45"
+        },
+        {
+          "player1": {
+            "name": "Brabus",
+            "photo": "/images/profiles/brabus372.png",
+            "score": 496
+          },
+          "player2": {
+            "name": "Amyr",
+            "photo": "/images/profiles/amir__hajji.png",
+            "score": 630
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Chbaya7",
+            "photo": "/images/profiles/bilel.chbayah.png",
+            "score": 19
+          },
+          "player2": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraomriii.png",
+            "score": 14
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Skander",
+            "photo": "/images/profiles/skander_rezgui.png",
+            "score": 543
+          },
+          "player2": {
+            "name": "Tiger",
+            "photo": "/images/profiles/big.heart129.png",
+            "score": 866
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Charchabil",
+            "photo": "/images/profiles/garga044.png",
+            "score": 143
+          },
+          "player2": {
+            "name": "Faj3a",
+            "photo": "/images/profiles/limar8969.png",
+            "score": 49
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Mardi 5 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Sandro",
+            "photo": "/images/profiles/sandro.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Thala",
+            "photo": "/images/profiles/thalaftw.png",
+            "score": -1
+          },
+          "time": "20:15",
+          "forfait":"Sandro",
+          "motif_forfait":"absent"
+        },
+        {
+          "player1": {
+            "name": "Kinen",
+            "photo": "/images/profiles/kinen007.png",
+            "score": 60
+          },
+          "player2": {
+            "name": "Eva",
+            "photo": "/images/profiles/eva.png",
+            "score": 67
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Houda",
+            "photo": "/images/profiles/houda.png",
+            "score": 149
+          },
+          "player2": {
+            "name": "Khayri",
+            "photo": "/images/profiles/khayri_89.png",
+            "score": 423
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Couloumbi",
+            "photo": "/images/profiles/www.couloumbi.png",
+            "score": 212
+          },
+          "player2": {
+            "name": "Pap Malik",
+            "photo": "/images/profiles/malek.louati.2.png",
+            "score": 77
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Mercredi 6 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Sameh",
+            "photo": "/images/profiles/sameh.ba.png",
+            "score": 486
+          },
+          "player2": {
+            "name": "Ibn Tunis",
+            "photo": "/images/profiles/marouane_suisse88.png",
+            "score": 413
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Seif",
+            "photo": "/images/profiles/seifbenmustapha.png",
+            "score": 11
+          },
+          "player2": {
+            "name": "Dali",
+            "photo": "/images/profiles/dali_elghoul.png",
+            "score": 132
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Ashref",
+            "photo": "/images/profiles/ashref_officiel.png",
+            "score": 332
+          },
+          "player2": {
+            "name": "Syrinne",
+            "photo": "/images/profiles/sy_rinnee.png",
+            "score": 320
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Zaman",
+            "photo": "/images/profiles/zamanino.png",
+            "score": 147
+          },
+          "player2": {
+            "name": "Mosamem",
+            "photo": "/images/profiles/mosamem.png",
+            "score": 197
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Jeudi 7 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Marwen",
+            "photo": "/images/profiles/marwen.07.png",
+            "score": 37
+          },
+          "player2": {
+            "name": "Houda",
+            "photo": "/images/profiles/houda.png",
+            "score": 241
+          },
+          "time": "19:30"
+        },
+        {
+          "player1": {
+            "name": "Maher",
+            "photo": "/images/profiles/maherncycm7.png",
+            "score": 308
+          },
+          "player2": {
+            "name": "Couloumbi",
+            "photo": "/images/profiles/www.couloumbi.png",
+            "score": 375
+          },
+          "time": "19:45"
+        },
+        {
+          "player1": {
+            "name": "Sag3",
+            "photo": "/images/profiles/dr.sag3.01.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Khal",
+            "photo": "/images/profiles/5al.png",
+            "score": -1
+          },
+          "time": "20:15",
+          "forfait":"Sag3",
+          "motif_forfait":"a refusé de jouer"
+        },
+        {
+          "player1": {
+            "name": "Fares",
+            "photo": "/images/profiles/faresbabay.png",
+            "score": 30
+          },
+          "player2": {
+            "name": "Trabelsi",
+            "photo": "/images/profiles/mtrabelsi.png",
+            "score": 129
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Anis",
+            "photo": "/images/profiles/ben.salem.anis.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Souhaiel",
+            "photo": "/images/profiles/souhaiel_junkremoval03.png",
+            "score": -1
+          },
+          "time": "21:00",
+          "forfait":"Anis",
+          "motif_forfait":"sanctionné"
+        },
+        {
+          "player1": {
+            "name": "Youneni",
+            "photo": "/images/profiles/nazz_elyouneni.png",
+            "score": 81
+          },
+          "player2": {
+            "name": "Fathi",
+            "photo": "/images/profiles/fathi_3jej.png",
+            "score": 174
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Vendredi 8 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Sameh",
+            "photo": "/images/profiles/sameh.ba.png",
+            "score": 529
+          },
+          "player2": {
+            "name": "Ashref",
+            "photo": "/images/profiles/ashref_officiel.png",
+            "score": 533
+          },
+          "time": "19:30"
+        },
+        {
+          "player1": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
+            "score": 170
+          },
+          "player2": {
+            "name": "Seif",
+            "photo": "/images/profiles/seifbenmustapha.png",
+            "score": 47
+          },
+          "time": "19:45"
+        },
+        {
+          "player1": {
+            "name": "Brabus",
+            "photo": "/images/profiles/brabus372.png",
+            "score": 296
+          },
+          "player2": {
+            "name": "Skander",
+            "photo": "/images/profiles/skander_rezgui.png",
+            "score": 142
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Chbaya7",
+            "photo": "/images/profiles/bilel.chbayah.png",
+            "score": 10
+          },
+          "player2": {
+            "name": "Charchabil",
+            "photo": "/images/profiles/garga044.png",
+            "score": 214
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Tiger",
+            "photo": "/images/profiles/big.heart129.png",
+            "score": 659
+          },
+          "player2": {
+            "name": "Amyr",
+            "photo": "/images/profiles/amir__hajji.png",
+            "score": 848
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Faj3a",
+            "photo": "/images/profiles/limar8969.png",
+            "score": 86
+          },
+          "player2": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraomriii.png",
+            "score": 136
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Samedi 9 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Sandro",
+            "photo": "/images/profiles/sandro.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Houda",
+            "photo": "/images/profiles/houda.png",
+            "score": -1
+          },
+          "time": "20:15",
+          "forfait":"Sandro",
+          "motif_forfait":"sanctionné"
+        },
+        {
+          "player1": {
+            "name": "Kinen",
+            "photo": "/images/profiles/kinen007.png",
+            "score": 7
+          },
+          "player2": {
+            "name": "Couloumbi",
+            "photo": "/images/profiles/www.couloumbi.png",
+            "score": 89
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Khayri",
+            "photo": "/images/profiles/khayri_89.png",
+            "score": 232
+          },
+          "player2": {
+            "name": "Thala",
+            "photo": "/images/profiles/thalaftw.png",
+            "score": 79
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Pap Malik",
+            "photo": "/images/profiles/malek.louati.2.png",
+            "score": 33
+          },
+          "player2": {
+            "name": "Eva",
+            "photo": "/images/profiles/eva.png",
+            "score": 72
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Dimanche 10 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Colombi",
+            "photo": "/images/profiles/colombi_oussama.png",
+            "score": 167
+          },
+          "player2": {
+            "name": "Ashref",
+            "photo": "/images/profiles/ashref_officiel.png",
+            "score": 309
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Seif",
+            "photo": "/images/profiles/seifbenmustapha.png",
+            "score": 62
+          },
+          "player2": {
+            "name": "Zaman",
+            "photo": "/images/profiles/zamanino.png",
+            "score": 72
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Syrinne",
+            "photo": "/images/profiles/sy_rinnee.png",
+            "score": 312
+          },
+          "player2": {
+            "name": "Ibn Tunis",
+            "photo": "/images/profiles/marouane_suisse88.png",
+            "score": 237
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Mosamem",
+            "photo": "/images/profiles/mosamem.png",
+            "score": 106
+          },
+          "player2": {
+            "name": "Dali",
+            "photo": "/images/profiles/dali_elghoul.png",
+            "score": 408
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Lundi 11 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Marwen",
+            "photo": "/images/profiles/marwen.07.png",
+            "score": 203
+          },
+          "player2": {
+            "name": "Thala",
+            "photo": "/images/profiles/thalaftw.png",
+            "score": 43
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Maher",
+            "photo": "/images/profiles/maherncycm7.png",
+            "score": 117
+          },
+          "player2": {
+            "name": "Eva",
+            "photo": "/images/profiles/eva.png",
+            "score": 102
+          },
+          "time": "20:30"
+        }
+      ]
+    },
+    {
+      "date": "Mardi 12 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Colombi",
+            "photo": "/images/profiles/colombi_oussama.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Ibn Tunis",
+            "photo": "/images/profiles/marouane_suisse88.png",
+            "score": -1
+          },
+          "time": "20:15",
+          "forfait": "Colombi",
+          "motif_forfait": "a refusé de jouer"
+        },
+        {
+          "player1": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
+            "score": 812
+          },
+          "player2": {
+            "name": "Dali",
+            "photo": "/images/profiles/dali_elghoul.png",
+            "score": 875
+          },
+          "time": "20:30"
+        }
+      ]
+    },
+    {
+      "date": "Mercredi 13 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Marwen",
+            "photo": "/images/profiles/marwen.07.png",
+            "score": 695
+          },
+          "player2": {
+            "name": "Khayri",
+            "photo": "/images/profiles/khayri_89.png",
+            "score": 790
+          },
+          "time": "19:30"
+        },
+        {
+          "player1": {
+            "name": "Maher",
+            "photo": "/images/profiles/maherncycm7.png",
+            "score": 84
+          },
+          "player2": {
+            "name": "Pap Malik",
+            "photo": "/images/profiles/malek.louati.2.png",
+            "score": 12
+          },
+          "time": "19:45"
+        },
+        {
+          "player1": {
+            "name": "Sag3",
+            "photo": "/images/profiles/dr.sag3.01.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Anis",
+            "photo": "/images/profiles/ben.salem.anis.png",
+            "score": -1
+          },
+          "time": "20:15",
+          "forfait": "Anis",
+          "motif_forfait": "sanctionné"
+        },
+        {
+          "player1": {
+            "name": "Fares",
+            "photo": "/images/profiles/faresbabay.png",
+            "score": 135
+          },
+          "player2": {
+            "name": "Youneni",
+            "photo": "/images/profiles/nazz_elyouneni.png",
+            "score": 2
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Khal",
+            "photo": "/images/profiles/5al.png",
+            "score": 14
+          },
+          "player2": {
+            "name": "Souhaiel",
+            "photo": "/images/profiles/souhaiel_junkremoval03.png",
+            "score": 540
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Trabelsi",
+            "photo": "/images/profiles/mtrabelsi.png",
+            "score": 30
+          },
+          "player2": {
+            "name": "Fathi",
+            "photo": "/images/profiles/fathi_3jej.png",
+            "score": 216
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Jeudi 14 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Sameh",
+            "photo": "/images/profiles/sameh.ba.png",
+            "score": 719
+          },
+          "player2": {
+            "name": "Syrinne",
+            "photo": "/images/profiles/sy_rinnee.png",
+            "score": 743
+          },
+          "time": "19:30"
+        },
+        {
+          "player1": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
+            "score": 166
+          },
+          "player2": {
+            "name": "Mosamem",
+            "photo": "/images/profiles/mosamem.png",
+            "score": 49
+          },
+          "time": "19:45"
+        },
+        {
+          "player1": {
+            "name": "Brabus",
+            "photo": "/images/profiles/brabus372.png",
+            "score": 743
+          },
+          "player2": {
+            "name": "Tiger",
+            "photo": "/images/profiles/big.heart129.png",
+            "score": 1877
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Chbaya7",
+            "photo": "/images/profiles/bilel.chbayah.png",
+            "score": 6
+          },
+          "player2": {
+            "name": "Faj3a",
+            "photo": "/images/profiles/limar8969.png",
+            "score": 126
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Skander",
+            "photo": "/images/profiles/skander_rezgui.png",
+            "score": 62
+          },
+          "player2": {
+            "name": "Amyr",
+            "photo": "/images/profiles/amir__hajji.png",
+            "score": 176
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Charchabil",
+            "photo": "/images/profiles/garga044.png",
+            "score": 254
+          },
+          "player2": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraomriii.png",
+            "score": 209
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Vendredi 15 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Sandro",
+            "photo": "/images/profiles/sandro.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Khayri",
+            "photo": "/images/profiles/khayri_89.png",
+            "score": -1
+          },
+          "time": "20:15",
+          "forfait":"Sandro",
+          "motif_forfait": "sanctionné"
+        },
+        {
+          "player1": {
+            "name": "Kinen",
+            "photo": "/images/profiles/kinen007.png",
+            "score": 19
+          },
+          "player2": {
+            "name": "Pap Malik",
+            "photo": "/images/profiles/malek.louati.2.png",
+            "score": 44
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Houda",
+            "photo": "/images/profiles/houda.png",
+            "score": 174
+          },
+          "player2": {
+            "name": "Thala",
+            "photo": "/images/profiles/thalaftw.png",
+            "score": 1098
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Couloumbi",
+            "photo": "/images/profiles/www.couloumbi.png",
+            "score": 207
+          },
+          "player2": {
+            "name": "Eva",
+            "photo": "/images/profiles/eva.png",
+            "score": 306
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
+      "date": "Samedi 16 nov. 2024",
+      "matches": [
+        {
+          "player1": {
+            "name": "Colombi",
+            "photo": "/images/profiles/colombi_oussama.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Syrinne",
+            "photo": "/images/profiles/sy_rinnee.png",
+            "score": -1
+          },
+          "time": "20:15"
+        },
+        {
+          "player1": {
+            "name": "Seif",
+            "photo": "/images/profiles/seifbenmustapha.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Mosamem",
+            "photo": "/images/profiles/mosamem.png",
+            "score": -1
+          },
+          "time": "20:30"
+        },
+        {
+          "player1": {
+            "name": "Ashref",
+            "photo": "/images/profiles/ashref_officiel.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Ibn Tunis",
+            "photo": "/images/profiles/marouane_suisse88.png",
+            "score": -1
+          },
+          "time": "21:00"
+        },
+        {
+          "player1": {
+            "name": "Zaman",
+            "photo": "/images/profiles/zamanino.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Dali",
+            "photo": "/images/profiles/dali_elghoul.png",
+            "score": -1
+          },
+          "time": "21:15"
+        }
+      ]
+    },
+    {
       "date": "Lundi 18 nov. 2024",
       "knockout": true,
       "roundName": "Quarts de Finale",
@@ -419,12 +1355,12 @@
           "player1": {
             "name": "Syrinne",
             "photo": "/images/profiles/sy_rinnee.png",
-            "score": -1
+            "score": 200
           },
           "player2": {
             "name": "Khayri",
             "photo": "/images/profiles/khayri_89.png",
-            "score": -1
+            "score": 202
           },
           "time": "19:30"
         },
@@ -494,8 +1430,8 @@
             "score": -1
           },
           "player2": {
-            "name": "Dali",
-            "photo": "/images/profiles/dali_elghoul.png",
+            "name": "à définir",
+            "photo": "/images/profiles/userTiktok.png",
             "score": -1
           },
           "time": "20:00"
