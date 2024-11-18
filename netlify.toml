@@ -11,13 +11,13 @@ for = "/*"
   Cache-Control = "no-cache"
   Content-Security-Policy = """
     default-src 'self';
-    script-src 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com;
-    script-src-elem 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://embed.typeform.com;
-    style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://embed.typeform.com;
+    script-src 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com https://the.gatekeeperconsent.com;
+    script-src-elem 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com https://the.gatekeeperconsent.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://embed.typeform.com https://sf16-website-login.neutral.ttwstatic.com;
+    style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://embed.typeform.com https://sf16-website-login.neutral.ttwstatic.com;
     font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' data: https://www.tiktok.com https://*.ttwstatic.com https://uploads.tuntok.live https://pagead2.googlesyndication.com https://embed.typeform.com;
-    connect-src 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://region1.google-analytics.com https://embed.typeform.com;
-    frame-src 'self' https://www.tiktok.com https://embed.typeform.com;
+    img-src 'self' data: https://www.tiktok.com https://*.ttwstatic.com https://uploads.tuntok.live https://pagead2.googlesyndication.com https://embed.typeform.com https://images.typeform.com;
+    connect-src 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://region1.google-analytics.com https://embed.typeform.com https://api.typeform.com;
+    frame-src 'self' https://www.tiktok.com https://embed.typeform.com https://form.typeform.com;
     base-uri 'self';
   """
