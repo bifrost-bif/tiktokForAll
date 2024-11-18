@@ -19,7 +19,7 @@ const Home = () => {
                 <Typography variant="h4" className="featured-title">
                     <span className="highlight">A LA UNE <br/></span> <span className="highlightDes">Vidéo gagnante - Journée 2</span>
                 </Typography>
-                <TikTokEmbed videoId="7433744840464043295" />
+                <TikTokEmbed videoId="7438325709644549431" />
             </section>
             <br />
         </div>
