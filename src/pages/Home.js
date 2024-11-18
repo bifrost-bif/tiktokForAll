@@ -21,11 +21,14 @@ const Home = () => {
                     src="https://tally.so/embed/nr0VrN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
                     loading="lazy" 
                     width="100%" 
-                    height="200" 
                     frameBorder="0" 
                     marginHeight="0" 
                     marginWidth="0" 
                     title="Vote"
+                    style={{
+                        height: '27vh', // Ajustez selon la taille de votre contenu
+                        overflow: 'hidden', // Empêche le défilement interne
+                    }}
                 ></iframe>
             </section>
             {/* Section de la vidéo gagnante - À la une */}
