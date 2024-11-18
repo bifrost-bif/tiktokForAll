@@ -13,6 +13,7 @@ const Home = () => {
     const today = new Date().toLocaleDateString();
 
     return (
+        
         <div className="home-container">
             {/* Section de la vidéo gagnante - À la une */}
             <section className="featured-video-section">
@@ -22,6 +23,7 @@ const Home = () => {
                 <TikTokEmbed videoId="7438325709644549431" />
             </section>
             <br />
+            
         </div>
     );
 };

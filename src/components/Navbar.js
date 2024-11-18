@@ -26,7 +26,7 @@ const Navbar = () => {
             }}
         >
             <List sx={{ width: '100%' }}>
-                {['Accueil', 'Joueurs Inscrits', 'Calendrier', 'Phase de groupe', 'Phase Éliminatoire', 'Sanctions', 'Mosammin'].map((text, index) => (
+                {['Accueil', 'Calendrier', 'Phase de groupe', 'Phase Eliminatoire', 'Sanctions', 'Mosammin'].map((text, index) => (
                     <ListItem 
                         button 
                         component={Link} 
@@ -109,9 +109,7 @@ const Navbar = () => {
                         <Button component={Link} to="/" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Accueil
                         </Button>
-                        <Button component={Link} to="/joueurs-inscrits" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                            Joueurs Inscrits
-                        </Button>
+ 
                         <Button component={Link} to="/calendrier" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Calendrier
                         </Button>
