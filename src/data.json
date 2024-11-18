@@ -321,46 +321,46 @@
       {
         "id": 9,
         "player1": {
-          "name": "Joueur 1",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player2": {
-          "name": "Joueur 4",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player3": {
-          "name": "Joueur 1",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player4": {
-          "name": "Joueur 4",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         }
       },
       {
         "id": 10,
         "player1": {
-          "name": "Joueur 1",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player2": {
-          "name": "Joueur 4",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player3": {
-          "name": "Joueur 1",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player4": {
-          "name": "Joueur 4",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         }
       }
@@ -369,26 +369,26 @@
       {
         "id": 11,
         "player1": {
-          "name": "Joueur 4",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player2": {
-          "name": "Joueur 8",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         }
       },
       {
         "id": 12,
         "player1": {
-          "name": "Joueur 4",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player2": {
-          "name": "Joueur 8",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         }
       }
@@ -397,13 +397,13 @@
       {
         "id": 13,
         "player1": {
-          "name": "Joueur 8",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         },
         "player2": {
-          "name": "Joueur 13",
-          "photo": "/images/profiles/userTiktok.png",
+          "name": "A définir3",
+          "photo": "/images/profiles/inconnu.png",
           "score": -1
         }
       }
