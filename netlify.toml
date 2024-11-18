@@ -11,8 +11,8 @@ for = "/*"
   Cache-Control = "no-cache"
   Content-Security-Policy = """
     default-src 'self';
-    script-src 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com https://the.gatekeeperconsent.com https://tally.so;
-    script-src-elem 'self' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com https://the.gatekeeperconsent.com https://tally.so;
+    script-src 'self' 'nonce-random-nonce-value' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com https://the.gatekeeperconsent.com https://tally.so;
+    script-src-elem 'self' 'nonce-random-nonce-value' https://www.tiktok.com https://*.ttwstatic.com https://www.googletagmanager.com https://plausible.io https://pagead2.googlesyndication.com https://embed.typeform.com https://the.gatekeeperconsent.com https://tally.so;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://embed.typeform.com https://sf16-website-login.neutral.ttwstatic.com https://tally.so;
     style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://embed.typeform.com https://sf16-website-login.neutral.ttwstatic.com https://tally.so;
     font-src 'self' https://fonts.gstatic.com;
