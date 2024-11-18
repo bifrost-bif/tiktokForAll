@@ -443,7 +443,7 @@
         },
         {
           "player1": {
-            "name": "Amyr",
+            "name": "Amir",
             "photo": "/images/profiles/amir__hajji.png",
             "score": -1
           },
@@ -866,7 +866,7 @@
         },
         {
           "id": 4,
-          "name": "Amyr",
+          "name": "Amir",
           "flag": "/images/profiles/amir__hajji.png",
           "played": 3,
           "coins": "1654k",

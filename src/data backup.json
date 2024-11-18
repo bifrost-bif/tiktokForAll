@@ -549,7 +549,7 @@
             "score": 496
           },
           "player2": {
-            "name": "Amyr",
+            "name": "Amir",
             "photo": "/images/profiles/amir__hajji.png",
             "score": 630
           },
@@ -861,7 +861,7 @@
             "score": 659
           },
           "player2": {
-            "name": "Amyr",
+            "name": "Amir",
             "photo": "/images/profiles/amir__hajji.png",
             "score": 848
           },
@@ -1209,7 +1209,7 @@
             "score": 62
           },
           "player2": {
-            "name": "Amyr",
+            "name": "Amir",
             "photo": "/images/profiles/amir__hajji.png",
             "score": 176
           },
@@ -1352,7 +1352,7 @@
   "joueursInscritsData": [
     {
       "id": 1,
-      "name": "Amyr",
+      "name": "Amir",
       "flag": "/images/profiles/amir__hajji.png",
       "validated": true,
       "tiktokUsername": "amir__hajji"
@@ -1686,7 +1686,7 @@
         },
         {
           "id": 4,
-          "name": "Amyr",
+          "name": "Amir",
           "flag": "/images/profiles/amir__hajji.png",
           "played": 3,
           "coins": "1654k",
