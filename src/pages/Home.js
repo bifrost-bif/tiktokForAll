@@ -16,9 +16,7 @@ const Home = () => {
         <div className="home-container">
                 {/* Ajout de l'iframe directement dans le JSX */}
                 <section className="vote-section">
-                <Typography variant="h5" className="vote-title">
-                    Votez maintenant
-                </Typography>
+
                 <iframe 
                     src="https://tally.so/embed/nr0VrN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
                     loading="lazy" 
