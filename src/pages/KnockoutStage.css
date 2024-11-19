@@ -318,7 +318,7 @@
 .connector-1 {
     position: absolute;
     right: -64px;
-    top: 110px;
+    top: 100px;
     width: 64px;
     height: 2px;
     background-color: #32de84;
@@ -356,7 +356,7 @@
 .connector-4 {
     position: absolute;
     right: -64px;
-    top: 560px;
+    top: 550px;
     width: 64px;
     height: 2px;
     background-color: #32de84;
@@ -365,7 +365,7 @@
 .connector-5 {
     position: absolute;
     right: -64px;
-    top: 710px;
+    top: 700px;
     width: 64px;
     height: 2px;
     background-color: #ddd;
@@ -385,7 +385,7 @@
 .connector-6 {
     position: absolute;
     right: -64px;
-    top: 860px;
+    top: 850px;
     width: 64px;
     height: 2px;
     background-color: #ddd;
@@ -394,7 +394,7 @@
 .connector-7 {
     position: absolute;
     right: -64px;
-    top: 1010px;
+    top: 1000px;
     width: 64px;
     height: 2px;
     background-color: #ddd;
@@ -403,7 +403,7 @@
 .connector-8 {
     position: absolute;
     right: -64px;
-    top: 1160px;
+    top: 1150px;
     width: 64px;
     height: 2px;
     background-color: #ddd;
