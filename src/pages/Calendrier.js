@@ -199,6 +199,26 @@ const Match = ({ match, onClick }) => {
     const forfeitReason = match.motif_forfait ? `${match.motif_forfait}` : '';
     const forfeitMessage = `${match.forfait} ${forfeitReason}, victoire automatique`.trim();
 
+    const isTirageAuSort = match.tirage_au_sort === "true";
+    if (isTirageAuSort) {
+        return (
+            <Grid item xs={12} sm={6} md={5} onClick={onClick}>
+                <Paper className="match-container">
+                    <div className="tirage-container">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/tiktokforall_tirage.png`}
+                            alt="Tirage au Sort"
+                            className="tirage-image"
+                        />
+                        <Typography variant="h6" className="match-time">
+                            {match.time}
+                        </Typography>
+                    </div>
+                </Paper>
+            </Grid>
+        );
+    }
+
     return (
         <Grid item xs={12} sm={6} md={5} onClick={onClick}>
             <Paper className={`match-container ${match.report === "true" ? 'postponed-match' : ''}`}>

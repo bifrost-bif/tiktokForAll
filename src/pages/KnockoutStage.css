@@ -255,22 +255,23 @@
     padding: 0.5rem;
 }
 
-.Khayri,.Amira,.Khal,.Chrchbil {
+.Khayri, .Amira, .Khal, .Chrchbil, .Souhaiel, .Dali, .Thala, .Hend {
     display: block !important; /* Assure que l'image prend tout l'espace */
     overflow: hidden !important; /* Coupe les débordements */
     position: relative !important; /* Nécessaire pour utiliser transform */
+    z-index: 9999 !important; /* Assure que les éléments sont au premier plan */
     animation: move-horizontal 6s ease forwards !important; /* Animation correcte */
-  }
-  
-  @keyframes move-horizontal {
+}
+
+@keyframes move-horizontal {
     0% {
-      transform: translateX(0); /* Début à la position initiale */
+        transform: translateX(0); /* Début à la position initiale */
     }
     100% {
-      transform: translateX(130px); /* Fin à 200px à droite */
+        transform: translateX(130px); /* Fin à 200px à droite */
     }
-  }
-  
+}
+
   
    /*Animation définie avec @keyframes */
   /*@keyframes move-horizontal-vertical {
@@ -295,7 +296,11 @@
 .Syrinne,
 .Fares,
 .Fathi,
-.Amir{
+.Amir,
+.Maher,
+.Achref,
+.Eva,
+.Tiger{
     filter: grayscale(0); /* Couleur normale au début */
     opacity: 1; /* Entièrement visible */
     animation: fadeToGray 2s ease forwards; /* Animation fluide sur 2 secondes */
@@ -368,7 +373,7 @@
     top: 700px;
     width: 64px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #32de84;
 }
 
 .connector-5::after {
@@ -388,7 +393,7 @@
     top: 850px;
     width: 64px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #32de84;
 }
 
 .connector-7 {
@@ -397,7 +402,7 @@
     top: 1000px;
     width: 64px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #32de84;
 }
 
 .connector-8 {
@@ -406,7 +411,7 @@
     top: 1150px;
     width: 64px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #32de84;
 }
 
 /* 1/2 de final */

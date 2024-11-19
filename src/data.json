@@ -221,7 +221,7 @@
           "score": -1
         },
         "player2": {
-          "name": "Khayri 👑",
+          "name": "Khayri",
           "realName": "Khayri",
           "photo": "/images/profiles/khayri_89.png",
           "score": -1
@@ -236,7 +236,7 @@
           "score": -1
         },
         "player2": {
-          "name": "Amira 👑",
+          "name": "Amira",
           "realName": "Amira",
           "photo": "/images/profiles/amiraomriii.png",
           "score": -1
@@ -251,7 +251,7 @@
           "score": -1
         },
         "player2": {
-          "name": "Khal 👑",
+          "name": "Khal",
           "realName": "Khal",
           "photo": "/images/profiles/5al.png",
           "score": -1
@@ -266,7 +266,7 @@
           "score": -1
         },
         "player2": {
-          "name": "Chrchbil 👑",
+          "name": "Chrchbil",
           "realName": "Chrchbil",
           "photo": "/images/profiles/garga044.png",
           "score": -1
@@ -275,16 +275,16 @@
       {
         "id": 5,
         "player1": {
-          "name": "Souhaiel",
-          "realName": "Souhaiel",
-          "photo": "/images/profiles/souhaiel_junkremoval03.png",
-          "score": -1
-        },
-        "player2": {
           "name": "Tiger",
           "realName": "Tiger",
           "photo": "/images/profiles/big.heart129.png",
-          "score": -1
+          "score": 1553
+        },
+        "player2": {
+          "name": "Souhaiel",
+          "realName": "Souhaiel",
+          "photo": "/images/profiles/souhaiel_junkremoval03.png",
+          "score": 1826
         }
       },
       {
@@ -293,28 +293,28 @@
           "name": "Maher",
           "realName": "Maher",
           "photo": "/images/profiles/maherncycm7.png",
-          "score": -1
+          "score": 184
         },
         "player2": {
           "name": "Dali",
           "realName": "Dali",
           "photo": "/images/profiles/dali_elghoul.png",
-          "score": -1
+          "score": 444
         }
       },
       {
         "id": 7,
         "player1": {
-          "name": "Thala",
-          "realName": "Thala",
-          "photo": "/images/profiles/thalaftw.png",
-          "score": -1
-        },
-        "player2": {
           "name": "Achref",
           "realName": "Achref",
           "photo": "/images/profiles/ashref_officiel.png",
-          "score": -1
+          "score": 436
+        },
+        "player2": {
+          "name": "Thala",
+          "realName": "Thala",
+          "photo": "/images/profiles/thalaftw.png",
+          "score": 572
         }
       },
       {
@@ -323,13 +323,13 @@
           "name": "Eva",
           "realName": "Eva",
           "photo": "/images/profiles/eva.png",
-          "score": -1
+          "score": 215
         },
         "player2": {
           "name": "Hend",
           "realName": "Hend",
           "photo": "/images/profiles/hendab7.png",
-          "score": -1
+          "score": 498
         }
       }
     ],
@@ -494,12 +494,12 @@
           "player1": {
             "name": "Souhaiel",
             "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": -1
+            "score": 1826
           },
           "player2": {
             "name": "Tiger",
             "photo": "/images/profiles/big.heart129.png",
-            "score": -1
+            "score": 1553
           },
           "time": "19:30"
         },
@@ -507,12 +507,12 @@
           "player1": {
             "name": "Maher",
             "photo": "/images/profiles/maherncycm7.png",
-            "score": -1
+            "score": 184
           },
           "player2": {
             "name": "Dali",
             "photo": "/images/profiles/dali_elghoul.png",
-            "score": -1
+            "score": 444
           },
           "time": "20:00"
         },
@@ -520,12 +520,12 @@
           "player1": {
             "name": "Thala",
             "photo": "/images/profiles/thalaftw.png",
-            "score": -1
+            "score": 572
           },
           "player2": {
             "name": "Achref",
             "photo": "/images/profiles/ashref_officiel.png",
-            "score": -1
+            "score": 436
           },
           "time": "20:30"
         },    
@@ -533,17 +533,38 @@
           "player1": {
             "name": "Eva",
             "photo": "/images/profiles/eva.png",
-            "score": -1
+            "score": 215
           },
           "player2": {
             "name": "Hend",
             "photo": "/images/profiles/hendab7.png",
-            "score": -1
+            "score": 498
           },
           "time": "21:00"
         }
       ]
-    }
+    },
+    {
+      "date": "Mercredi 20 nov. 2024",
+      "knockout": true,
+      "roundName": "Tirage au sort",
+      "matches": [
+        {
+          "player1": {
+            "name": "Souhaiel",
+            "photo": "/images/profiles/souhaiel_junkremoval03.png",
+            "score": 1826
+          },
+          "player2": {
+            "name": "Tiger",
+            "photo": "/images/profiles/big.heart129.png",
+            "score": 1553
+          },
+          "time": "19:30",
+          "tirage_au_sort":"true"
+        }
+      ]
+    } 
   ],
   "joueursInscritsData": [
     {
