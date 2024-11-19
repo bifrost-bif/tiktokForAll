@@ -206,7 +206,7 @@ const Match = ({ match, onClick }) => {
                 <Paper className="match-container">
                     <div className="tirage-container">
                         <img
-                            src={`${process.env.PUBLIC_URL}/images/tiktokforall_tirage.png`}
+                            src={`${process.env.PUBLIC_URL}/images/tiktokforall_tirage.webp`}
                             alt="Tirage au Sort"
                             className="tirage-image"
                         />

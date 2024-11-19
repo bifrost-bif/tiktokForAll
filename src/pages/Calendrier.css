@@ -540,13 +540,13 @@ body {
     display: block;
     margin: 0 auto;
     max-width: 1000px!important;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .tirage-container {
     text-align: center;
     width: 350px!important;
     height: 350px!important;
     display: block;
-    overflow: hidden;
+    overflow-x: hidden;
     left: 50%!important;
 }
