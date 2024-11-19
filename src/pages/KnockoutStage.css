@@ -283,7 +283,7 @@
     top: 250px;
     width: 64px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #32de84;
 }
 
 .connector-3 {
@@ -292,7 +292,7 @@
     top: 400px;
     width: 64px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #32de84;
 }
 
 .connector-4 {
@@ -301,7 +301,7 @@
     top: 560px;
     width: 64px;
     height: 2px;
-    background-color: #ddd;
+    background-color: #32de84;
 }
 
 .connector-5 {
@@ -319,8 +319,8 @@
     right: 0;
     top: 50%;
     height: 450px;
-    width: 2px;
-    background-color: #ddd;
+    width: 3px;
+    background-color: #32de84;
     transform: translateY(0%);
 }
 
