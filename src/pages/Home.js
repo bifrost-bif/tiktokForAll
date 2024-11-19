@@ -35,9 +35,9 @@ const Home = () => {
             <section className="featured-video-section">
                 <Typography variant="h4" className="featured-title">
                     <span className="highlight">A LA UNE <br /></span> 
-                    <span className="highlightDes">Vidéo gagnante - Journée 2</span>
+                    <span className="highlightDes">Vidéo gagnante - Journée 1</span>
                 </Typography>
-                <TikTokEmbed videoId="7438325709644549431" />
+                <TikTokEmbed videoId="7174423546025773829" />
             </section>
             <br />
             

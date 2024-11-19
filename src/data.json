@@ -220,7 +220,7 @@
           "score": -1
         },
         "player2": {
-          "name": "Khayri",
+          "name": "Khayri 👑",
           "photo": "/images/profiles/khayri_89.png",
           "score": -1
         }
@@ -1170,13 +1170,6 @@
       "flag": "/images/profiles/mosamin/ds_replay.png",
       "validated": true,
       "tiktokUsername": "ds_replay"
-    },
-    {
-      "id": 8,
-      "name": "3ami9",
-      "flag": "/images/profiles/mosamin/schba31wa.png",
-      "validated": true,
-      "tiktokUsername": "schba31w"
     },
     {
       "id": 9,
