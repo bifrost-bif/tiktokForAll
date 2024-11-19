@@ -278,13 +278,13 @@
           "name": "Tiger",
           "realName": "Tiger",
           "photo": "/images/profiles/big.heart129.png",
-          "score": 1553
+          "score": -1
         },
         "player2": {
           "name": "Souhaiel",
           "realName": "Souhaiel",
           "photo": "/images/profiles/souhaiel_junkremoval03.png",
-          "score": 1826
+          "score": -1
         }
       },
       {
@@ -293,13 +293,13 @@
           "name": "Maher",
           "realName": "Maher",
           "photo": "/images/profiles/maherncycm7.png",
-          "score": 184
+          "score": -1
         },
         "player2": {
           "name": "Dali",
           "realName": "Dali",
           "photo": "/images/profiles/dali_elghoul.png",
-          "score": 444
+          "score": -1
         }
       },
       {
@@ -308,13 +308,13 @@
           "name": "Achref",
           "realName": "Achref",
           "photo": "/images/profiles/ashref_officiel.png",
-          "score": 436
+          "score": -1
         },
         "player2": {
           "name": "Thala",
           "realName": "Thala",
           "photo": "/images/profiles/thalaftw.png",
-          "score": 572
+          "score": -1
         }
       },
       {
@@ -323,13 +323,13 @@
           "name": "Eva",
           "realName": "Eva",
           "photo": "/images/profiles/eva.png",
-          "score": 215
+          "score": -1
         },
         "player2": {
           "name": "Hend",
           "realName": "Hend",
           "photo": "/images/profiles/hendab7.png",
-          "score": 498
+          "score": -1
         }
       }
     ],
