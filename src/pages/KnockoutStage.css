@@ -258,8 +258,8 @@
 .Khayri, .Amira, .Khal, .Chrchbil, .Souhaiel, .Dali, .Thala, .Hend {
     display: block !important; /* Assure que l'image prend tout l'espace */
     overflow: hidden !important; /* Coupe les débordements */
-    position: relative !important; /* Nécessaire pour utiliser transform */
-    z-index: 9999 !important; /* Assure que les éléments sont au premier plan */
+    position: relative !important;
+    z-index: 1000 !important; 
     animation: move-horizontal 6s ease forwards !important; /* Animation correcte */
 }
 
@@ -271,7 +271,6 @@
         transform: translateX(130px); /* Fin à 200px à droite */
     }
 }
-
   
    /*Animation définie avec @keyframes */
   /*@keyframes move-horizontal-vertical {
