@@ -9,7 +9,6 @@ const Home = () => {
     // Toggle function to show/hide full content
     const toggleContent = () => setIsContentMinimized(!isContentMinimized);
 
-    // Date du jour pour afficher la date de la vidéo gagnante
     const today = new Date().toLocaleDateString();
 
     return (
@@ -26,8 +25,11 @@ const Home = () => {
                     marginWidth="0" 
                     title="Vote"
                     style={{
-                        height: '27vh', // Ajustez selon la taille de votre contenu
-                        overflow: 'hidden', // Empêche le défilement interne
+                        height: '30vh', 
+                        overflow: 'hidden', 
+                        scrollBehavior: 'none',
+                        scrollbarWidth: 'none',
+                        display: 'flex' /*Merci Zoet*/
                     }}
                 ></iframe>
             </section>

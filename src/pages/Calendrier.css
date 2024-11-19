@@ -43,7 +43,11 @@
 .match-container {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 100%;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .match-info {
