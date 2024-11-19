@@ -62,12 +62,14 @@ const KnockoutStage = () => {
                                         alignItems: 'center',
                                         gap: '18px',
                                         fontWeight: 'bold',
-                                        marginTop: "-8px"
+                                        marginTop: "-8px",
                                     }}
+                                    className={player.realName}
                                 >
                                     <img
                                         src={`${process.env.PUBLIC_URL}${player.photo}`}
                                         alt={player.name}
+
                                         style={{
                                             width: '32px',
                                             height: '32px',
@@ -75,7 +77,7 @@ const KnockoutStage = () => {
                                             marginTop: "10px"
                                         }}
                                     />
-                                    {player.name}
+                                    <span className={`player-name-${player.realName}`}>{player.name}</span>
                                 </Typography>
                             ))}
                         </div>
@@ -101,12 +103,14 @@ const KnockoutStage = () => {
                                                 alignItems: 'center',
                                                 gap: '8px',
                                                 fontWeight: 'bold',
-                                                marginTop: "-8px"
+                                                marginTop: "-8px",
                                             }}
+                                            className={player.realName}
                                         >
                                             <img
                                                 src={`${process.env.PUBLIC_URL}${player.photo}`}
                                                 alt={player.name}
+                                                
                                                 style={{
                                                     width: '32px',
                                                     height: '32px',

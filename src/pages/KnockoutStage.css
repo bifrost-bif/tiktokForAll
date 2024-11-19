@@ -255,7 +255,65 @@
     padding: 0.5rem;
 }
 
+.Khayri,.Amira,.Khal,.Chrchbil {
+    display: block !important; /* Assure que l'image prend tout l'espace */
+    overflow: hidden !important; /* Coupe les débordements */
+    position: relative !important; /* Nécessaire pour utiliser transform */
+    animation: move-horizontal 6s ease forwards !important; /* Animation correcte */
+  }
+  
+  @keyframes move-horizontal {
+    0% {
+      transform: translateX(0); /* Début à la position initiale */
+    }
+    100% {
+      transform: translateX(130px); /* Fin à 200px à droite */
+    }
+  }
+  
+  
+   /*Animation définie avec @keyframes */
+  /*@keyframes move-horizontal-vertical {
+    0% {
+      transform: translate(0, 0); 
+    }
+    33% {
+      transform: translateX(125px); 
+    }
+    66% {
+      transform: translate(225px, 490px); 
+    }
+    100% {
+      transform: translate(325px,490px);  
+    }
+  }*/
 
+/* Animation horizontale définie avec @keyframes */
+
+
+  
+.Syrinne,
+.Fares,
+.Fathi,
+.Amir{
+    filter: grayscale(0); /* Couleur normale au début */
+    opacity: 1; /* Entièrement visible */
+    animation: fadeToGray 2s ease forwards; /* Animation fluide sur 2 secondes */
+  }
+  
+  /* Animation de transition vers l'élimination */
+  @keyframes fadeToGray {
+    0% {
+      filter: grayscale(0); /* Couleur normale */
+      opacity: 1; /* Complètement visible */
+    }
+    100% {
+      filter: grayscale(100%); /* Devient gris */
+      opacity: 0.2; /* Devient presque transparent */
+    }
+  }
+  
+  
 
 .connector-1 {
     position: absolute;
@@ -412,3 +470,4 @@
     left: 50%;
     transform: translateX(-50%);
 }
+

@@ -216,11 +216,13 @@
         "id": 1,
         "player1": {
           "name": "Syrinne",
+          "realName": "Syrinne",
           "photo": "/images/profiles/sy_rinnee.png",
           "score": -1
         },
         "player2": {
           "name": "Khayri 👑",
+          "realName": "Khayri",
           "photo": "/images/profiles/khayri_89.png",
           "score": -1
         }
@@ -229,11 +231,13 @@
         "id": 3,
         "player1": {
           "name": "Fares",
+          "realName": "Fares",
           "photo": "/images/profiles/faresbabay.png",
           "score": -1
         },
         "player2": {
           "name": "Amira 👑",
+          "realName": "Amira",
           "photo": "/images/profiles/amiraomriii.png",
           "score": -1
         }
@@ -242,11 +246,13 @@
         "id": 2,
         "player1": {
           "name": "Amir",
+          "realName": "Amir",
           "photo": "/images/profiles/amir__hajji.png",
           "score": -1
         },
         "player2": {
           "name": "Khal 👑",
+          "realName": "Khal",
           "photo": "/images/profiles/5al.png",
           "score": -1
         }
@@ -255,11 +261,13 @@
         "id": 4,
         "player1": {
           "name": "Fathi",
+          "realName": "Fathi",
           "photo": "/images/profiles/fathi_3jej.png",
           "score": -1
         },
         "player2": {
           "name": "Chrchbil 👑",
+          "realName": "Chrchbil",
           "photo": "/images/profiles/garga044.png",
           "score": -1
         }
@@ -268,11 +276,13 @@
         "id": 5,
         "player1": {
           "name": "Souhaiel",
+          "realName": "Souhaiel",
           "photo": "/images/profiles/souhaiel_junkremoval03.png",
           "score": -1
         },
         "player2": {
           "name": "Tiger",
+          "realName": "Tiger",
           "photo": "/images/profiles/big.heart129.png",
           "score": -1
         }
@@ -281,11 +291,13 @@
         "id": 6,
         "player1": {
           "name": "Maher",
+          "realName": "Maher",
           "photo": "/images/profiles/maherncycm7.png",
           "score": -1
         },
         "player2": {
           "name": "Dali",
+          "realName": "Dali",
           "photo": "/images/profiles/dali_elghoul.png",
           "score": -1
         }
@@ -294,11 +306,13 @@
         "id": 7,
         "player1": {
           "name": "Thala",
+          "realName": "Thala",
           "photo": "/images/profiles/thalaftw.png",
           "score": -1
         },
         "player2": {
           "name": "Achref",
+          "realName": "Achref",
           "photo": "/images/profiles/ashref_officiel.png",
           "score": -1
         }
@@ -307,11 +321,13 @@
         "id": 8,
         "player1": {
           "name": "Eva",
+          "realName": "Eva",
           "photo": "/images/profiles/eva.png",
           "score": -1
         },
         "player2": {
           "name": "Hend",
+          "realName": "Hend",
           "photo": "/images/profiles/hendab7.png",
           "score": -1
         }
