@@ -39,7 +39,7 @@ const Home = () => {
                     <span className="highlight">A LA UNE <br /></span> 
                     <span className="highlightDes">Vidéo gagnante - Journée 1</span>
                 </Typography>
-                <TikTokEmbed videoId="7438714680157228321" />
+                <TikTokEmbed videoId="7434713514431761695" />
             </section>
             <br />
             
