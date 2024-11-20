@@ -70,15 +70,15 @@
   
   /* Bouton de lancement */
   button {
-    margin-top: 20px!important;
-    padding: 10px 20px!important;
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #3498db;
-    color: white!important;
-    border: none!important;
-    border-radius: 5px!important;
-    cursor: pointer!important;
-    font-size: 14px!important;
-    font-weight: bold!important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   button:disabled {
