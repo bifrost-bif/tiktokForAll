@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './TirageAuSort.css';
 
-const playersA = [
+const initialPlayersA = [
   { id: 1, name: 'Khayri', photo: '/images/profiles/khayri_89.png' },
   { id: 2, name: 'Khal', photo: '/images/profiles/5al.png' },
   { id: 3, name: 'Souhaiel', photo: '/images/profiles/souhaiel_junkremoval03.png' },
   { id: 4, name: 'Thala', photo: '/images/profiles/thalaftw.png' },
 ];
 
-const playersB = [
+const initialPlayersB = [
   { id: 5, name: 'Hend', photo: '/images/profiles/hendab7.png' },
   { id: 6, name: 'Chrchbil', photo: '/images/profiles/garga044.png' },
   { id: 7, name: 'Dali', photo: '/images/profiles/dali_elghoul.png' },
@@ -16,6 +16,9 @@ const playersB = [
 ];
 
 const TirageAuSort = () => {
+  const [playersA, setPlayersA] = useState(initialPlayersA);
+  const [playersB, setPlayersB] = useState(initialPlayersB);
+
   const [selectedPlayerA, setSelectedPlayerA] = useState(null);
   const [isSpinningA, setIsSpinningA] = useState(false);
   const [rotationA, setRotationA] = useState(0);
@@ -24,41 +27,59 @@ const TirageAuSort = () => {
   const [isSpinningB, setIsSpinningB] = useState(false);
   const [rotationB, setRotationB] = useState(0);
 
-  const fixedResultA = Math.floor(Math.random() * 4) + 1;; // ID du joueur sélectionné pour playersA
-  const fixedResultB = Math.floor(Math.random() * 4) + 5;; // ID du joueur sélectionné pour playersB
+  // IDs 
+  const playerA = 0; // groupe A
+  const playerB = 0; // groupe B
+
+  // mode aléatoire
+  const [useFixedResult, setUseFixedResult] = useState(false);
 
   const handleDraw = (group) => {
     if (group === 'A' && isSpinningA) return;
     if (group === 'B' && isSpinningB) return;
 
-    if (group === 'A') {
+    if (group === 'A' && playersA.length > 0) {
       setIsSpinningA(true);
       setSelectedPlayerA(null);
+
+      // Utilisation d'un ID fixe ou aléatoire
+      const selectedId = useFixedResult
+        ? playerA
+        : playersA[Math.floor(Math.random() * playersA.length)].id;
+
       const totalPlayers = playersA.length;
+      const playerIndex = playersA.findIndex(player => player.id === selectedId);
       const anglePerPlayer = 360 / totalPlayers;
-      const playerIndex = playersA.findIndex(player => player.id === fixedResultA);
       const targetRotation = rotationA + 360 * 5 - (playerIndex * anglePerPlayer) + anglePerPlayer / 2;
 
       setRotationA(targetRotation);
 
       setTimeout(() => {
         setSelectedPlayerA(playersA[playerIndex]);
+        setPlayersA(playersA.filter(player => player.id !== selectedId)); // Supprime le joueur sélectionné
         setIsSpinningA(false);
       }, 5000);
     }
 
-    if (group === 'B') {
+    if (group === 'B' && playersB.length > 0) {
       setIsSpinningB(true);
       setSelectedPlayerB(null);
+
+      // Utilisation d'un ID fixe ou aléatoire
+      const selectedId = useFixedResult
+        ? playerB
+        : playersB[Math.floor(Math.random() * playersB.length)].id;
+
       const totalPlayers = playersB.length;
+      const playerIndex = playersB.findIndex(player => player.id === selectedId);
       const anglePerPlayer = 360 / totalPlayers;
-      const playerIndex = playersB.findIndex(player => player.id === fixedResultB);
       const targetRotation = rotationB + 360 * 5 - (playerIndex * anglePerPlayer) + anglePerPlayer / 2;
 
       setRotationB(targetRotation);
 
       setTimeout(() => {
         setSelectedPlayerB(playersB[playerIndex]);
+        setPlayersB(playersB.filter(player => player.id !== selectedId)); // Supprime le joueur sélectionné
         setIsSpinningB(false);
       }, 5000);
     }
@@ -97,9 +118,13 @@ const TirageAuSort = () => {
                 )}
               </div>
             ))}
-          </div><br/><br/>
-          <button onClick={() => handleDraw('A')} disabled={isSpinningA}>
-            {isSpinningA ? 'Tirage en cours...' : 'Lancer le tirage - Groupe A'}
+          </div><br/>
+          <button onClick={() => handleDraw('A')} disabled={isSpinningA || playersA.length === 0}>
+            {playersA.length === 0
+              ? 'Aucun joueur restant'
+              : isSpinningA
+              ? 'Tirage en cours...'
+              : 'Lancer le tirage - Groupe A'}
           </button>
           {selectedPlayerA && (
             <div className="result">
@@ -111,7 +136,7 @@ const TirageAuSort = () => {
         </div>
 
         {/* Groupe B */}
-        <div className="circle-container">
+        <br/><div className="circle-container">
           <h2>Tirage au Sort - Groupe B</h2><br/>
           <div
             className="wheel"
@@ -134,8 +159,12 @@ const TirageAuSort = () => {
               </div>
             ))}
           </div><br/><br/>
-          <button onClick={() => handleDraw('B')} disabled={isSpinningB}>
-            {isSpinningB ? 'Tirage en cours...' : 'Lancer le tirage - Groupe B'}
+          <button onClick={() => handleDraw('B')} disabled={isSpinningB || playersB.length === 0}>
+            {playersB.length === 0
+              ? 'Aucun joueur restant'
+              : isSpinningB
+              ? 'Tirage en cours...'
+              : 'Lancer le tirage - Groupe B'}
           </button>
           {selectedPlayerB && (
             <div className="result">

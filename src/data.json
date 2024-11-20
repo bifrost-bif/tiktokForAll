@@ -1,6 +1,16 @@
 {
   "sanctions": [
     {
+      "id": 4,
+      "name": "Marwen",
+      "flag": "/images/profiles/marwen.07.png",
+      "date": "2024-11-20",
+      "status": "Sanctionné",
+      "niv1": "0",
+      "niv2": "2",
+      "niv3": "1",
+      "niv4": "0"
+    },    {
       "id": 1,
       "name": "Zaman",
       "flag": "/images/profiles/zamanino.png",
