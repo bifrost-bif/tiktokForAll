@@ -19,13 +19,13 @@ const Home = () => {
                     src="https://tally.so/embed/nr0VrN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
                     loading="lazy" 
                     width="100%" 
-                    min-height="80vh"
+                    min-height="50vh"
                     frameBorder="0" 
                     marginHeight="0" 
                     marginWidth="0" 
                     title="Vote"
                     style={{
-                        height: '80vh', 
+                        height: '50vh', 
                         overflow: 'hidden', 
                         scrollBehavior: 'none',
                         scrollbarWidth: 'none',
