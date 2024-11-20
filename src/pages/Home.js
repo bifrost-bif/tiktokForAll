@@ -13,26 +13,41 @@ const Home = () => {
 
     return (
         <div className="home-container">
-                {/* Ajout de l'iframe directement dans le JSX */}
-                <section className="vote-section">
-
+            {/* Ajout de l'iframe directement dans le JSX */}
+            <section className="vote-section">
                 <iframe 
                     src="https://tally.so/embed/nr0VrN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
                     loading="lazy" 
                     width="100%" 
+                    min-height="50vh"
                     frameBorder="0" 
                     marginHeight="0" 
                     marginWidth="0" 
                     title="Vote"
                     style={{
-                        height: '30vh', 
+                        height: '50vh', 
                         overflow: 'hidden', 
                         scrollBehavior: 'none',
                         scrollbarWidth: 'none',
-                        display: 'flex' /*Merci Zoet*/
+                        display: 'flex'
                     }}
                 ></iframe>
             </section>
+
+            {/* IMAGE TIRAGE AU SORT */}
+            <section className="tirage-image-section">
+                <h2 className="tirage-title">
+                    <span className="highlight">Tirage au sort<br /></span>
+                    <span className="highlightDes">En live avec Bacem</span>
+                </h2>
+                <img 
+                    src={`${process.env.PUBLIC_URL}/images/tiktokforall_tirage.webp`} 
+                    alt="Tirage au Sort" 
+                    className="tirage-image"
+                />
+            </section>
+
+
             {/* Section de la vidéo gagnante - À la une */}
             <section className="featured-video-section">
                 <Typography variant="h4" className="featured-title">
@@ -42,8 +57,6 @@ const Home = () => {
                 <TikTokEmbed videoId="7434713514431761695" />
             </section>
             <br />
-            
-
         </div>
     );
 };

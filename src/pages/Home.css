@@ -209,3 +209,102 @@ button:hover {
 .menu-icon-button:hover {
     color: #e0e0e0 !important; /* Couleur légèrement plus claire au survol */
 }
+
+.tirage-image-section {
+    text-align: center; /* Centre l'image horizontalement */
+    margin: 20px 0; /* Espacement vertical */
+  }
+  
+  .tirage-image {
+    width: 80%; /* Ajuste la taille de l'image */
+    max-width: 400px; /* Taille maximale pour les écrans larges */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation lors du hover */
+  }
+  
+  .tirage-image:hover {
+    transform: scale(1.05); /* Légère mise en avant lors du hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Augmente l'ombre */
+  }
+
+  /* Section Tirage */
+.tirage-image-section {
+    text-align: center;
+    margin: 30px 0; /* Espacement vertical */
+  }
+  
+  /* Titre principal */
+  .tirage-title {
+    font-size: 2.5rem; /* Taille de base pour le titre */
+    font-weight: bold; /* Texte gras */
+    color: #2c3e50; /* Couleur élégante */
+    margin-bottom: 20px; /* Espacement avec l'image */
+    line-height: 1.4; /* Espacement des lignes */
+    text-transform: uppercase; /* Texte en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    animation: fadeIn 1.5s ease-in-out; /* Animation légère */
+  }
+  
+  /* Couleur et style pour le mot "Tirage au sort" */
+  .tirage-title .highlight {
+    color: #e63946 ; /* Couleur principale */
+    font-size: 2.8rem; /* Taille légèrement plus grande */
+    display: block;
+  }
+  
+  /* Couleur et style pour la description "En live avec Bacem" */
+  .tirage-title .highlightDes {
+    font-size: 1.2rem; /* Texte descriptif plus petit */
+    color: #7f8c8d; /* Couleur grise élégante */
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Image */
+  .tirage-image {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tirage-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Animation pour le titre */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Adaptation pour les petits écrans */
+  @media (max-width: 768px) {
+    .tirage-title {
+      font-size: 2rem;
+    }
+  
+    .tirage-title .highlight {
+      font-size: 2.3rem;
+    }
+  
+    .tirage-title .highlightDes {
+      font-size: 1rem;
+    }
+  
+    .tirage-image {
+      width: 90%;
+      max-width: 300px;
+    }
+  }
+  

@@ -16,6 +16,8 @@ import MentionsLegales from './pages/MentionsLegales';
 import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import ContactDonnees from './pages/ContactDonnees';
 import Mosammin from './pages/Mosammin';
+import TirageAuSort from './pages/TirageAuSort';
+
 
 import AdminPage from './components/AdminPage';
 
@@ -88,6 +90,7 @@ function App() {
                     <Route path="/contact-donnees" element={<ContactDonnees />} />
                     <Route path="/mosammin" element={<Mosammin />} />
                     <Route path="/admin" element={<AdminPage/> } />
+                    <Route path="/tirage-au-sort" element={<TirageAuSort/> } />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
                 
