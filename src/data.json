@@ -563,6 +563,51 @@
       ]
     },
     {
+      "date": "Vendredi 22 nov. 2024",
+      "knockout": true,
+      "roundName": "Journée spéciale",
+      "matches": [
+        {
+          "player1": {
+            "name": "Zaman",
+            "photo": "/images/profiles/zamanino.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Chbaya7",
+            "photo": "/images/profiles/bilel.png",
+            "score": -1
+          },
+          "time": "21:00",
+          "duo":"true"
+        },
+        {
+          "player1": {
+            "name": "Sameh",
+            "photo": "/images/profiles/sameh.ba.png",
+            "score": -1
+          },
+          "player3": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraI.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Midou",
+            "photo": "/images/profiles/midouayari26.png",
+            "score": -1
+          },
+          "player4": {
+            "name": "A définir",
+            "photo": "/images/profiles/inconnu.png",
+            "score": -1
+          },
+          "time": "21:45",
+          "duo":"true"
+        }
+      ]
+    },
+    {
       "date": "Samedi 23 nov. 2024",
       "knockout": true,
       "roundName": "Quarts de finale",
@@ -618,51 +663,6 @@
           "tirage_au_sort":"true",
           "quatre":"true",
           "id":"2"
-        }
-      ]
-    },
-    {
-      "date": "Vendredi 22 nov. 2024",
-      "knockout": true,
-      "roundName": "Journée spéciale",
-      "matches": [
-        {
-          "player1": {
-            "name": "Zaman",
-            "photo": "/images/profiles/zamanino.png",
-            "score": -1
-          },
-          "player2": {
-            "name": "Chbaya7",
-            "photo": "/images/profiles/bilel.png",
-            "score": -1
-          },
-          "time": "21:00",
-          "duo":"true"
-        },
-        {
-          "player1": {
-            "name": "Sameh",
-            "photo": "/images/profiles/sameh.ba.png",
-            "score": -1
-          },
-          "player3": {
-            "name": "Amira",
-            "photo": "/images/profiles/amiraI.png",
-            "score": -1
-          },
-          "player2": {
-            "name": "Midou",
-            "photo": "/images/profiles/midouayari26.png",
-            "score": -1
-          },
-          "player4": {
-            "name": "A définir",
-            "photo": "/images/profiles/inconnu.png",
-            "score": -1
-          },
-          "time": "21:45",
-          "duo":"true"
         }
       ]
     }
