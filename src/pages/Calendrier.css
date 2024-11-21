@@ -550,3 +550,15 @@ body {
     overflow-x: hidden;
     left: 50%!important;
 }
+
+.quatre-photo-container {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.quatre-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

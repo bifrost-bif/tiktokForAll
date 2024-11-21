@@ -39,6 +39,7 @@ const Calendar = () => {
             <div className="calendar-content">
                 {calendarData.map((journey, journeyIndex) => {
                     const isOpeningMatch = journey.matches.some(match => match.ouverture === "true");
+                    const isDuoMatch = journey.matches.some(match => match.duo === "true");
                     
 
                     if (!isOpeningMatch) {
@@ -56,7 +57,7 @@ const Calendar = () => {
                                     <Match
                                         key={matchIndex}
                                         match={match}
-                                        onClick={() =>{ if(!match.ouverture){setOpenMatch({ ...match, date: journey.date })}}}
+                                        onClick={() =>{ if(!match.ouverture&&!isDuoMatch){setOpenMatch({ ...match, date: journey.date })}}}
                                     />
                                 ))}
                             </Grid>
@@ -74,47 +75,65 @@ const Calendar = () => {
     );
 };
 
-const MatchModal = ({ match, onClose }) => (
-    <Dialog open={!!match} onClose={onClose} fullScreen className="dialog-container">
-        <DialogTitle className="modal-title">
-            <IconButton 
-                aria-label="close" 
-                onClick={onClose} 
-                className="modal-close-button"
-                style={{ position: 'absolute', right: 16, top: 16, zIndex: 1000 }}
-                >
-            <CloseIcon fontSize="large" />
-            </IconButton>
 
-        </DialogTitle>
-        <DialogContent className="modal-content" style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/images/fd-1.png)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            color: '#ffffff'
-        }}>
-            <CountdownTimer targetDate={`${match.date} ${match.time}`} />
-        <img src="./images/titre.png" alt="tiktokForAll_icone_affiche" className="affiche-title" style={{ maxWidth: '80%', height: 'auto', width: '300px' }} />
-            <div className="modal-players">
-                <Player player={match.player1} large />
-                <img src={`${process.env.PUBLIC_URL}/images/versus.png`} alt="Versus" className="versus-image-modal" />
-                <Player player={match.player2} large />
-            </div>
-            <Typography variant="h5" className="modal-match-date">{match.date}</Typography>
-            <Typography>
-                <img src={`${process.env.PUBLIC_URL}/images/euro.png`} alt="Europe" className="flag-icon" />
-                <img src={`${process.env.PUBLIC_URL}/images/tunisia.png`} alt="Tunisie" className="flag-icon" />
-            </Typography> 
-            <Typography variant="h6" className="modal-match-time">
-                {match.time.replace(':', 'h')} 
-            </Typography>
-            <div >
-                <img src="./images/tiktokForAll_icone_affiche.png" className="affiche-image-modal" alt="Affiche Icon" />
-            </div>
-        </DialogContent>
-    </Dialog>
-);
+
+const MatchModal = ({ match, onClose }) => {
+    const images = {
+        "1": `${process.env.PUBLIC_URL}/images/1000015079.jpg`,
+        "2": `${process.env.PUBLIC_URL}/images/1000015078.jpg`,
+    };
+
+    const imageSrc = images[match?.id] || null;
+
+    return (
+        <Dialog open={!!match} onClose={onClose} className="dialog-container">
+            <DialogContent
+                className="modal-content"
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    backgroundColor: '#000',
+                    overflow: 'hidden',
+                    position: 'relative',
+                }}
+            >
+                {/* Improved Close Button */}
+                <IconButton
+                    onClick={onClose}
+                    style={{
+                        position: 'absolute',
+                        top: '20px',
+                        right: '400px',
+                        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                        color: '#ff0000',
+                        border: '2px solid #ff0000',
+                        borderRadius: '50%',
+                        padding: '10px',
+                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+                        cursor: 'pointer',
+                        fontSize: '20px',
+                    }}
+                >
+                    <CloseIcon fontSize="large" />
+                </IconButton>
+
+                {/* Display Image */}
+                {imageSrc && (
+                    <img
+                        src={imageSrc}
+                        alt={`Match ${match?.id}`}
+                        style={{
+                            maxWidth: '900px',
+                            height: '850px',
+                            borderRadius: '1px',
+                        }}
+                    />
+                )}
+            </DialogContent>
+        </Dialog>
+    );
+};
 
 // Composant CountdownTimer pour afficher le compte à rebours
 const CountdownTimer = ({ targetDate }) => {
@@ -199,25 +218,7 @@ const Match = ({ match, onClick }) => {
     const forfeitReason = match.motif_forfait ? `${match.motif_forfait}` : '';
     const forfeitMessage = `${match.forfait} ${forfeitReason}, victoire automatique`.trim();
 
-    const isTirageAuSort = match.tirage_au_sort === "true";
-    if (isTirageAuSort) {
-        return (
-            <Grid item xs={12} sm={6} md={5} onClick={onClick}>
-                <Paper className="match-container">
-                    <div className="tirage-container">
-                        <img
-                            src={`${process.env.PUBLIC_URL}/images/tiktokforall_tirage.webp`}
-                            alt="Tirage au Sort"
-                            className="tirage-image"
-                        />
-                        <Typography variant="h6" className="match-time">
-                            {match.time}
-                        </Typography>
-                    </div>
-                </Paper>
-            </Grid>
-        );
-    }
+
 
     return (
         <Grid item xs={12} sm={6} md={5} onClick={onClick}>

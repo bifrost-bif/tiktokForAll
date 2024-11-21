@@ -34,7 +34,7 @@ const Home = () => {
                 ></iframe>
             </section>
 
-            {/* IMAGE TIRAGE AU SORT */}
+            {/* IMAGE TIRAGE AU SORT 
             <section className="tirage-image-section">
                 <h2 className="tirage-title">
                     <span className="highlight">Tirage au sort<br /></span>
@@ -45,7 +45,7 @@ const Home = () => {
                     alt="Tirage au Sort" 
                     className="tirage-image"
                 />
-            </section>
+            </section>*/}
 
 
             {/* Section de la vidéo gagnante - À la une */}

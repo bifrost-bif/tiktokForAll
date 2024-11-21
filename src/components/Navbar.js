@@ -65,6 +65,7 @@ const Navbar = () => {
                             gap: '10px',
                             justifyContent: mobileOpen ? 'center' : 'flex-start',
                             width: mobileOpen ? '100%' : 'auto',
+                            
                         }}
                     >
                         <img
@@ -146,6 +147,7 @@ const Navbar = () => {
                         height: '100vh',
                         boxShadow: 'none',
                         overflow: 'hidden',
+                        zIndex:'99999'
                     },
                 }}
             >

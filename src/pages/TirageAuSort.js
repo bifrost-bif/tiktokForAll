@@ -28,8 +28,17 @@ const TirageAuSort = () => {
   const [rotationB, setRotationB] = useState(0);
 
   // IDs 
+  //const playerA = 2; // groupe A
+  //const playerB = 7; // groupe B
+
   const playerA = 0; // groupe A
   const playerB = 0; // groupe B
+
+  //const playerA = 0; // groupe A
+  //const playerB = 0; // groupe B
+
+  //const playerA = 0; // groupe A
+  //const playerB = 0; // groupe B
 
   // mode aléatoire
   const [useFixedResult, setUseFixedResult] = useState(false);

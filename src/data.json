@@ -261,7 +261,7 @@
           "score": -1
         },
         "player2": {
-          "name": "Khal",
+          "name": "El Khal",
           "realName": "Khal",
           "photo": "/images/profiles/5al.png",
           "score": -1
@@ -347,46 +347,46 @@
       {
         "id": 9,
         "player1": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Souhaiel",
+          "photo": "/images/profiles/souhaiel_junkremoval03.png",
           "score": -1
         },
         "player2": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Charchabil",
+          "photo": "/images/profiles/garga044.png",
           "score": -1
         },
         "player3": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Khayri",
+          "photo": "/images/profiles/khayri_89.png",
           "score": -1
         },
         "player4": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Dali",
+          "photo": "/images/profiles/dali_elghoul.png",
           "score": -1
         }
       },
       {
         "id": 10,
         "player1": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Thala",
+          "photo": "/images/profiles/thalaftw.png",
           "score": -1
         },
         "player2": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Hend",
+          "photo": "/images/profiles/hendab7.png",
           "score": -1
         },
         "player3": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Amira",
+          "photo": "/images/profiles/amiraomriii.png",
           "score": -1
         },
         "player4": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "El Khal",
+          "photo": "/images/profiles/5al.png",
           "score": -1
         }
       }
@@ -452,7 +452,8 @@
             "photo": "/images/profiles/khayri_89.png",
             "score": 493
           },
-          "time": "19:30"
+          "time": "19:30",
+          "duo":"true"
         },
         {
           "player1": {
@@ -465,7 +466,8 @@
             "photo": "/images/profiles/amiraomriii.png",
             "score": 125
           },
-          "time": "20:00"
+          "time": "20:00",
+          "duo":"true"
         },
         {
           "player1": {
@@ -478,7 +480,8 @@
             "photo": "/images/profiles/5al.png",
             "score": 1345
           },
-          "time": "20:30"
+          "time": "20:30",
+          "duo":"true"
         },        
         {
           "player1": {
@@ -491,7 +494,8 @@
             "photo": "/images/profiles/fathi_3jej.png",
             "score": 64
           },
-          "time": "21:00"
+          "time": "21:00",
+          "duo":"true"
         }
       ]
     },
@@ -511,7 +515,8 @@
             "photo": "/images/profiles/big.heart129.png",
             "score": 1553
           },
-          "time": "19:30"
+          "time": "19:30",
+          "duo":"true"
         },
         {
           "player1": {
@@ -524,7 +529,8 @@
             "photo": "/images/profiles/dali_elghoul.png",
             "score": 444
           },
-          "time": "20:00"
+          "time": "20:00",
+          "duo":"true"
         },
         {
           "player1": {
@@ -537,7 +543,8 @@
             "photo": "/images/profiles/ashref_officiel.png",
             "score": 436
           },
-          "time": "20:30"
+          "time": "20:30",
+          "duo":"true"
         },    
         {
           "player1": {
@@ -550,31 +557,115 @@
             "photo": "/images/profiles/hendab7.png",
             "score": 498
           },
-          "time": "21:00"
+          "time": "21:00",
+          "duo":"true"
         }
       ]
     },
     {
-      "date": "Mercredi 20 nov. 2024",
+      "date": "Samedi 23 nov. 2024",
       "knockout": true,
-      "roundName": "Tirage au sort",
+      "roundName": "Quarts de finale",
       "matches": [
         {
           "player1": {
             "name": "Souhaiel",
             "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": 1826
+            "score": -1
           },
           "player2": {
-            "name": "Tiger",
-            "photo": "/images/profiles/big.heart129.png",
-            "score": 1553
+            "name": "Khayri",
+            "photo": "/images/profiles/khayri_89.png",
+            "score": -1
           },
-          "time": "19:30",
-          "tirage_au_sort":"true"
+          "player3": {
+            "name": "Charchabil",
+            "photo": "/images/profiles/garga044.png",
+            "score": -1
+          },
+          "player4": {
+            "name": "Dali",
+            "photo": "/images/profiles/dali_elghoul.png",
+            "score": -1
+          },
+          "time": "20:00",
+          "tirage_au_sort":"true",
+          "quatre":"true",
+          "id":"1"
+        },
+        {
+          "player1": {
+            "name": "Thala",
+            "photo": "/images/profiles/thalaftw.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraomriii.png",
+            "score": -1
+          },
+          "player3": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
+            "score": -1
+          },
+          "player4": {
+            "name": "El Khal",
+            "photo": "/images/profiles/5al.png",
+            "score": -1
+          },
+          "time": "20:45",
+          "tirage_au_sort":"true",
+          "quatre":"true",
+          "id":"2"
         }
       ]
-    } 
+    },
+    {
+      "date": "Vendredi 22 nov. 2024",
+      "knockout": true,
+      "roundName": "Journée spéciale",
+      "matches": [
+        {
+          "player1": {
+            "name": "Zaman",
+            "photo": "/images/profiles/zamanino.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Chbaya7",
+            "photo": "/images/profiles/bilel.png",
+            "score": -1
+          },
+          "time": "21:00",
+          "duo":"true"
+        },
+        {
+          "player1": {
+            "name": "Sameh",
+            "photo": "/images/profiles/sameh.ba.png",
+            "score": -1
+          },
+          "player3": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraI.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Midou",
+            "photo": "/images/profiles/midouayari26.png",
+            "score": -1
+          },
+          "player4": {
+            "name": "A définir",
+            "photo": "/images/profiles/inconnu.png",
+            "score": -1
+          },
+          "time": "21:45",
+          "duo":"true"
+        }
+      ]
+    }
   ],
   "joueursInscritsData": [
     {
