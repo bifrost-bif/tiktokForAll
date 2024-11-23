@@ -395,26 +395,26 @@
       {
         "id": 11,
         "player1": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Souhaiel",
+          "photo": "/images/profiles/souhaiel_junkremoval03.png",
           "score": -1
         },
         "player2": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Charchabil",
+          "photo": "/images/profiles/garga044.png",
           "score": -1
         }
       },
       {
         "id": 12,
         "player1": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Thala",
+          "photo": "/images/profiles/thalaftw.png",
           "score": -1
         },
         "player2": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Hend",
+          "photo": "/images/profiles/hendab7.png",
           "score": -1
         }
       }
@@ -598,8 +598,8 @@
             "score": -1
           },
           "player4": {
-            "name": "A définir",
-            "photo": "/images/profiles/inconnu.png",
+            "name": "Kader",
+            "photo": "/images/profiles/kader.png",
             "score": -1
           },
           "time": "21:45",
@@ -616,21 +616,70 @@
           "player1": {
             "name": "Souhaiel",
             "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": -1
+            "score": 1858
           },
           "player2": {
             "name": "Khayri",
             "photo": "/images/profiles/khayri_89.png",
-            "score": -1
+            "score": 1059
           },
           "player3": {
             "name": "Charchabil",
             "photo": "/images/profiles/garga044.png",
-            "score": -1
+            "score": 1858
           },
           "player4": {
             "name": "Dali",
             "photo": "/images/profiles/dali_elghoul.png",
+            "score": 1059
+          },
+          "time": "20:00",
+          "tirage_au_sort":"true",
+          "quatre":"true",
+          "id":"1"
+        },
+        {
+          "player1": {
+            "name": "Thala",
+            "photo": "/images/profiles/thalaftw.png",
+            "score": 239
+          },
+          "player2": {
+            "name": "Amira",
+            "photo": "/images/profiles/amiraomriii.png",
+            "score": 75
+          },
+          "player3": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
+            "score": 239
+          },
+          "player4": {
+            "name": "El Khal",
+            "photo": "/images/profiles/5al.png",
+            "score": 75
+          },
+          "time": "20:45",
+          "tirage_au_sort":"true",
+          "quatre":"true",
+          "id":"2"
+        }
+      ]
+    },
+    {
+      "date": "Mardi 26 nov. 2024",
+      "knockout": true,
+      "roundName": "Demi finale",
+      "matches": [
+        {
+          "player1": {
+            "name": "Souhaiel",
+            "photo": "/images/profiles/souhaiel_junkremoval03.png",
+            "score": -1
+          },
+          "player2": {
+            "name": "Charchabil",
+            "photo": "/images/profiles/garga044.png",
             "score": -1
           },
           "time": "20:00",
@@ -645,18 +694,8 @@
             "score": -1
           },
           "player2": {
-            "name": "Amira",
-            "photo": "/images/profiles/amiraomriii.png",
-            "score": -1
-          },
-          "player3": {
             "name": "Hend",
             "photo": "/images/profiles/hendab7.png",
-            "score": -1
-          },
-          "player4": {
-            "name": "El Khal",
-            "photo": "/images/profiles/5al.png",
             "score": -1
           },
           "time": "20:45",
@@ -665,7 +704,7 @@
           "id":"2"
         }
       ]
-    }
+    }    
   ],
   "joueursInscritsData": [
     {
