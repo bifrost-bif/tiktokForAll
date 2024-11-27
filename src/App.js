@@ -22,6 +22,7 @@ import TirageAuSort from './pages/TirageAuSort';
 import AdminPage from './components/AdminPage';
 
 import './App.css';
+import FinalAnnouncement from "./pages/FinalAnnouncement";
 
 function App() {
     const [installPrompt, setInstallPrompt] = useState(null);
@@ -69,14 +70,10 @@ function App() {
         <Router>
             <Navbar /> {/* Barre de navigation */}
             <div className="App">
-                {installPrompt && (
-                    <button className="install-button" onClick={handleInstallClick}>
-                        Disponible en application mobile
-                    </button>
-                )}
+
 
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<FinalAnnouncement />} />
                     <Route path="/joueurs-inscrits" element={<JoueursInscrits />} />
                     <Route path="/sanctions" element={<Sanctions />} />
                     <Route path="/phase-de-groupe" element={<GroupStage />} />

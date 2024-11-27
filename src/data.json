@@ -2,6 +2,17 @@
   "sanctions": [
     {
       "id": 4,
+      "name": "Thala",
+      "flag": "/images/profiles/thalaftw.png",
+      "date": "2024-11-27",
+      "status": "Active",
+      "niv1": "0",
+      "niv2": "1",
+      "niv3": "1",
+      "niv4": "0"
+    },
+    {
+      "id": 4,
       "name": "Marwen",
       "flag": "/images/profiles/marwen.07.png",
       "date": "2024-11-20",
@@ -10,7 +21,8 @@
       "niv2": "2",
       "niv3": "1",
       "niv4": "0"
-    },    {
+    },
+    {
       "id": 1,
       "name": "Zaman",
       "flag": "/images/profiles/zamanino.png",
@@ -21,7 +33,7 @@
       "niv3": "1",
       "niv4": "0"
     },
-         {
+    {
       "id": 1,
       "name": "Daly",
       "flag": "/images/profiles/dali_elghoul.png",
@@ -31,7 +43,7 @@
       "niv2": "1",
       "niv3": "1",
       "niv4": "0"
-    }, 
+    },
     {
       "id": 7,
       "name": "Pap Malik",
@@ -119,7 +131,7 @@
       "niv2": "2",
       "niv3": "0",
       "niv4": "0"
-    },    
+    },
     {
       "id": 5,
       "name": "Sandro",
@@ -423,13 +435,13 @@
       {
         "id": 13,
         "player1": {
-          "name": "A définir",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Souhaiel",
+          "photo": "/images/profiles/souhaiel_junkremoval03.png",
           "score": -1
         },
         "player2": {
-          "name": "A définir3",
-          "photo": "/images/profiles/inconnu.png",
+          "name": "Thala",
+          "photo": "/images/profiles/thalaftw.png",
           "score": -1
         }
       }
@@ -453,7 +465,7 @@
             "score": 493
           },
           "time": "19:30",
-          "duo":"true"
+          "duo": "true"
         },
         {
           "player1": {
@@ -467,7 +479,7 @@
             "score": 125
           },
           "time": "20:00",
-          "duo":"true"
+          "duo": "true"
         },
         {
           "player1": {
@@ -481,8 +493,8 @@
             "score": 1345
           },
           "time": "20:30",
-          "duo":"true"
-        },        
+          "duo": "true"
+        },
         {
           "player1": {
             "name": "Charchabil",
@@ -495,7 +507,7 @@
             "score": 64
           },
           "time": "21:00",
-          "duo":"true"
+          "duo": "true"
         }
       ]
     },
@@ -516,7 +528,7 @@
             "score": 1553
           },
           "time": "19:30",
-          "duo":"true"
+          "duo": "true"
         },
         {
           "player1": {
@@ -530,7 +542,7 @@
             "score": 444
           },
           "time": "20:00",
-          "duo":"true"
+          "duo": "true"
         },
         {
           "player1": {
@@ -544,8 +556,8 @@
             "score": 436
           },
           "time": "20:30",
-          "duo":"true"
-        },    
+          "duo": "true"
+        },
         {
           "player1": {
             "name": "Eva",
@@ -558,7 +570,7 @@
             "score": 498
           },
           "time": "21:00",
-          "duo":"true"
+          "duo": "true"
         }
       ]
     },
@@ -579,7 +591,7 @@
             "score": -1
           },
           "time": "21:00",
-          "duo":"true"
+          "duo": "true"
         },
         {
           "player1": {
@@ -603,7 +615,7 @@
             "score": -1
           },
           "time": "21:45",
-          "duo":"true"
+          "duo": "true"
         }
       ]
     },
@@ -634,9 +646,10 @@
             "score": 1059
           },
           "time": "20:00",
-          "tirage_au_sort":"true",
-          "quatre":"true",
-          "id":"1"
+          "tirage_au_sort": "true",
+          "quatre": "true",
+          "id": "1",
+          "duo": "true"
         },
         {
           "player1": {
@@ -660,9 +673,10 @@
             "score": 75
           },
           "time": "20:45",
-          "tirage_au_sort":"true",
-          "quatre":"true",
-          "id":"2"
+          "tirage_au_sort": "true",
+          "quatre": "true",
+          "id": "2",
+          "duo": "true"
         }
       ]
     },
@@ -675,6 +689,47 @@
           "player1": {
             "name": "Souhaiel",
             "photo": "/images/profiles/souhaiel_junkremoval03.png",
+            "score": 264
+          },
+          "player2": {
+            "name": "Charchabil",
+            "photo": "/images/profiles/garga044.png",
+            "score": 210
+          },
+          "time": "20:00",
+          "tirage_au_sort": "true",
+          "quatre": "true",
+          "id": "1",
+          "duo": "true"
+        },
+        {
+          "player1": {
+            "name": "Thala",
+            "photo": "/images/profiles/thalaftw.png",
+            "score": 40
+          },
+          "player2": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
+            "score": 100
+          },
+          "time": "20:45",
+          "tirage_au_sort": "true",
+          "quatre": "true",
+          "id": "2",
+          "duo": "true"
+        }
+      ]
+    },
+    {
+      "date": "Jeudi 28 nov. 2024",
+      "knockout": true,
+      "roundName": "Classement - 3ème place",
+      "matches": [
+        {
+          "player1": {
+            "name": "Hend",
+            "photo": "/images/profiles/hendab7.png",
             "score": -1
           },
           "player2": {
@@ -682,11 +737,19 @@
             "photo": "/images/profiles/garga044.png",
             "score": -1
           },
-          "time": "20:00",
-          "tirage_au_sort":"true",
-          "quatre":"true",
-          "id":"1"
-        },
+          "time": "20:30",
+          "tirage_au_sort": "true",
+          "quatre": "true",
+          "id": "1",
+          "duo": "true"
+        }
+      ]
+    },
+    {
+      "date": "Vendredi 29 nov. 2024",
+      "knockout": true,
+      "roundName": "Finale",
+      "matches": [
         {
           "player1": {
             "name": "Thala",
@@ -694,17 +757,18 @@
             "score": -1
           },
           "player2": {
-            "name": "Hend",
-            "photo": "/images/profiles/hendab7.png",
+            "name": "Souhaiel",
+            "photo": "/images/profiles/souhaiel_junkremoval03.png",
             "score": -1
           },
-          "time": "20:45",
-          "tirage_au_sort":"true",
-          "quatre":"true",
-          "id":"2"
+          "time": "20:30",
+          "tirage_au_sort": "true",
+          "quatre": "true",
+          "id": "1",
+          "duo": "true"
         }
       ]
-    }    
+    }
   ],
   "joueursInscritsData": [
     {
@@ -1270,7 +1334,8 @@
           "played": 4,
           "coins": "1448k",
           "points": 8
-        },        {
+        },
+        {
           "id": 5,
           "name": "Dali",
           "flag": "/images/profiles/dali_elghoul.png",
@@ -1286,7 +1351,6 @@
           "coins": "410k",
           "points": 4
         },
-
         {
           "id": 2,
           "name": "Zaman",
@@ -1294,7 +1358,8 @@
           "played": 4,
           "coins": "564k",
           "points": 2
-        },{
+        },
+        {
           "id": 1,
           "name": "Seif",
           "flag": "/images/profiles/seifbenmustapha.png",
@@ -1375,13 +1440,6 @@
       "flag": "/images/profiles/mosamin/med_loked.png",
       "validated": true,
       "tiktokUsername": "med_loked"
-    },
-    {
-      "id": 14,
-      "name": "Journal Tunisie",
-      "flag": "/images/profiles/mosamin/journal_tunisie.png",
-      "validated": true,
-      "tiktokUsername": "journal_tunisie"
     },
     {
       "id": 15,
