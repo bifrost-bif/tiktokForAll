@@ -1,134 +1,118 @@
-/* Reset Styles */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    box-sizing: border-box;
 
-}
-
-*, *::before, *::after {
-    box-sizing: inherit; /* Consistent box model */
-}
-
-/* Global Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gray to medium gray */
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-/* Final Announcement Container */
-.final-announcement {
+/* Final Announcement Scoped Container */
+.final-announcement-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark background */
+    color: white;
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+
+    /* Animation for Page Load */
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 /* Title Styling */
-.final-title {
-    font-size: 2.1rem!Important;
+.final-announcement-container .final-title {
+    font-size: 2.5rem;
     background: linear-gradient(90deg, #1c92d2, #f2fcfe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-    animation-delay: 0.5s; /* Slight delay */
+    margin-bottom: 20px;
+}
+
+.match-time {
+    font-size: 1rem; /* Larger size for emphasis */
+    color: rgba(255, 0, 0, 0.7); /* Gold for elegance */
+    font-weight: 700; /* Bold to stand out */
+    text-transform: uppercase; /* Optional: Make text uppercase */
+    letter-spacing: 1.5px; /* Subtle spacing for readability */
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Elegant shadow for depth */
+    margin-top: -30px;
+    animation: pulse 1.5s infinite; /* Subtle animation for dynamic effect */
 }
 
 /* Date Styling */
-.final-date {
+.final-announcement-container .final-date {
     font-size: 1.8rem;
-    color: #b8c1c8; /* Soft gray */
+    color: #b8c1c8;
     margin-bottom: 40px;
-    animation: slideDown 1.5s ease-in-out 0.5s;
 }
 
 /* Players Section */
-.players {
+.final-announcement-container .players {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px; /* Space between players and VS */
-    flex-wrap: wrap; /* Stack players on small screens */
-    margin: 40px 0;
-    animation: fadeInScale 2s ease-in-out;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 /* Player Photo */
-.player-photo {
-    width: 180px;
-    height: 180px;
+.final-announcement-container .player-photo {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 6px solid #ffffff;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.player-photo:hover {
+.final-announcement-container .player-photo:hover {
     transform: scale(1.1);
     box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.7);
 }
 
 /* Player Name */
-.player-name {
+.final-announcement-container .player-name {
     margin-top: 15px;
-    font-size: 1.2rem!important;
-    color: #838181 !important; /* Soft silver for elegance */
+    font-size: 1.2rem;
+    color: #838181;
     text-transform: uppercase;
-    font-weight: 700; /* Slightly bolder for prominence */
-    letter-spacing: 2px; /* Improved letter spacing for better readability */
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Softer, elegant shadow */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.player-name:hover {
-    color: #FFBB4A!important; /* Add a subtle gold accent on hover for sophistication */
-    transform: scale(1.05); /* Slight scaling on hover for interaction */
+.final-announcement-container .player-name:hover {
+    color: #FFBB4A;
+    transform: scale(1.05);
 }
-
 
 /* VS Section */
-.vs {
-    width: 150px; /* Enlarged size for VS image */
-    height: 150px;
+.final-announcement-container .vs {
+    width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: pop 1.5s ease-in-out infinite alternate; /* Smooth bounce effect */
-    margin: 0 30px;
+    margin-bottom: 10px;
 }
 
-.vs img {
+.final-announcement-container .vs img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 /* Countdown */
-.countdown {
+.final-announcement-container .countdown {
     display: flex;
-    gap: 20px;
+    gap: 2px;
     justify-content: center;
-    margin-top: 40px;
-    animation: fadeInScale 2s ease-in-out 0.5s;
+    margin-top: 0px;
 }
 
-.countdown-item {
+.final-announcement-container .countdown-item {
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
-    background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Modern blue gradient */
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
@@ -136,106 +120,25 @@ body {
     border-radius: 10px;
 }
 
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes pop {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .final-title {
-        font-size: 4rem;
-    }
-
-    .final-date {
-        font-size: 1.5rem;
-    }
-
-    .player-photo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .vs {
-        width: 120px;
-        height: 120px;
-    }
-
-    .countdown-item {
+    .final-announcement-container .final-title {
         font-size: 2.5rem;
     }
 
-    .player-name {
-        font-size: 1.6rem;
+    .final-announcement-container .player-photo {
+        width: 100px;
+        height: 100px;
     }
 }
 
 @media (max-width: 480px) {
-    .players {
+    .final-announcement-container .players {
         flex-direction: column;
-        gap: 20px;
     }
 
-    .vs {
-        margin: 20px 0;
+    .final-announcement-container .player-photo {
         width: 100px;
         height: 100px;
-    }
-
-    .final-title {
-        font-size: 2.5rem;
-    }
-
-    .final-date {
-        font-size: 1.3rem;
-    }
-
-    .player-photo {
-        width: 120px;
-        height: 120px;
-    }
-
-    .countdown-item {
-        font-size: 2rem;
-    }
-
-    .player-name {
-        font-size: 1.4rem;
     }
 }
