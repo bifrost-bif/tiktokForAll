@@ -107,7 +107,7 @@ const Navbar = () => {
                     </IconButton>
 
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: '30px', justifyContent: 'center', flexGrow: 1 }}>
-                        <Button component={Link} to="/" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
+                        <Button component={Link} to="/home" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Accueil
                         </Button>
  

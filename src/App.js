@@ -70,10 +70,9 @@ function App() {
         <Router>
             <Navbar /> {/* Barre de navigation */}
             <div className="App">
-
-
                 <Routes>
                     <Route path="/" element={<FinalAnnouncement />} />
+                    <Route path="/Accueil" element={<Home />} />
                     <Route path="/joueurs-inscrits" element={<JoueursInscrits />} />
                     <Route path="/sanctions" element={<Sanctions />} />
                     <Route path="/phase-de-groupe" element={<GroupStage />} />
