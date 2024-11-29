@@ -23,6 +23,7 @@ import AdminPage from './components/AdminPage';
 
 import './App.css';
 import FinalAnnouncement from "./pages/FinalAnnouncement";
+import WinnersPodium from "./pages/WinnersPodium";
 
 function App() {
     const [installPrompt, setInstallPrompt] = useState(null);
@@ -71,7 +72,7 @@ function App() {
             <Navbar /> {/* Barre de navigation */}
             <div className="App">
                 <Routes>
-                    <Route path="/" element={<FinalAnnouncement />} />
+                    <Route path="/" element={<WinnersPodium />} />
                     <Route path="/Accueil" element={<Home />} />
                     <Route path="/joueurs-inscrits" element={<JoueursInscrits />} />
                     <Route path="/sanctions" element={<Sanctions />} />

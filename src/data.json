@@ -741,7 +741,9 @@
           "tirage_au_sort": "true",
           "quatre": "true",
           "id": "1",
-          "duo": "true"
+          "duo": "true",
+          "forfait":"Hend",
+          "motif_forfait":"absent"
         }
       ]
     },
@@ -754,12 +756,12 @@
           "player1": {
             "name": "Thala",
             "photo": "/images/profiles/thalaftw.png",
-            "score": -1
+            "score": 214
           },
           "player2": {
             "name": "Souhaiel",
             "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": -1
+            "score": 789
           },
           "time": "20:30",
           "tirage_au_sort": "true",

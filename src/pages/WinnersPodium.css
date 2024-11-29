@@ -1,0 +1,237 @@
+/* Section principale du podium */
+.winners-podium {
+    text-align: center;
+    color: white;
+    padding: 50px 30px;
+
+    overflow: hidden;
+    position: fixed; /* Fix the position on the screen */
+
+    width: 85vw;
+
+
+
+    background: url('/images/background.webp') no-repeat center center fixed;
+
+    z-index: 997; /* Ensure it stays on top */
+}
+
+/* Animation du titre avec des nuances de rouge */
+.winners-podium__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    color: #ff4d4d; /* Rouge élégant pour le texte */
+    margin-bottom: 20px;
+    animation: winners-podium__red-glow 2s infinite;
+}
+
+@keyframes winners-podium__red-glow {
+    0%, 100% {
+        text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff6666, 0 0 30px #cc0000; /* Douces ombres rouges */
+    }
+    50% {
+        text-shadow: 0 0 20px #ff6666, 0 0 30px #ff1a1a, 0 0 40px #800000; /* Rouge profond pour la pulsation */
+    }
+}
+
+
+/* Conteneur du podium */
+.winners-podium__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Espacement horizontal */
+    align-items: flex-end;
+    height: 400px;
+    margin-top: 50px;
+    padding: 0 100px; /* Padding latéral */
+    gap: 150px; /* Espacement entre les joueurs */
+}
+
+/* Effet spécial pour le champion */
+.winners-podium__special-effect {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    border-radius: 50%;
+    z-index: -1;
+    animation: winners-podium__special-glow 3s infinite;
+}
+
+@keyframes winners-podium__special-glow {
+    0%, 100% {
+        transform: scale(1) translateX(-50%);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.2) translateX(-50%);
+        opacity: 0.5;
+    }
+}
+
+/* Styles pour les différentes positions */
+/* Champion - Milieu */
+.winners-podium__place--1 {
+    position: absolute;
+    right: 35%;
+    bottom: 70%; /* Place plus élevée */
+    transform: scale(1.3); /* Mise en avant */
+    animation: winners-podium__champion 1.5s ease-in-out forwards;
+}
+
+@keyframes winners-podium__champion {
+    0% {
+        transform: translateY(50px) scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* Runner-up - Droite */
+.winners-podium__place--2 {
+    position: absolute;
+    right: 75%;
+    bottom: 20%; /* Place plus basse */
+    animation: winners-podium__runner-up 2.5s ease-in-out forwards;
+}
+
+/* Runner-up - Gauche */
+.winners-podium__place--3 {
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    animation: winners-podium__runner-up 2.5s ease-in-out forwards;
+}
+
+@keyframes winners-podium__runner-up {
+    0% {
+        transform: translateX(200px) translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Images des joueurs */
+.winners-podium__image {
+    margin-bottom: 0px;
+    margin-top: -40px!important;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    box-shadow: 0 20px 40px rgba(255, 0, 0, 0.5);
+}
+
+.winners-podium__image:hover {
+    transform: scale(1.2);
+    box-shadow: 0 20px 40px rgba(255, 0, 0, 0.5);
+}
+
+/* Texte - Nom des joueurs */
+.winners-podium__name {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Particles - Arrière-plan */
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Rangs des joueurs avec emojis */
+.winners-podium__rank {
+    position: absolute;
+    top: 75px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem; /* Taille des emojis */
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+/* Style pour le champion */
+.winners-podium__place--1 .winners-podium__rank {
+    background: rgba(255, 223, 0, 0.2); /* Or */
+    color: #ffd700;
+    font-size: 1.8rem; /* Emoji plus grand */
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.5);
+}
+
+/* Style pour le 2ème */
+.winners-podium__place--2 .winners-podium__rank {
+    background: rgba(192, 192, 192, 0.2); /* Argent */
+    color: #c0c0c0;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+}
+
+/* Style pour le 3ème */
+.winners-podium__place--3 .winners-podium__rank {
+    background: rgba(205, 127, 50, 0.2); /* Bronze */
+    color: #cd7f32;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+
+/* Animation pour le message final */
+.winners-podium__message {
+position: relative;
+    bottom: 10%;
+    top: 20%;
+    left: 50%!important;
+    transform: translateX(-50%) translateY(50px);
+    width: 100%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+    opacity: 0;
+    animation: fade-in-up 1.5s ease-in-out forwards;
+}
+
+/* Effet d'apparition avec mouvement */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Texte stylisé */
+.winners-podium__message p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #f5f5f5;
+}
+
+.winners-podium__message strong {
+    color: #ff4d4d; /* Accent rouge élégant */
+}
