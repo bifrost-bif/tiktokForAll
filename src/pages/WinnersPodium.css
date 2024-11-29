@@ -4,14 +4,14 @@
     color: white;
     padding: 50px 30px;
 
-    overflow: hidden;
-    position: fixed; /* Fix the position on the screen */
+
+
 
     width: 85vw;
 
 
 
-    background: url('/images/background.webp') no-repeat center center fixed;
+    background: url('/images/background.jpg') no-repeat center center fixed;
 
     z-index: 997; /* Ensure it stays on top */
 }
