@@ -110,21 +110,8 @@ const Navbar = () => {
                         <Button component={Link} to="/home" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Accueil
                         </Button>
- 
                         <Button component={Link} to="/calendrier" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Calendrier
-                        </Button>
-                        <Button component={Link} to="/phase-de-groupe" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                            Phase de groupe
-                        </Button>
-                        <Button component={Link} to="/eliminatoire" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                            Phase Éliminatoire
-                        </Button>
-                        <Button component={Link} to="/sanctions" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                            Sanctions
-                        </Button>
-                        <Button component={Link} to="/mosammin" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                            Monteurs Vidéo
                         </Button>
                         <Button component={Link} to="/tirage-au-sort" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Tirage au sort

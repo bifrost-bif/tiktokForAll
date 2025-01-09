@@ -449,324 +449,36 @@
   },
   "calendarMatches": [
     {
-      "date": "Lundi 18 nov. 2024",
-      "knockout": true,
-      "roundName": "Huitièmes de Finale",
-      "matches": [
-        {
-          "player1": {
-            "name": "Syrinne",
-            "photo": "/images/profiles/sy_rinnee.png",
-            "score": 370
-          },
-          "player2": {
-            "name": "Khayri",
-            "photo": "/images/profiles/khayri_89.png",
-            "score": 493
-          },
-          "time": "19:30",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Fares",
-            "photo": "/images/profiles/faresbabay.png",
-            "score": 90
-          },
-          "player2": {
-            "name": "Amira",
-            "photo": "/images/profiles/amiraomriii.png",
-            "score": 125
-          },
-          "time": "20:00",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Amir",
-            "photo": "/images/profiles/amir__hajji.png",
-            "score": 1311
-          },
-          "player2": {
-            "name": "Khal",
-            "photo": "/images/profiles/5al.png",
-            "score": 1345
-          },
-          "time": "20:30",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Charchabil",
-            "photo": "/images/profiles/garga044.png",
-            "score": 333
-          },
-          "player2": {
-            "name": "Fathi",
-            "photo": "/images/profiles/fathi_3jej.png",
-            "score": 64
-          },
-          "time": "21:00",
-          "duo": "true"
-        }
-      ]
-    },
-    {
-      "date": "Mardi 19 nov. 2024",
-      "knockout": true,
-      "roundName": "Huitièmes de Finale",
-      "matches": [
-        {
-          "player1": {
-            "name": "Souhaiel",
-            "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": 1826
-          },
-          "player2": {
-            "name": "Tiger",
-            "photo": "/images/profiles/big.heart129.png",
-            "score": 1553
-          },
-          "time": "19:30",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Maher",
-            "photo": "/images/profiles/maherncycm7.png",
-            "score": 184
-          },
-          "player2": {
-            "name": "Dali",
-            "photo": "/images/profiles/dali_elghoul.png",
-            "score": 444
-          },
-          "time": "20:00",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Thala",
-            "photo": "/images/profiles/thalaftw.png",
-            "score": 572
-          },
-          "player2": {
-            "name": "Achref",
-            "photo": "/images/profiles/ashref_officiel.png",
-            "score": 436
-          },
-          "time": "20:30",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Eva",
-            "photo": "/images/profiles/eva.png",
-            "score": 215
-          },
-          "player2": {
-            "name": "Hend",
-            "photo": "/images/profiles/hendab7.png",
-            "score": 498
-          },
-          "time": "21:00",
-          "duo": "true"
-        }
-      ]
-    },
-    {
-      "date": "Vendredi 22 nov. 2024",
-      "knockout": true,
-      "roundName": "Journée spéciale",
-      "matches": [
-        {
-          "player1": {
-            "name": "Zaman",
-            "photo": "/images/profiles/zamanino.png",
-            "score": -1
-          },
-          "player2": {
-            "name": "Chbaya7",
-            "photo": "/images/profiles/bilel.png",
-            "score": -1
-          },
-          "time": "21:00",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Sameh",
-            "photo": "/images/profiles/sameh.ba.png",
-            "score": -1
-          },
-          "player3": {
-            "name": "Amira",
-            "photo": "/images/profiles/amiraI.png",
-            "score": -1
-          },
-          "player2": {
-            "name": "Midou",
-            "photo": "/images/profiles/midouayari26.png",
-            "score": -1
-          },
-          "player4": {
-            "name": "Kader",
-            "photo": "/images/profiles/kader.png",
-            "score": -1
-          },
-          "time": "21:45",
-          "duo": "true"
-        }
-      ]
-    },
-    {
-      "date": "Samedi 23 nov. 2024",
-      "knockout": true,
-      "roundName": "Quarts de finale",
-      "matches": [
-        {
-          "player1": {
-            "name": "Souhaiel",
-            "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": 1858
-          },
-          "player2": {
-            "name": "Khayri",
-            "photo": "/images/profiles/khayri_89.png",
-            "score": 1059
-          },
-          "player3": {
-            "name": "Charchabil",
-            "photo": "/images/profiles/garga044.png",
-            "score": 1858
-          },
-          "player4": {
-            "name": "Dali",
-            "photo": "/images/profiles/dali_elghoul.png",
-            "score": 1059
-          },
-          "time": "20:00",
-          "tirage_au_sort": "true",
-          "quatre": "true",
-          "id": "1",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Thala",
-            "photo": "/images/profiles/thalaftw.png",
-            "score": 239
-          },
-          "player2": {
-            "name": "Amira",
-            "photo": "/images/profiles/amiraomriii.png",
-            "score": 75
-          },
-          "player3": {
-            "name": "Hend",
-            "photo": "/images/profiles/hendab7.png",
-            "score": 239
-          },
-          "player4": {
-            "name": "El Khal",
-            "photo": "/images/profiles/5al.png",
-            "score": 75
-          },
-          "time": "20:45",
-          "tirage_au_sort": "true",
-          "quatre": "true",
-          "id": "2",
-          "duo": "true"
-        }
-      ]
-    },
-    {
-      "date": "Mardi 26 nov. 2024",
+      "date": "Samedi 09 Janvier. 2024",
       "knockout": true,
       "roundName": "Demi finale",
       "matches": [
         {
           "player1": {
-            "name": "Souhaiel",
-            "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": 264
+            "name": "Nims",
+            "photo": "/images/profiles/nims.png",
+            "score": -1
           },
           "player2": {
-            "name": "Charchabil",
-            "photo": "/images/profiles/garga044.png",
-            "score": 210
+            "name": "El Khal",
+            "photo": "/images/profiles/5al.png",
+            "score": -1
           },
-          "time": "20:00",
-          "tirage_au_sort": "true",
-          "quatre": "true",
-          "id": "1",
+          "time": "21:00",
           "duo": "true"
         },
         {
           "player1": {
-            "name": "Thala",
-            "photo": "/images/profiles/thalaftw.png",
-            "score": 40
-          },
-          "player2": {
-            "name": "Hend",
-            "photo": "/images/profiles/hendab7.png",
-            "score": 100
-          },
-          "time": "20:45",
-          "tirage_au_sort": "true",
-          "quatre": "true",
-          "id": "2",
-          "duo": "true"
-        }
-      ]
-    },
-    {
-      "date": "Jeudi 28 nov. 2024",
-      "knockout": true,
-      "roundName": "Classement - 3ème place",
-      "matches": [
-        {
-          "player1": {
-            "name": "Hend",
-            "photo": "/images/profiles/hendab7.png",
+            "name": "Ala Ltaief",
+            "photo": "/images/profiles/ala_ltaief.png",
             "score": -1
           },
           "player2": {
-            "name": "Charchabil",
-            "photo": "/images/profiles/garga044.png",
+            "name": "Diablo",
+            "photo": "/images/profiles/diablo.png",
             "score": -1
           },
-          "time": "20:30",
-          "tirage_au_sort": "true",
-          "quatre": "true",
-          "id": "1",
-          "duo": "true",
-          "forfait":"Hend",
-          "motif_forfait":"absent"
-        }
-      ]
-    },
-    {
-      "date": "Vendredi 29 nov. 2024",
-      "knockout": true,
-      "roundName": "Finale",
-      "matches": [
-        {
-          "player1": {
-            "name": "Thala",
-            "photo": "/images/profiles/thalaftw.png",
-            "score": 214
-          },
-          "player2": {
-            "name": "Souhaiel",
-            "photo": "/images/profiles/souhaiel_junkremoval03.png",
-            "score": 789
-          },
-          "time": "20:30",
-          "tirage_au_sort": "true",
-          "quatre": "true",
-          "id": "1",
+          "time": "21:45",
           "duo": "true"
         }
       ]
@@ -775,269 +487,31 @@
   "joueursInscritsData": [
     {
       "id": 1,
-      "name": "Amir",
-      "flag": "/images/profiles/amir__hajji.png",
+      "name": "Nims",
+      "flag": "/images/profiles/nims.png",
       "validated": true,
-      "tiktokUsername": "amir__hajji"
+      "tiktokUsername": "marmara1.1.1"
     },
     {
       "id": 2,
-      "name": "Anis",
-      "flag": "/images/profiles/ben.salem.anis.png",
+      "name": "El Khal",
+      "flag": "/images/profiles/5al.png",
       "validated": true,
-      "tiktokUsername": "ben.salem.anis"
+      "tiktokUsername": "skon2024"
     },
     {
       "id": 3,
-      "name": "Ashref",
-      "flag": "/images/profiles/ashref_officiel.png",
+      "name": "Ala Ltaief",
+      "flag": "/images/profiles/ala_ltaief.png",
       "validated": true,
-      "tiktokUsername": "ashref_officiel"
+      "tiktokUsername": "alaltaief"
     },
     {
       "id": 4,
-      "name": "Non Inscrit",
-      "flag": "/images/profiles/sortie.png",
+      "name": "Diablo",
+      "flag": "/images/profiles/diablo.png",
       "validated": true,
-      "tiktokUsername": "#"
-    },
-    {
-      "id": 5,
-      "name": "Brabus",
-      "flag": "/images/profiles/brabus372.png",
-      "validated": true,
-      "tiktokUsername": "brabus372"
-    },
-    {
-      "id": 6,
-      "name": "Colombi",
-      "flag": "/images/profiles/colombi_oussama.png",
-      "validated": true,
-      "tiktokUsername": "colombi_oussama"
-    },
-    {
-      "id": 7,
-      "name": "Khal",
-      "flag": "/images/profiles/5al.png",
-      "validated": true,
-      "tiktokUsername": "user4021713872133"
-    },
-    {
-      "id": 8,
-      "name": "Houda",
-      "flag": "/images/profiles/houda.png",
-      "validated": true,
-      "tiktokUsername": "iyes.sajed"
-    },
-    {
-      "id": 9,
-      "name": "Ibn Tunis",
-      "flag": "/images/profiles/marouane_suisse88.png",
-      "validated": true,
-      "tiktokUsername": "marouane_suisse88"
-    },
-    {
-      "id": 10,
-      "name": "Khayri",
-      "flag": "/images/profiles/khayri_89.png",
-      "validated": true,
-      "tiktokUsername": "Khayri_89"
-    },
-    {
-      "id": 11,
-      "name": "Marwen",
-      "flag": "/images/profiles/marwen.07.png",
-      "validated": true,
-      "tiktokUsername": "marwen.07"
-    },
-    {
-      "id": 12,
-      "name": "Sag3",
-      "flag": "/images/profiles/dr.sag3.01.png",
-      "validated": true,
-      "tiktokUsername": "dr.sag3.01"
-    },
-    {
-      "id": 13,
-      "name": "Sameh",
-      "flag": "/images/profiles/sameh.ba.png",
-      "validated": true,
-      "tiktokUsername": "sameh.ba"
-    },
-    {
-      "id": 14,
-      "name": "Sandro",
-      "flag": "/images/profiles/sandro.png",
-      "validated": true,
-      "tiktokUsername": "sandrinotn"
-    },
-    {
-      "id": 15,
-      "name": "Skander",
-      "flag": "/images/profiles/skander_rezgui.png",
-      "validated": true,
-      "tiktokUsername": "skanderrezguiii"
-    },
-    {
-      "id": 16,
-      "name": "Souhaiel",
-      "flag": "/images/profiles/souhaiel_junkremoval03.png",
-      "validated": true,
-      "tiktokUsername": "souhaiel_junkremoval03"
-    },
-    {
-      "id": 17,
-      "name": "Syrinne",
-      "flag": "/images/profiles/sy_rinnee.png",
-      "validated": true,
-      "tiktokUsername": "syy_rinne"
-    },
-    {
-      "id": 18,
-      "name": "Thala",
-      "flag": "/images/profiles/thalaftw.png",
-      "validated": true,
-      "tiktokUsername": "thalaftw"
-    },
-    {
-      "id": 19,
-      "name": "Tiger",
-      "flag": "/images/profiles/big.heart129.png",
-      "validated": true,
-      "tiktokUsername": "big.heart129"
-    },
-    {
-      "id": 20,
-      "name": "Amira",
-      "flag": "/images/profiles/amiraomriii.png",
-      "validated": true,
-      "tiktokUsername": "amiraomriii"
-    },
-    {
-      "id": 21,
-      "name": "Charchabil",
-      "flag": "/images/profiles/garga044.png",
-      "validated": true,
-      "tiktokUsername": "garga044"
-    },
-    {
-      "id": 22,
-      "name": "Chbaya7",
-      "flag": "/images/profiles/bilel.chbayah.png",
-      "validated": true,
-      "tiktokUsername": "bilel.chbayah"
-    },
-    {
-      "id": 23,
-      "name": "Couloumbi",
-      "flag": "/images/profiles/www.couloumbi.png",
-      "validated": true,
-      "tiktokUsername": "www.couloumbi"
-    },
-    {
-      "id": 24,
-      "name": "Dali",
-      "flag": "/images/profiles/dali_elghoul.png",
-      "validated": true,
-      "tiktokUsername": "dali_elghoul_"
-    },
-    {
-      "id": 25,
-      "name": "Youneni",
-      "flag": "/images/profiles/nazz_elyouneni.png",
-      "validated": true,
-      "tiktokUsername": "nazz_elyouneni"
-    },
-    {
-      "id": 26,
-      "name": "Eva",
-      "flag": "/images/profiles/eva.png",
-      "validated": true,
-      "tiktokUsername": "_eva_bjaoui"
-    },
-    {
-      "id": 27,
-      "name": "Faj3a",
-      "flag": "/images/profiles/limar8969.png",
-      "validated": true,
-      "tiktokUsername": "limar8969"
-    },
-    {
-      "id": 28,
-      "name": "Fares",
-      "flag": "/images/profiles/faresbabay.png",
-      "validated": true,
-      "tiktokUsername": "faresbabay"
-    },
-    {
-      "id": 29,
-      "name": "Fathi",
-      "flag": "/images/profiles/fathi_3jej.png",
-      "validated": true,
-      "tiktokUsername": "fathi.kamoussa "
-    },
-    {
-      "id": 30,
-      "name": "Hend",
-      "flag": "/images/profiles/hendab7.png",
-      "validated": true,
-      "tiktokUsername": "hendab7"
-    },
-    {
-      "id": 31,
-      "name": "Non Inscrit",
-      "flag": "/images/profiles/sortie.png",
-      "validated": true,
-      "tiktokUsername": "#"
-    },
-    {
-      "id": 32,
-      "name": "Kinen",
-      "flag": "/images/profiles/kinen007.png",
-      "validated": true,
-      "tiktokUsername": "kinen007"
-    },
-    {
-      "id": 33,
-      "name": "Maher",
-      "flag": "/images/profiles/maherncycm7.png",
-      "validated": true,
-      "tiktokUsername": "maherboutarfa835"
-    },
-    {
-      "id": 34,
-      "name": "Mosamem",
-      "flag": "/images/profiles/mosamem.png",
-      "validated": true,
-      "tiktokUsername": "mosamem_tunsi"
-    },
-    {
-      "id": 35,
-      "name": "Pap Malik",
-      "flag": "/images/profiles/malek.louati.2.png",
-      "validated": true,
-      "tiktokUsername": "malek.louati.2"
-    },
-    {
-      "id": 36,
-      "name": "Seif",
-      "flag": "/images/profiles/seifbenmustapha.png",
-      "validated": true,
-      "tiktokUsername": "seifbenmustapha"
-    },
-    {
-      "id": 37,
-      "name": "Trabelsi",
-      "flag": "/images/profiles/mtrabelsi.png",
-      "validated": true,
-      "tiktokUsername": "mtrabelsi"
-    },
-    {
-      "id": 38,
-      "name": "Zaman",
-      "flag": "/images/profiles/zamanino.png",
-      "validated": true,
-      "tiktokUsername": "zamanino"
+      "tiktokUsername": "diablo.11diablo"
     }
   ],
   "groups": [

@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import './TirageAuSort.css';
 
 const initialPlayersA = [
-  { id: 1, name: 'Khayri', photo: '/images/profiles/khayri_89.png' },
+  { id: 1, name: 'Ala Ltaief', photo: '/images/profiles/ala_ltaief.png' },
   { id: 2, name: 'Khal', photo: '/images/profiles/5al.png' },
-  { id: 3, name: 'Souhaiel', photo: '/images/profiles/souhaiel_junkremoval03.png' },
-  { id: 4, name: 'Thala', photo: '/images/profiles/thalaftw.png' },
+  { id: 3, name: 'Diablo', photo: '/images/profiles/diablo.png' },
+  { id: 4, name: 'Nims', photo: '/images/profiles/nims.png' },
 ];
 
 const initialPlayersB = [
-  { id: 5, name: 'Hend', photo: '/images/profiles/hendab7.png' },
-  { id: 6, name: 'Chrchbil', photo: '/images/profiles/garga044.png' },
-  { id: 7, name: 'Dali', photo: '/images/profiles/dali_elghoul.png' },
-  { id: 8, name: 'Amira', photo: '/images/profiles/amiraomriii.png' },
+  { id: 5, name: 'Khal', photo: '/images/profiles/5al.png' },
+  { id: 6, name: 'Ala Ltaief', photo: '/images/profiles/ala_ltaief.png' },
+  { id: 7, name: 'Nims', photo: '/images/profiles/nims.png' },
+  { id: 8, name: 'Diablo', photo: '/images/profiles/diablo.png' },
 ];
 
 const TirageAuSort = () => {
