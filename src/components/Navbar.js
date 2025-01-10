@@ -26,7 +26,7 @@ const Navbar = () => {
             }}
         >
             <List sx={{ width: '100%' }}>
-                {['Accueil', 'Calendrier', 'Phase de groupe', 'Phase Eliminatoire', 'Sanctions', 'Mosammin', 'Tirage au sort'].map((text, index) => (
+                {['Accueil', 'Calendrier', 'Mosammin', 'Tirage au sort'].map((text, index) => (
                     <ListItem 
                         button 
                         component={Link} 
