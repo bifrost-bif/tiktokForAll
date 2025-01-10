@@ -47,7 +47,7 @@ const JoueursInscrits = () => {
                 <div className="joueurs-inscrits-grid-item">
                     <Paper className="joueurs-inscrits-paper">
                         <Typography variant="h5" className="group-title">
-                            Groupe A
+                            {/* Group A */}
                         </Typography>
                         <div className="table-container">
                             <Table>
@@ -79,41 +79,6 @@ const JoueursInscrits = () => {
                     </Paper>
                 </div>
 
-                {/* Group B */}
-                <div className="joueurs-inscrits-grid-item">
-                    <Paper className="joueurs-inscrits-paper">
-                        <Typography variant="h5" className="group-title">
-                            Groupe B
-                        </Typography>
-                        <div className="table-container">
-                            <Table>
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell align="center" className="joueurs-table-header">Numéro</TableCell>
-                                        <TableCell align="center" className="joueurs-table-header">Joueur</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    {groupB.map((joueur, index) => (
-                                        <TableRow key={joueur.id} className="joueurs-table-row">
-                                            <TableCell align="center" className="joueurs-table-cell">
-                                                <PlayerNumber>{index + 1}</PlayerNumber>{/* Numéro de jouer dans le groupe A */}
-                                            </TableCell>
-                                            <TableCell align="center" className="joueurs-table-cell">
-                                                <div className="joueur-details">
-                                                    <a href={`https://www.tiktok.com/@${joueur.tiktokUsername}`} target="_blank" rel="noopener noreferrer">
-                                                        <Flag src={`${process.env.PUBLIC_URL}${joueur.flag}`} alt={joueur.name} />
-                                                    </a>
-                                                    <Typography variant="body1" className="joueur-nom">{joueur.name}</Typography>
-                                                </div>
-                                            </TableCell>
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                        </div>
-                    </Paper>
-                </div>
             </div>
         </div>
     );
