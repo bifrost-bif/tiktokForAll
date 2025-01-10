@@ -72,7 +72,7 @@ function App() {
             <Navbar /> {/* Barre de navigation */}
             <div className="App">
                 <Routes>
-                    <Route path="/" element={<WinnersPodium />} />
+                    <Route path="/" element={<JoueursInscrits />} />
                     <Route path="/Accueil" element={<Home />} />
                     <Route path="/joueurs-inscrits" element={<JoueursInscrits />} />
                     <Route path="/sanctions" element={<Sanctions />} />

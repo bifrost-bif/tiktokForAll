@@ -107,8 +107,8 @@ const Navbar = () => {
                     </IconButton>
 
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: '30px', justifyContent: 'center', flexGrow: 1 }}>
-                        <Button component={Link} to="/home" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
-                            Accueil
+                        <Button component={Link} to="/joueurs-inscrits" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
+                            Joueurs Inscrits
                         </Button>
                         <Button component={Link} to="/calendrier" sx={{ color: '#ecf0f1', fontWeight: 'bold' }}>
                             Calendrier
