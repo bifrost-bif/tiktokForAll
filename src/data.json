@@ -469,7 +469,7 @@
         },
         {
           "player1": {
-            "name": "Ala Ltaief",
+            "name": "Karoum",
             "photo": "/images/profiles/ala_ltaief.png",
             "score": -1
           },
@@ -501,10 +501,10 @@
     },
     {
       "id": 3,
-      "name": "Ala Ltaief",
-      "flag": "/images/profiles/ala_ltaief.png",
+      "name": "Karoum",
+      "flag": "/images/profiles/karoum.png",
       "validated": true,
-      "tiktokUsername": "alaltaief"
+      "tiktokUsername": "karoum934"
     },
     {
       "id": 4,
