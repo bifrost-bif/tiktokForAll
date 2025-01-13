@@ -449,14 +449,14 @@
   },
   "calendarMatches": [
     {
-      "date": "Samedi 11 Janvier. 2025",
+      "date": "Mardi 14 Janvier. 2025",
       "knockout": true,
-      "roundName": "Demi finale",
+      "roundName": "Finale",
       "matches": [
         {
           "player1": {
-            "name": "Nims",
-            "photo": "/images/profiles/nims.png",
+            "name": "Diablo",
+            "photo": "/images/profiles/diablo.png",
             "score": -1
           },
           "player2": {
@@ -464,21 +464,7 @@
             "photo": "/images/profiles/5al.png",
             "score": -1
           },
-          "time": "21:00",
-          "duo": "true"
-        },
-        {
-          "player1": {
-            "name": "Karoum",
-            "photo": "/images/profiles/ala_ltaief.png",
-            "score": -1
-          },
-          "player2": {
-            "name": "Diablo",
-            "photo": "/images/profiles/diablo.png",
-            "score": -1
-          },
-          "time": "21:45",
+          "time": "20:00",
           "duo": "true"
         }
       ]
@@ -498,13 +484,6 @@
       "flag": "/images/profiles/5al.png",
       "validated": true,
       "tiktokUsername": "skon2024"
-    },
-    {
-      "id": 3,
-      "name": "Karoum",
-      "flag": "/images/profiles/karoum.png",
-      "validated": true,
-      "tiktokUsername": "karoum934"
     },
     {
       "id": 4,
