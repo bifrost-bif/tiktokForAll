@@ -455,8 +455,8 @@
       "matches": [
         {
           "player1": {
-            "name": "Diablo",
-            "photo": "/images/profiles/diablo.png",
+            "name": "Inconnu",
+            "photo": "/images/profiles/userTiktok.png",
             "score": -1
           },
           "player2": {
@@ -487,10 +487,10 @@
     },
     {
       "id": 4,
-      "name": "Diablo",
-      "flag": "/images/profiles/diablo.png",
+      "name": "Inconnu",
+      "flag": "/images/profiles/userTiktok.png",
       "validated": true,
-      "tiktokUsername": "diablo.11diablo"
+      "tiktokUsername": "diablo.11diablo.inconnu"
     }
   ],
   "groups": [
