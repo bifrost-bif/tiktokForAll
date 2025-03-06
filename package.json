@@ -38,7 +38,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint './src/**/*.{js,jsx}'",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy --prod --dir=build"
+    "deploy": "netlify deploy --prod --dir=build",
+    "netlify-build": "npm install --force && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app",
