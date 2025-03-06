@@ -6,6 +6,12 @@
   NODE_VERSION = "18"
   PYTHON_VERSION = "3.8"
 
+[[redirects]]
+from = "/*"
+to = "/maintenance.html"
+status = 200
+force = true
+
 [[headers]]
 for = "/*"
 [headers.values]

@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
 import GroupStage from './pages/GroupStage';
@@ -20,6 +20,7 @@ import TirageAuSort from './pages/TirageAuSort';
 
 
 import AdminPage from './components/AdminPage';
+import Maintenance from './pages/Maintenance'; // Import de la page maintenance
 
 import './App.css';
 import FinalAnnouncement from "./pages/FinalAnnouncement";
@@ -27,6 +28,7 @@ import WinnersPodium from "./pages/WinnersPodium";
 
 function App() {
     const [installPrompt, setInstallPrompt] = useState(null);
+    const isMaintenanceMode = true;
 
     useEffect(() => {
         // Capture l'événement 'beforeinstallprompt' pour proposer l'installation
@@ -51,6 +53,10 @@ function App() {
             document.removeEventListener('contextmenu', handleContextMenu);
             document.removeEventListener('keydown', handleKeyDown);
         };
+
+        if (isMaintenanceMode) {
+            window.location.href = "https://www.tiktok.com"; // Redirige vers TikTok
+        }
     }, []);
 
     const handleInstallClick = () => {
@@ -69,29 +75,34 @@ function App() {
 
     return (
         <Router>
-            <Navbar /> {/* Barre de navigation */}
+            {!isMaintenanceMode && <Navbar />} {/* ❌ Cache la Navbar si maintenance */}
             <div className="App">
                 <Routes>
-                    <Route path="/" element={<JoueursInscrits />} />
-                    <Route path="/Accueil" element={<Home />} />
-                    <Route path="/joueurs-inscrits" element={<JoueursInscrits />} />
-                    <Route path="/sanctions" element={<Sanctions />} />
-                    <Route path="/phase-de-groupe" element={<GroupStage />} />
-                    <Route path="/eliminatoire" element={<KnockoutStage />} />
-                    <Route path="/phase-eliminatoire" element={<KnockoutStage />} />
-                    <Route path="/calendrier" element={<Calendar />} />
-                    <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
-                    <Route path="/mentions-legales" element={<MentionsLegales />} />
-                    <Route path="/politique-cookies" element={<PolitiqueCookies />} />
-                    <Route path="/conditions-utilisation" element={<ConditionsUtilisation />} />
-                    <Route path="/contact-donnees" element={<ContactDonnees />} />
-                    <Route path="/mosammin" element={<Mosammin />} />
-                    <Route path="/admin" element={<AdminPage/> } />
-                    <Route path="/tirage-au-sort" element={<TirageAuSort/> } />
-                    <Route path="*" element={<Navigate to="/" />} />
+                    {isMaintenanceMode ? (
+                        <Route path="*" element={<Maintenance />} /> // Affiche Maintenance uniquement
+                    ) : (
+                        <>
+                            <Route path="/" element={<JoueursInscrits />} />
+                            <Route path="/Accueil" element={<Home />} />
+                            <Route path="/joueurs-inscrits" element={<JoueursInscrits />} />
+                            <Route path="/sanctions" element={<Sanctions />} />
+                            <Route path="/phase-de-groupe" element={<GroupStage />} />
+                            <Route path="/eliminatoire" element={<KnockoutStage />} />
+                            <Route path="/phase-eliminatoire" element={<KnockoutStage />} />
+                            <Route path="/calendrier" element={<Calendar />} />
+                            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+                            <Route path="/mentions-legales" element={<MentionsLegales />} />
+                            <Route path="/politique-cookies" element={<PolitiqueCookies />} />
+                            <Route path="/conditions-utilisation" element={<ConditionsUtilisation />} />
+                            <Route path="/contact-donnees" element={<ContactDonnees />} />
+                            <Route path="/mosammin" element={<Mosammin />} />
+                            <Route path="/admin" element={<AdminPage />} />
+                            <Route path="/tirage-au-sort" element={<TirageAuSort />} />
+                            <Route path="*" element={<Navigate to="/" />} />
+                        </>
+                    )}
                 </Routes>
-                
-                <Footer />
+                {!isMaintenanceMode && <Footer />} {/* Cache le Footer si maintenance */}
             </div>
         </Router>
     );

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚧 Maintenance en cours</title>
+    <style>
+        /* Styles généraux */
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a60);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            opacity: 0;
+        }
+
+        p {
+            font-size: 1.3rem;
+            opacity: 0;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            opacity: 0;
+        }
+
+        /* Loader animé */
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 30px auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Bouton contact */
+        .contact {
+            margin-top: 20px;
+            text-decoration: none;
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            opacity: 0;
+        }
+
+        .contact:hover {
+            background: white;
+            color: #1e1e2f;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Logo -->
+<img src="https://cdn-icons-png.flaticon.com/512/189/189792.png" alt="Maintenance" class="logo">
+
+<!-- Message -->
+<h1>🚧 Site en maintenance 🚧</h1>
+<p>Nous travaillons sur des améliorations et serons de retour bientôt.</p>
+
+<!-- Loader animé -->
+<div class="loader"></div>
+
+<!-- Lien de contact -->
+<a href="mailto:support@tonsite.com" class="contact">Contactez-nous</a>
+
+<!-- GSAP Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    gsap.to(".logo", { opacity: 1, y: -10, duration: 1, delay: 0.2 });
+    gsap.to("h1", { opacity: 1, y: -10, duration: 1, delay: 0.5 });
+    gsap.to("p", { opacity: 1, y: -10, duration: 1, delay: 0.8 });
+    gsap.to(".contact", { opacity: 1, y: -10, duration: 1, delay: 1.2 });
+</script>
+
+</body>
+</html>
