@@ -8,7 +8,6 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.5",
     "@mui/material": "^6.1.5",
-    "@react-native-community/masked-view": "^0.1.11",
     "@react-spring/web": "^9.7.5",
     "@testing-library/jest-dom": "^6.6.2",
     "@testing-library/react": "^16.0.1",
@@ -22,10 +21,6 @@
     "lucide-react": "^0.462.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-native-gesture-handler": "^2.20.2",
-    "react-native-reanimated": "^3.16.1",
-    "react-native-safe-area-context": "^4.12.0",
-    "react-native-screens": "^3.35.0",
     "react-router-dom": "^6.27.0",
     "react-scripts": "^5.0.1",
     "react-tsparticles": "^2.12.2",
@@ -39,7 +34,7 @@
     "lint": "eslint './src/**/*.{js,jsx}'",
     "predeploy": "npm run build",
     "deploy": "netlify deploy --prod --dir=build",
-    "netlify-build": "npm install --force && npm run build"
+    "netlify-build": "npm install --legacy-peer-deps && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app",
