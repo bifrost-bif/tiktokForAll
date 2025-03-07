@@ -15,7 +15,7 @@ const Footer = () => {
                     <li><Link to="/contact-donnees">Contact pour Droits des Données</Link></li>
                 </ul>
                 <p className="footer-copyright">
-                    © 2024 TIKTOK FOR ALL. Tous droits réservés.
+                    © 2025 TIKTOK FOR ALL. Tous droits réservés.
                 </p>
             </div>
         </footer>
