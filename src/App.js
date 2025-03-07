@@ -28,7 +28,7 @@ import WinnersPodium from "./pages/WinnersPodium";
 
 function App() {
     const [installPrompt, setInstallPrompt] = useState(null);
-    const isMaintenanceMode = false;
+    const isMaintenanceMode = true;
 
     useEffect(() => {
         // Capture l'événement 'beforeinstallprompt' pour proposer l'installation
